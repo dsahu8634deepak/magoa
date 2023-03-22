@@ -1,0 +1,52 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include index-page-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include index-page-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include index-page-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include index-page-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include index-page-mixin-min-xxl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include index-page-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include index-page-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include index-page-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include index-page-mixin-max-xs();
+  
+}
+
+@media (max-width: 430px) {
+    @include index-page-mixin-430();
+}

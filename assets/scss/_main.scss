@@ -1,0 +1,54 @@
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theme2;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba($primary, 0.01);
+}
+
+// Font Size
+.fs-10 {font-size: 10px;}
+.fs-11 {font-size: 11px;}
+.fs-12 {font-size: 12px;}
+.fs-13 {font-size: 13px;}
+.fs-14 {font-size: 14px;}
+.fs-15 {font-size: 15px;}
+.fs-16 {font-size: 16px;}
+.fs-17 {font-size: 17px;}
+.fs-18 {font-size: 18px;}
+.fs-19 {font-size: 19px;}
+.fs-20 {font-size: 20px;}
+.fs-21 {font-size: 21px;}
+.fs-22 {font-size: 22px;}
+.fs-23 {font-size: 23px;}
+.fs-24 {font-size: 24px;}
+.fs-25 {font-size: 25px;}
+.fs-26 {font-size: 26px;}
+.fs-27 {font-size: 27px;}
+.fs-28 {font-size: 28px;}
+.fs-29 {font-size: 29px;}
+.fs-30 {font-size: 30px;}
+
+// line Height
+.lh-100 {
+  line-height: 100%;
+}
+.lh-120 {
+  line-height: 120%;
+}
+.lh-150 {
+  line-height: 150%;
+}
