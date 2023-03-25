@@ -47,6 +47,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
+    <script src="assets/libs/jquery-3.6.0.min.js"></script>
+
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
@@ -80,7 +82,7 @@
                             <li>
                                 <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png"
                                             alt="cleaner"></span></h4>
-                                <a href="#" class="user-btn"> user <span><img src="assets/images/user-fillter.png"
+                                <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"
                                             alt="fillter"></span></a>
                             </li>
                         </ul>
@@ -97,56 +99,56 @@
                 <div class="links">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round active">
                                     <span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="message.html">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:;">
                                 <div class="round">
                                     <span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings
                                 </div>
@@ -157,93 +159,44 @@
             </div>
         </div>
         <!-- sidebar sm end -->
-        <!-- sidebar lg satrt -->
-        <div class="sidebar-lg sidebar">
-            <div class="sider-top">
-                <div class="user">
-                    <ul class="list-unstyled">
-                        <li class="user">
-                            <img src="assets/images/user-profile.svg" alt="img">
-                        </li>
-                        <li>
-                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png"
-                                        alt="cleaner"></span></h4>
-                            <a href="#" class="user-btn"> user <span><img src="assets/images/user-fillter.png"
-                                        alt="fillter"></span></a>
-                        </li>
-                    </ul>
+                <!--########## [ Aside Bar Start ] ###########-->
+                <div class="sidebar-lg sidebar row mx-0 h-100 flex-column flex-wrap">
+                    <div class="sider-top col-12">
+                        <div class="user">
+                            <ul class="list-unstyled">
+                                <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                                <li>
+                                    <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                                    <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="divder">
+                        </hr>
+                        <div class="job">
+                            <ul class="list-unstyled">
+                                <li class="current">Current Job</li>
+                                <li class="price">$450</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links col-12 h-100 flex-fill px-0 overflow-hidden">
+                        <div class="row mx-0 overflow-y-auto h-100">
+                        <ul class="list-unstyled px-0 col-12">
+                            <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                            <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round active"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                            <li><a href="javascript:;" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
-                <hr class="divder">
-                </hr>
-                <div class="job">
-                    <ul class="list-unstyled">
-                        <li class="current">Current Job</li>
-                        <li class="price">$450</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="links">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab1">
-                            <div class="round active">
-                                <span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab2">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab3">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab4">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab5">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab6">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab7">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tab-a" data-id="tab8">
-                            <div class="round">
-                                <span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- sidebar lg end -->
+                <!--########## [ Aside Bar End ] ###########-->
+        
         <div class="main">
             <div class="dPage my-job active" data-id="tab1">
                 <h4 class="page-title">My Jobs</h4>
@@ -316,7 +269,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -357,20 +310,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -378,10 +331,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -419,7 +372,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -460,20 +413,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -481,10 +434,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -522,7 +475,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -563,20 +516,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -584,10 +537,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -625,7 +578,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -666,20 +619,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -687,10 +640,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -733,7 +686,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -773,20 +726,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -794,10 +747,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen opLow"
+                                                        <a href="javascript:;" class="theme-btn btnGreen opLow"
                                                             data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                             Job</a>
                                                     </li>
@@ -837,7 +790,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -878,20 +831,20 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#MemorialDetailModal">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -899,10 +852,10 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder"
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen opLow"
+                                                        <a href="javascript:;" class="theme-btn btnGreen opLow"
                                                             data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                             Job</a>
                                                     </li>
@@ -964,7 +917,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1004,18 +957,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1023,8 +976,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1062,7 +1015,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1102,18 +1055,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1121,8 +1074,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1165,7 +1118,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1205,18 +1158,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1224,8 +1177,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1263,7 +1216,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1303,22 +1256,22 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#CancelJobModal">Cancel Job</a>
                                                                 </li>
@@ -1326,8 +1279,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1388,7 +1341,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1429,18 +1382,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1448,8 +1401,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1487,7 +1440,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1528,18 +1481,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1547,8 +1500,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1591,7 +1544,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">A G Powell, Cliff Hill <span><img
+                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1631,18 +1584,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1650,8 +1603,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1689,7 +1642,7 @@
                                                                 <img src="assets/images/Subtract.svg" alt="">
                                                             </div>
                                                             <div class="link">
-                                                                <a href="#">Abie Everman, California Cemetry <span><img
+                                                                <a href="javascript:;">Abie Everman, California Cemetry <span><img
                                                                             src="assets/images/maximize.svg" alt=""></span></a>
                                                             </div>
                                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -1729,18 +1682,18 @@
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
-                                                        <a href="#" class="message round p-0">
+                                                        <a href="javascript:;" class="message round p-0">
                                                             <img src="assets/images/message.svg" alt="">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="#" class="more round" data-bs-toggle="dropdown"
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="assets/images/More.svg" alt="">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="#">Memorial
+                                                                <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
-                                                                <li><a class="dropdown-item" href="#"
+                                                                <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#DeclineModal">Decline Job</a>
                                                                 </li>
@@ -1748,8 +1701,8 @@
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="#" class="theme-btn btnGreenBorder">Memorial Detail</a>
-                                                        <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1836,7 +1789,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -1874,24 +1827,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1929,7 +1882,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -1967,24 +1920,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen">Send Quote</a>
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -2026,7 +1979,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2063,24 +2016,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2119,7 +2072,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2158,24 +2111,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2218,7 +2171,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2255,24 +2208,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2311,7 +2264,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2350,24 +2303,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2410,7 +2363,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2447,24 +2400,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2503,7 +2456,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2542,24 +2495,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2602,7 +2555,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2639,24 +2592,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2695,7 +2648,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2734,24 +2687,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2794,7 +2747,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2831,24 +2784,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -2887,7 +2840,7 @@
                                                         <img src="assets/images/Subtract.svg" alt="">
                                                     </div>
                                                     <div class="link">
-                                                        <a href="#">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
+                                                        <a href="javascript:;">Abie Everman, California Cemetry <span><img src="assets/images/maximize.svg" alt=""></span></a>
                                                     </div>
                                                     <div class="top-btn Memorial">Large Memorial</div>
                                                 </li>
@@ -2926,24 +2879,24 @@
                                         </ul>
                                         <ul class="list-unstyled chat">
                                             <li class="drop">
-                                                <a href="#" class="message round p-0">
+                                                <a href="javascript:;" class="message round p-0">
                                                     <img src="assets/images/message.svg" alt="">
                                                 </a>
                                             </li>
                                             <li class="drop">
-                                                <a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <img src="assets/images/More.svg" alt="">
-                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        </a><li><a href="#" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
+                                                    </a><ul class="list-unstyled dropdown-menu py-0"><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </a><li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial
                                                                 Detail</a></li>
-                                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
+                                                        <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#DeclineModal">Decline Job</a>
                                                         </li>
                                                     </ul>
                                                 
                                             </li>
                                             <li class="buttons d-flex gap-2">
-                                                <a href="#" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
-                                                <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
+                                                <a href="javascript:;" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal" data-bs-target="#StartJobModal">Start
                                                     Job</a>
                                             </li>
                                         </ul>
@@ -3006,7 +2959,7 @@
                                                 <img src="assets/images/Subtract.svg" alt="">
                                             </div>
                                             <div class="link">
-                                                <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
+                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
                                                             alt=""></span></a>
                                             </div>
                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -3026,10 +2979,10 @@
                                 </div>
                                 <ul class="list-unstyled d-flex align-items-center gap-2">
                                     <li class="w-100">
-                                        <a href="#" class="theme-btn btnGrayBorder w-100">Back</a>
+                                        <a href="javascript:;" class="theme-btn btnGrayBorder w-100">Back</a>
                                     </li>
                                     <li class="w-100">
-                                        <a href="#" class="theme-btn btnred w-100">Decline</a>
+                                        <a href="javascript:;" class="theme-btn btnred w-100">Decline</a>
                                     </li>
                                 </ul>
                             </div>
@@ -3074,7 +3027,7 @@
                                                 <img src="assets/images/Subtract.svg" alt="">
                                             </div>
                                             <div class="link">
-                                                <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
+                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
                                                             alt=""></span></a>
                                             </div>
                                             <div class="top-btn Memorial">Large Memorial</div>
@@ -3094,10 +3047,10 @@
                                 </div>
                                 <ul class="list-unstyled d-flex align-items-center gap-2">
                                     <li class="w-100">
-                                        <a href="#" class="theme-btn btnGrayBorder w-100">Back</a>
+                                        <a href="javascript:;" class="theme-btn btnGrayBorder w-100">Back</a>
                                     </li>
                                     <li class="w-100">
-                                        <a href="#" class="theme-btn btnred w-100">Cancel Job</a>
+                                        <a href="javascript:;" class="theme-btn btnred w-100">Cancel Job</a>
                                     </li>
                                 </ul>
                             </div>
@@ -3176,7 +3129,7 @@
                                         </li>
                                         <li>
                                             <h6>1435 North Main Street (US Hwy 395)Lone Pine, California, USA <span><a
-                                                        href="#">Show Map <span><img src="assets/images/maximize-green.svg"
+                                                        href="javascript:;">Show Map <span><img src="assets/images/maximize-green.svg"
                                                                 alt=""></span></a></span></h6>
                                         </li>
                                         <li class="mb-0">
@@ -3237,7 +3190,7 @@
                                             <img src="assets/images/Subtract.svg" alt="">
                                         </div>
                                         <div class="link">
-                                            <a href="#">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
+                                            <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
                                                         alt=""></span></a>
                                         </div>
                                         <div class="top-btn Memorial">Large Memorial</div>
@@ -3374,7 +3327,7 @@
                             </div>
                             <ul class="list-unstyled chat d-flex justify-content-between">
                                 <li>
-                                    <a href="#" class="theme-btn btnGreenBorder custommsgBtn">
+                                    <a href="javascript:;" class="theme-btn btnGreenBorder custommsgBtn">
                                         <img src="assets/images/message.svg" alt="">
                                         <span>Message</span>
                                     </a>
@@ -3383,24 +3336,24 @@
                                 <li class="d-flex">
                                     <ul class="list-unstyled">
                                         <li class="drop">
-                                            <a href="#" class="more round" data-bs-toggle="dropdown"
+                                            <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 <img src="assets/images/More.svg" alt="">
                                             </a>
 
                                             <ul class="list-unstyled dropdown-menu py-0">
                                                 
-                                                <li><a href="#" class="more round" data-bs-toggle="dropdown"
-                                                        aria-expanded="false"></a><a class="dropdown-item" href="#"
+                                                <li><a href="javascript:;" class="more round" data-bs-toggle="dropdown"
+                                                        aria-expanded="false"></a><a class="dropdown-item" href="javascript:;"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#MemorialDetailModal">Memorial Detail</a></li>
-                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                <li><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
                                                         data-bs-target="#DeclineModal">Decline Job</a></li>
                                             </ul>
                                         </li>
                                 </li>
                             </ul>
-                            <a href="#" class="theme-btn btnGreen opLow" data-bs-toggle="modal"
+                            <a href="javascript:;" class="theme-btn btnGreen opLow" data-bs-toggle="modal"
                                 data-bs-target="#StartJobModal">Finish Job</a>
                             </li>
 
@@ -3416,9 +3369,8 @@
 
     <!-- ////////// Modal start /////////// -->
 
-    <script src="assets/libs/jquery-3.6.0.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
