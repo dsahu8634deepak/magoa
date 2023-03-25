@@ -1,206 +1,79 @@
-// // $('#owlcard').owlCarousel({
-// //     loop: true,
-// //     items: 6,
-// //     padding: 0,
-// //     margin: 20,
-// //     nav: true,
-// //     autoplay: true,
-// //     dots: false,
-// //     freeDrag: false,
-// //     lazyLoad: true,
-// //     autoplay:true,
-// //     autoplayTimeout:1000,
-// //     autoplayHoverPause:true,
-// //     responsiveClass: true,
-// //     responsive: {
-// //         0: {
-// //             items: 1
-// //         },
-// //         576: {
-// //             items: 1
-// //         },
-// //         768: {
-// //             items: 2
-// //         },
-// //         992: {
-// //             items: 3
-// //         },
-// //         1299: {
-// //             items: 3
-// //         }
-// //     },
-// // });
-// // $('.owlcrd').owlCarousel({
-// //   loop:true,
-// //   margin:10,
-// //   nav:true,
-// //   responsive:{
-// //       0:{
-// //           items:1
-// //       },
-// //       600:{
-// //           items:3
-// //       },
-// //       1000:{
-// //           items:5
-// //       }
-// //   }
-// // })
 
+        var selector = '.round';
 
-// //? ###########################  Candidate Registration Page Start  ###########################
-// if ($("[page-name=candidate-registration]").length) {
+        $(selector).on('click', function () {
+            $(selector).removeClass('active');
+            $(this).addClass('active');
+        });
 
-//     // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//     'use strict'
-  
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     const forms = document.querySelectorAll('.needs-validation')
-  
-//     // Loop over them and prevent submission
-//     Array.from(forms).forEach(form => {
-//       form.addEventListener('submit', event => {
-//         if (!form.checkValidity()) {
-//           event.preventDefault()
-//           event.stopPropagation()
-//         }
-  
-//         form.classList.add('was-validated')
-//       }, false)
-//     })
-//   })()
-// }
+{/* #################### */}
 
-// //! ###########################  End Candidate Registration Page  ###########################
+        jQuery(document).ready(function () {
+            ImgUpload();
+        });
 
+        function ImgUpload() {
+            var imgWrap = "";
+            var imgArray = [];
 
-// //? ###########################  Employer Registration Page Start  ###########################
-// if ($("[page-name=employer-registration]").length) {
-    
-//     // Example starter JavaScript for disabling form submissions if there are invalid fields
-//     (() => {
-//         'use strict'
-    
-//         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//         const forms = document.querySelectorAll('.needs-validation')
-    
-//         // Loop over them and prevent submission
-//         Array.from(forms).forEach(form => {
-//         form.addEventListener('submit', event => {
-//             if (!form.checkValidity()) {
-//             event.preventDefault()
-//             event.stopPropagation()
-//             }
-    
-//             form.classList.add('was-validated')
-//         }, false)
-//         })
-//     })()
-// }
+            $('.upload__inputfile').each(function () {
+                $(this).on('change', function (e) {
+                    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+                    var maxLength = $(this).attr('data-max_length');
 
-// //! ###########################  End Employer Registration Page  ###########################
+                    var files = e.target.files;
+                    var filesArr = Array.prototype.slice.call(files);
+                    var iterator = 0;
+                    filesArr.forEach(function (f, index) {
 
-// //? ###########################  login Page Start  ###########################
-// if ($("[page-name=login]").length) {
-    
-//     // Example starter JavaScript for disabling form submissions if there are invalid fields
-//     (() => {
-//         'use strict'
-    
-//         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//         const forms = document.querySelectorAll('.needs-validation')
-    
-//         // Loop over them and prevent submission
-//         Array.from(forms).forEach(form => {
-//         form.addEventListener('submit', event => {
-//             if (!form.checkValidity()) {
-//             event.preventDefault()
-//             event.stopPropagation()
-//             }
-    
-//             form.classList.add('was-validated')
-//         }, false)
-//         })
-//     })()
-// }
+                        if (!f.type.match('image.*')) {
+                            return;
+                        }
 
-// //! ###########################  End login Page  ###########################
+                        if (imgArray.length > maxLength) {
+                            return false
+                        } else {
+                            var len = 0;
+                            for (var i = 0; i < imgArray.length; i++) {
+                                if (imgArray[i] !== undefined) {
+                                    len++;
+                                }
+                            }
+                            if (len > maxLength) {
+                                return false;
+                            } else {
+                                imgArray.push(f);
 
-// //? ###########################  Candidate Registration Page Start  ###########################
-// if ($("[page-name=candidate-profile]").length) {
+                                var reader = new FileReader();
+                                reader.onload = function (e) {
+                                    var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                                    imgWrap.append(html);
+                                    iterator++;
+                                }
+                                reader.readAsDataURL(f);
+                            }
+                        }
+                    });
+                });
+            });
 
-//     // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//     'use strict'
-  
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     const forms = document.querySelectorAll('.needs-validation')
-  
-//     // Loop over them and prevent submission
-//     Array.from(forms).forEach(form => {
-//       form.addEventListener('submit', event => {
-//         if (!form.checkValidity()) {
-//           event.preventDefault()
-//           event.stopPropagation()
-//         }
-  
-//         form.classList.add('was-validated')
-//       }, false)
-//     })
-//   })()
-// }
-
-// //! ###########################  End Candidate Registration Page  ###########################
-// //! ###########################  End login Page  ###########################
-
-// //? ###########################  Candidate Registration Page Start  ###########################
-// if ($("[page-name=candidate-profile]").length) {
-
-//   // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//   'use strict'
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   const forms = document.querySelectorAll('.needs-validation')
-
-//   // Loop over them and prevent submission
-//   Array.from(forms).forEach(form => {
-//     form.addEventListener('submit', event => {
-//       if (!form.checkValidity()) {
-//         event.preventDefault()
-//         event.stopPropagation()
-//       }
-
-//       form.classList.add('was-validated')
-//     }, false)
-//   })
-// })()
-// }
-
-// //! ###########################  End Candidate Registration Page  ###########################
-// //? ###########################  update profile employee Start  ###########################
-// if ($("[page-name=update-profile-employee]").length) {
-
-//   // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//   'use strict'
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   const forms = document.querySelectorAll('.needs-validation')
-
-//   // Loop over them and prevent submission
-//   Array.from(forms).forEach(form => {
-//     form.addEventListener('submit', event => {
-//       if (!form.checkValidity()) {
-//         event.preventDefault()
-//         event.stopPropagation()
-//       }
-
-//       form.classList.add('was-validated')
-//     }, false)
-//   })
-// })()
-// }
-
-// //! ###########################  update profile employee Page  ###########################
+            $('body').on('click', ".upload__img-close", function (e) {
+                var file = $(this).parent().data("file");
+                for (var i = 0; i < imgArray.length; i++) {
+                    if (imgArray[i].name === file) {
+                        imgArray.splice(i, 1);
+                        break;
+                    }
+                }
+                $(this).parent().parent().remove();
+            });
+        }
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        $(document).ready(function(){ 
+            $('.tab-a').click(function(){  
+            $(".dPage").removeClass('active');
+            $(".dPage[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+            $(".tab-a").removeClass('active');
+            $(this).parent().find(".tab-a").addClass('active-a');
+            });
+        });

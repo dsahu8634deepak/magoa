@@ -1,0 +1,16 @@
+.topHeader {
+    &.navbar {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
+        height: 80px;
+        z-index: 1;
+
+        a.toggler-icon {
+            display: none;
+        }
+    }
+}
+
+.offcanvas.offcanvas-end {
+    width: 280px !important;
+}

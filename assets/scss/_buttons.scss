@@ -1,0 +1,91 @@
+
+.theme-btn {
+    border-radius: 50px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 40px;
+    border: 1px solid #3CB54A;
+    transition: all ease-in-out 0.3s;
+}
+.custommsgBtn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #3CB54A;
+    span {
+        margin-left: 6px;
+    }
+}
+.opLow {
+    opacity: 0.6;
+}
+.btnGrayBorder {
+    border: 1px solid #7F7F8D;
+    color: #7F7F8D;
+
+    &:hover {
+        background: #7F7F8D;
+        color: #fff;
+    }
+}
+
+.btnred {
+    border: 1px solid #E84F45;
+    color: #fff;
+    background-color: #E84F45;
+
+    &:hover {
+        background: transparent;
+        color: #E84F45;
+    }
+}
+
+.btnGreenBorder {
+    border: 1px solid #3CB54A;
+    color: #3CB54A;
+
+    &:hover {
+        background: #3CB54A;
+        color: #fff;
+    }
+}
+
+.btnGreen {
+    border: 1px solid #3CB54A;
+    color: #fff;
+    background-color: #3CB54A;
+
+    &:hover {
+        background: transparent;
+        color: #3CB54A;
+    }
+}
+
+.availabile {
+    background: #E9F9EB;
+    border: 1px solid #2BA339;
+    border-radius: 32px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2BA339;
+    padding: 4px 14px;
+    &.Waiting{
+        color: #E99140 !important;
+        border: 1px solid #E99140 !important;
+        background: #FFEDDC !important;
+    }
+}
