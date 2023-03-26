@@ -108,11 +108,21 @@
 
         <!--########## [ Main Content ] ###########-->
         <div class="main">
-            <div class="row h-100 flex-column flex-nowrap">
+            <div class="row h-100 flex-column flex-nowrap mx-0">
                 <div class="col-12">
                     <h4 class="page-title">Message</h4>
                 </div>
-                <div class="col-12 h-100 flex-fill overflow-hidden maniChateBox">
+                <div class="col-12">
+                    <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                          <div class="toast-body">
+                            This is a toast alert.
+                          </div>
+                          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 h-100 flex-fill overflow-hidden maniChateBox px-0">
                     <div class="row mx-0 h-100">
                         <!-- Empty Chat Start -->
                         <div class="col-12 h-100 bg-white livechatbox overflow-yauto d-flex align-items-center justify-content-center d-none">
@@ -127,7 +137,7 @@
                         <!-- Empty Chat End -->
                         
                         <!-- Chating Box Start -->
-                        <div class="col-12 chateingBox d-flex h-100 bg-white px-0 flex-fill overflow-hidden">
+                        <div class="col-12 chateingBox d-md-flex h-100 bg-white px-0 flex-fill overflow-hidden">
                             <div class="leftUserBox h-100">
                                 <div class="row mx-0 flex-column flex-nowrap h-100">
                                     <div class="col-12 px-0">
@@ -365,6 +375,13 @@
 
 <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+
+</script>
 </body>
 
 </html>
