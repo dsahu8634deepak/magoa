@@ -77,3 +77,9 @@
 //             $(this).parent().find(".tab-a").addClass('active-a');
 //             });
 //         });
+
+// include sidebar
+$(function(){
+  $("#sidebar").load("layout/sidebar.html"); 
+    $("#navbar").load("layout/header.html"); 
+  });
