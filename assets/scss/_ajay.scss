@@ -317,10 +317,37 @@
                                         width: 52px;
                                         height: 52px;
                                         background: #3CB54A;
+
                                         & span {
                                             width: 24px;
                                             height: 24px;
                                         }
+                                    }
+                                }
+
+                                & .alert {
+                                    min-height: 64px;
+                                    background: #FFEDD4;
+                                    border-radius: 8px;
+                                    position: relative;
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    /* or 143% */
+                                    color: #7F7F8D;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 5px;
+                                        height: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        background-color: #FFAE3D;
+                                    }
+                                    & .closeBtn {
+                                        width: 20px;
                                     }
                                 }
                             }
@@ -329,6 +356,10 @@
                 }
             }
         }
+    }
+
+    & .offcanvas-backdrop {
+        display: none;
     }
 }
 
@@ -356,44 +387,44 @@
                         }
                     }
 
-                    & .chateingBox {    
+                    & .chateingBox {
                         & .leftUserBox {
                             width: 280px;
                             border-right: 1px solid #EAEAEA;
-    
+
                             // & .searchgroup {
                             //     height: 76px;
-    
+
                             //     & .input-group {
                             //         padding: 8px 16px;
                             //         border: 1px solid #D3D3D3;
-    
+
                             //         & .input-group-text {
                             //             width: 20px;
                             //             height: 20px;
                             //         }
-    
+
                             //         & .form-control {
                             //             font-size: 14px;
                             //             line-height: 17px;
-    
+
                             //         }
                             //     }
                             // }
-    
+
                             // & .userCard {
                             //     height: 76px;
-    
+
                             //     & .card-body {
                             //         padding: 12px 12px 12px 16px;
                             //         position: relative;
-    
+
                             //         & .liveUserImg {
                             //             width: 52px;
                             //             height: 52px;
                             //             margin-right: 12px;
                             //         }
-    
+
                             //         & .contentscard {
                             //             & .card-title {
                             //                 font-family: 'Inter';
@@ -404,7 +435,7 @@
                             //                 /* identical to box height */
                             //                 color: #29293E;
                             //             }
-    
+
                             //             & .chattext,
                             //             & .card-date {
                             //                 font-family: 'Inter';
@@ -413,7 +444,7 @@
                             //                 display: block;
                             //                 text-overflow: ellipsis;
                             //             }
-    
+
                             //             & .card-date {
                             //                 font-size: 13px;
                             //                 line-height: 16px;
@@ -421,7 +452,7 @@
                             //                 text-align: right;
                             //                 color: #7F7F8D;
                             //             }
-    
+
                             //             & .chattext {
                             //                 margin-top: 8px;
                             //                 font-size: 14px;
@@ -430,7 +461,7 @@
                             //                 color: #7F7F8D;
                             //             }
                             //         }
-    
+
                             //         &::before {
                             //             content: "";
                             //             height: 100%;
@@ -441,11 +472,11 @@
                             //             background-color: transparent;
                             //         }
                             //     }
-    
+
                             //     &.active {
                             //         & .card-body {
                             //             background-color: #F6F6F6;
-    
+
                             //             &::before {
                             //                 background-color: $theme1;
                             //             }
@@ -453,21 +484,21 @@
                             //     }
                             // }
                         }
-    
+
                         & .rightChatebox {
                             width: calc(100% - 280px);
-    
+
                             // &.chateBox {
                             //     & .innerChatBox {
                             //         & .chatBoxHeader {
                             //             height: 82px;
                             //             border-bottom: 1px solid #EAEAEA;
-    
+
                             //             & .userpic {
                             //                 width: 52px;
                             //                 height: 52px;
                             //             }
-    
+
                             //             & .userNAme {
                             //                 font-family: 'Inter';
                             //                 font-style: normal;
@@ -477,18 +508,18 @@
                             //                 /* identical to box height */
                             //                 color: #29293E;
                             //             }
-    
+
                             //             & .moreRefressBtn {
                             //                 display: flex;
                             //                 align-items: center;
                             //                 flex-direction: row-reverse;
                             //                 gap: 10px;
-    
+
                             //                 & .moreBt {
                             //                     width: 24px;
                             //                     height: 24px;
                             //                 }
-    
+
                             //                 & .refreshCollapse {
                             //                     position: absolute;
                             //                     top: 50%;
@@ -496,7 +527,7 @@
                             //                 }
                             //             }
                             //         }
-    
+
                             //         & .chatBoxBody {
                             //             & .innerbody {
                             //                 & .innerBox {
@@ -510,7 +541,7 @@
                             //                         text-align: center;
                             //                         color: #7F7F8D;
                             //                     }
-    
+
                             //                     & .chatCard {
                             //                         & .timing {
                             //                             font-family: 'Inter';
@@ -522,14 +553,14 @@
                             //                             color: #7F7F8D;
                             //                             margin-bottom: 12px;
                             //                             gap: 4px;
-    
+
                             //                             & span {
                             //                                 font-weight: 600;
                             //                                 font-size: 14px;
                             //                                 line-height: 17px;
                             //                             }
                             //                         }
-    
+
                             //                         & .chatUser {
                             //                             border-radius: 12px 12px 0px 12px;
                             //                             padding: 12px;
@@ -541,44 +572,44 @@
                             //                             /* identical to box height */
                             //                             display: inline-flex;
                             //                         }
-    
+
                             //                         &.chateingUser {
                             //                             & .chatUser {
                             //                                 color: #FFFFFF;
                             //                                 background: #3CB54A;
                             //                             }
                             //                         }
-    
+
                             //                         &.liveUser {
                             //                             & .chatUser {
                             //                                 background: #F6F6F6;
                             //                                 color: #7F7F8D;
                             //                             }
-    
+
                             //                             & .timing {
                             //                                 flex-direction: row-reverse;
                             //                             }
                             //                         }
                             //                     }
-    
+
                             //                 }
                             //             }
                             //         }
-    
+
                             //         & .chatBoxFooter {
                             //             height: 52px;
-    
+
                             //             & .upload {
                             //                 position: absolute;
                             //                 top: 50%;
                             //                 right: 0;
                             //                 transform: translate(-50%, -50%);
-    
+
                             //                 & label {
                             //                     cursor: pointer;
                             //                 }
                             //             }
-    
+
                             //             & .form-control {
                             //                 border: 1px solid #D3D3D3;
                             //                 font-family: 'Inter';
@@ -589,11 +620,11 @@
                             //                 /* identical to box height */
                             //                 color: #7F7F8D;
                             //             }
-    
+
                             //             & .input-group-text {
                             //                 border: 1px solid #D3D3D3;
                             //             }
-    
+
                             //             & .sendBtn {
                             //                 width: 52px;
                             //                 height: 52px;
@@ -615,10 +646,13 @@
     }
 }
 
-@media only screen and (max-width: 767.99px) {
+@media only screen and (max-width: 767px) {
     [data-page-name="messagePage"] {
         .wrapper {
             & .main {
+                padding: 20px 16px 16px 16px;
+                background-color: $white;
+
                 & .maniChateBox {
                     & .emptyChatebox {
                         & .mtChatBox {
@@ -638,9 +672,55 @@
                             line-height: 18px;
                         }
                     }
+
                     & .chateingBox {
-                        & .leftUserBox, & .rightChatebox {
+                        border-radius: 0px;
+
+                        & .leftUserBox,
+                        & .rightChatebox {
                             width: 100%;
+                        }
+
+                        & .leftUserBox {
+                            border: none;
+                        }
+
+                        & .rightChatebox {
+                            top: 80px;
+                            height: calc(100% - 80px) !important;
+
+                            & .innerChatBox {
+                                & .chatBoxHeader {
+                                    & .closeIcon {
+                                        width: 20px;
+                                    }
+
+                                    & .userpic {
+                                        width: 42px !important;
+                                        height: 42px !important;
+                                    }
+                                }
+
+                                & .chatBoxBody {
+                                    & .innerbody {
+                                        & .innerBox {
+                                            & .datetime {
+                                                font-size: 13px !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                & .chatBoxFooter  {
+                                    & .sendBtn {
+                                        width: 48px !important;
+                                        height: 48px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        & .offcanvas-backdrop {
+                            display: none;
                         }
                     }
                 }
