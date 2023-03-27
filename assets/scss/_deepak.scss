@@ -100,6 +100,12 @@
                         font-size: 14px;
                         line-height: 17px;
                         color: #3CB54A;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: $theme1;
+                            color: $white;
+                        }
                     }
 
                     & .increseandDeresebtn {
@@ -159,6 +165,50 @@
 
             }
         }
+
+        & .cartcard {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+            border-radius: 16px;
+
+            & .cardHeading {
+                color: #29293E;
+                line-height: 29px;
+                background: #F7F7F7;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .cartbtn {
+                padding: 14px 64px;
+                background: $theme1;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                border-radius: 50px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                border: 1px solid $theme1;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $theme1;
+                }
+            }
+
+
+            & .itempayment {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme1;
+            }
+
+        }
+
+
     }
 }
 
