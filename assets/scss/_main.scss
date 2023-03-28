@@ -54,7 +54,21 @@ body{
 .lh-150 {
   line-height: 150%;
 }
-
+.customInput{
+  background: transparent !important;
+  border: 1px solid #EAEAEA !important;
+  border-radius: 8px !important;
+  box-shadow: inherit !important;
+  font-weight: 600;
+  font-size: 14px !important;
+  color: $black;
+  &:focus,&:active,&:hover {
+      background: #EAEAEA !important;
+    }
+    &.notMatch{
+      border: 1px solid $red !important;
+    }
+}
 
 
 .sider-top {

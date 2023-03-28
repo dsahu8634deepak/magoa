@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Static Required meta tags (should be same on every page) -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <meta name="theme-color" content="#1A73E9" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name="web-author" content="web-author-name" />
+    <meta name="googlebot" content="all">
+    <meta name="revisit-after" content="3 days">
+    <meta name="copyright" content="Site Name">
+    <meta name="language" content="English">
+    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <!-- Twitter Meta -->
+    <meta name="twitter:site" content="@miradontsoa">
+    <meta name="twitter:creator" content="@miradontsoa">
+    <meta name="twitter:card" content="summary">
+    <!-- Facebook Meta -->
+    <meta property="fb:app_id" content="0" />
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Dynamic Meta Tags (Should change for every page) -->
+    <title>MAGOA | AVAILABILITY</title>
+    <!-- Required meta tags -->
+    <meta name="title" content="MAGOA" />
+    <meta name="discrption" content="Discrption here" />
+    <meta name="keyword" content="Keyword here" />
+    <!-- Twitter Meta -->
+    <meta name="twitter:title" content="MAGOA">
+    <meta name="twitter:description" content="Discrption here">
+    <meta name="twitter:image" content="assets/img/logo.png">
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="MAGOA">
+    <meta property="og:description" content="Discrption here">
+    <meta property="og:image" content="assets/img/logo/favicon-32x32.png">
+    <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
+    <meta name="classification" content="MAGOA" />
+    <link rel="canonical" href="" />
+    <script src="assets/libs/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+<body>
+    <div class="main" page-name="availability">
+    <div id="navbar"></div>
+    <div class="wrapper">
+        <div id="sidebar"></div>
+        <div class="main">
+            <div class="dPage availability" data-id="tab5">
+                <h4 class="page-title my-4 fs-24 f text-startw-bold">Availability</h4>
+                <div class="row mb-3">
+                    <div class="col-12 col-md-7 d-flex align-items-center justify-content-between">
+                        <div class="salectDates d-flex align-items-center">
+                           <span> I’m available to work</span>
+                            <select class="border-0 p-0 bg-transparent ms-2 shadow-none" id="salectValue" aria-label="Default select example">
+                                <option value="0">Everyday</option>
+                                <option value="1" selected>monday to friday</option>
+                                <option value="2">weekend </option>
+                                <option value="3">customs</option>
+                              </select>
+                        </div>
+                        <div class="theme-btn btnGreen">Add to Google Calendar</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="theme-card">
+                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
+                               
+                            </div>
+                            <div class="theme-card-body position-relative pt-1">
+                                <div class="theme-btn btnGrayBorder w-auto float-end px-3 position-absolute r-16 py-2" id="date">
+                                </div>
+                                <ion-datetime class="w-100 customWidth " presentation="date" multiple="true"></ion-datetime>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Work Location</div>
+                            </div>
+                            <div class="theme-card-body overflow-auto LocationHeight">
+                                <ul class="workLocation">
+                                    <li class="d-flex justify-content-between">
+                                        <div class="location">
+                                            <span>
+                                                <img src="assets/images/location.svg" alt="img">
+                                            </span>
+                                            <div class="fs-14">Virginia Beach, Virginia</div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="assets/images/delete.svg" alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="location">
+                                            <span>
+                                                <img src="assets/images/location.svg" alt="img">
+                                            </span>
+                                            <div class="fs-14">Virginia Beach, Virginia</div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="assets/images/delete.svg" alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="location">
+                                            <span>
+                                                <img src="assets/images/location.svg" alt="img">
+                                            </span>
+                                            <div class="fs-14">Virginia Beach, Virginia</div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="assets/images/delete.svg" alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="location">
+                                            <span>
+                                                <img src="assets/images/location.svg" alt="img">
+                                            </span>
+                                            <div class="fs-14">Virginia Beach, Virginia</div>
+                                        </div>
+                                        <div class="delete">
+                                            <img src="assets/images/delete.svg" alt="img">
+                                        </div>
+                                    </li>
+                                    <li class="border-0">
+                                        <button class="theme-btn btnGreenBorder w-100">+ Add Work Location</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="theme-card">
+                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Package Settings</div>
+                            </div>
+                            <div class="theme-card-body position-relative p-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="theme-card innerCard">
+                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Flat Memorial</div>
+                                            </div>
+                                            <div class="theme-card-body position-relative p-3">
+                                                <ul class="p-0 m-0">
+                                                    <li class="d-flex justify-content-between align-items-center mb-2">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span>
+                                                                <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                              </div>
+                                                            </span>
+                                                            <div class="fs-14">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14">Input Charge</div>
+                                                    </li>
+                                                    <li class="d-flex justify-content-between align-items-center">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span>
+                                                                <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                              </div>
+                                                            </span>
+                                                            <div class="fs-14">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14">Input Charge</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="theme-card">
+                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Additional Service</div>
+                               
+                            </div>
+                            <div class="theme-card-body position-relative p-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ///////salect dates ///////// -->
+    <script>
+        $( document ).ready(function() {
+
+        var e = document.getElementById("salectValue");
+        var value = e.value;
+
+    });
+        //today
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = mm + '/' + dd + '/' + yyyy;
+            document.write(today);
+            document.getElementById("date").innerHTML = today;
+
+        //all date
+        const getDays = (year, month) => {
+            return new Date(year, month, 0).getDate();
+        };
+        //monday to fridday date
+        var monfridday = [
+            new Date(firstMonday),
+            new Date(secondMonday),
+            new Date(thirdMonday),
+            new Date(fourthMonday),
+            new Date(firstFriday),
+            new Date(secondFriday),
+            new Date(thirdFriday),
+            new Date(fourthFriday),
+        ];
+        //weekends
+        var weekends = [
+            new Date(firstSaturday),
+            new Date(secondSaturday),
+            new Date(thirdSaturday),
+            new Date(fourthSaturday),
+            new Date(firstSunday),
+            new Date(secondSaturday),
+            new Date(thirdSaturday),
+            new Date(fourthSaturday),
+        ];
+        //Custom salect date
+        const datetime = document.querySelector('ion-datetime');
+        datetime.value = ['2022-06-03', '2022-06-13', '2022-06-29'];
+    
+      
+    </script>
+</body>
+</html>

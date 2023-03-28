@@ -28,7 +28,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>MAGOA | HOME</title>
+    <title>MAGOA | SETTING</title>
     <!-- Required meta tags -->
     <meta name="title" content="MAGOA" />
     <meta name="discrption" content="Discrption here" />
@@ -47,23 +47,621 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
-    <script src="assets/libs/jquery-3.6.0.min.js"></script>
+   
 
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="assets/libs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="main" data-page-name="settings">
+    <div class="main" page-name="settings">
     <div id="navbar"></div>
     <div class="wrapper">
         <div id="sidebar"></div>
+        <div class="main settings">
+            <div class="dPage settings" data-id="tab5">
+                <div class="page-title my-4 fs-24 fw-bold">Profile Setting</div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
+                            </div>
+                            <div class="theme-card-body">
+                                        <div class="avatar-upload row d-flex align-items-center m-0 py-3">
+                                            <div class="col-auto">
+                                                <div class="avatar-preview">
+                                                <div id="imagePreview" style="background-image: url('assets/images/user-profile.svg');">
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="avatar-edit">
+                                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload" class="theme-btn btnGreenBorder">Change Picture</label>
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Display Picture</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <ul class="list-unstyled row d-flex gap-3 m-0 p-3">
+                                    <li class="upload__box mt-0">
+                                       
+
+                                            <div class="upload__img-wrap">
+                                                <div class="upload__btn-box">
+                                                    <label class="upload__btn">
+                                                        <img src="assets/images/add.svg" alt="">
+                                                        <p class="mb-0">Add Photo</p>
+                                                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                    </li>
+                                    <li class="upload__box mt-0">
+                                        
+                                            <div class="upload__btn-box">
+                                                <label class="upload__btn">
+                                                    <img src="assets/images/add.svg" alt="">
+                                                    <p class="mb-0">Add Photo</p>
+                                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                </label>
+                                            </div>
+                                            <div class="upload__img-wrap"></div>
+                                       
+                                    </li>
+                                    <li class="upload__box mt-0">
+                                        
+                                            <div class="upload__btn-box">
+                                                <label class="upload__btn">
+                                                    <img src="assets/images/add.svg" alt="">
+                                                    <p class="mb-0">Add Photo</p>
+                                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                </label>
+                                            </div>
+                                            <div class="upload__img-wrap"></div>
+
+                                    </li>
+                                    <li class="upload__box mt-0">
+                                        
+                                            <div class="upload__btn-box">
+                                                <label class="upload__btn">
+                                                    <img src="assets/images/add.svg" alt="">
+                                                    <p class="mb-0">Add Photo</p>
+                                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                </label>
+                                            </div>
+                                            <div class="upload__img-wrap"></div>
+                                       
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Name</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                <h4 class="fs-16 mb-0 mb-3 tc-black">Eric Adorno</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#NameSettingModal">
+                                            Change Name
+                                        </a>
+                                    </div>
+                                
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">About Me</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                <p class="mb-0 mb-3 fs-14">Hello My name is Eric and I've been cleaning headstones for over 10 years and I love what I do.</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#bioSettingModal">
+                                            Edit Bio
+                                        </a>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-title my-4 fs-24 fw-bold">Payment</div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Payment Dashboard</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 py-4">
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder">
+                                            Open Stripe
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="page-title my-4 fs-24 fw-bold">Security Setting</div>
+                <div class="row g-3">
+                   
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Email</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                    <div class="fs-16 mb-0 mb-3 tc-black h4">ericadorno@gmail.com</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#emailBtnModalToggle">
+                                            Change Email
+                                        </a>
+                                    </div>
+                                
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Phone Number</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                <div class="fs-16 mb-0 mb-3 tc-black h4">+1 202 234 4453</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#numberBtnModalToggle">
+                                            Change Phone Number
+                                        </a>
+                                    </div>
+                                
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header mb-1">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Password</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#passwordBtnModalToggle">
+                                            Change Password
+                                        </a>
+                                    </div>
+                                
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="theme-card">
+                            <div class="theme-card-header">
+                                <div class="fs-16 mb-0 h4 fw-bold text-black">Deactivate Account</div>
+                            </div>
+                            <div class="theme-card-body">
+                                <div class="row m-0 pt-3 pb-4">
+                                    <div class="col-12">
+                                        <a href="javascript:" class="theme-btn btnRedBorder" data-bs-toggle="modal" data-bs-target="#DeactivateBtnModalToggle">
+                                            Deactivate Account
+                                        </a>
+                                    </div>
+                                
+                                </div>
+  
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
+
+
+
+<!-- Modal -->
+        <div class="modal fade" id="NameSettingModal" tabindex="-1" aria-labelledby="NameSettingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-20 h1" id="exampleModalLabel">Change Name</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1 fs-14" class="form-label">Current Name</label>
+                    <input type="text" class="form-control customInput fs-14" id="exampleFormControlInput1" placeholder="Input Current Name">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlInput1 fs-14" class="form-label">New Name</label>
+                    <input type="text" class="form-control customInput fs-14" id="exampleFormControlInput1" placeholder="Input New Name">
+                    </div>
+                    <div class="d-flex gap-2">
+                    <button type="button" class="theme-btn px-3 w-100 btnGrayBorder" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="theme-btn px-3 w-100 btnGreen opLow">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div> 
+        <div class="modal fade" id="bioSettingModal" tabindex="-1" aria-labelledby="bioSettingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered p-3">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-20 h1" id="exampleModalLabel">Edit Bio</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Bio</label>
+                    <textarea class="form-control customInput" id="exampleFormControlTextarea1" rows="3" placeholder="Hello My name is Eric and I've been cleaning headstones for over 10 years and I love what I do."></textarea>
+                    </div>
+                    <div class="d-flex gap-2 justify-content-end">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="theme-btn btnGreen opLow">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div> 
+
+  <!-- modal email satting start -->
+        <div class="modal fade" id="emailBtnModalToggle" aria-hidden="true" aria-labelledby="emailBtnModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Change Email</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Change Email?</h4>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Accept</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body OTPVerification">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="emailOrSms mb-3 active">
+                            <img src="assets/images/email.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="emailOrSms mb-3">
+                            <img src="assets/images/phone.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12">
+                    <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none " data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
+                </div>
+                <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the data change</p>
+            </div>
+            
+                
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered  p-5">
+            <div class="modal-content overflow-visible m-4">
+                <div class="modal-header custom-border">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification position-relative">
+                    <ul class="otpInput gap-2">
+                        <li><input class="alertborder" type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                    </ul>
+                    <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
+                    <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Send</button>
+                    </div>
+                    <!-- otp Alert -->
+                    <div class="otpalert">
+                        An example danger alert with an icon
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Change Email</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="CurrentEmail" class="form-label text-muted fs-14">Current Email</label>
+                        <input type="email" class="form-control customInput" id="CurrentEmail" placeholder="Input Current Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="NewEmail" class="form-label text-muted fs-14">New Email</label>
+                        <input type="email" class="form-control customInput" id="NewEmail" placeholder="Input New Email">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow">Save</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+  <!-- modal email satting end -->
+
+  <!-- modal password satting start -->
+        <div class="modal fade" id="passwordBtnModalToggle" aria-hidden="true" aria-labelledby="passwordBtnModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered p-5">
+            <div class="modal-content m-4">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Change Password</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Change Password?</h4>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnred" data-bs-target="#passwordModalToggle2" data-bs-toggle="modal">Accept</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="passwordModalToggle2" aria-hidden="true" aria-labelledby="passwordModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered  p-5">
+            <div class="modal-content overflow-visible m-4">
+                <div class="modal-header custom-border">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Change Password</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification position-relative">
+                    <div class="mb-3">
+                        <label for="CurrentPassword" class="form-label text-muted fs-14 text-start ms-0 w-100">Current Password</label>
+                        <div class="showPassword">
+                            <input type="password" class="form-control customInput notMatch" autocomplete="off" id="CurrentEmail" placeholder="Input Current Password">
+                            <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="NewEmail" class="form-label text-muted fs-14 text-start ms-0 w-100">New Password</label>
+                        <div class="showPassword">
+                            <input type="password" class="form-control customInput" autocomplete="off" id="NewEmail" placeholder="Input New Password">
+                            <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow">Save</button>
+                    </div>
+                    <!-- otp Alert -->
+                    <div class="otpalert">
+                        Password not match
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- modal Password satting end -->
+
+ <!-- modal Change Phone Number satting start -->
+        <div class="modal fade" id="numberBtnModalToggle" aria-hidden="true" aria-labelledby="numberBtnModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered p-5">
+            <div class="modal-content m-4">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Change Phone Number</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Change Phone Number?</h4>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnred" data-bs-target="#numberModalToggle2" data-bs-toggle="modal">Accept</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="numberModalToggle2" aria-hidden="true" aria-labelledby="numberModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered  p-5">
+            <div class="modal-content overflow-visible m-4">
+                <div class="modal-header custom-border">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Change Phone Number</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification position-relative">
+                    <div class="mb-3">
+                        <label for="CurrentPassword" class="form-label text-muted fs-14 text-start ms-0 w-100">Current Phone Number</label>
+                            <input type="taxt" class="form-control customInput" autocomplete="off" id="CurrentEmail" placeholder="Input Current Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="NewEmail" class="form-label text-muted fs-14 text-start ms-0 w-100">Current Phone Number</label>
+                            <input type="text" class="form-control customInput" autocomplete="off" id="NewEmail" placeholder="Input New Password">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow">Save</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- modal Change Phone Number satting end -->
+
+  <!-- modal deactivate satting start -->
+        <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true" aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Deactivate Account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Deactivate Account?</h4>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnred" data-bs-target="#DeactivateModalToggle2" data-bs-toggle="modal">Accept</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="DeactivateModalToggle2" aria-hidden="true" aria-labelledby="DeactivateModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body OTPVerification">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="emailOrSms mb-3 active">
+                            <img src="assets/images/email.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="emailOrSms mb-3">
+                            <img src="assets/images/phone.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12">
+                    <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none " data-bs-target="#DeactivateModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
+                </div>
+                <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the deactivate account</p>
+            </div>
+            
+                
+            </div>
+        </div>
+        </div>
+        <div class="modal fade" id="DeactivateModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered  p-5">
+            <div class="modal-content overflow-visible m-4">
+                <div class="modal-header custom-border">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification position-relative">
+                    <ul class="otpInput gap-2">
+                        <li><input class="alertborder" type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                    </ul>
+                    <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
+                    <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow" data-bs-dismiss="modal">Send</button>
+                    </div>
+                    <!-- otp Alert -->
+                    <div class="otpalert">
+                        An example danger alert with an icon
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!-- modal deactivate satting end -->
+
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+    </script>
+    <script>
+        $(".toggle-password").click(function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            input = $(this).parent().find("input");
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
 </body>
 
 </html>
