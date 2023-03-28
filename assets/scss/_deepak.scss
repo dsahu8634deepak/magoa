@@ -731,6 +731,8 @@
         & .input-group {
             display: flex;
             flex-wrap: unset;
+            margin: auto;
+            width: 100px;
 
             & .input-group-btn {
 
@@ -740,6 +742,10 @@
                     border: 1px solid #3CB54A;
                     border-radius: 30px;
                     background-color: transparent;
+                }
+
+                & .input-number {
+                    padding: 0;
                 }
             }
 
@@ -977,6 +983,7 @@
 
     & .modal-footer {
         justify-content: center;
+
         & .downloadbutton {
             background: $white;
             border: 1px solid #D3D3D3;
