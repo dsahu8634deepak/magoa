@@ -41,10 +41,10 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="MAGOA">
     <meta property="og:description" content="Discrption here">
-    <meta property="og:image" content="assets/img/logo/favicon-32x32.png">
-    <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
+    <meta property="og:image" content="assets/logo/favicon-32x32.png">
+    <meta property="og:image:secure_url" content="assets/logo/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
@@ -59,9 +59,57 @@
 </head>
 <body>
     <div class="main" page-name="earnings">
-    <div id="navbar"></div>
+      <nav class="navbar topHeader">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <img src="assets/images/logo.svg" alt="img">
+            </span>
+            <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </nav>
     <div class="wrapper">
-        <div id="sidebar"></div>
+<!--########## [ Aside Bar Start ] ###########-->
+        <div class="sidebar-lg sidebar">
+            <div class="sider-top">
+                <div class="user">
+                    <ul class="list-unstyled">
+                        <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                        <li>
+                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                            <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="divder">
+                </hr>
+                <div class="job">
+                    <ul class="list-unstyled">
+                        <li class="current">Current Job</li>
+                        <li class="price">$450</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links h-100 flex-fill overflow-hidden">
+                <div class="">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                        <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round active"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                        <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                        <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                        <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                        <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                        <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--########## [ Aside Bar End ] ###########-->
+
+<!--########## [ Main Content ] ###########-->
         <div class="main">
             <div class="dPage earnings" data-id="tab5">
                 <h4 class="page-title my-4 fs-24 f text-startw-bold">Earnings</h4>
@@ -194,15 +242,51 @@
                 </div>
             </div>
         </div>
+<!--########## [ Main Content End] ###########-->
     </div>
 </div>
+<!-- sidebar sm satrt -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body p-0">
+      <div class="sider-top">
+          <div class="user">
+              <ul class="list-unstyled">
+                  <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                  <li>
+                      <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                      <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png" alt="fillter"></span></a>
+                  </li>
+              </ul>
+          </div>
+          <hr class="divder"></hr>
+          <div class="job">
+              <ul class="list-unstyled">
+                  <li class="current">Current Job</li>
+                  <li class="price">$450</li>
+              </ul>
+          </div>
+      </div>
+      <div class="links">
+        <ul class="list-unstyled">
+            <li><a href="index.html"><div class="round active"><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+            <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+<!-- sidebar sm end -->
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!--//////////////// earning Chart js start /////////////////// -->
-    <script>
-Highcharts.chart('container', {
+<!-- higchart -->
+<script>
+  Highcharts.chart('container', {
     chart: {
       type: 'column'
     },
@@ -234,11 +318,10 @@ Highcharts.chart('container', {
       name: 'Upcoming Earnings',
       data: [0, 2, 0, 0,0,0,0,0,0,0,0,0]
     }]
-  });
+});
 
 
-// // earning Chart js start
-    </script>
+</script>
 </body>
 
 </html>

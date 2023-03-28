@@ -41,10 +41,10 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="MAGOA">
     <meta property="og:description" content="Discrption here">
-    <meta property="og:image" content="assets/img/logo/favicon-32x32.png">
-    <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
+    <meta property="og:image" content="assets/logo/favicon-32x32.png">
+    <meta property="og:image:secure_url" content="assets/logo/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
@@ -56,9 +56,57 @@
 </head>
 <body>
     <div class="main" page-name="reviewspage">
-        <div id="navbar"></div>
+        <nav class="navbar topHeader">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">
+                    <img src="assets/images/logo.svg" alt="img">
+                </span>
+                <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+            </div>
+        </nav>
         <div class="wrapper">
-            <div id="sidebar"></div>
+<!--########## [ Aside Bar Start ] ###########-->
+        <div class="sidebar-lg sidebar">
+            <div class="sider-top">
+                <div class="user">
+                    <ul class="list-unstyled">
+                        <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                        <li>
+                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                            <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="divder">
+                </hr>
+                <div class="job">
+                    <ul class="list-unstyled">
+                        <li class="current">Current Job</li>
+                        <li class="price">$450</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links h-100 flex-fill overflow-hidden">
+                <div class="">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                        <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                        <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                        <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round active"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                        <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                        <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                        <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+<!--########## [ Aside Bar End ] ###########-->
+
+<!--########## [ Main Content ] ###########-->
             <div class="main reviewspage">
                 <div class="dPage ReviewsSection" data-id="tab5">
                     <h4 class="page-title">Reviews</h4>
@@ -90,35 +138,35 @@
                                             <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">5</h4></div>
                                             <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar text-bg-warning" style="width: 56%"><p>56</p></div>
-                                              </div></div>
+                                                </div></div>
                                         </div>
                                         <div class="row align-items-center g-3 mb-1">
                                             <div class="col-auto"><img class="mb-1" src="assets/images/star-review.svg" alt="img"></div>
                                             <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">4</h4></div>
                                             <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar text-bg-warning" style="width: 10%"><p>10</p></div>
-                                              </div></div>
+                                                </div></div>
                                         </div>
                                         <div class="row align-items-center g-3 mb-1">
                                             <div class="col-auto"><img class="mb-1" src="assets/images/star-review.svg" alt="img"></div>
                                             <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">3</h4></div>
                                             <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar text-bg-warning" style="width: 4%"><p>4</p></div>
-                                              </div></div>
+                                                </div></div>
                                         </div>
                                         <div class="row align-items-center g-3 mb-1">
                                             <div class="col-auto"><img class="mb-1" src="assets/images/star-review.svg" alt="img"></div>
                                             <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">2</h4></div>
                                             <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
-                                              </div></div>
+                                                </div></div>
                                         </div>
                                         <div class="row align-items-center g-3">
                                             <div class="col-auto"><img class="mb-1" src="assets/images/star-review.svg" alt="img"></div>
                                             <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">1</h4></div>
                                             <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
-                                              </div></div>
+                                                </div></div>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +215,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -205,7 +253,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -243,7 +291,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -281,7 +329,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -323,7 +371,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -361,7 +409,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -399,7 +447,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -437,7 +485,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -479,7 +527,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -517,7 +565,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -555,7 +603,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -593,7 +641,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -635,7 +683,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -673,7 +721,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -711,7 +759,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -749,7 +797,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -791,7 +839,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -829,7 +877,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -867,7 +915,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -905,7 +953,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -947,7 +995,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -985,7 +1033,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -1023,7 +1071,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -1061,7 +1109,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
                                                 <li class="me-1"><img src="assets/images/star-review.svg" alt="img"></li>
                                                 <li><img src="assets/images/star-review.svg" alt="img"></li>
@@ -1089,14 +1137,13 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
+<!--########## [ Main Content End ] ###########-->
         </div>
     </div>
 
-    <!-- ////////// Modal start /////////// -->
-
-    <!-- Decline Modal start -->
+<!-- Decline Modal start -->
     <div class="modal fade" id="DeclineModal" tabindex="-1" aria-labelledby="DeclineModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered p-3">
             <div class="modal-content">
@@ -1153,9 +1200,9 @@
             </div>
         </div>
     </div>
-    <!-- Decline Modal end -->
+<!-- Decline Modal end -->
 
-    <!-- Decline Modal start -->
+<!-- Decline Modal start -->
     <div class="modal fade" id="CancelJobModal" tabindex="-1" aria-labelledby="CancelJobModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered p-3">
             <div class="modal-content">
@@ -1221,10 +1268,10 @@
             </div>
         </div>
     </div>
-    <!-- Decline Modal end -->
+<!-- Decline Modal end -->
 
 
-    <!-- MemorialDetailModal start -->
+<!-- MemorialDetailModal start -->
     <div class="modal fade" id="MemorialDetailModal" tabindex="-1" aria-labelledby="MemorialDetailModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered p-5">
@@ -1306,9 +1353,9 @@
             </div>
         </div>
     </div>
-    <!-- MemorialDetailModal end -->
+<!-- MemorialDetailModal end -->
 
-    <!-- StartJobModal start -->
+<!-- StartJobModal start -->
     <div class="modal fade" id="StartJobModal" tabindex="-1" aria-labelledby="StartJobModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -1526,9 +1573,43 @@
             </div>
         </div>
     </div>
-    <!-- MemorialDetailModal end -->
-
-    <!-- ////////// Modal start /////////// -->
+<!-- MemorialDetailModal end -->
+<!-- sidebar sm satrt -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body p-0">
+        <div class="sider-top">
+            <div class="user">
+                <ul class="list-unstyled">
+                    <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                    <li>
+                        <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                        <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png" alt="fillter"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divder"></hr>
+            <div class="job">
+                <ul class="list-unstyled">
+                    <li class="current">Current Job</li>
+                    <li class="price">$450</li>
+                </ul>
+            </div>
+        </div>
+        <div class="links">
+            <ul class="list-unstyled">
+                <li><a href="index.html"><div class="round active"><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- sidebar sm end -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
