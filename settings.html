@@ -544,6 +544,90 @@
     </div>
     <!-- modal Password satting end -->
 
+     <!-- modal deactivate satting start -->
+     <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true"
+     aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered modal-sm">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Deactivate Account</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Deactivate Account?</h4>
+                 <div class="d-flex justify-content-between">
+                     <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                     <button class="theme-btn btnred" data-bs-target="#DeactivateModalToggle2"
+                         data-bs-toggle="modal">Accept</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="modal fade" id="DeactivateModalToggle2" aria-hidden="true" aria-labelledby="DeactivateModalToggleLabel2"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered modal-sm">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body OTPVerification">
+                 <div class="row">
+                     <div class="col-6">
+                         <div class="emailOrSms mb-3 active">
+                             <img src="assets/images/email.svg" alt="">
+                         </div>
+                     </div>
+                     <div class="col-6">
+                         <div class="emailOrSms mb-3">
+                             <img src="assets/images/phone.svg" alt="">
+                         </div>
+                     </div>
+
+                 </div>
+                 <div class="col-12">
+                     <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none "
+                         data-bs-target="#DeactivateModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
+                 </div>
+                 <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the deactivate account</p>
+             </div>
+
+
+         </div>
+     </div>
+ </div>
+ <div class="modal fade" id="DeactivateModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered  p-5">
+         <div class="modal-content overflow-visible m-4">
+             <div class="modal-header custom-border">
+                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body OTPVerification position-relative">
+                 <ul class="otpInput gap-2">
+                     <li><input class="alertborder" type="text" maxlength="1"></li>
+                     <li><input type="text" maxlength="1"></li>
+                     <li><input type="text" maxlength="1"></li>
+                     <li><input type="text" maxlength="1"></li>
+                 </ul>
+                 <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
+                 <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
+                 <div class="d-flex justify-content-between">
+                     <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                     <button class="theme-btn btnGreen opLow" data-bs-dismiss="modal">Send</button>
+                 </div>
+                 <!-- otp Alert -->
+                 <div class="otpalert">
+                     An example danger alert with an icon
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- modal deactivate satting end -->
+
     <!-- modal Change Phone Number satting start -->
     <div class="modal fade" id="numberBtnModalToggle" aria-hidden="true" aria-labelledby="numberBtnModalToggleLabel"
         tabindex="-1">
@@ -594,90 +678,6 @@
         </div>
     </div>
     <!-- modal Change Phone Number satting end -->
-
-    <!-- modal deactivate satting start -->
-    <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true"
-        aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Deactivate Account</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Deactivate Account?</h4>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                        <button class="theme-btn btnred" data-bs-target="#DeactivateModalToggle2"
-                            data-bs-toggle="modal">Accept</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="DeactivateModalToggle2" aria-hidden="true" aria-labelledby="DeactivateModalToggleLabel2"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body OTPVerification">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="emailOrSms mb-3 active">
-                                <img src="assets/images/email.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="emailOrSms mb-3">
-                                <img src="assets/images/phone.svg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12">
-                        <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none "
-                            data-bs-target="#DeactivateModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
-                    </div>
-                    <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the deactivate account</p>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="DeactivateModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered  p-5">
-            <div class="modal-content overflow-visible m-4">
-                <div class="modal-header custom-border">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body OTPVerification position-relative">
-                    <ul class="otpInput gap-2">
-                        <li><input class="alertborder" type="text" maxlength="1"></li>
-                        <li><input type="text" maxlength="1"></li>
-                        <li><input type="text" maxlength="1"></li>
-                        <li><input type="text" maxlength="1"></li>
-                    </ul>
-                    <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
-                    <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
-                    <div class="d-flex justify-content-between">
-                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                        <button class="theme-btn btnGreen opLow" data-bs-dismiss="modal">Send</button>
-                    </div>
-                    <!-- otp Alert -->
-                    <div class="otpalert">
-                        An example danger alert with an icon
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal deactivate satting end -->
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
