@@ -78,6 +78,8 @@
 //             });
 //         });
 
+
+// ##################################### alert Js #####################
 // include sidebar
 $(function(){
   $("#sidebar").load("layout/sidebar.html"); 
