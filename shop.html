@@ -59,7 +59,7 @@
     <div id="navbar"></div>
     <div class="wrapper">
         <div id="sidebar"></div>
-        <div class="main shopmaincontent">
+        <div class="main shopmaincontent d-none">
             <div class="row mx-0 align-items-center mb-3">
                 <div class="col">
                     <div class="headingmain">Shop</div>
@@ -829,37 +829,686 @@
                 </div>
             </div>
         </div>
-        <div class="main shopmaincontent">
+        <div class="main shopmaincontent d-none">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 mb-2">
                     <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Cart</div>
                 </div>
                 <div class="col-md-8">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th class="tableHeading" scope="col">Product</th>
+                                <th class="tableHeading" scope="col">Price</th>
+                                <th class="tableHeading" scope="col">Qty</th>
+                                <th class="tableHeading" scope="col">Total</th>
+                                <th class="tableHeading" scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bodytable">
+                                <td scope="row">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="tableimage">
+                                            <img class="w-100 h-100 rounded-3" src="assets/shoppage/image1.png" alt="">
+                                        </div>
+                                        <div class="texttable">Rose Flower</div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td class="">
+                                    <div class="increseandDeresebtn incress2">
+                                        <div class="center">
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button type="button " class="btn btn-number  d-flex align-items-center justify-content-center"  data-type="minus" data-field="quant[2]">
+                                                    <span class="glyphicon glyphicon-minus"> <img class="w-100 h-100" src="assets/shoppage/minus-icon.svg" alt="minusSvg"></span>
+                                                    </button>
+                                                </span>
+                                                <input type="text" name="quant[2]" class="form-control text-center input-number inputnumber2 px-1 border-0 fs-13" value="10" min="1" max="100">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn  d-flex align-items-center justify-content-center btn-number" data-type="plus" data-field="quant[2]">
+                                                        <span class="glyphicon glyphicon-plus"><img class="w-100 h-100" src="assets/shoppage/plus.svg" alt="plusSvg"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td >
+                                    <button class="delatebutton"><img class="w-100 h-100 p-1" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                </td>
 
+                            </tr>
+                            <tr class="bodytable">
+                                <td scope="row">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="tableimage">
+                                            <img class="w-100 h-100 rounded-3" src="assets/shoppage/image2.png" alt="">
+                                        </div>
+                                        <div class="texttable">Paint</div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td class="">
+                                    <div class="increseandDeresebtn incress2">
+                                        <div class="center">
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button type="button " class="btn btn-number  d-flex align-items-center justify-content-center"  data-type="minus" data-field="quant[2]">
+                                                    <span class="glyphicon glyphicon-minus"> <img class="w-100 h-100" src="assets/shoppage/minus-icon.svg" alt="minusSvg"></span>
+                                                    </button>
+                                                </span>
+                                                <input type="text" name="quant[2]" class="form-control text-center input-number inputnumber2 px-1 border-0 fs-13" value="10" min="1" max="100">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn  d-flex align-items-center justify-content-center btn-number" data-type="plus" data-field="quant[2]">
+                                                        <span class="glyphicon glyphicon-plus"><img class="w-100 h-100" src="assets/shoppage/plus.svg" alt="plusSvg"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td >
+                                    <button class="delatebutton"><img class="w-100 h-100 p-1" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                </td>
+                            </tr>
+                            <tr class="bodytable">
+                                <td class="borderlast" scope="row">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="tableimage">
+                                            <img class="w-100 h-100 rounded-3" src="assets/shoppage/image3.png" alt="">
+                                        </div>
+                                        <div class="texttable">US Flag</div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td class="">
+                                    <div class="increseandDeresebtn incress2">
+                                        <div class="center">
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button type="button " class="btn btn-number  d-flex align-items-center justify-content-center"  data-type="minus" data-field="quant[2]">
+                                                    <span class="glyphicon glyphicon-minus"> <img class="w-100 h-100" src="assets/shoppage/minus-icon.svg" alt="minusSvg"></span>
+                                                    </button>
+                                                </span>
+                                                <input type="text" name="quant[2]" class="form-control text-center input-number inputnumber2 px-1 border-0 fs-13" value="10" min="1" max="100">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn  d-flex align-items-center justify-content-center btn-number" data-type="plus" data-field="quant[2]">
+                                                        <span class="glyphicon glyphicon-plus"><img class="w-100 h-100" src="assets/shoppage/plus.svg" alt="plusSvg"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="numbertext">$5</td>
+                                <td >
+                                    <button class="delatebutton"><img class="w-100 h-100 p-1" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-3 cartcard">
-                        <div class="cardHeading mb-2">Order Summary</div>
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div class="card cartcard">
+                        <div class="cardHeading mb-2  p-3">Order Summary</div>
+                        <div class="d-flex align-items-center justify-content-between p-2 border-bottom">
                             <div class="fs-14 text-secondary">Items (3)</div>
                             <div class="fs-16 fw-bold itempayment">$27</div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-between p-2">
                             <div class="fs-14 text-black">Order Total</div>
                             <div class="fs-16 fw-bold itempayment">$27</div>
                         </div>
-                        <div class="w-100">
-                            <button class="w-100 cartbtn">Check Out</button>
+                        <div class="w-100  p-3">
+                            <button class="w-100 cartbtn" >Check Out</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="main shopmaincontent shippingpayment d-none">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row mx-0 g-4">
+                        <div class="col-12">
+                            <div class="card cartcard">
+                                <div class="cardHeading mb-2  p-3">Shipping Address</div>
+                                <div class="row mx-2 addressContent p-3  align-items-center">
+                                    <div class="col-auto px-0 position-relative">
+                                        <div class="form-check checkForm">
+                                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping">
+                                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping">
+                                                Eric Ardono
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="fs-14 text-muted">105 Krome Ave, New York, Greenfield, 53143 (+1 202 556 3456)</div>
+                                    </div>
+                                    <div class="col-auto px-0">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 inputGroupBtn">
+                                            <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/pancile.svg" alt=""></button>
+                                            <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 w-auto">
+                                    <button class="cartbtn"  data-bs-toggle="modal" data-bs-target="#shippingModal">+ Add Shipping Address</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card cartcard">
+                                <div class="cardHeading mb-2  p-3">Shipping Method</div>
+                                <div class="row  addressContent p-3 m-3">
+                                    <div class="col-auto px-0 position-relative">
+                                        <div class="form-check checkForm">
+                                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
+                                                FedEx Delivery
+                                            </label><br><span class="innertext">$12</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
+                                    </div>
+                                    <div class="col-auto px-0">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 ">
+                                            <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt=""></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  addressContent p-3 m-3">
+                                    <div class="col-auto px-0 position-relative">
+                                        <div class="form-check checkForm">
+                                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
+                                                DHL Delivery
+                                            </label><br><span class="innertext">$12</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
+                                    </div>
+                                    <div class="col-auto px-0">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 ">
+                                            <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image7.png" alt=""></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  addressContent p-3 m-3">
+                                    <div class="col-auto px-0 position-relative">
+                                        <div class="form-check checkForm">
+                                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
+                                                ShipBob Delivery
+                                            </label><br><span class="innertext">$12</span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
+                                    </div>
+                                    <div class="col-auto px-0">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 ">
+                                            <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image8.png" alt=""></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 fs-14 text-muted">
+                                    Waiting for shipping address    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card cartcard">
+                                <div class="cardHeading mb-2  p-3">Shipping Method</div>
+                                <div class="row  addressContent p-3 m-3">
+                                    <div class="col-auto px-0 position-relative">
+                                        <div class="form-check checkForm">
+                                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
+                                                ShipBob Delivery
+                                            </label>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="d-flex">
+                                            <div class="fs-14 text-muted">3103 8745 8956 3451</div>
+                                            <span class="fs-14 text-muted mx-2">05/26</span>
+                                            <span class="w-30px h-30px d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto px-0">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 inputGroupBtn">
+                                            <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <button class="cartbtn" data-bs-toggle="modal" data-bs-target="#cardDetailsModal">+ Add Card Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card cartcard">
+                        <div class="cardHeading mb-2  p-3">Order Summary</div>
+                        <div class="d-flex align-items-center justify-content-between p-2 border-bottom">
+                            <div class="fs-14 text-secondary">Items (3)</div>
+                            <div class="fs-16 fw-bold itempayment">$27</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="fs-14 text-black">Order Total</div>
+                            <div class="fs-16 fw-bold itempayment">$27</div>
+                        </div>
+                        <div class="w-100  p-3">
+                            <button class="w-100 cartbtn bgblur" >Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main shopmaincontent orderSuccessful d-none">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="seccesorder"><img class="w-100 h-100" src="assets/shoppage/yesicon.svg" alt=""></div>
+                </div>
+                <div class="col-12 mb-3">
+                    <div class="textHeading">
+                        Your Order Was Successful!
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <div class="orderid">Order ID <span class="innertext">64573274324893454</span>Order Date<span class="date">23 February 2023</span></div>
+                </div>
+                <div class="col-12 mb-3 groupButton d-flex align-items-center justify-content-center gap-3">
+                    <button class="btn button1 d-flex align-items-center gap-2"><span class="d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/download.svg" alt=""></span>Download Order</button>
+                    <button class="btn button2">Back to Shop</button>
+                </div>
+                <div class="col-md-6 leftcard">
+                    <div class="row mx-0 innerreow g-3">
+                        <div class="col-md-6 left">
+                            <div class="card h-100">
+                                <div class="card-body p-0">
+                                    <div class="headingtext fs-16 fw-bold p-3 ">Shipping Address</div>
+                                    <div class="fs-14 fw-bold subtext p-3">Eric Ardono</div>
+                                    <div class=" address p-3">105 Krome Ave, 
+                                        New York, Greenfield, 
+                                        53143 
+                                        (+1 202 556 3456)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <div class="card h-100">
+                                <div class="card-body p-0">
+                                    <div class="headingtext fs-16 fw-bold p-3 ">Shipping Address</div>
+                                    <div class="imagemain fs-16 fw-bold ms-3 "><img class="w-100 h-100" src="assets/shoppage/image6.png" alt=""></div>
+                                    <div class="fs-14 fw-bold subtext pt-2 px-3">FedEx Delivery <span class="fs-13  mx-1">2–3 days work</span></div>
+                                    <div class="fs-14 fw-bold subtext py-2 px-3">Receipt<span class="fs-13  mx-1"> 3453 2345 2345</span></div>
+                                    <a class="track p-3" href="#">Track Shipping</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 bottomCard">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="headingtext fs-16 fw-bold p-3 ">Card Payment</div>
+                                    <div class="d-flex align-items-center imagecardbottom p-3 ps-0 ms-3 gap-2"> <span class="d-inline-flex image"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span> <span class="innertext">Eric Ardono</span> <span class="subInner">3103 8745 8956 3451</span> <span class="subInner">05/26</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 rightcard">
+                    <div class="card">
+                        <div class="card-header p-3 border-bottom-0">
+                            Order Summary
+                        </div>
+                        <div class="card-body">
+                            <div class="row mx-0 align-items-center border-bottom py-3">
+                                <div class="col-auto">
+                                    <div class="imagelrft"><img class="w-100 h-100" src="assets/shoppage/image1.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="heading">Rose Flower</div>
+                                    <div class="quntenty">Qty: 1</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="payment">$5</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 align-items-center border-bottom py-3">
+                                <div class="col-auto">
+                                    <div class="imagelrft"><img class="w-100 h-100" src="assets/shoppage/image1.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="heading">Paint</div>
+                                    <div class="quntenty">Qty: 1</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="payment">$15</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 align-items-center border-bottom py-3">
+                                <div class="col-auto">
+                                    <div class="imagelrft"><img class="w-100 h-100" src="assets/shoppage/image1.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="heading">Paint</div>
+                                    <div class="quntenty">Qty: 1</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="payment">$15</div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 justify-content-end py-3 gap-3 border-bottom">
+                                <div class="itemtotal text-end">Item Total <span class="ms-3">$27</span></div>
+                                <div class="itemtotal text-end">Shipping Fee <span class="ms-3">$12</span></div>
+                            </div>
+                            <div class="row mx-0 justify-content-end py-3">
+                                <div class="totalorder text-end">Order Total<span class="ms-3">$39</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main shopmaincontent myOrders d-none">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
+                </div>
+                <div class="row h-100 pt-5 mt-5">
+                    <div class="col-12 mb-3 mt-5">
+                        <div class="purchesorder"><img class="w-100 h-100" src="assets/shoppage/purches.svg" alt=""></div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="purchestext text-center">No purchase history</div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="subtextpurches text-center">All orders will appear here.</div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn buttonshop">Back to Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main shopmaincontent myOrders2">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header p-3 d-flex align-items-center">
+                            <span class="">Order ID</span>
+                            <span class="">64573274324893454</span>
+                            <span class="">Order Date</span>
+                            <span class="">23 February 2023</span>
+                        </div>
+                        <div class="row mx-0  p-3 border-bottom">
+                            <div class="col-auto px-0">
+                                <div class="imagecard">
+                                    <img class="w-100 h-100" src="assets/shoppage/image1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mainheading">Rose Flower</div>
+                                <div class="subHeading pt-2">+2 Other Product</div>
+                            </div>
+                        </div>
+                        <div class="image m-3 mb-1"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt=""></div>
+                        <div class="recipet p-3 pt-0">FedEx Delivery Receipt <span class="mx-1">3453 2345 2345</span></div>
+                        <div class="d-flex align-items-center justify-content-between p-3 pt-1 border-top border-bottom">
+                            <div class="orderTotal">Order Total</div>
+                            <div class="orderPayment">$39</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
+<!-- modal-Shipping-Address -->
+    <div class="modal fade shippingModal" id="shippingModal" tabindex="-1" aria-labelledby="shippingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modalDialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title  Heading" id="shippingModalLabel">Shipping Address</div>
+            <button type="button" class="btn-close shadow-none dismissbtn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mx-0">
+                    <div class="formShipping">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label formLebal">First Name</label>
+                                <input type="text" class="form-control shadow-none controlForm" id="validationCustom01" placeholder="e.g. John" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label formLebal">Last Name</label>
+                                <input type="text" class="form-control shadow-none controlForm" id="validationCustom02" placeholder="e.g. John" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername03" class="form-label formLebal">Phone Number</label>
+                                <div class="input-group has-validation">
+                                    <input type="tel" class="form-control shadow-none controlForm" id="validationCustomUsername03" placeholder="e.g. +1 202 556 3456" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                    Please Enter Number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="validationStreet04" class="form-label formLebal">Street Address</label>
+                                    <input class="form-control shadow-none controlForm" id="validationStreet04" placeholder="e.g. 105 KROME AVE" required></input>
+                                    <div class="invalid-feedback">
+                                        Please enter Address.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom05" class="form-label formLebal">State</label>
+                                <select class="form-select" id="validationCustom05" required>
+                                    <option selected disabled value="">Choose State</option>
+                                    <option>Rajasthan</option>
+                                    <option>Dhali</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom06" class="form-label formLebal">City</label>
+                                <select class="form-select" id="validationCustom06" required>
+                                    <option selected disabled value="">Choose City</option>
+                                    <option>sawai Madhopur</option>
+                                    <option>Ajmer</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom07" class="form-label formLebal">Zip</label>
+                                <input type="text" class="form-control shadow-none controlForm" placeholder="e.g. 53143" id="validationCustom07" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn w-50 bgblur rounded-pill " data-bs-dismiss="modal" type="submit">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- Card Details -->
+    <div class="modal fade cardDetails" id="cardDetailsModal" tabindex="-1" aria-labelledby="cardDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modalDilog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-title" id="cardDetailsModalLabel">Card Payment</div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body cardBody">
+                <div class="row mx-0">
+                    <div class="formShipping">
+                        <form class="row g-4 needs-validation" novalidate>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom011" class="form-label formLebal">Card Number</label>
+                                <div class="position-relative">
+                                <input type="text" class="form-control shadow-none controlForm" id="validationCustom011" placeholder="Input card number" value="Mark" required>
+                                    <span class="d-inline-flex w-30px h-30px position-absolute top-0 end-0 mt-2 me-2"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span>
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom022" class="form-label formLebal">Name</label>
+                                <input type="text" class="form-control shadow-none controlForm" id="validationCustom022" placeholder="Input name" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustomUsername033" class="form-label formLebal">Expiry (MM/YY)</label>
+                                <div class="input-group has-validation">
+                                    <input type="tel" class="form-control shadow-none controlForm" id="validationCustomUsername033" placeholder="Input expiry MM/YY" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                    Please Enter Number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="mb-3">
+                                    <label for="validationStreet044" class="form-label formLebal">CVC</label>
+                                    <input type="password" class="form-control shadow-none controlForm" id="validationStreet044" placeholder="Input CVC" required></input>
+                                    <div class="invalid-feedback">
+                                        Please enter CVC.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn w-50 bgblur rounded-pill " data-bs-dismiss="modal" type="submit">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        
+$('.btn-number').click(function(e){
+  e.preventDefault();
+  
+  fieldName = $(this).attr('data-field');
+  type      = $(this).attr('data-type');
+  var input = $("input[name='"+fieldName+"']");
+  var currentVal = parseInt(input.val());
+  if (!isNaN(currentVal)) {
+      if(type == 'minus') {
+          
+          if(currentVal > input.attr('min')) {
+              input.val(currentVal - 1).change();
+          } 
+          if(parseInt(input.val()) == input.attr('min')) {
+              $(this).attr('disabled', true);
+          }
+
+      } else if(type == 'plus') {
+
+          if(currentVal < input.attr('max')) {
+              input.val(currentVal + 1).change();
+          }
+          if(parseInt(input.val()) == input.attr('max')) {
+              $(this).attr('disabled', true);
+          }
+
+      }
+  } else {
+      input.val(0);
+  }
+});
+$('.input-number').focusin(function(){
+ $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+  
+  minValue =  parseInt($(this).attr('min'));
+  maxValue =  parseInt($(this).attr('max'));
+  valueCurrent = parseInt($(this).val());
+  
+  name = $(this).attr('name');
+  if(valueCurrent >= minValue) {
+      $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+  } else {
+      alert('Sorry, the minimum value was reached');
+      $(this).val($(this).data('oldValue'));
+  }
+  if(valueCurrent <= maxValue) {
+      $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+  } else {
+      alert('Sorry, the maximum value was reached');
+      $(this).val($(this).data('oldValue'));
+  }
+  
+  
+});
+$(".input-number").keydown(function (e) {
+      // Allow: backspace, delete, tab, escape, enter and .
+      if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+           // Allow: Ctrl+A
+          (e.keyCode == 65 && e.ctrlKey === true) || 
+           // Allow: home, end, left, right
+          (e.keyCode >= 35 && e.keyCode <= 39)) {
+               // let it happen, don't do anything
+               return;
+      }
+      // Ensure that it is a number and stop the keypress
+      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+          e.preventDefault();
+      }
+  });
+    </script>
 
 </body>
 
