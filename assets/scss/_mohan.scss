@@ -1,18 +1,13 @@
-// [data-page-name="mainDashboard"] {
-
-// }
-
-
-
-//************* [ Modal Scss ] *************
-//modal-css start
+//************* [ Modal css start ] *************
 .modal-content {
     overflow: hidden;
     border-radius: 24px !important;
-    .theme-card {
+
+    & .theme-card {
         box-shadow: transparent !important;
-        border-radius: inherit !important; 
-        h4.worn.text-center {
+        border-radius: inherit !important;
+
+        & .worn.text-center {
             margin-bottom: 10px;
             font-family: 'Inter';
             font-style: normal;
@@ -22,116 +17,141 @@
             color: #29293E;
         }
     }
-.modal-header {
-    height: 72px;
-    background: #F7F7F7;
-    border-bottom: 0;
-    h1 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        color: #29293E;
+
+    .modal-header {
+        height: 72px;
+        background: #F7F7F7;
+        border-bottom: 0;
+
+        h1 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #29293E;
+        }
     }
-}
-.card-body-top {
-    padding: 24px !important;
-   
-    .theme-card-header {
-        border-radius: 12px;
-        
-    }
-    ul.gap-2{
+
+    .card-body-top {
+        padding: 24px !important;
+
+        .theme-card-header {
+            border-radius: 12px;
+
+        }
+
+        ul.gap-2 {
             margin-bottom: 0;
             margin-top: 10px;
+        }
     }
 }
-}
-.MemorialDetail{
-ul.Detail{
-    margin-bottom: 0;
-    p {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #7F7F8D;
-        margin-bottom: 3px;
-    }
-    h5 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        color: #29293E;
+
+.MemorialDetail {
+    ul.Detail {
         margin-bottom: 0;
-    }
-    h6 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
-        color: #29293E;
-        a {
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #7F7F8D;
+            margin-bottom: 3px;
+        }
+
+        h5 {
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
-            text-decoration-line: underline;
-            color: #2BA339;
-            span{
-                margin-left: 7px;
+            color: #29293E;
+            margin-bottom: 0;
+        }
+
+        h6 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #29293E;
+
+            a {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                text-decoration-line: underline;
+                color: $theme1;
+
+                span {
+                    margin-left: 7px;
+                }
             }
         }
+
+        li {
+            margin-bottom: 11px;
+        }
     }
-    li {
-        margin-bottom: 11px;
-    }
-}
 
 }
-#MemorialDetailModal{
-.modal-dialog {
-    transform: none;
-    width: 800px !important;
-    max-width: 100%;
-    
-}
+
+#MemorialDetailModal {
+    .modal-dialog {
+        transform: none;
+        width: 800px !important;
+        max-width: 100%;
+
+    }
 }
 .beforeAftercleaning {
-padding: 16px;
-overflow: hidden;
-border-bottom: 1px solid #EAEAEA;
-textarea {
-    background: #F7F7F7 !important;
-    border-radius: 12px !important;
-    border: 0 !important;
-    padding: 18px 15px !important;
-    font-family: 'Inter' !important;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #7F7F8D;
-}
-h4.beforeAfterTitle {
-    font-family: 'Inter' !important;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: #29293E;
-    margin-bottom: 14px;
-    sup {
-        color: #E84F45;
+    padding: 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #EAEAEA;
+
+    textarea {
+        background: #F7F7F7 !important;
+        border-radius: 12px !important;
+        border: 0 !important;
+        padding: 18px 15px !important;
+        font-family: 'Inter' !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #7F7F8D;
     }
-   
+
+    h4.beforeAfterTitle {
+        font-family: 'Inter' !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #29293E;
+        margin-bottom: 14px;
+
+        sup {
+            color: $red;
+        }
+
+    }
+
 }
+
+#StartJobModal {
+    .card-body-top {
+        padding: 16px 16px 0px 16px !important;
+    }
+}
+//************* [ Modal css end ] *************
+
 .upload__box {
     padding: 0;
     position: relative;
@@ -139,18 +159,20 @@ h4.beforeAfterTitle {
     height: 76px;
     border-radius: 10px;
     max-width: 76px;
+
     .upload__img-wrap {
         display: flex;
         flex-wrap: wrap;
         margin: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: $white;
+
         .upload__img-close {
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: $white;
             position: absolute;
             top: -6px;
             right: -6px;
@@ -164,6 +186,7 @@ h4.beforeAfterTitle {
             justify-content: center;
             align-items: center;
         }
+
         .upload__img-close:after {
             content: '\2716';
             font-size: 13px;
@@ -171,22 +194,24 @@ h4.beforeAfterTitle {
             color: #7F7F8D;
         }
     }
+
     .upload__btn-box {
         margin-bottom: 0;
         width: 100%;
         height: 100%;
+
         .upload__btn {
             font-family: 'Inter' !important;
             font-style: normal;
             font-weight: 600;
             font-size: 12px;
             line-height: 15px;
-            color: #3cb54a;
+            color: $theme1;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 1px solid;
-            background-color: #ffffff;
-            border-color: #3cb54a;
+            background-color: $white;
+            border-color: $theme1;
             border-radius: 10px;
             width: 100%;
             height: 100%;
@@ -194,9 +219,11 @@ h4.beforeAfterTitle {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            &:hover{
+
+            &:hover {
                 transition: all 0.3s ease;
             }
+
             .upload__inputfile {
                 width: 0.1px;
                 height: 0.1px;
@@ -207,13 +234,14 @@ h4.beforeAfterTitle {
             }
         }
     }
-    .img-bg{
+
+    .img-bg {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: #fff;
+        background: $white;
         background-repeat: no-repeat;
         background-position: center;
         border: 0;
@@ -221,16 +249,28 @@ h4.beforeAfterTitle {
         object-fit: contain;
     }
 }
+.upload__btn-box {
+    margin-bottom: 10px;
 }
-#StartJobModal{
-.card-body-top {
-    padding: 16px 16px 0px 16px !important;
+
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
+
+.upload__img-box {
+    width: 200px;
+    padding: 0 10px;
+    margin-bottom: 12px;
 }
-//modal-css end
-
-
-
+.img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+}
 
 @media (max-width:767px) {
     .toggler-icon {
@@ -247,41 +287,22 @@ h4.beforeAfterTitle {
     }
 }
 
-.upload__btn-box {
-    margin-bottom: 10px;
-}
-.upload__img-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
-}
-.upload__img-box {
-    width: 200px;
-    padding: 0 10px;
-    margin-bottom: 12px;
-}
-
-.img-bg {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding-bottom: 100%;
-}
-
-//***********************************************************Reviews Page *****************************************************
+//*************************Reviews Page css start **********************************//
 [page-name=reviewspage] {
-    & .reviewspage{
+    & .reviewspage {
         .borderRight {
             border-right: 1px solid #EAEAEA;
-            .p-15{
+
+            .p-15 {
                 padding: 15px !important;
             }
         }
+
         .borderbottom {
             border-bottom: 1px solid #EAEAEA;
         }
-        .squre{
+
+        .squre {
             width: 52px;
             height: 52px;
             left: 16px;
@@ -291,27 +312,33 @@ h4.beforeAfterTitle {
             align-items: center;
             justify-content: center;
             margin-right: 12px;
-            &.rating{
+
+            &.rating {
                 background: #FFF3E3;
+
                 img {
                     width: 25px;
                 }
             }
-            &.user{
+
+            &.user {
                 background: #F6F6F6;
             }
         }
-        .ReviewsRight{
+
+        .ReviewsRight {
             .progress {
                 background: transparent;
                 height: 6px;
                 overflow: visible;
-                .progress-bar{
+
+                .progress-bar {
                     border-radius: 12px;
-                    background-color: #39B54A !important;
+                    background-color: $theme1 !important;
                     position: relative;
                     overflow: visible;
-                    p{
+
+                    p {
                         position: absolute;
                         right: -34px;
                         font-family: "Inter";
@@ -324,24 +351,27 @@ h4.beforeAfterTitle {
                     }
                 }
             }
-            
+
         }
     }
 }
+//*************************Reviews Page css end **********************************//
+
+//*************************tutorials Page css start **********************************//
 [page-name=tutorials] {
-    .video-container {
+    & .video-container {
         position: relative;
-        .video-wrapper {
+
+        & .video-wrapper {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-       
     }
-    
-    .play-button-wrapper {
+
+    & .play-button-wrapper {
         position: absolute;
         top: 0;
         left: 0;
@@ -353,11 +383,12 @@ h4.beforeAfterTitle {
         width: 100%;
         height: auto;
         pointer-events: none;
-        #circle-play-b {
+
+        & #circle-play-b {
             cursor: pointer;
             pointer-events: auto;
-    
-            svg {
+
+            & svg {
                 width: 60px;
                 height: 60px;
                 fill: $theme1;
@@ -369,38 +400,471 @@ h4.beforeAfterTitle {
             }
         }
     }
-    video {
+
+    & video {
         width: 100%;
         height: 100%;
         border-radius: 16px;
-     
+    }
 
-
-
-      }
-      #playlist {
+    & #playlist {
         width: 100%;
-        li{
+
+        & .listInner {
             display: flex;
             width: 100%;
             border-left: 4px solid transparent;
-            &.active,&:hover{
-                border-left: 4px solid #3cb54a;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all ease-in-out 0.3s;
+
+            &.active,
+            &:hover {
+                border-left: 4px solid $theme1;
                 background: #e9f9eb;
-                color: #3cb54a;
+                color: $theme1;
+
+                & img {
+                    filter: grayscale(0);
+                }
             }
-            a{
-                
+
+            & a {
+
                 color: #7F7F8D;
-                padding: 19px 24px 19px 10px;
+
                 width: 100%;
                 text-decoration: none;
-               
+
+            }
+
+            & img {
+                filter: grayscale(1);
+            }
+
+        }
+
+    }
+}
+//*************************tutorials Page css end **********************************//
+
+//*************************settings Page css start **********************************//
+[page-name=settings] {
+    & .settings {
+        
+        .avatar-upload {
+            .avatar-edit {
+                input {
+                    display: none;
+                }
+            }
+        }
+        .avatar-preview {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border-radius: 100%;
+
+            img {
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            >div {
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
         
+    }
+    
+   
+}
+//*************************settings Page css end **********************************//
+
+//*************************earnings Page css start **********************************//
+[page-name=earnings] {
+    & .earnings {
+        .selectYear{
+            font-weight: 600;
+            font-size: 20px;
+            .formselect {
+                color: $theme1;
+                outline: none;
+                border: 0;
+                & option{
+                    font-size: 14px;
+                    border: 0;
+                    background-color: transparent;
+                    color: #000;
+                    &:hover{
+                        background-color: #e9f9eb !important;
+                        color: $theme1;
+                    }
+                }
+            }
+        }
+        .downlode {
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 40px;
+            border: 1px solid #3cb54a;
+           
+            border: 1px solid #7f7f8d;
+            color: #7f7f8d;
+            background: rgba(0,0,0,0) !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 29px;
+            width: fit-content;
+            margin-left: auto;
+            img{
+                filter: opacity(0.5);
+            }
+            &:hover{
+                transition: all ease-in-out .1s;
+                background: #7f7f8d !important;
+                color: #fff;
+                img{
+                    filter: brightness(100);
+                }
+            }
+        }
+        .customTable{
+            th{
+                vertical-align: middle;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #7F7F8D;
+                background: #F6F6F6;
+                border-bottom: 0;
+            }
+            td{
+                font-weight: 600;
+                font-size: 16px;
+                &.green {
+                    color: $theme1;
+                }
+                &.orange {
+                    color: #f89408;
+                }
+                &.red {
+                    color: #dc3545;
+                }
+            }
+        }
+        $color_1: #555;
+$font-family_1: Verdana, sans-serif;
+.totalEarning {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px !important;
+    .total{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        &.afterBefore{
+            position: relative;
+            &:after{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                background-color: #EAEAEA;
+                right: 35px;
+                top: 0;
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                background-color: #EAEAEA;
+                left: -16px;
+                top: 0;
+            }
+        }
+        p{
+            margin-bottom: 11px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #7F7F8D;
+        }
+        .round {
+            width: 52px;
+            height: 52px;
+            left: 16px;
+            top: 16px;
+            background: #E9F9EB;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.orange{
+                background: #F9F1E9;
+            }
+            &.red{
+                background: #F9E9E9;
+            }
+        }
+    }
+}
+#container {
+	height: 400px;
+    overflow: hidden;
+    margin-left: -29px;
+    margin-bottom: -38px;
+    .highcharts-title,.highcharts-button-symbol{
+        display: none !important;
+    }
+    .highcharts-point{
+        background-color: red !important;
+        border-radius: 50px !important;
+        width: 8px !important;
+        overflow: hidden;
+        fill: inherit;
+        &.highcharts-color-1{
+            fill: $red !important;
+        }
+        &.highcharts-color-0{
+            fill: $theme1 !important;
+        }
+        &.highcharts-color-2{
+            fill: #F89408 !important;
+        }
+    }
+}
+.highcharts-figure {
+	max-width: 100%;
+    background: #fff;
+    padding-top: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.highcharts-data-table {
+	table {
+		min-width: 310px;
+		max-width: 800px;
+		margin: 1em auto;
+		font-family: $font-family_1;
+		border-collapse: collapse;
+		border: 1px solid #ebebeb;
+		margin: 10px auto;
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+	}
+	caption {
+		padding: 1em 0;
+		font-size: 1.2em;
+		color: $color_1;
+		padding: 0.5em;
+	}
+	th {
+		font-weight: 600;
+		padding: 0.5em;
+		padding: 0.5em;
+	}
+	td {
+		padding: 0.5em;
+	}
+	thead {
+		tr {
+			background: red;
+		}
+	}
+	tr {
+		&:nth-child(even) {
+			background: #f8f8f8;
+		}
+		&:hover {
+			background: #f1f7ff;
+		}
+	}
+}
+
+    }
+}
+.OTPVerification{
+    text-align: center !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .emailOrSms {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        cursor: pointer;
+        &.active{
+            background: #E9F9EB;
+            border: 1px solid #3CB54A;
+        }
+        
+    }
+    .underline-none{
+        text-decoration: none;
+        text-align: center;
+    }
+    .needed{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        a{
+            color: $theme1;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+    .otpInput {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0 !important;
+        input{
+            width: 73px;
+            border: 0;
+            border-bottom: 1px solid #BDBDBD;
+            text-align: center;
+            outline: none;
+            font-weight: 700;
+            font-size: 24px;
+            color: $black;
+            &.alertborder{
+                border-bottom: 1px solid $red !important;
+            }
+        }
+    }
+    .otpalert {
+        background: #f9d9d7;
+        border-radius: 8px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -61px;
+        padding: 12px 17px;
+        text-align: left;
+        border-left: 5px solid #E84F45;
+        font-weight: 600;
+        font-size: 14px;
+        color: $black;
+    }
+   
+}
+.custom-border{
+    border-radius: 24px 24px 0px 0px !important;
+}
+.showPassword {
+    position: relative;
+    i {
+        position: absolute;
+        top: 34%;
+        right: 12px;
+        font-size: 14px;
+        color: #7e7b7b;
+    }
+}
+//*************************earnings Page css end **********************************//
+[page-name=availability] {
+    
+    & .availability {
+        .r-16{
+            right: 16%;
+            top: 9px;
+        }
+        .LocationHeight{
+            height: 353px;
+        }
+        & .salectDates{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $black;
+            & #salectValue{
+                width: 127px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: $theme1;
+                outline: none;
+                option{
+                    border: 0;
+                    padding: 20px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $black;
+                }
+            }
+        }
+        :host .calendar-action-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 80% !important;
+            position: absolute;
+            top: 5px;
+            margin-bottom: 10px;
+        }
+      .customWidth{
+        max-width: 100%;
+       
       }
-      
+    
+      .calendar-day{
+        &.calendar-day-active {
+            .calendar-day-highlight{
+                background: inherit;
+                background: red !important;
+            }
+        }
+      }
+        .workLocation {
+            padding: 0;
+            margin: 0;
+            li{
+                padding: 15px 19px;
+               
+                border-bottom: 1px solid #EAEAEA;
+                
+                .location {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .innerCard{
+            border: 1px solid #e8e8e8;
+            box-shadow: inherit !important;
+            .theme-card-header{
+                background-color: $theme1;
+            }
+        }
+    }
+    
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -421,40 +885,35 @@ h4.beforeAfterTitle {
 // X-Small devices (portrait phones, less than 576px)
 @mixin reviewspage-mixin-max-xs() {
     [page-name=reviewspage] {
-        & .reviewspage{
+        & .reviewspage {
             .borderRight {
                 border-right: 0;
                 border-bottom: 1px solid #EAEAEA;
-                .p-15{
-                    
-                }
+
+                .p-15 {}
             }
-            .borderbottom {
-                
-            }
-            .squre{
-               
-                &.rating{
-                   
-                    img {
-                       
-                    }
+
+            .borderbottom {}
+
+            .squre {
+
+                &.rating {
+
+                    img {}
                 }
-                &.user{
-                   
-                }
+
+                &.user {}
             }
-            .ReviewsRight{
+
+            .ReviewsRight {
                 .progress {
-                   
-                    .progress-bar{
-                       
-                        p{
-                           
-                        }
+
+                    .progress-bar {
+
+                        p {}
                     }
                 }
-                
+
             }
         }
     }

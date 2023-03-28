@@ -28,7 +28,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>MAGOA | HOME</title>
+    <title>MAGOA | EARNINGS</title>
     <!-- Required meta tags -->
     <meta name="title" content="MAGOA" />
     <meta name="discrption" content="Discrption here" />
@@ -48,22 +48,197 @@
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
-
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
-    <div class="main" data-page-name="earnings">
+    <div class="main" page-name="earnings">
     <div id="navbar"></div>
     <div class="wrapper">
         <div id="sidebar"></div>
+        <div class="main">
+            <div class="dPage earnings" data-id="tab5">
+                <h4 class="page-title my-4 fs-24 f text-startw-bold">Earnings</h4>
+                <div class="row justify-content-between mb-3 d-flex">
+                    <div class="col">
+                        <div class="selectYear">
+                            <span>Earnings Records</span>
+                            <select class="formselect border-0 bg-transparent" aria-label="Default select example">
+                                <option value="2">2021</option>
+                                <option value="3">2022</option>
+                                <option value="1" selected>2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col text-end">
+                        <div class="downlode">
+                                <span><img src="assets/images/downlode.svg" alt=""></span>  Download <span><img src="assets/images/downlodeArrow.svg" alt=""></span>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="theme-card mb-3">
+                            <ul class="totalEarning p-0 mb-0 d-flex">
+                                <li class="row total">
+                                    <div class="col-auto">
+                                        <div class="round">
+                                            <img src="assets/images/dollar-symbol.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col text-start">
+                                        <p class="text-mutede fs-14">Earnings</p>
+                                        <h4 class="mb-0 fw-bold fs-20">$700</h4>
+                                    </div>
+                                </li>
+                                <li class="row total afterBefore pe-2">
+                                    <div class="col-auto">
+                                        <div class="round orange">
+                                            <img src="assets/images/dollar-symbol-orange.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col text-start">
+                                        <p class="text-mutede fs-14">Upcoming Earnings</p>
+                                        <h4 class="mb-0 fw-bold fs-20">$15 0</h4>
+                                    </div>
+                                </li>
+                                <li class="row total">
+                                    <div class="col-auto">
+                                        <div class="round red">
+                                            <img src="assets/images/dollar-symbol-red.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col text-start">
+                                        <p class="text-mutede fs-14">Missed Earnings</p>
+                                        <h4 class="mb-0 fw-bold fs-20">$160</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <figure class="highcharts-figure">
+                            <div id="container"></div>
+                        </figure>
+                    </div>
+                    <div class="cl-12 col-md-4">
+                        <div class="theme-card">
+                            <table class="table table-hover mb-0 text-center customTable">
+                                <thead>
+                                    <tr class="fs-14 text-mutede">
+                                      <th scope="col">Month</th>
+                                      <th scope="col">Earnings</th>
+                                      <th scope="col">Upcoming
+                                        Earnings</th>
+                                      <th scope="col">Missed
+                                        Earnings</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td scope="row">Jan</td>
+                                      <td class="green">$400</td>
+                                      <td class="orange">$0</td>
+                                      <td class="red">@$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Feb</td>
+                                        <td class="green">$300</td>
+                                        <td class="orange">$150</td>
+                                        <td class="red">@$60</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Mar</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td class="red">-</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Apr</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">May</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Jun</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Jul</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">Aug</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                  </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!--//////////////// earning Chart js start /////////////////// -->
+    <script>
+Highcharts.chart('container', {
+    chart: {
+      type: 'column'
+    },
+    xAxis: {
+      categories: ['Janu', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: 'Assists'
+      }
+    },
+    tooltip: {
+      pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+      shared: true
+    },
+    plotOptions: {
+      column: {
+        stacking: 'percent'
+      }
+    },
+    series: [{
+      name: 'Earnings',
+      data: [12, 8, 0,0,0,0,0,0,0,0,0,0]
+    }, {
+      name: 'Missed Earnings',
+      data: [4, 4, 0, 0,0,0,0,0,0,0,0,0]
+    }, {
+      name: 'Upcoming Earnings',
+      data: [0, 2, 0, 0,0,0,0,0,0,0,0,0]
+    }]
+  });
+
+
+// // earning Chart js start
+    </script>
 </body>
 
 </html>
