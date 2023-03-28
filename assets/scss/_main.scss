@@ -221,3 +221,70 @@ body{
 ul{
   list-style: none;
 }
+
+
+// Switch btn start
+  .switch-wrapper {
+    display: inline-block;
+    float: left;
+  }
+  .switch-input {
+    display: none;
+    &:checked {
+      + {
+        .switch-label {
+          background-color: #B0DCB5;
+          transition: all 0.3s ease-in 0s;
+          &:before {
+            right: 0;
+            background-color: $theme1;
+          }
+        }
+      }
+    }
+  }
+  .switch-label {
+    display: inline-block;
+    width: 32px;
+  height: 10px;
+    
+    background-color: #D2D2D2;
+    position: relative;
+    border-radius: 100px;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-color: #7F7F8D;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 20px;
+      cursor: pointer;
+      transition: all ease 0.3s;
+    }
+  }
+  .line-switch {
+    .switch-label {
+      height: 10px;
+      &:before {
+        top: -3px;
+      }
+    }
+    .switch-input {
+      &:checked {
+        + {
+          .switch-label {
+            background-color: #B0DCB5;
+            &:before {
+              border-color: #B0DCB5;
+            }
+          }
+        }
+      }
+    }
+  }
+// Switch btn end
+

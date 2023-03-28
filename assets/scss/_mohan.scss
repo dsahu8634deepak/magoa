@@ -790,6 +790,7 @@ $font-family_1: Verdana, sans-serif;
 [page-name=availability] {
     
     & .availability {
+       
         .r-16{
             right: 16%;
             top: 9px;
@@ -857,10 +858,30 @@ $font-family_1: Verdana, sans-serif;
             }
         }
         .innerCard{
-            border: 1px solid #e8e8e8;
-            box-shadow: inherit !important;
+            border: 1px solid #d2d2d278;
             .theme-card-header{
                 background-color: $theme1;
+            }
+        }
+        .AdditionalService {
+            border: 1px solid #EAEAEA;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .CleaningCharge{
+            display: block;
+            cursor: pointer;
+        }
+        .CleaningChargeEdit{
+            display: none;
+            &.show{
+                display: flex;
+            }
+            .charge {
+                color: $theme1;
+            }
+            .edit {
+                cursor: pointer;
             }
         }
     }
@@ -930,3 +951,10 @@ $font-family_1: Verdana, sans-serif;
 
 // X-Large devices (large desktops, less than 1400px)
 @mixin reviewspage-mixin-max-xl() {}
+
+
+.customWidth {
+   & .datetime-calendar{
+    display: none;
+   }
+}

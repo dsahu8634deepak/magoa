@@ -59,6 +59,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
 </head>
 <body>
     <div class="main" page-name="availability">
@@ -110,7 +111,7 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
                                             <img src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
@@ -121,7 +122,7 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
                                             <img src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
@@ -132,7 +133,7 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
                                             <img src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
@@ -143,7 +144,7 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
                                             <img src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
@@ -172,25 +173,133 @@
                                                 <ul class="p-0 m-0">
                                                     <li class="d-flex justify-content-between align-items-center mb-2">
                                                         <div  class="d-flex align-items-center">
-                                                            <span>
-                                                                <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                              </div>
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox1"class="switch-input" >
+                                                                    <label for="switchBox1" class="switch-label"></label>
+                                                                </div>
                                                             </span>
-                                                            <div class="fs-14">One Time Cleaning</div>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
                                                         </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14">Input Charge</div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
                                                     </li>
                                                     <li class="d-flex justify-content-between align-items-center">
                                                         <div  class="d-flex align-items-center">
-                                                            <span>
-                                                                <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                              </div>
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox2"class="switch-input" >
+                                                                    <label for="switchBox2" class="switch-label"></label>
+                                                                </div>
                                                             </span>
-                                                            <div class="fs-14">One Time Cleaning</div>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
                                                         </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14">Input Charge</div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="theme-card innerCard">
+                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Upright Memorial</div>
+                                            </div>
+                                            <div class="theme-card-body position-relative p-3">
+                                                <ul class="p-0 m-0">
+                                                    <li class="d-flex justify-content-between align-items-center mb-2">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox3"class="switch-input" >
+                                                                    <label for="switchBox3" class="switch-label"></label>
+                                                                </div>
+                                                            </span>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex justify-content-between align-items-center">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox4"class="switch-input" >
+                                                                    <label for="switchBox4" class="switch-label"></label>
+                                                                </div>
+                                                            </span>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="theme-card innerCard">
+                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Large Memorial</div>
+                                            </div>
+                                            <div class="theme-card-body position-relative p-3">
+                                                <ul class="p-0 m-0">
+                                                    <li class="d-flex justify-content-between align-items-center mb-2">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox5"class="switch-input" >
+                                                                    <label for="switchBox5" class="switch-label"></label>
+                                                                </div>
+                                                            </span>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex justify-content-between align-items-center">
+                                                        <div  class="d-flex align-items-center">
+                                                            <span class="me-2">
+                                                                <div class="switch-wrapper line-switch">
+                                                                    <input type="checkbox" id="switchBox6"class="switch-input" >
+                                                                    <label for="switchBox6" class="switch-label"></label>
+                                                                </div>
+                                                            </span>
+                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                        </div>
+                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                        <div class="align-items-center CleaningChargeEdit">
+                                                            <span class="charge me-2 fw-bold ts-16">
+                                                                $15
+                                                            </span>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -206,10 +315,114 @@
                         <div class="theme-card">
                             <div class="theme-card-header d-flex justify-content-between align-items-center">
                                 <div class="fs-16 mb-0 h4 fw-bold text-black">Additional Service</div>
-                               
                             </div>
                             <div class="theme-card-body position-relative p-3">
-                                
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox7"class="switch-input" checked>
+                                                        <label for="switchBox7" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox8"class="switch-input" checked>
+                                                        <label for="switchBox8" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox9"class="switch-input" checked>
+                                                        <label for="switchBox9" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox10"class="switch-input" checked>
+                                                        <label for="switchBox10" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox11"class="switch-input" checked>
+                                                        <label for="switchBox11" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox12"class="switch-input" checked>
+                                                        <label for="switchBox12" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox13"class="switch-input" checked>
+                                                        <label for="switchBox13" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="AdditionalService">
+                                            <div  class="d-flex align-items-center">
+                                                <span class="me-2">
+                                                    <div class="switch-wrapper line-switch">
+                                                        <input type="checkbox" id="switchBox14"class="switch-input" checked>
+                                                        <label for="switchBox14" class="switch-label"></label>
+                                                    </div>
+                                                </span>
+                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -218,6 +431,56 @@
         </div>
     </div>
 </div>
+
+
+<!-- ////Cleaning Charge modal start ////// -->
+    <div class="modal fade" id="CleaningChargeModal" tabindex="-1" aria-labelledby="CleaningChargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-20 h1" id="exampleModalLabel">Flat Memorial</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="worn fs-18 mb-2 mt-0">One Time Cleaning</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fs-14">Input Charge</label>
+                        <input type="text" class="form-control customInput fs-14" id="exampleFormControlInput1"
+                            placeholder="Input Charge">
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="theme-btn px-3 w-100 btnGrayBorder"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="theme-btn px-3 w-100 btnGreen opLow CleaningChargeHide"  data-bs-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ////Cleaning Charge modal end ////// -->
+
+<!-- ////Delete Work Location modal satrt ////// -->
+<div class="modal fade" id="DeleteWorkLocationModal" aria-hidden="true" aria-labelledby="DeleteWorkLocationModalLabel"
+tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Delete Work Location</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Delete Work Location?</h4>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ////Delete Work Location modal end ////// -->
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -270,6 +533,19 @@
         datetime.value = ['2022-06-03', '2022-06-13', '2022-06-29'];
     
       
+    </script>
+    <script>
+        $(".CleaningChargeHide").click(function(){
+            $(".CleaningCharge").hide();
+            $(".CleaningChargeEdit").addClass("show");
+            $(".switch-wrapper :input").checked = true;
+        });
+    </script>
+    <script>
+        $(".calendar-day").click(function(){
+            debugger;
+            $(this).addClass("green");
+        });
     </script>
 </body>
 </html>
