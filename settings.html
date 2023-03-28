@@ -41,10 +41,10 @@
     <meta property="og:url" content="">
     <meta property="og:title" content="MAGOA">
     <meta property="og:description" content="Discrption here">
-    <meta property="og:image" content="assets/img/logo/favicon-32x32.png">
-    <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.png" />
+    <meta property="og:image" content="assets/logo/favicon-32x32.png">
+    <meta property="og:image:secure_url" content="assets/logo/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
 
@@ -59,6 +59,56 @@
 
 <body>
     <div class="main" page-name="settings">
+        <nav class="navbar topHeader">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">
+                    <img src="assets/images/logo.svg" alt="img">
+                </span>
+                <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+            </div>
+        </nav>
+        <div class="wrapper">
+<!--########## [ Aside Bar Start ] ###########-->
+        <div class="sidebar-lg sidebar">
+            <div class="sider-top">
+                <div class="user">
+                    <ul class="list-unstyled">
+                        <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                        <li>
+                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                            <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="divder">
+                </hr>
+                <div class="job">
+                    <ul class="list-unstyled">
+                        <li class="current">Current Job</li>
+                        <li class="price">$450</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links h-100 flex-fill overflow-hidden">
+                <div class="">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                        <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                        <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                        <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                        <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                        <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                        <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round active"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--########## [ Aside Bar End ] ###########-->
+<!--########## [ Main Content ] ###########-->
         <div id="navbar"></div>
         <div class="wrapper">
             <div id="sidebar"></div>
@@ -72,12 +122,25 @@
                                     <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
                                 </div>
                                 <div class="theme-card-body">
+                                            <div class="avatar-upload row d-flex align-items-center m-0 py-3">
+                                                <div class="col-auto">
+                                                    <div class="avatar-preview">
+                                                    <div id="imagePreview" style="background-image: url('assets/images/user-profile.svg');">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="avatar-edit">
+                                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                    <label for="imageUpload" class="theme-btn btnGreenBorder">Change Picture</label>
+                                                </div>
                                     <div class="avatar-upload row d-flex align-items-center m-0 py-3">
                                         <div class="col-auto">
                                             <div class="avatar-preview">
                                                 <div id="imagePreview"
                                                     style="background-image: url('assets/images/user-profile.svg');">
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col">
@@ -100,9 +163,19 @@
                                 <div class="theme-card-body">
                                     <ul class="list-unstyled row d-flex gap-3 m-0 p-3">
                                         <li class="upload__box mt-0">
-
-
-                                            <div class="upload__img-wrap">
+                                                <div class="upload__img-wrap">
+                                                    <div class="upload__btn-box">
+                                                        <label class="upload__btn">
+                                                            <img src="assets/images/add.svg" alt="">
+                                                            <p class="mb-0">Add Photo</p>
+                                                            <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            
+                                        </li>
+                                        <li class="upload__box mt-0">
+                                            
                                                 <div class="upload__btn-box">
                                                     <label class="upload__btn">
                                                         <img src="assets/images/add.svg" alt="">
@@ -111,6 +184,32 @@
                                                             class="upload__inputfile">
                                                     </label>
                                                 </div>
+                                                <div class="upload__img-wrap"></div>
+                                        
+                                        </li>
+                                        <li class="upload__box mt-0">
+                                            
+                                                <div class="upload__btn-box">
+                                                    <label class="upload__btn">
+                                                        <img src="assets/images/add.svg" alt="">
+                                                        <p class="mb-0">Add Photo</p>
+                                                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                    </label>
+                                                </div>
+                                                <div class="upload__img-wrap"></div>
+
+                                        </li>
+                                        <li class="upload__box mt-0">
+                                            
+                                                <div class="upload__btn-box">
+                                                    <label class="upload__btn">
+                                                        <img src="assets/images/add.svg" alt="">
+                                                        <p class="mb-0">Add Photo</p>
+                                                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                                    </label>
+                                                </div>
+                                                <div class="upload__img-wrap"></div>
+                                        
                                             </div>
 
                                         </li>
@@ -165,6 +264,16 @@
                                 <div class="theme-card-body">
                                     <div class="row m-0 pt-3 pb-4">
                                         <div class="col-12">
+                                    <h4 class="fs-16 mb-0 mb-3 tc-black">Eric Adorno</h4>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#NameSettingModal">
+                                                Change Name
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+    
                                             <h4 class="fs-16 mb-0 mb-3 tc-black">Eric Adorno</h4>
                                         </div>
                                         <div class="col-12">
@@ -187,6 +296,14 @@
                                 <div class="theme-card-body">
                                     <div class="row m-0 pt-3 pb-4">
                                         <div class="col-12">
+                                    <p class="mb-0 mb-3 fs-14">Hello My name is Eric and I've been cleaning headstones for over 10 years and I love what I do.</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#bioSettingModal">
+                                                Edit Bio
+                                            </a>
+                                        </div>
+                                    
                                             <p class="mb-0 mb-3 fs-14">Hello My name is Eric and I've been cleaning
                                                 headstones for over 10 years and I love what I do.</p>
                                         </div>
@@ -220,6 +337,39 @@
                                 </div>
                             </div>
                         </div>
+                        
+                    </div>
+                    <div class="page-title my-4 fs-24 fw-bold">Security Setting</div>
+                    <div class="row g-3">
+                    
+                        <div class="col-12 col-md-6">
+                            <div class="theme-card">
+                                <div class="theme-card-header">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Email</div>
+                                </div>
+                                <div class="theme-card-body">
+                                    <div class="row m-0 pt-3 pb-4">
+                                        <div class="col-12">
+                                        <div class="fs-16 mb-0 mb-3 tc-black h4">ericadorno@gmail.com</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#emailBtnModalToggle">
+                                                Change Email
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="theme-card">
+                                <div class="theme-card-header">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Phone Number</div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="page-title my-4 fs-24 fw-bold">Security Setting</div>
@@ -233,6 +383,16 @@
                                 <div class="theme-card-body">
                                     <div class="row m-0 pt-3 pb-4">
                                         <div class="col-12">
+                                    <div class="fs-16 mb-0 mb-3 tc-black h4">+1 202 234 4453</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#numberBtnModalToggle">
+                                                Change Phone Number
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+    
                                             <div class="fs-16 mb-0 mb-3 tc-black h4">ericadorno@gmail.com</div>
                                         </div>
                                         <div class="col-12">
@@ -249,12 +409,21 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="theme-card">
+                                <div class="theme-card-header mb-1">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Password</div>
                                 <div class="theme-card-header">
                                     <div class="fs-16 mb-0 h4 fw-bold text-black">Phone Number</div>
                                 </div>
                                 <div class="theme-card-body">
                                     <div class="row m-0 pt-3 pb-4">
                                         <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnGreenBorder" data-bs-toggle="modal" data-bs-target="#passwordBtnModalToggle">
+                                                Change Password
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+    
                                             <div class="fs-16 mb-0 mb-3 tc-black h4">+1 202 234 4453</div>
                                         </div>
                                         <div class="col-12">
@@ -271,12 +440,25 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="theme-card">
+                                <div class="theme-card-header">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Deactivate Account</div>
                                 <div class="theme-card-header mb-1">
                                     <div class="fs-16 mb-0 h4 fw-bold text-black">Password</div>
                                 </div>
                                 <div class="theme-card-body">
                                     <div class="row m-0 pt-3 pb-4">
                                         <div class="col-12">
+                                            <a href="javascript:" class="theme-btn btnRedBorder" data-bs-toggle="modal" data-bs-target="#DeactivateBtnModalToggle">
+                                                Deactivate Account
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    
                                             <a href="javascript:" class="theme-btn btnGreenBorder"
                                                 data-bs-toggle="modal" data-bs-target="#passwordBtnModalToggle">
                                                 Change Password
@@ -311,6 +493,7 @@
                     </div>
                 </div>
             </div>
+<!--########## [ Main Content End] ###########-->
         </div>
     </div>
 
@@ -369,6 +552,8 @@
         </div>
     </div>
 
+<!-- modal email satting start -->
+        <div class="modal fade" id="emailBtnModalToggle" aria-hidden="true" aria-labelledby="emailBtnModalToggleLabel" tabindex="-1">
     <!-- modal email satting start -->
     <div class="modal fade" id="emailBtnModalToggle" aria-hidden="true" aria-labelledby="emailBtnModalToggleLabel"
         tabindex="-1">
@@ -479,6 +664,10 @@
 
             </div>
         </div>
+<!-- modal email satting end -->
+
+<!-- modal password satting start -->
+        <div class="modal fade" id="passwordBtnModalToggle" aria-hidden="true" aria-labelledby="passwordBtnModalToggleLabel" tabindex="-1">
     </div>
     <!-- modal email satting end -->
 
@@ -544,90 +733,8 @@
     </div>
     <!-- modal Password satting end -->
 
-     <!-- modal deactivate satting start -->
-     <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true"
-     aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
-     <div class="modal-dialog modal-dialog-centered modal-sm">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Deactivate Account</h1>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-                 <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Deactivate Account?</h4>
-                 <div class="d-flex justify-content-between">
-                     <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                     <button class="theme-btn btnred" data-bs-target="#DeactivateModalToggle2"
-                         data-bs-toggle="modal">Accept</button>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- <div class="modal fade" id="DeactivateModalToggle2" aria-hidden="true" aria-labelledby="DeactivateModalToggleLabel2"
-     tabindex="-1">
-     <div class="modal-dialog modal-dialog-centered modal-sm">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body OTPVerification">
-                 <div class="row">
-                     <div class="col-6">
-                         <div class="emailOrSms mb-3 active">
-                             <img src="assets/images/email.svg" alt="">
-                         </div>
-                     </div>
-                     <div class="col-6">
-                         <div class="emailOrSms mb-3">
-                             <img src="assets/images/phone.svg" alt="">
-                         </div>
-                     </div>
-
-                 </div>
-                 <div class="col-12">
-                     <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none "
-                         data-bs-target="#DeactivateModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
-                 </div>
-                 <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the deactivate account</p>
-             </div>
-
-
-         </div>
-     </div>
- </div>
- <div class="modal fade" id="DeactivateModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
-     tabindex="-1">
-     <div class="modal-dialog modal-dialog-centered  p-5">
-         <div class="modal-content overflow-visible m-4">
-             <div class="modal-header custom-border">
-                 <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body OTPVerification position-relative">
-                 <ul class="otpInput gap-2">
-                     <li><input class="alertborder" type="text" maxlength="1"></li>
-                     <li><input type="text" maxlength="1"></li>
-                     <li><input type="text" maxlength="1"></li>
-                     <li><input type="text" maxlength="1"></li>
-                 </ul>
-                 <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
-                 <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
-                 <div class="d-flex justify-content-between">
-                     <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                     <button class="theme-btn btnGreen opLow" data-bs-dismiss="modal">Send</button>
-                 </div>
-                 <!-- otp Alert -->
-                 <div class="otpalert">
-                     An example danger alert with an icon
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- <!-- modal deactivate satting end -->
-
+<!-- modal Change Phone Number satting start -->
+        <div class="modal fade" id="numberBtnModalToggle" aria-hidden="true" aria-labelledby="numberBtnModalToggleLabel" tabindex="-1">
     <!-- modal Change Phone Number satting start -->
     <div class="modal fade" id="numberBtnModalToggle" aria-hidden="true" aria-labelledby="numberBtnModalToggleLabel"
         tabindex="-1">
@@ -678,6 +785,129 @@
         </div>
     </div>
     <!-- modal Change Phone Number satting end -->
+
+<!-- modal deactivate satting start -->
+        <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true" aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
+    <!-- modal deactivate satting start -->
+    <div class="modal fade" id="DeactivateBtnModalToggle" aria-hidden="true"
+        aria-labelledby="DeactivateBtnModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Deactivate Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Deactivate Account?</h4>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnred" data-bs-target="#DeactivateModalToggle2"
+                            data-bs-toggle="modal">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="DeactivateModalToggle2" aria-hidden="true" aria-labelledby="DeactivateModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="emailOrSms mb-3 active">
+                                <img src="assets/images/email.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="emailOrSms mb-3">
+                                <img src="assets/images/phone.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <a href="javascript:" class="fs-16 text-black fw-bold text-canter underline-none "
+                            data-bs-target="#DeactivateModalToggle3" data-bs-toggle="modal">Pick to Send OTP</a>
+                    </div>
+                    <p class="text-muted ts-14  mb-0 needed">OTP needed to proceed the deactivate account</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="DeactivateModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered  p-5">
+            <div class="modal-content overflow-visible m-4">
+                <div class="modal-header custom-border">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">OTP Verification</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body OTPVerification position-relative">
+                    <ul class="otpInput gap-2">
+                        <li><input class="alertborder" type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                        <li><input type="text" maxlength="1"></li>
+                    </ul>
+                    <p class="text-muted ts-14  mb-0 needed"> OTP has sent to your email</p>
+                    <p class="text-muted ts-14  mb-3 needed"> Haven’t received? <a href="javascript:"> Resend</a></p>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow" data-bs-dismiss="modal">Send</button>
+                    </div>
+                    <!-- otp Alert -->
+                    <div class="otpalert">
+                        An example danger alert with an icon
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- modal deactivate satting end -->
+<!-- sidebar sm satrt -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+            <div class="sider-top">
+                <div class="user">
+                    <ul class="list-unstyled">
+                        <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                        <li>
+                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
+                            <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png" alt="fillter"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="divder"></hr>
+                <div class="job">
+                    <ul class="list-unstyled">
+                        <li class="current">Current Job</li>
+                        <li class="price">$450</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li><a href="index.html"><div class="round active"><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                    <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- sidebar sm end -->
+    </div>
+    <!-- modal deactivate satting end -->
 
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

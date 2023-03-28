@@ -117,3 +117,18 @@
     color: #7F7F8D;
 }
 
+.bgblur {
+    background-color: #98D19E !important;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    padding: 14px 64px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+
+    &:hover {
+        background-color: $theme1 !important;
+        color: $white;
+    }
+}

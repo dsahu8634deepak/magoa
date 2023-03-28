@@ -100,25 +100,15 @@
                         font-size: 14px;
                         line-height: 17px;
                         color: #3CB54A;
-                    }
+                        transition: all 0.3s ease-in-out;
 
-                    & .increseandDeresebtn {
-                        & .input-group {
-                            display: flex;
-                            flex-wrap: unset;
-
-                            & .input-group-btn {
-
-                                & .btn-number {
-                                    width: 36px;
-                                    height: 36px;
-                                    border: 1px solid #3CB54A;
-                                    border-radius: 30px;
-                                    background-color: transparent;
-                                }
-                            }
+                        &:hover {
+                            background-color: $theme1;
+                            color: $white;
                         }
                     }
+
+
 
                     & .delatebtn {
                         width: 36px;
@@ -158,6 +148,853 @@
                 }
 
             }
+        }
+
+        & .cartcard {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+            border-radius: 16px;
+            overflow: hidden;
+
+            & .cardHeading {
+                color: #29293E;
+                line-height: 29px;
+                background: #F7F7F7;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .cartbtn {
+                padding: 14px 64px;
+                background: $theme1;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                border-radius: 50px;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                border: 1px solid $theme1;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $theme1;
+                }
+
+                &.bgblur {
+                    background-color: #98D19E !important;
+                    border: none;
+                    transition: all 0.3s e;
+
+                    &:hover {
+                        background-color: $theme1 !important;
+                        color: $white;
+                    }
+                }
+            }
+
+
+            & .itempayment {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme1;
+            }
+
+        }
+
+        & .table {
+            & thead {
+                & tr {
+                    & .tableHeading {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #7F7F8D;
+                        padding: 15px;
+
+                    }
+
+                    & th {
+                        background-color: #F6F6F6;
+                    }
+
+                    & th:last-child {
+                        border-top-right-radius: 16px;
+                    }
+
+                    & th:first-child {
+                        border-top-left-radius: 16px;
+                    }
+                }
+
+
+            }
+
+            & tbody {
+                & .bodytable {
+                    & .tableimage {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 12px;
+                    }
+
+                    & .texttable {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #29293E;
+
+                    }
+
+                    & .numbertext {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $theme1;
+                    }
+
+                    & .delatebutton {
+                        width: 36px;
+                        height: 36px;
+                        border: 1px solid #E84F45;
+                        border-radius: 30px;
+                        background-color: transparent;
+                    }
+
+                    & .borderlast {
+                        border-bottom-left-radius: 16px;
+                    }
+                }
+
+                & tr {
+                    & td {
+                        background-color: $white;
+                        padding: 12px;
+                    }
+                }
+
+                & tr:last-child td:last-child {
+                    border-bottom-right-radius: 16px;
+                }
+            }
+
+
+        }
+
+        &.shippingpayment {
+            & .addressContent {
+                border: 1px solid $theme1;
+                border-radius: 8px;
+            }
+
+            & .checkForm {
+                & .redioubtn {
+                    height: 20px;
+                    width: 20px;
+
+
+                    &:checked {
+                        background-color: $theme1;
+                        border-color: $theme1;
+                    }
+
+                    &:focus {
+                        box-shadow: none !important;
+                    }
+                }
+
+
+                & .inputText {}
+
+                & .innertext {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+            }
+
+            & .inputGroupBtn {
+                & button {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &.orderSuccessful {
+            & .seccesorder {
+                width: 80px;
+                height: 80px;
+                margin: auto;
+            }
+
+            & .textHeading {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #29293E;
+                text-align: center;
+
+            }
+
+            & .orderid {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #29293E;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                & .innertext {
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: $theme1;
+                }
+
+                & .date {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #29293E;
+                }
+            }
+
+            & .groupButton {
+
+                & .button1 {
+                    background: $white;
+                    border: 1px solid #D3D3D3;
+                    padding: 14px 50px;
+                    border-radius: 40px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #29293E;
+
+                }
+
+                & .button2 {
+                    background: $theme1;
+                    border-radius: 50px;
+                    padding: 14px 64px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $white;
+
+                }
+            }
+
+            & .leftcard {
+                & .innerreow {
+                    & .left {
+                        & .card {
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                            border-radius: 16px;
+                            overflow: hidden;
+
+                            & .card-body {
+                                & .headingtext {
+                                    color: #29293E;
+                                    background: #F7F7F7;
+                                }
+
+                                & .subtext {
+                                    color: #29293E;
+
+                                }
+
+                                & .address {
+                                    color: #7F7F8D;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    & .right {
+                        & .card {
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                            border-radius: 16px;
+                            overflow: hidden;
+
+                            & .headingtext {
+                                color: #29293E;
+                                background: #F7F7F7;
+                            }
+
+                            & .card-body {
+
+                                & .imagemain {
+                                    width: 62px;
+                                    height: 34px;
+                                }
+
+                                & .subtext {
+                                    color: #29293E;
+
+                                    & span {
+                                        color: #7F7F8D;
+                                    }
+
+                                }
+
+                                & .track {
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #3CB54A;
+                                }
+                            }
+                        }
+                    }
+
+                    & .bottomCard {
+                        .card {
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                            border-radius: 16px;
+                            overflow: hidden;
+
+                            & .headingtext {
+                                color: #29293E;
+                                background: #F7F7F7;
+                            }
+
+                            & .imagecardbottom {
+                                & .image {
+                                    width: 31px;
+                                    height: 25px;
+                                }
+
+                                & .innertext {
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #29293E;
+                                }
+
+                                & .subInner {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #7F7F8D;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .rightcard {
+                & .card {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                    border-radius: 16px;
+
+                    & .card-header {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #29293E;
+                        background: #F7F7F7;
+                        border-top-left-radius: 16px;
+                        border-top-right-radius: 16px;
+                    }
+
+                    & .card-body {
+                        & .imagelrft {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 12px;
+                            background-color: #D9D9D9;
+
+                            & img {
+                                border-radius: 12px;
+                            }
+                        }
+
+                        & .heading {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #29293E;
+                        }
+
+                        & .quntenty {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #7F7F8D;
+                        }
+
+                        & .payment {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: $theme1;
+                        }
+
+                        & .itemtotal {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #7F7F8D;
+
+                            & span {
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: $theme1;
+                            }
+                        }
+
+                        & .totalorder {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #29293E;
+
+                            & span {
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: $theme1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.myOrders {
+            & .purchesorder {
+                margin-top: 70px;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+            }
+
+            & .purchestext {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #29293E;
+            }
+
+            & .subtextpurches {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .buttonshop {
+                background: $theme1;
+                border-radius: 50px;
+                padding: 14px 64px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: $white;
+            }
+
+
+        }
+
+        &.myOrders2 {
+            & .card {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                border-radius: 16px;
+                overflow: hidden;
+
+                & .card-header {
+                    background: #F7F7F7;
+
+                    & .orderid {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .orderNumber {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: #2BA339;
+                        background: #E9F9EB;
+                        border-radius: 32px;
+                    }
+
+                    & .orderDate {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .date {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+                }
+
+                & .imagecard {
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 12px;
+                    background: #D9D9D9;
+
+                    & img {
+                        border-radius: 16px;
+                    }
+                }
+
+                & .mainheading {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #29293E;
+                }
+
+                & .subHeading {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #7F7F8D;
+                }
+
+                & .image {
+                    width: 62px;
+                    height: 30px;
+                }
+
+                & .recipet {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #29293E;
+
+                    & span {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #7F7F8D;
+                    }
+                }
+
+                & .orderTotal {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #29293E;
+                }
+
+                & .orderPayment {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+
+                & .drop {
+                    width: 47px;
+                    height: 42px;
+                    background: $white;
+                    border: 1px solid #eaeaea;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                & .dropdown-menu {}
+            }
+        }
+    }
+
+    & .increseandDeresebtn {
+        & .input-group {
+            display: flex;
+            flex-wrap: unset;
+            margin: auto;
+            width: 100px;
+
+            & .input-group-btn {
+
+                & .btn-number {
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid #3CB54A;
+                    border-radius: 30px;
+                    background-color: transparent;
+                }
+
+                & .input-number {
+                    padding: 0;
+                }
+            }
+
+            & .inputnumber2 {
+                width: 6px;
+                background: transparent;
+            }
+        }
+
+        &.incress2 {
+            width: 100px;
+        }
+    }
+}
+
+// modal Shipping Address
+.shippingModal {
+    & .modalDialog {
+        & .Heading {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #29293E;
+        }
+
+        & .dismissbtn {}
+
+        & .formShipping {
+            & .formLebal {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .controlForm {
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+                height: 44px;
+            }
+
+            & .form-select {
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+                height: 44px;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+// Card Details
+.cardDetails {
+    & .modalDilog {
+        & .modal-title {}
+
+        & .cardBody {}
+    }
+}
+
+// order_Detail
+.order_Detail {
+    & .card {
+        background: #F6F6F6;
+        border-radius: 16px;
+        border: none;
+
+        & .card-header {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #29293E;
+            background: #F7F7F7;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        & .card-body {
+            & .imagelrft {
+                width: 60px;
+                height: 60px;
+                border-radius: 12px;
+                background-color: #D9D9D9;
+
+                & img {
+                    border-radius: 12px;
+                }
+            }
+
+            & .heading {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #29293E;
+            }
+
+            & .quntenty {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .payment {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme1;
+            }
+
+            & .itemtotal {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7F7F8D;
+
+                & span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+            }
+
+            & .totalorder {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #29293E;
+
+                & span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+            }
+        }
+    }
+
+    & .innercard {
+        & .left {
+            & .card {
+                background: #FFFFFF;
+                overflow: hidden;
+
+                & .card-body {
+                    & .headingtext {
+                        color: #29293E;
+                    }
+
+                    & .subtext {
+                        color: #29293E;
+
+                    }
+
+                    & .address {
+                        color: #7F7F8D;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        & .right {
+            & .card {
+                background: #FFFFFF;
+                overflow: hidden;
+
+                & .headingtext {
+                    color: #29293E;
+                }
+
+                & .card-body {
+
+                    & .imagemain {
+                        width: 62px;
+                        height: 34px;
+                    }
+
+                    & .subtext {
+                        color: #29293E;
+
+                        & span {
+                            color: #7F7F8D;
+                        }
+
+                    }
+
+                    & .track {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #3CB54A;
+                    }
+                }
+            }
+        }
+
+        & .bottomCard {
+            .card {
+                background: #FFFFFF;
+                border-radius: 16px;
+                overflow: hidden;
+
+                & .headingtext {
+                    color: #29293E;
+                }
+
+                & .imagecardbottom {
+                    & .image {
+                        width: 31px;
+                        height: 25px;
+                    }
+
+                    & .innertext {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .subInner {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #7F7F8D;
+                    }
+                }
+            }
+        }
+    }
+
+    & .modal-footer {
+        justify-content: center;
+
+        & .downloadbutton {
+            background: $white;
+            border: 1px solid #D3D3D3;
+            border-radius: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #29293E;
+            height: 45px;
+            width: 210px;
+            justify-content: center;
         }
     }
 }
