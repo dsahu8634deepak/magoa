@@ -613,13 +613,48 @@
 
         &.myOrders2 {
             & .card {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                border-radius: 16px;
+                overflow: hidden;
+
                 & .card-header {
                     background: #F7F7F7;
+
+                    & .orderid {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .orderNumber {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: #2BA339;
+                        background: #E9F9EB;
+                        border-radius: 32px;
+                    }
+
+                    & .orderDate {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .date {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
                 }
 
                 & .imagecard {
-                    width: 60px;
-                    height: 60px;
+                    width: 66px;
+                    height: 66px;
                     border-radius: 12px;
                     background: #D9D9D9;
 
@@ -644,7 +679,7 @@
 
                 & .image {
                     width: 62px;
-                    height: 34px;
+                    height: 30px;
                 }
 
                 & .recipet {
@@ -674,6 +709,20 @@
                     line-height: 19px;
                     color: $theme1;
                 }
+
+                & .drop {
+                    width: 47px;
+                    height: 42px;
+                    background: $white;
+                    border: 1px solid #eaeaea;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                & .dropdown-menu {}
             }
         }
     }
@@ -748,6 +797,198 @@
         & .modal-title {}
 
         & .cardBody {}
+    }
+}
+
+// order_Detail
+.order_Detail {
+    & .card {
+        background: #F6F6F6;
+        border-radius: 16px;
+        border: none;
+
+        & .card-header {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #29293E;
+            background: #F7F7F7;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        & .card-body {
+            & .imagelrft {
+                width: 60px;
+                height: 60px;
+                border-radius: 12px;
+                background-color: #D9D9D9;
+
+                & img {
+                    border-radius: 12px;
+                }
+            }
+
+            & .heading {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #29293E;
+            }
+
+            & .quntenty {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7F7F8D;
+            }
+
+            & .payment {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme1;
+            }
+
+            & .itemtotal {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7F7F8D;
+
+                & span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+            }
+
+            & .totalorder {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #29293E;
+
+                & span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme1;
+                }
+            }
+        }
+    }
+
+    & .innercard {
+        & .left {
+            & .card {
+                background: #FFFFFF;
+                overflow: hidden;
+
+                & .card-body {
+                    & .headingtext {
+                        color: #29293E;
+                    }
+
+                    & .subtext {
+                        color: #29293E;
+
+                    }
+
+                    & .address {
+                        color: #7F7F8D;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        & .right {
+            & .card {
+                background: #FFFFFF;
+                overflow: hidden;
+
+                & .headingtext {
+                    color: #29293E;
+                }
+
+                & .card-body {
+
+                    & .imagemain {
+                        width: 62px;
+                        height: 34px;
+                    }
+
+                    & .subtext {
+                        color: #29293E;
+
+                        & span {
+                            color: #7F7F8D;
+                        }
+
+                    }
+
+                    & .track {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #3CB54A;
+                    }
+                }
+            }
+        }
+
+        & .bottomCard {
+            .card {
+                background: #FFFFFF;
+                border-radius: 16px;
+                overflow: hidden;
+
+                & .headingtext {
+                    color: #29293E;
+                }
+
+                & .imagecardbottom {
+                    & .image {
+                        width: 31px;
+                        height: 25px;
+                    }
+
+                    & .innertext {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #29293E;
+                    }
+
+                    & .subInner {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #7F7F8D;
+                    }
+                }
+            }
+        }
+    }
+
+    & .modal-footer {
+        justify-content: center;
+        & .downloadbutton {
+            background: $white;
+            border: 1px solid #D3D3D3;
+            border-radius: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #29293E;
+            height: 45px;
+            width: 210px;
+            justify-content: center;
+        }
     }
 }
 
