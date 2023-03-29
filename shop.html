@@ -106,14 +106,14 @@
             </div>
 <!--########## [ Aside Bar End ] ###########-->
 <!--########## [ Main Content ] ###########-->
-            <div class="main shopmaincontent">
+            <div class="main shopmaincontent" id="section1">
                 <div class="row mx-0 align-items-center mb-3">
                     <div class="col">
                         <div class="headingmain">Shop</div>
                     </div>
                     <div class="col-auto">
                         <div class="myorderbtn">
-                            <button class="btn myOrder d-flex align-items-center bg-white text-black"> <span class="d-inline-flex align-items-center "><img class="w-100 h-100" src="assets/shoppage/shop-icon.svg" alt="ordericon"></span>My Orders</button>
+                            <button class="btn myOrder d-flex align-items-center bg-white text-black" onclick="myorders()"> <span class="d-inline-flex align-items-center "><img class="w-100 h-100" src="assets/shoppage/shop-icon.svg" alt="ordericon"></span>My Orders</button>
                         </div>
                     </div>
                 </div>
@@ -147,8 +147,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn1" data-card="card1">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2 " id="card1">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -183,8 +183,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn2" data-card="card2">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card2">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -219,8 +219,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn3" data-card="card3">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card3">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -255,8 +255,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2 d-none">
+                                                        <button  class="btn btn-primary cardbtn" type="button" id="btn4" data-card="card4">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card4">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn ">
                                                                     <div class="center">
@@ -683,7 +683,7 @@
                                                 </div>
                                             </div>
                                             <div class="position-absolute cartbtn">
-                                                <a class="text-decoration-none" href="#"> <button class="btn cartbutton"> <span class="d-inline-flex align-items-center justify-content-center"><img class="w-100 h-100" src="assets/shoppage/shopping-cart.svg" alt=""></span> Cart (3)</button></a>
+                                                <a class="text-decoration-none like"  onclick="enterSection()" role="button"> <button class="btn cartbutton"> <span class="d-inline-flex align-items-center justify-content-center"><img class="w-100 h-100" src="assets/shoppage/shopping-cart.svg" alt=""></span> Cart (3)</button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -695,8 +695,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn5" data-card="card5">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card5">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -731,8 +731,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn6" data-card="card6">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card6">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -767,8 +767,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn7" data-card="card7">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card7">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1242,8 +1242,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn8" data-card="card8">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card8">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1278,8 +1278,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn9" data-card="card9">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card9">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1314,8 +1314,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn"type="button" id="btn10" data-card="card10">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card10">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1789,8 +1789,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn11" data-card="card11">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card11">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1825,8 +1825,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn"type="button" id="btn12" data-card="card12">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card12">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -1861,8 +1861,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn"type="button" id="btn13" data-card="card13">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card13">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -2336,8 +2336,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn" type="button" id="btn14" data-card="card14">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card14">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -2372,8 +2372,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn"type="button" id="btn15" data-card="card15">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card15">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -2408,8 +2408,8 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mainCradtext">Rose Flower</h5>
                                                         <p class="card-text textCard">$5</p>
-                                                        <button class="btn btn-primary cardbtn">Add to Cart</button>
-                                                        <div class="row mx-0 mt-2">
+                                                        <button class="btn btn-primary cardbtn"type="button" id="btn16" data-card="card16">Add to Cart</button>
+                                                        <div class="row mx-0 mt-2" id="card16">
                                                             <div class="col px-0">
                                                                 <div class="increseandDeresebtn">
                                                                     <div class="center">
@@ -2881,10 +2881,10 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent d-none" herf="">
+            <div class="main shopmaincontent shopmainsectionid"id="section2">
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Cart</div>
+                        <div class="d-inline-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Cart</div>
                     </div>
                     <div class="col-md-8">
                         <table class="table align-middle">
@@ -3017,16 +3017,16 @@
                                 <div class="fs-16 fw-bold itempayment">$27</div>
                             </div>
                             <div class="w-100  p-3">
-                                <button class="w-100 cartbtn" >Check Out</button>
+                                <button class="w-100 cartbtn" onclick="enterSection1()">Check Out</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent shippingpayment d-none">
+            <div class="main shopmaincontent shopmainsectionid shippingpayment" id="section3">
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
+                        <div class="d-inline-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout1()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="row mx-0 g-4">
@@ -3170,13 +3170,13 @@
                                 <div class="fs-16 fw-bold itempayment">$27</div>
                             </div>
                             <div class="w-100  p-3">
-                                <button class="w-100 cartbtn bgblur" >Place Order</button>
+                                <button class="w-100 cartbtn bgblur" onclick="successOrder()" >Place Order</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent orderSuccessful d-none">
+            <div class="main shopmaincontent shopmainsectionid orderSuccessful" id="section4">
                 <div class="row">
                     <div class="col-12 mb-3">
                         <div class="seccesorder"><img class="w-100 h-100" src="assets/shoppage/yesicon.svg" alt=""></div>
@@ -3191,7 +3191,7 @@
                     </div>
                     <div class="col-12 mb-3 groupButton d-flex align-items-center justify-content-center gap-3">
                         <button class="btn button1 d-flex align-items-center gap-2"><span class="d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/download.svg" alt=""></span>Download Order</button>
-                        <button class="btn button2">Back to Shop</button>
+                        <button class="btn button2" onclick="backtoshop()">Back to Shop</button>
                     </div>
                     <div class="col-md-6 leftcard">
                         <div class="row mx-0 innerreow g-3">
@@ -3282,7 +3282,8 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent myOrders d-none">
+<!-- no product purches than show section -->
+            <div class="main shopmaincontent shopmainsectionid myOrders">
                 <div class="row">
                     <div class="col-12 mb-3">
                         <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
@@ -3303,7 +3304,10 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent myOrders2 d-none">
+<!-- no product purches than show section End-->
+
+
+            <div class="main shopmaincontent shopmainsectionid myOrders2" id="section6">
                 <div class="row g-4">
                     <div class="col-12 mb-3">
                         <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
@@ -3520,8 +3524,8 @@
                                             
                                         </li>
                                         <li class="buttons d-flex gap-2 cardButton w-100">
-                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100">Track Shipping</a>
-                                            <a href="javascript:;" class="theme-btn btnGreen w-100" data-bs-toggle="modal" data-bs-target="#orderDetailsModal">View Detail</a>
+                                            <a role="button" class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#ordertrackingModal">Track Shipping</a>
+                                            <a role="button" class="theme-btn btnGreen w-100" data-bs-toggle="modal" data-bs-target="#orderDetailsModal">View Detail</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -3786,6 +3790,42 @@
         </div>
         </div>
     </div>
+<!-- Order Details Tracking-->
+    <div class="modal fade order_tracking" id="ordertrackingModal" tabindex="-1" aria-labelledby="ordertrackingModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ordertrackingModalLabel">Track Shipping</h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="orderid d-flex align-items-center gap-3 p-3">
+                        <div class="ordertext d-flex align-items-center gap-2">
+                            Order ID
+                            <span class="orderid fw-bold">64573274324893454</span>
+                        </div>
+                        <div class="ordertext d-flex align-items-center gap-2">
+                            Order Date
+                            <span class="prderid fw-bold">23 February 2023</span>
+                        </div>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="card m-2 border-0">
+                        <div class="card-body">
+                            <div class="row mx-0">
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="image"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt="image"></div>
+                                        <div class="d-flex align-items-center gap-2 textdate"><strong class="fs-14"></strong>Receipt<strong></strong>23 February 2023</strong> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 <!-- sidebar sm satrt -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-body p-0">
@@ -3827,77 +3867,142 @@
     <script src="assets/js/main.js"></script>
     <script>
         
-$('.btn-number').click(function(e){
-  e.preventDefault();
-  
-  fieldName = $(this).attr('data-field');
-  type      = $(this).attr('data-type');
-  var input = $("input[name='"+fieldName+"']");
-  var currentVal = parseInt(input.val());
-  if (!isNaN(currentVal)) {
-      if(type == 'minus') {
-          
-          if(currentVal > input.attr('min')) {
-              input.val(currentVal - 1).change();
-          } 
-          if(parseInt(input.val()) == input.attr('min')) {
-              $(this).attr('disabled', true);
-          }
+        $('.btn-number').click(function(e){
+        e.preventDefault();
+        
+        fieldName = $(this).attr('data-field');
+        type      = $(this).attr('data-type');
+        var input = $("input[name='"+fieldName+"']");
+        var currentVal = parseInt(input.val());
+        if (!isNaN(currentVal)) {
+            if(type == 'minus') {
+                
+                if(currentVal > input.attr('min')) {
+                    input.val(currentVal - 1).change();
+                } 
+                if(parseInt(input.val()) == input.attr('min')) {
+                    $(this).attr('disabled', true);
+                }
 
-      } else if(type == 'plus') {
+            } else if(type == 'plus') {
 
-          if(currentVal < input.attr('max')) {
-              input.val(currentVal + 1).change();
-          }
-          if(parseInt(input.val()) == input.attr('max')) {
-              $(this).attr('disabled', true);
-          }
+                if(currentVal < input.attr('max')) {
+                    input.val(currentVal + 1).change();
+                }
+                if(parseInt(input.val()) == input.attr('max')) {
+                    $(this).attr('disabled', true);
+                }
 
-      }
-  } else {
-      input.val(0);
-  }
-});
-$('.input-number').focusin(function(){
- $(this).data('oldValue', $(this).val());
-});
-$('.input-number').change(function() {
-  
-  minValue =  parseInt($(this).attr('min'));
-  maxValue =  parseInt($(this).attr('max'));
-  valueCurrent = parseInt($(this).val());
-  
-  name = $(this).attr('name');
-  if(valueCurrent >= minValue) {
-      $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
-  } else {
-      alert('Sorry, the minimum value was reached');
-      $(this).val($(this).data('oldValue'));
-  }
-  if(valueCurrent <= maxValue) {
-      $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
-  } else {
-      alert('Sorry, the maximum value was reached');
-      $(this).val($(this).data('oldValue'));
-  }
-  
-  
-});
-$(".input-number").keydown(function (e) {
-      // Allow: backspace, delete, tab, escape, enter and .
-      if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-           // Allow: Ctrl+A
-          (e.keyCode == 65 && e.ctrlKey === true) || 
-           // Allow: home, end, left, right
-          (e.keyCode >= 35 && e.keyCode <= 39)) {
-               // let it happen, don't do anything
-               return;
-      }
-      // Ensure that it is a number and stop the keypress
-      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-          e.preventDefault();
-      }
-  });
+            }
+        } else {
+            input.val(0);
+        }
+        });
+        $('.input-number').focusin(function(){
+        $(this).data('oldValue', $(this).val());
+        });
+        $('.input-number').change(function() {
+        
+        minValue =  parseInt($(this).attr('min'));
+        maxValue =  parseInt($(this).attr('max'));
+        valueCurrent = parseInt($(this).val());
+        
+        name = $(this).attr('name');
+        if(valueCurrent >= minValue) {
+            $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        } else {
+            alert('Sorry, the minimum value was reached');
+            $(this).val($(this).data('oldValue'));
+        }
+        if(valueCurrent <= maxValue) {
+            $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+        } else {
+            alert('Sorry, the maximum value was reached');
+            $(this).val($(this).data('oldValue'));
+        }
+        
+        
+        });
+        $(".input-number").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) || 
+                // Allow: home, end, left, right
+                (e.keyCode >= 35 && e.keyCode <= 39)) {
+                    // let it happen, don't do anything
+                    return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script>
+        $("#card1").hide();
+            $("#card2").hide();
+            $("#card3").hide();
+            $("#card4").hide();
+            $("#card5").hide();
+            $("#card6").hide();
+            $("#card7").hide();
+            $("#card8").hide();
+            $("#card9").hide();
+            $("#card10").hide();
+            $("#card11").hide();
+            $("#card12").hide();
+            $("#card13").hide();
+            $("#card14").hide();
+            $("#card15").hide();
+            $("#card16").hide();
+            $(".btn").on('click',function() {
+                var cardId = $(this).attr('data-card');
+                $('#'+cardId).toggle(300);
+            })
+
+            $(".btn").on('click',function() {
+                var str = $(this).text();
+                $("#title").html('I love '+str);			
+        });		
+
+    </script>
+    <script>
+        // var follow = document.getElementsByClassName("like");
+        // for (var i = 0; i < follow.length; i++) {
+        //     follow[i].onclick = function (event) {
+        //         this.classList.toggle('likeFill');
+        //     }
+        // }
+        function enterSection() {
+        document.getElementById("section1").style.display = "none";
+        document.getElementById("section2").style.display = "block";
+    }
+    function myorders() {
+        document.getElementById("section1").style.display = "none";
+        document.getElementById("section6").style.display = "block";
+    }
+    function enterSection1() {
+        document.getElementById("section2").style.display = "none";
+        document.getElementById("section3").style.display = "block";
+    }
+    function successOrder() {
+        document.getElementById("section3").style.display = "none";
+        document.getElementById("section4").style.display = "block";
+    }
+        function backout() {
+            document.getElementById("section1").style.display = "block";
+            document.getElementById("section2").style.display = "none";
+        }
+        function backout1() {
+        document.getElementById("section2").style.display = "block";
+        document.getElementById("section3").style.display = "none";
+    }
+    function backtoshop() {
+        document.getElementById("section1").style.display = "block";
+        document.getElementById("section4").style.display = "none";
+    }
+
     </script>
 
 </body>

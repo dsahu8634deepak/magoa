@@ -725,6 +725,10 @@
                 & .dropdown-menu {}
             }
         }
+
+        &.shopmainsectionid {
+            display: none;
+        }
     }
 
     & .increseandDeresebtn {
@@ -998,6 +1002,26 @@
         }
     }
 }
+
+.order_tracking {
+    & .modal-body {
+        & .card {
+            & .card-body {
+                & .image {
+                    width: 62px;
+                    height: 35px;
+                }
+                & .textdate{
+                    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #7F7F8D;
+                }
+            }
+        }
+    }
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @mixin shoppage-mixin-min-sm() {}
