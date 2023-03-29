@@ -790,13 +790,31 @@ $font-family_1: Verdana, sans-serif;
 [page-name=availability] {
     
     & .availability {
-       
+       .borderGray{
+        border-top: 1px solid #eaeaea;
+        margin-top: -24px;
+        span{
+            width: 7px;
+            height: 7px;
+            background: #3AB54A;
+            padding: 1px;
+            display: flex;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+       }
+       .calendar-action-buttons {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 10px;
+    }
         .r-16{
             right: 16%;
             top: 9px;
         }
         .LocationHeight{
-            height: 353px;
+            height: 384px;
         }
         & .salectDates{
             font-weight: 600;
@@ -804,7 +822,7 @@ $font-family_1: Verdana, sans-serif;
             line-height: 24px;
             color: $black;
             & #salectValue{
-                width: 127px;
+                width: 115px;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
