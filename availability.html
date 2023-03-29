@@ -48,20 +48,13 @@
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-
+    <script nomodule src="assets\libs\ionic.esm.js"></script>
+    <link rel="stylesheet" href="assets\css\ionic.bundle.css" />
 </head>
 <body>
     <div class="main" page-name="availability">
@@ -125,7 +118,7 @@
                            <span> I’m available to work</span>
                             <select class="border-0 p-0 bg-transparent ms-2 shadow-none" id="salectValue" aria-label="Default select example">
                                 <option value="0">Everyday</option>
-                                <option value="1" selected>monday to friday</option>
+                                <option value="1" selected>mon-fri</option>
                                 <option value="2">weekend </option>
                                 <option value="3">customs</option>
                               </select>
@@ -133,8 +126,8 @@
                         <div class="theme-btn btnGreen">Add to Google Calendar</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-7">
+                <div class="row g-3">
+                    <div class="col-12 col-md-7">
                         <div class="theme-card">
                             <div class="theme-card-header d-flex justify-content-between align-items-center">
                                 <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
@@ -144,6 +137,10 @@
                                 <div class="theme-btn btnGrayBorder w-auto float-end px-3 position-absolute r-16 py-2" id="date">
                                 </div>
                                 <ion-datetime class="w-100 customWidth " presentation="date" multiple="true"></ion-datetime>
+                                <div class="d-flex justify-content-between p-3 borderGray">
+                                    <div class="fs-14 fw-bold d-flex align-items-center"><span></span> Available</div>
+                                    <div class="fs-14 text-muted">Tap the date to change availability*</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,8 +158,8 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
-                                            <img src="assets/images/delete.svg" alt="img">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
+                                            <img  src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
                                     <li class="d-flex justify-content-between">
@@ -172,8 +169,8 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
-                                            <img src="assets/images/delete.svg" alt="img">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
+                                            <img  src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
                                     <li class="d-flex justify-content-between">
@@ -183,8 +180,8 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
-                                            <img src="assets/images/delete.svg" alt="img">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
+                                            <img  src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
                                     <li class="d-flex justify-content-between">
@@ -194,12 +191,12 @@
                                             </span>
                                             <div class="fs-14">Virginia Beach, Virginia</div>
                                         </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="DeleteWorkLocationModal">
-                                            <img src="assets/images/delete.svg" alt="img">
+                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
+                                            <img  src="assets/images/delete.svg" alt="img">
                                         </div>
                                     </li>
                                     <li class="border-0">
-                                        <button class="theme-btn btnGreenBorder w-100">+ Add Work Location</button>
+                                        <button class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#addLocationModal">+ Add Work Location</button>
                                     </li>
                                 </ul>
                             </div>
@@ -213,7 +210,7 @@
                                 <div class="fs-16 mb-0 h4 fw-bold text-black">Package Settings</div>
                             </div>
                             <div class="theme-card-body position-relative p-3">
-                                <div class="row">
+                                <div class="row g-2">
                                     <div class="col-12 col-md-4">
                                         <div class="theme-card innerCard">
                                             <div class="theme-card-header d-flex justify-content-between align-items-center">
@@ -236,7 +233,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                     <li class="d-flex justify-content-between align-items-center">
@@ -254,7 +251,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -283,7 +280,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                     <li class="d-flex justify-content-between align-items-center">
@@ -301,7 +298,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -330,7 +327,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                     <li class="d-flex justify-content-between align-items-center">
@@ -348,7 +345,7 @@
                                                             <span class="charge me-2 fw-bold ts-16">
                                                                 $15
                                                             </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
+                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -367,7 +364,7 @@
                                 <div class="fs-16 mb-0 h4 fw-bold text-black">Additional Service</div>
                             </div>
                             <div class="theme-card-body position-relative p-3">
-                                <div class="row g-3">
+                                <div class="row g-2">
                                     <div class="col-12 col-md-3">
                                         <div class="AdditionalService">
                                             <div  class="d-flex align-items-center">
@@ -506,14 +503,14 @@
         </div>
         <div class="links">
             <ul class="list-unstyled">
-                <li><a href="index.html"><div class="round active"><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                <li><a href="javascript:;"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
+                <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
+                <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
+                <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round active"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
+                <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
+                <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
+                <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
+                <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
             </ul>
         </div>
     </div>
@@ -547,28 +544,103 @@
     </div>
 <!-- ////Cleaning Charge modal end ////// -->
 
-<!-- ////Delete Work Location modal satrt ////// -->
-<div class="modal fade" id="DeleteWorkLocationModal" aria-hidden="true" aria-labelledby="DeleteWorkLocationModalLabel"
-tabindex="-1">
-<div class="modal-dialog modal-dialog-centered modal-sm">
+<!-- ////Edit Cleaning Charge modal start ////// -->
+<div class="modal fade" id="EditCleaningChargeModal" tabindex="-1" aria-labelledby="EditCleaningChargeModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-sm modal-dialog-centered">
     <div class="modal-content">
         <div class="modal-header">
-            <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Delete Work Location</h1>
+            <div class="modal-title fs-20 h1" id="exampleModalLabel">Flat Memorial</div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Delete Work Location?</h4>
-            <div class="d-flex justify-content-between">
-                <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2"
-                    data-bs-toggle="modal">Delete</button>
+            <h4 class="worn fs-18 mb-2 mt-0">One Time Cleaning</h4>
+            <div class="mb-3">
+                <label for="CurrentCharge" class="form-label fs-14">Current Charge</label>
+                <input type="text" class="form-control customInput fs-14" id="CurrentCharge"
+                    placeholder="Current Charge">
+            </div>
+            <div class="mb-3">
+                <label for="NewCharge" class="form-label fs-14">New Charge</label>
+                <input type="text" class="form-control customInput fs-14" id="NewCharge"
+                    placeholder="New Charge">
+            </div>
+            <div class="d-flex gap-2">
+                <button type="button" class="theme-btn px-3 w-100 btnGrayBorder"
+                    data-bs-dismiss="modal">Close</button>
+                <button type="button" class="theme-btn px-3 w-100 btnGreen opLow EditCleaningChargeHide"  data-bs-dismiss="modal">Save</button>
             </div>
         </div>
     </div>
 </div>
 </div>
+<!-- ////Edit Cleaning Charge modal end ////// -->
+
+<!-- ////Delete Work Location modal satrt ////// -->
+<div class="modal fade" id="deleteLocationModal" tabindex="-1" aria-labelledby="deleteLocationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Delete Work Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="location d-flex align-items-center justify-content-center">
+                    <span class="me-2">
+                        <img src="assets/images/location.svg" alt="img">
+                    </span>
+                    <div class="fs-14">Virginia Beach, Virginia</div>
+                </div>
+                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Delete Work Location?</h4>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- ////Delete Work Location modal end ////// -->
 
+<!-- ////add Work Location modal satrt ////// -->
+<div class="modal fade" id="addLocationModal" tabindex="-1" aria-labelledby="addLocationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="addLocationModalLabel">Add Work Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-2">
+                    <label for="ChooseState" class="form-label fs-14">State</label>
+                     <select class="form-select customInput fs-14 text-muted" id="ChooseState">
+                        <option selected>Choose State</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mb-2">
+                    <label for="ChooseCity" class="form-label fs-14">City</label>
+                     <select class="form-select customInput fs-14 text-muted" id="ChooseCity">
+                        <option selected>Choose City</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                  </div>
+               
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                    <button class="theme-btn btnGreen opLow" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ////add Work Location modal end ////// -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 <!-- calendar -->
@@ -620,11 +692,21 @@ tabindex="-1">
 
     
 </script>
+<!-- Cleaning Charge Hide -->
 <script>
     $(".CleaningChargeHide").click(function(){
         $(".CleaningCharge").hide();
         $(".CleaningChargeEdit").addClass("show");
-        $(".switch-wrapper :input").checked = true;
+        if ($(".switch-wrapper :input").is(':checked')) {
+            debugger;
+            $(".switch-wrapper :input").attr('checked', 'false');
+        } else {
+            $(".switch-wrapper :input").attr('checked', 'true');
+        }
+    });
+    $(".EditCleaningChargeHide").click(function(){
+        $(".CleaningCharge").show();
+        $(".CleaningChargeEdit").removeClass("show");
     });
 </script>
 <script>
