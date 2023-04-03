@@ -59,7 +59,7 @@
         <nav class="navbar topHeader">
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1">
-                    <img src="assets/images/logo.svg" alt="img">
+                    <img src="assets/images/logo.svg" alt="logo">
                 </span>
                 <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                     aria-controls="offcanvasExample">
@@ -73,7 +73,7 @@
                 <div class="sider-top">
                     <div class="user">
                         <ul class="list-unstyled">
-                            <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                            <li class="user"><img src="assets/images/user-profile.svg" alt="user-profile"></li>
                             <li>
                                 <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
                                 <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
@@ -92,8 +92,8 @@
                 <div class="links h-100 flex-fill overflow-hidden">
                     <div class="">
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
+                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="paint-brush"></span> My Jobs</div></a></li>
+                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="message"></span> Message</div></a></li>
                         <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
                         <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
                         <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
@@ -106,41 +106,45 @@
             </div>
 <!--########## [ Aside Bar End ] ###########-->
 <!--########## [ Main Content ] ###########-->
-            <div class="main shopmaincontent" id="section1">
+            <div class="main shopmaincontent d-none" id="section1">
                 <div class="row mx-0 align-items-center mb-3">
                     <div class="col">
                         <div class="headingmain">Shop</div>
                     </div>
                     <div class="col-auto">
                         <div class="myorderbtn">
-                            <button class="btn myOrder d-flex align-items-center bg-white text-black" onclick="myorders()"> <span class="d-inline-flex align-items-center "><img class="w-100 h-100" src="assets/shoppage/shop-icon.svg" alt="ordericon"></span>My Orders</button>
+                            <button class="btn myOrder d-flex align-items-center bg-white text-black" onclick="myorders()"> <span class="d-inline-flex align-items-center "><img class="w-100 h-100" src="assets/shoppage/shop-icon.svg" alt="ordericon"></span><span class="d-inline-flex d-none d-sm-block">My Orders</span></button>
                         </div>
                     </div>
                 </div>
                 <div class="row mx-0 align-items-center mb-3">
                     <div class="col-12 px-0">
                         <div class="row mx-0">
-                            <div class="col">
-                                <div class="ceatgeorymain">
-                                    <div class="nav d-flex nav-pills gap-3  navcategorey" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <button class="nav-link ceatgeory active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
-                                        <button class="nav-link ceatgeory" id="v-pills-decoration-tab" data-bs-toggle="pill" data-bs-target="#v-pills-decoration" type="button" role="tab" aria-controls="v-pills-decoration" aria-selected="false">Decoration</button>
-                                        <button class="nav-link ceatgeory" id="v-pills-tools-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tools" type="button" role="tab" aria-controls="v-pills-tools" aria-selected="false">Tools</button>
-                                        <button class="nav-link ceatgeory" id="v-pills-lorem1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lorem1" type="button" role="tab" aria-controls="v-pills-lorem1" aria-selected="false">Lorem Ipsum</button>
-                                        <button class="nav-link ceatgeory" id="v-pills-lorem2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lorem2" type="button" role="tab" aria-controls="v-pills-lorem2" aria-selected="false">Lorem Ipsum</button>
+                            <div class="col-12 px-0">
+                                <div class="row mx-0 gy-2 gy-sm-0">
+                                    <div class="col-sm col-12 order-2 order-sm-1 ">
+                                        <div class="ceatgeorymain">
+                                            <div class="nav d-flex nav-pills gap-3  navcategorey" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <button class="nav-link ceatgeory active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
+                                                <button class="nav-link ceatgeory" id="v-pills-decoration-tab" data-bs-toggle="pill" data-bs-target="#v-pills-decoration" type="button" role="tab" aria-controls="v-pills-decoration" aria-selected="false">Decoration</button>
+                                                <button class="nav-link ceatgeory" id="v-pills-tools-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tools" type="button" role="tab" aria-controls="v-pills-tools" aria-selected="false">Tools</button>
+                                                <button class="nav-link ceatgeory" id="v-pills-lorem1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lorem1" type="button" role="tab" aria-controls="v-pills-lorem1" aria-selected="false">Lorem Ipsum</button>
+                                                <button class="nav-link ceatgeory" id="v-pills-lorem2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lorem2" type="button" role="tab" aria-controls="v-pills-lorem2" aria-selected="false">Lorem Ipsum</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="input-group groupinput">
-                                    <span class="input-group-text inputTextGroup" id="basic-addon1"><span class="d-inline-flex align-items-center justify-content-center"><img class="w-100 h-100" src="assets/shoppage/serach-icon.svg" alt="serach-icon"></span></span>
-                                    <input type="text" class="form-control shadow-none controlForm ps-0 border-start-0" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                    <div class="col-sm-auto col-12 order-1 order-sm-2  ">
+                                        <div class="input-group groupinput">
+                                            <span class="input-group-text inputTextGroup" id="basic-addon1"><span class="d-inline-flex align-items-center justify-content-center"><img class="w-100 h-100" src="assets/shoppage/serach-icon.svg" alt="serach-icon"></span></span>
+                                            <input type="text" class="form-control shadow-none controlForm ps-0 border-start-0" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="tab-content tabscontentinner pt-3" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active alltab" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab" tabindex="0">
-                                        <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -170,7 +174,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -206,7 +210,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -242,7 +246,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -278,7 +282,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -314,7 +318,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -350,7 +354,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -386,7 +390,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -422,7 +426,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -458,7 +462,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -494,7 +498,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -530,7 +534,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -566,7 +570,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -602,7 +606,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -638,7 +642,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -674,7 +678,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -687,7 +691,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade alltab" id="v-pills-decoration" role="tabpanel" aria-labelledby="v-pills-decoration-tab" tabindex="0">
-                                        <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -717,7 +721,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -753,7 +757,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -789,7 +793,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -825,7 +829,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -861,7 +865,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -897,7 +901,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -933,7 +937,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -969,7 +973,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -982,7 +986,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade alltab" id="v-pills-tools" role="tabpanel" aria-labelledby="v-pills-tools-tab" tabindex="0">
-                                        <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -1012,7 +1016,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1048,7 +1052,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1061,7 +1065,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade alltab" id="v-pills-lorem1" role="tabpanel" aria-labelledby="v-pills-lorem1-tab" tabindex="0">
-                                        <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -1091,7 +1095,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1104,7 +1108,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade alltab" id="v-pills-lorem2" role="tabpanel" aria-labelledby="v-pills-lorem2-tab" tabindex="0">
-                                       <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -1134,7 +1138,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1170,7 +1174,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1206,7 +1210,7 @@
                                                             </div>
                                                             <div class="col-auto text-center">
                                                                 <div class="d-flex align-items-center justify-content-center delete">
-                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
+                                                                    <button class="delatebtn btn d-flex align-items-center justify-content-center p-2 d-none d-sm-block"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1224,10 +1228,10 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent shopmainsectionid"id="section2">
+            <div class="main shopmaincontent shopmainsectionid d-none"id="section2">
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <div class="d-inline-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Cart</div>
+                        <div class="d-inline-flex align-items-center gap-2 fs-sm-24 fs-20 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Cart</div>
                     </div>
                     <div class="col-md-8">
                         <table class="table align-middle">
@@ -1366,18 +1370,19 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent shopmainsectionid shippingpayment" id="section3">
+            <!--hold  -->
+            <div class="main shopmaincontent shopmainsectionid shippingpayment " id="section3">
                 <div class="row">
                     <div class="col-12 mb-2">
-                        <div class="d-inline-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout1()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
+                        <div class="d-inline-flex align-items-center gap-2 fs-20 fs-sm-26 fw-bold cartHeading" onclick="backout1()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8">
                         <div class="row mx-0 g-4">
                             <div class="col-12">
                                 <div class="card cartcard">
-                                    <div class="cardHeading mb-2  p-3">Shipping Address</div>
+                                    <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Shipping Address</div>
                                     <div class="row mx-2 addressContent p-3  align-items-center">
-                                        <div class="col-auto px-0 position-relative">
+                                        <div class="col-6 col-sm-auto px-0 position-relative">
                                             <div class="form-check checkForm">
                                                 <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping">
                                                 <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping">
@@ -1385,11 +1390,11 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col px-0">
+                                        <div class="col-12 col-sm px-0 order-3 order-sm-2 pt-3 pt-sm-0">
                                             <div class="fs-14 text-muted">105 Krome Ave, New York, Greenfield, 53143 (+1 202 556 3456)</div>
                                         </div>
-                                        <div class="col-auto px-0">
-                                            <div class="d-flex align-items-center justify-content-between gap-2 inputGroupBtn">
+                                        <div class="col-sm-auto col-6 px-0 order-2 order-sm-3">
+                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 inputGroupBtn">
                                                 <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/pancile.svg" alt=""></button>
                                                 <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                             </div>
@@ -1402,63 +1407,25 @@
                             </div>
                             <div class="col-12">
                                 <div class="card cartcard">
-                                    <div class="cardHeading mb-2  p-3">Shipping Method</div>
-                                    <div class="row  addressContent p-3 m-3">
-                                        <div class="col-auto px-0 position-relative">
+                                    <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Shipping Method</div>
+                                    <div class="row addressContent p-3 m-3">
+                                        <div class="col-6 col-sm-auto px-0 position-relative">
                                             <div class="form-check checkForm">
                                                 <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
                                                 <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
                                                     FedEx Delivery
-                                                </label><br><span class="innertext">$12</span>
-                                                
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col px-0">
-                                            <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
+                                        <div class="col-12 order-4">
+                                            <div class="innertext">$12</div>
                                         </div>
-                                        <div class="col-auto px-0">
-                                            <div class="d-flex align-items-center justify-content-between gap-2 ">
+                                        <div class="col-12 col-sm px-0 pt-3 pt-sm-0">
+                                            <div class="fs-14 text-muted deliverttext">Delivery: 2–3 days work</div>
+                                        </div>
+                                        <div class="col-sm-auto col-6 px-0">
+                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
                                                 <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt=""></div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row  addressContent p-3 m-3">
-                                        <div class="col-auto px-0 position-relative">
-                                            <div class="form-check checkForm">
-                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
-                                                <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
-                                                    DHL Delivery
-                                                </label><br><span class="innertext">$12</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col px-0">
-                                            <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
-                                        </div>
-                                        <div class="col-auto px-0">
-                                            <div class="d-flex align-items-center justify-content-between gap-2 ">
-                                                <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image7.png" alt=""></div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row  addressContent p-3 m-3">
-                                        <div class="col-auto px-0 position-relative">
-                                            <div class="form-check checkForm">
-                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
-                                                <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
-                                                    ShipBob Delivery
-                                                </label><br><span class="innertext">$12</span>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col px-0">
-                                            <div class="fs-14 text-muted">Delivery: 2–3 days work</div>
-                                        </div>
-                                        <div class="col-auto px-0">
-                                            <div class="d-flex align-items-center justify-content-between gap-2 ">
-                                                <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image8.png" alt=""></div>
                                                 
                                             </div>
                                         </div>
@@ -1470,9 +1437,9 @@
                             </div>
                             <div class="col-12">
                                 <div class="card cartcard">
-                                    <div class="cardHeading mb-2  p-3">Shipping Method</div>
+                                    <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Shipping Method</div>
                                     <div class="row  addressContent p-3 m-3">
-                                        <div class="col-auto px-0 position-relative">
+                                        <div class="col-6 col-sm-auto px-0 position-relative">
                                             <div class="form-check checkForm">
                                                 <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
                                                 <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
@@ -1481,15 +1448,15 @@
                                                 
                                             </div>
                                         </div>
-                                        <div class="col px-0">
+                                        <div class="col-12 col-sm px-0 pt-3 pt-sm-0 order-3 order-sm-2">
                                             <div class="d-flex">
                                                 <div class="fs-14 text-muted">3103 8745 8956 3451</div>
                                                 <span class="fs-14 text-muted mx-2">05/26</span>
                                                 <span class="w-30px h-30px d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span>
                                             </div>
                                         </div>
-                                        <div class="col-auto px-0">
-                                            <div class="d-flex align-items-center justify-content-between gap-2 inputGroupBtn">
+                                        <div class="col-sm-auto col-6 px-0 order-2 order-sm-3">
+                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 inputGroupBtn">
                                                 <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt=""></button>
                                             </div>
                                         </div>
@@ -1501,9 +1468,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="card cartcard">
-                            <div class="cardHeading mb-2  p-3">Order Summary</div>
+                            <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Order Summary</div>
                             <div class="d-flex align-items-center justify-content-between p-2 border-bottom">
                                 <div class="fs-14 text-secondary">Items (3)</div>
                                 <div class="fs-16 fw-bold itempayment">$27</div>
@@ -1519,10 +1486,13 @@
                     </div>
                 </div>
             </div>
-            <div class="main shopmaincontent shopmainsectionid orderSuccessful" id="section4">
-                <div class="row">
+            <div class="main shopmaincontent shopmainsectionid orderSuccessful " id="section4">
+                <div class="col-12 mb-2 py-3 d-block d-sm-none bg-white">
+                    <div class="d-inline-flex align-items-center gap-2 fs-20 fs-sm-26 fw-bold cartHeading  ps-4"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>Shipping and Payment</div>
+                </div>
+                <div class="row pt-3 mx-0">
                     <div class="col-12 mb-3">
-                        <div class="seccesorder"><img class="w-100 h-100" src="assets/shoppage/yesicon.svg" alt=""></div>
+                        <div class="seccesorder"><img class="w-100 h-100" src="assets/shoppage/yesicon.svg" alt="yesicon"></div>
                     </div>
                     <div class="col-12 mb-3">
                         <div class="textHeading">
@@ -1530,13 +1500,26 @@
                         </div>
                     </div>
                     <div class="col-12 mb-3">
-                        <div class="orderid">Order ID <span class="innertext">64573274324893454</span>Order Date<span class="date">23 February 2023</span></div>
+                        <div class="row mx-0 align-items-center justify-content-center gy-2">
+                            <div class="col-auto">
+                                <div class="orderid">Order ID </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="innertext">64573274324893454</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="orderid">Order Date</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="date">23 February 2023</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 mb-3 groupButton d-flex align-items-center justify-content-center gap-3">
+                    <div class="col-12 mb-3 groupButton d-flex align-items-center justify-content-center  gap-3">
                         <button class="btn button1 d-flex align-items-center gap-2"><span class="d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/download.svg" alt=""></span>Download Order</button>
                         <button class="btn button2" onclick="backtoshop()">Back to Shop</button>
                     </div>
-                    <div class="col-md-6 leftcard">
+                    <div class="col-md-6 leftcard order-2 order-sm-1">
                         <div class="row mx-0 innerreow g-3">
                             <div class="col-md-6 left">
                                 <div class="card h-100">
@@ -1553,11 +1536,11 @@
                             <div class="col-md-6 right">
                                 <div class="card h-100">
                                     <div class="card-body p-0">
-                                        <div class="headingtext fs-16 fw-bold p-3 ">Shipping Address</div>
+                                        <div class="headingtext fs-16 fw-bold p-3 ">Shipping Method</div>
                                         <div class="imagemain fs-16 fw-bold ms-3 "><img class="w-100 h-100" src="assets/shoppage/image6.png" alt=""></div>
                                         <div class="fs-14 fw-bold subtext pt-2 px-3">FedEx Delivery <span class="fs-13  mx-1">2–3 days work</span></div>
                                         <div class="fs-14 fw-bold subtext py-2 px-3">Receipt<span class="fs-13  mx-1"> 3453 2345 2345</span></div>
-                                        <a class="track p-3" href="#">Track Shipping</a>
+                                        <div class="mb-2"><a class="track p-3 mb-2" href="#">Track Shipping</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -1565,13 +1548,13 @@
                                 <div class="card">
                                     <div class="card-body p-0">
                                         <div class="headingtext fs-16 fw-bold p-3 ">Card Payment</div>
-                                        <div class="d-flex align-items-center imagecardbottom p-3 ps-0 ms-3 gap-2"> <span class="d-inline-flex image"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span> <span class="innertext">Eric Ardono</span> <span class="subInner">3103 8745 8956 3451</span> <span class="subInner">05/26</span></div>
+                                        <div class="d-flex align-items-sm-center imagecardbottom p-3 ps-0 ms-3 gap-sm-2 gap-1"> <span class="d-inline-flex image"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span> <span class="innertext bg-transparent">Eric Ardono</span> <span class="subInner">3103 8745 8956 3451 05/26</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 rightcard">
+                    <div class="col-md-6 rightcard order-1 order-sm-2">
                         <div class="card">
                             <div class="card-header p-3 border-bottom-0">
                                 Order Summary
@@ -1626,8 +1609,8 @@
                 </div>
             </div>
 <!-- no product purches than show section -->
-            <div class="main shopmaincontent shopmainsectionid myOrders">
-                <div class="row">
+            <div class="main shopmaincontent shopmainsectionid myOrders d-block ">
+                <div class="row mx-0">
                     <div class="col-12 mb-3">
                         <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
                     </div>
@@ -1650,7 +1633,7 @@
 <!-- no product purches than show section End-->
 
 
-            <div class="main shopmaincontent shopmainsectionid myOrders2" id="section6">
+            <div class="main shopmaincontent shopmainsectionid myOrders2 " id="section6">
                 <div class="row g-4">
                     <div class="col-12 mb-3">
                         <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt=""></span>My Orders</div>
@@ -1659,11 +1642,15 @@
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
-                                    <div class="card-header p-3 d-flex align-items-center gap-3">
-                                        <span class="orderid">Order ID</span>
-                                        <span class="orderNumber p-2">64573274324893454</span>
-                                        <span class="orderDate">Order Date</span>
-                                        <span class="date">23 February 2023</span>
+                                    <div class="card-header p-3 d-flex align-items-center gap-3 row-mx-0">
+                                        <div class="col-sm-auto col-12">
+                                            <span class="orderid">Order ID</span>
+                                            <span class="orderNumber p-2">64573274324893454</span>
+                                        </div>
+                                        <div class="col-sm col-12">
+                                            <span class="orderDate">Order Date</span>
+                                            <span class="date">23 February 2023</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 px-0">
@@ -1702,7 +1689,7 @@
                                             
                                         </li>
                                         <li class="buttons d-flex gap-2 cardButton w-100">
-                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
+                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100 d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
                                             <a href="javascript:;" class="theme-btn btnGreen w-100">View Detail</a>
                                         </li>
                                     </ul>
@@ -1714,11 +1701,15 @@
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
-                                    <div class="card-header p-3 d-flex align-items-center gap-3">
-                                        <span class="orderid">Order ID</span>
-                                        <span class="orderNumber p-2">64573274324893454</span>
-                                        <span class="orderDate">Order Date</span>
-                                        <span class="date">23 February 2023</span>
+                                    <div class="card-header p-3 d-flex align-items-center gap-3 row-mx-0">
+                                        <div class="col-sm-auto col-12">
+                                            <span class="orderid">Order ID</span>
+                                            <span class="orderNumber p-2">64573274324893454</span>
+                                        </div>
+                                        <div class="col-sm col-12">
+                                            <span class="orderDate">Order Date</span>
+                                            <span class="date">23 February 2023</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 px-0">
@@ -1740,7 +1731,7 @@
                                 </div>
                                 <div class="col-12 px-0">
                                     <div class="d-flex align-items-center justify-content-between p-3 border-top border-bottom">
-                                        <div class="orderTotal">Order Total</div>
+                                        <div class="orderTotal ">Order Total</div>
                                         <div class="orderPayment">$39</div>
                                     </div>
                                 </div>
@@ -1757,7 +1748,7 @@
                                             
                                         </li>
                                         <li class="buttons d-flex gap-2 cardButton w-100">
-                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
+                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100 d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
                                             <a href="javascript:;" class="theme-btn btnGreen w-100">View Detail</a>
                                         </li>
                                     </ul>
@@ -1769,11 +1760,15 @@
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
-                                    <div class="card-header p-3 d-flex align-items-center gap-3">
-                                        <span class="orderid">Order ID</span>
-                                        <span class="orderNumber p-2">64573274324893454</span>
-                                        <span class="orderDate">Order Date</span>
-                                        <span class="date">23 February 2023</span>
+                                    <div class="card-header p-3 d-flex align-items-center gap-3 row-mx-0">
+                                        <div class="col-sm-auto col-12">
+                                            <span class="orderid">Order ID</span>
+                                            <span class="orderNumber p-2">64573274324893454</span>
+                                        </div>
+                                        <div class="col-sm col-12">
+                                            <span class="orderDate">Order Date</span>
+                                            <span class="date">23 February 2023</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 px-0">
@@ -1812,7 +1807,7 @@
                                             
                                         </li>
                                         <li class="buttons d-flex gap-2 cardButton w-100">
-                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
+                                            <a href="javascript:;" class="theme-btn btnGreenBorder w-100 d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Track Shipping</a>
                                             <a href="javascript:;" class="theme-btn btnGreen w-100">View Detail</a>
                                         </li>
                                     </ul>
@@ -1824,11 +1819,15 @@
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
-                                    <div class="card-header p-3 d-flex align-items-center gap-3">
-                                        <span class="orderid">Order ID</span>
-                                        <span class="orderNumber p-2">64573274324893454</span>
-                                        <span class="orderDate">Order Date</span>
-                                        <span class="date">23 February 2023</span>
+                                    <div class="card-header p-3 d-flex align-items-center gap-3 row-mx-0">
+                                        <div class="col-sm-auto col-12">
+                                            <span class="orderid">Order ID</span>
+                                            <span class="orderNumber p-2">64573274324893454</span>
+                                        </div>
+                                        <div class="col-sm col-12">
+                                            <span class="orderDate">Order Date</span>
+                                            <span class="date">23 February 2023</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 px-0">
@@ -1867,7 +1866,7 @@
                                             
                                         </li>
                                         <li class="buttons d-flex gap-2 cardButton w-100">
-                                            <a role="button" class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#ordertrackingModal">Track Shipping</a>
+                                            <a role="button" class="theme-btn btnGreenBorder w-100 d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#ordertrackingModal">Track Shipping</a>
                                             <a role="button" class="theme-btn btnGreen w-100" data-bs-toggle="modal" data-bs-target="#orderDetailsModal">View Detail</a>
                                         </li>
                                     </ul>
@@ -2032,8 +2031,8 @@
                 <h1 class="modal-title fs-5" id="orderDetailsModalLabel">Order Detail</h1>
                 <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="orderid d-flex align-items-center gap-3 p-3">
-                    <div class="ordertext d-flex align-items-center gap-2">
+            <div class="orderid d-flex align-items-center gap-3 p-3 columnclass">
+                    <div class="ordertext d-flex align-items-center gap-2 ">
                         Order ID
                         <span class="orderid fw-bold">64573274324893454</span>
                     </div>
@@ -2121,7 +2120,7 @@
                         <div class="card">
                             <div class="card-body p-0">
                                 <div class="headingtext fs-16 fw-bold p-3 ">Card Payment</div>
-                                <div class="d-flex align-items-center imagecardbottom  ps-0 ms-3 gap-2"> <span class="d-inline-flex image"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span> <span class="innertext">Eric Ardono</span> <span class="subInner">3103 8745 8956 3451</span> <span class="subInner">05/26</span></div>
+                                <div class="d-flex align-items-sm-center imagecardbottom  ps-0 ms-3 gap-2"> <span class="d-inline-flex image"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt=""></span> <span class="innertext">Eric Ardono</span> <span class="subInner">3103 8745 8956 3451</span> <span class="subInner">05/26</span></div>
                             </div>
                         </div>
                     </div>
