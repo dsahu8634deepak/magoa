@@ -1126,43 +1126,86 @@ $font-family_1: Verdana, sans-serif;
             }
         }
     }
-#MemorialDetailModalToggle{
-    & .Detail-img{
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    .MemorialDetailRight{
-        border-left: 1px solid #EAEAEA;
-        padding: 0;
-        .myJobTopTab{
-            background-color: inherit;
-            box-shadow: inherit;
-            border-radius: inherit;
-            border-bottom: 1px solid #EAEAEA;
+    #MemorialDetailModalToggle{
+        & .Detail-img{
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .round{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 18px;
-            height: 18px;
-            background: #7F7F8D;
-            border-radius: 40px;
-            color: #fff;
-            font-size: 10px;
+        .MemorialDetailRight{
+            border-left: 1px solid #EAEAEA;
+            padding: 0;
+            .myJobTopTab{
+                background-color: inherit;
+                box-shadow: inherit;
+                border-radius: inherit;
+                border-bottom: 1px solid #EAEAEA;
+            }
+            .round{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18px;
+                height: 18px;
+                background: #7F7F8D;
+                border-radius: 40px;
+                color: #fff;
+                font-size: 10px;
+            }
+            .map{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                text-decoration-line: underline;
+                color: $theme1;
+            }
         }
-        .map{
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            text-decoration-line: underline;
-            color: $theme1;
+        .custom-p{
+            padding: 15px 15px 15px 27px;
         }
     }
-    .custom-p{
-        padding: 15px 15px 15px 27px;
+    .floverList{
+        .floverCard {
+            background: #F6F6F6;
+            border-radius: 16px;
+            margin-top: 15px;
+            margin-right: 13px;
+            .dropdown{
+                .dotDropdown {
+                    cursor: pointer;
+                }
+                .dropdown-menu{
+                    background: #FFFFFF;
+                    border: 1px solid #EAEAEA;
+                    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                    border-radius: 12px;
+                    li {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        a {
+                            height: 44px;
+                            border-bottom: 1px solid #EAEAEA;
+                            width: 100%;
+                            padding: 11px 15px;
+                            display: flex;
+                            align-items: center;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #29293E;
+                            text-decoration: none;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            
+        }
     }
-}
+    
 //*************************availability Page css end **********************************//
 
 // Small devices (landscape phones, 576px and up)
