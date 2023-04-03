@@ -264,6 +264,7 @@
                                                 
                                                 <div class="dropdown w-100 selected-images">
                                                     <sapn id="selected-images">
+                                                        <div id="satectImg"></div>
                                                     <input type="text"  class="form-control fs-14 text-muted bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Write a comment">
                                                     <img src="/assets/images/customer/floverGreen.svg" class="iconFlover" alt="img">
                                                     </span>
@@ -317,18 +318,59 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-auto"><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none"><span class="d-inline-flex"><img src="/assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
+                                            <div class="col-auto"><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none" data-bs-target="#MemorialDetailModalToggle5" data-bs-toggle="modal"><span class="d-inline-flex"><img src="/assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
                                         </div>
                                         
                                 <!-- Leave Your Flowers start -->
                                         <div class="flover d-none">
                                             <div class="w-auto">
-                                                <img src="/assets/images/customer/floverGreen.svg" alt="">
+                                                <img src="/assets/images/customer/floverGreen.svg" alt="img">
                                                 <div class="fw-bold text-18 mt-3">Leave Your Flowers</div>
                                             </div>
                                         </div>
                                 <!-- Leave Your Flowers end -->
-
+                                        <div class="floverList">
+                                            <div class="floverCard p-3">
+                                                <div class="floverCardHeader d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/assets/images/customer/Flower-1.svg">
+                                                        <span class="me-2">+25 Flowers</span>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu py-0">
+                                                            <li><a class="active" href="#">Edit Comment</a></li>
+                                                            <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle3" data-bs-toggle="modal">Delete Comment</a></li>
+                                                          </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floverCardBody">
+                                                    <div class="fs-13 text-muted mt-1">Left by <span> Paul D</span> on 12-12-2020</div>
+                                                </div>
+                                            </div>
+                                            <div class="floverCard p-3">
+                                                <div class="floverCardHeader d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="/assets/images/customer/Flower-2.svg">
+                                                        <span class="me-2">+5 Flowers</span>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu py-0">
+                                                            <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle4" data-bs-toggle="modal">Report Comment</a></li>
+                                                          </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floverCardBody">
+                                                    <div class="fs-14 text-bold mb-2 mt-2">Rest in peace my love</div>
+                                                    <div class="fs-13 text-muted">Left by <span> Peter J</span> on 12-12-2020</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                             </div>
                         </div>
@@ -355,6 +397,88 @@
         </div>
     </div>
     </div>
+
+    <div class="modal fade" id="MemorialDetailModalToggle3" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md px-5">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Delete Comment</h1>
+            <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="text-center fs-16 ">Want to Delete Comment?</div>
+            <div class="d-flex justify-content-between align-items-center mt-3 gap-3">
+                <button class="theme-btn btnGrayBorder w-100"data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                <button class="theme-btn btnred w-100"data-bs-dismiss="modal" aria-label="Close">Accept</button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="MemorialDetailModalToggle4" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md px-5">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Report Comment</h1>
+                <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="fs-16 mb-3">Want to Report Comment?</div>
+                <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>Choose reason</option>
+                    <option value="1">Hate Speech</option>
+                    <option value="2">Unwanted Commercial Content</option>
+                    <option value="3">Spam</option>
+                    <option value="3">Harassment or Bullying</option>
+                    <option value="3">Others</option>
+
+                  </select>
+                  <input type="text" class="form-control mb-3" id="InputReason" placeholder="Input reason">
+                <div class="d-flex justify-content-between align-items-center mt-3 gap-3">
+                    <button class="theme-btn btnGrayBorder w-100"data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button class="theme-btn btnred w-100 opLow"data-bs-dismiss="modal" aria-label="Close">Send</button>
+    
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="MemorialDetailModalToggle5" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel5" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Choose Payment Card</h1>
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="theme-btn btnGreen w-50 py-3" data-bs-target="#MemorialDetailModalToggle6" data-bs-toggle="modal">+ Add Card Details</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="modal fade" id="MemorialDetailModalToggle6" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel6" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Card Payment</h1>
+                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6"></div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="theme-btn btnGreen w-50 py-3 opLow"data-bs-dismiss="modal" aria-label="Close">Save</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
       
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
