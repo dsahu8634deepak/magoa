@@ -929,7 +929,7 @@ $font-family_1: Verdana, sans-serif;
         padding: 40px 0;
        
         .custom-mt {
-            margin-top: 40px !important;
+            margin-top: 33px !important;
         }
         & .cardcontent{
             background: $white;
@@ -947,6 +947,7 @@ $font-family_1: Verdana, sans-serif;
                 & img {
                     width: 100%;
                     height: 100%;
+                    border-radius: 8px;
                 }
             }
             .Favorite{
@@ -976,6 +977,7 @@ $font-family_1: Verdana, sans-serif;
             .list{
                 img{
                     width: 20px;
+                    margin-right: 6px;
                 }
             }
             
@@ -1020,7 +1022,7 @@ $font-family_1: Verdana, sans-serif;
             left: 15px;
             width: 20px;
         }
-        input,select,#multipleSelect{
+        input, select, #multipleSelect{
             height: 44px !important;
             padding: 0;
             padding-left: 42px;
@@ -1028,6 +1030,9 @@ $font-family_1: Verdana, sans-serif;
             border-radius: 50px !important;
             line-height: 40px !important;
             box-shadow: inherit !important;
+            font-size: 14px !important;
+            font-weight: 400;
+            color: #b8b8c5 !important;
             .select2{
                 height: 44px !important;
                 padding: 0;
@@ -1036,6 +1041,9 @@ $font-family_1: Verdana, sans-serif;
                 border-radius: 50px !important;
                 line-height: 40px !important;
                 box-shadow: inherit !important;
+               font-size: 14px !important;
+                font-weight: 400;
+                color: #b8b8c5 !important;
             }
             :focus{
             border: 1px solid $theme1 !important;
