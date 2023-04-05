@@ -73,7 +73,7 @@
                     height: 100%;
 
                     & .cardImage {
-                        height: 155px;
+                        height: 100%;
 
                         & img {}
                     }
@@ -1129,12 +1129,14 @@
                     align-items: center;
                     white-space: nowrap;
                     overflow: auto hidden;
+                    flex-wrap: nowrap;
 
 
                     & .ceatgeory {
 
                         &.active {}
                     }
+                    
                 }
             }
 
@@ -1461,6 +1463,7 @@
         &.incress2 {}
     }
 
+    // order_Detail
     .order_Detail {
         & .card {
 
@@ -1596,11 +1599,11 @@
                 }
             }
         }
-        & .columnclass{
+
+        & .columnclass {
             flex-direction: column;
-            & .ordertext{
-                justify-content: space-between;
-            }
+
+            & .ordertext {}
         }
 
         & .modal-footer {
@@ -1608,6 +1611,49 @@
             & .downloadbutton {}
         }
     }
+
+    // order Tracking
+    .order_tracking {
+        & .columnclass {
+            flex-direction: column;
+
+            & .ordertext {}
+        }
+
+        & .modal-body {
+            & .card {
+                & .card-body {
+                    & .image {}
+
+                    & .textdate {}
+
+                    & .trackOrder {
+                        & .trac {
+
+                            &:last-child {
+                                & .round {
+                                    &:before {}
+                                }
+
+                            }
+
+                            & .round {
+
+                                &:before {}
+
+                                &.active {
+
+                                    &:before {}
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 // Small devices (landscape phones, less than 768px)

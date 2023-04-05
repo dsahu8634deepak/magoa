@@ -47,14 +47,13 @@
     <link rel="icon" type="image/x-icon" href="/assets/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
- 
 
     <!-- Bootstrap Css -->
-    <script src="/assets/libs/jquery-3.6.0.min.js"></script>
+    <script src="../assets/libs/jquery-3.6.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- Custom Css -->
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
 </head>
@@ -64,9 +63,7 @@
 <!-- ########## Navbar ##########-->
         <nav class="navbar topHeader">
             <div class="container">
-                <span class="navbar-brand mb-0 h1">
-                    <img src="/assets/images/logo.svg" alt="img">
-                </span>
+                <span class="navbar-brand mb-0 h1"><a href="customer.html"><img src="../assets/images/logo.svg" alt="logo"></a></span>
                 <div class="right-nav dashboard customer">
                     <a href="javascript:" class="link me-3 Memorials pe-3">Memorials</a>
                     <!-- afterLogin start -->
@@ -78,31 +75,23 @@
 
                     <!-- BeforeLogin start -->
                         <ul class="beforeLogin ps-0 mb-0 gap-3">
-                            <li>
-                                <a href="javascript:"><img  class="gray" src="/assets/images/customer/cleaning-order-icon.svg" alt=""> </a>
-                            </li>
-                            <li>
-                                <a href="javascript:"><img  class="gray" src="/assets/images/message.svg" alt=""> </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;" class="user-btn"> user <span class="ms-2"><img src="/assets/images/user-fillter.png" alt="fillter"></span></a>
-                            </li>
+                            <li><a href="javascript:"><img class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning-order-icon"></a></li>
+                            <li><a href="message.html"><img class="gray"src="../assets/images/message.svg" alt="message"></a></li>
+                            <li><a href="javascript:;" class="user-btn"> user <span class="ms-2"><img src="../assets/images/user-fillter.png" alt="user-fillter"></span></a></li>
                             <li>
                                 <div class="dropdown user">
-                                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/images/user-profile.svg" alt="img"></div>
-                                   
+                                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/user-profile.svg" alt="user-profile"></div>
                                     <ul class="dropdown-menu me-0 p-0 border-0 dropdown-menu-end">
-                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="/assets/images/customer/userDrop.svg" alt=""></span> Profile</a></li>
-                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="/assets/images/customer/cleaning-order-icon.svg" alt=""></span> My Order</a></li>
-                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="/assets/images/customer/Favorite-drop.svg" alt=""></span>Favorite</a></li>
-                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="/assets/images/settings.svg" alt=""></span>Settings</a></li>
+                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/customer/userDrop.svg" alt="userDrop"></span> Profile</a></li>
+                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning-order-icon"></span> My Order</a></li>
+                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/customer/Favorite-drop.svg" alt="Favorite-drop"></span>Favorite</a></li>
+                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/settings.svg" alt="settings"></span>Settings</a></li>
                                     </ul>
-                                  </div>
+                                </div>
                                 
                             </li>
                         </ul>
                     <!-- BeforeLogin end -->
-
                 </div>
             </div>
         </nav>
@@ -120,7 +109,7 @@
                                     <label for="FullName" class="form-label">Full Name</label>
                                     <div class="filter-icon">
                                         <input type="text" class="form-control" id="FullName" placeholder="Full Name">
-                                        <img src="/assets/images/user-green.svg" alt="">
+                                        <img src="../assets/images/user-green.svg" alt="user-green">
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +123,7 @@
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <img src="/assets/images/location-green.svg" alt="">
+                                    <img src="../assets/images/location-green.svg" alt="location-green">
                                 </div>
                                 </div>
                             </div>
@@ -146,14 +135,14 @@
                                     <label for="Birth" class="form-label">Birth Date</label>
                                     <div class="filter-icon">
                                         <input type="text" class="form-control date-own" id="Birth" placeholder="YYYY">
-                                        <img src="/assets/images/calendar.svg" alt="">
+                                        <img src="../assets/images/calendar.svg" alt="calendar">
                                     </div>
                             </div>
                             <div class="col-6 col-md-6">
                                 <label for="Death" class="form-label">Death Date</label>
                                 <div class="filter-icon">
                                     <input type="text" class="form-control date-own" id="Death" placeholder="YYYY">
-                                    <img src="/assets/images/calendar.svg" alt="">
+                                    <img src="../assets/images/calendar.svg" alt="calendar">
                                 </div>
                              </div>
                         </div>
@@ -165,220 +154,218 @@
                 <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card cardcontent border-0">
-                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div class="Favorite"><img class="w-100 h-100" src="../assets/images/customer/redHeart.svg" alt="cardImage"></div>
                             <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
-                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image1.png" alt="cardImage"></div>
+                                <div class="cardImage"> <img class="w-100 h-100" src="../assets/shoppage/image1.png" alt="cardImage"></div>
                                 <div class="card-body">
                                     <ul class="ps-0 mb-0 list">
-                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
-                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
-                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="../assets/images/user-green.svg" alt="user-green"></sapn><span class="text-bold fs-16">A G Powell</span></li>
+                                        <li class="mb-2"><span class="me-2"><img src="../assets/images/Subtract.svg" alt="Subtract"></sapn><span class="text-muted fs-16">California Cemetery</span></li>
+                                        <li><span class="me-2"><img src="../assets/images/calendar.svg" alt="calendar"></sapn><span class="text-muted fs-16">1970–2020</span> </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </section>
 <!-- ########## filterMemorials end ##########-->
-    </div>         
-           
-      
-<div class="modal fade" id="MemorialDetailModalToggle" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content ">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel">Memorial Detail</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-4 custom-p">
-                        <div class=" Detail-img">
-                            <img class="w-100" src="/assets/shoppage/image1.png" alt="cardImage">
-                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+    </div>  
+
+    <div class="modal fade" id="MemorialDetailModalToggle" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel">Memorial Detail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 custom-p">
+                            <div class=" Detail-img">
+                                <img class="w-100" src="../assets/shoppage/image1.png" alt="cardImage">
+                                <div class="Favorite"><img class="w-100 h-100" src="../assets/images/customer/redHeart.svg" alt="cardImage"></div>
+                            </div>
+                            <button class="theme-btn btnGreen w-100 mt-3" data-bs-target="#MemorialDetailModalToggle2" data-bs-toggle="modal">Request Cleaning</button>
                         </div>
-                        <button class="theme-btn btnGreen w-100 mt-3" data-bs-target="#MemorialDetailModalToggle2" data-bs-toggle="modal">Request Cleaning</button>
-                    </div>
-                    <div class="col-12 col-md-8 MemorialDetailRight">
-                        <ul class="list-unstyled nav nav-pills myJobTopTab" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Information</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link d-flex align-items-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">Flowers <span class="round ms-2">2</span></button>
-                            </li>
-                        </ul>
-                        <div class="tab-content p-3" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                <div class="row">
-                                    <div class="col-12 mb-2">
-                                        <div class="d-flex align-items-start">
-                                            <img src="/assets/images/user-green.svg" alt="" class="mt-1"> 
-                                            <div class="ms-2">
-                                                <div class="text-muted fs-16">Full Name</div> <div class="text-bold fs-16">A G Powell</div>
+                        <div class="col-12 col-md-8 MemorialDetailRight">
+                            <ul class="list-unstyled nav nav-pills myJobTopTab" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Information</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link d-flex align-items-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">Flowers <span class="round ms-2">2</span></button>
+                                </li>
+                            </ul>
+                            <div class="tab-content p-3" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            <div class="d-flex align-items-start">
+                                                <img src="../assets/images/user-green.svg" alt="" class="mt-1"> 
+                                                <div class="ms-2">
+                                                    <div class="text-muted fs-16">Full Name</div> <div class="text-bold fs-16">A G Powell</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 mb-2 col-md-6">
-                                        <div class="d-flex align-items-start">
-                                            <img src="/assets/images/calendar.svg" alt="" class="mt-1"> 
-                                            <div class="ms-2">
-                                                <div class="text-muted fs-16">Birth Date</div> <div class="text-bold fs-16">1970-03-15</div>
+                                        <div class="col-12 mb-2 col-md-6">
+                                            <div class="d-flex align-items-start">
+                                                <img src="../assets/images/calendar.svg" alt="" class="mt-1"> 
+                                                <div class="ms-2">
+                                                    <div class="text-muted fs-16">Birth Date</div> <div class="text-bold fs-16">1970-03-15</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 mb-2 col-md-6">
-                                        <div class="d-flex align-items-start">
-                                            <img src="/assets/images/calendar.svg" alt="" class="mt-1"> 
-                                            <div class="ms-2">
-                                                <div class="text-muted fs-16">Death Date</div> <div class="text-bold fs-16">2020-02-08</div>
+                                        <div class="col-12 mb-2 col-md-6">
+                                            <div class="d-flex align-items-start">
+                                                <img src="../assets/images/calendar.svg" alt="" class="mt-1"> 
+                                                <div class="ms-2">
+                                                    <div class="text-muted fs-16">Death Date</div> <div class="text-bold fs-16">2020-02-08</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 mb-2">
-                                        <div class="d-flex align-items-start">
-                                            <img src="/assets/images/Subtract.svg" alt="" class="mt-1"> 
-                                            <div class="ms-2">
-                                                <div class="text-muted fs-16">Burial Site</div> <div class="text-bold fs-16">California Cemetery,<br>105 Krome Ave, New York, <br>Greenfield, 53143 <a href="jasascript:" class="map">Show Map</a></div>
+                                        <div class="col-12 mb-2">
+                                            <div class="d-flex align-items-start">
+                                                <img src="../assets/images/Subtract.svg" alt="" class="mt-1"> 
+                                                <div class="ms-2">
+                                                    <div class="text-muted fs-16">Burial Site</div> <div class="text-bold fs-16">California Cemetery,<br>105 Krome Ave, New York, <br>Greenfield, 53143 <a href="jasascript:" class="map">Show Map</a></div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-start">
-                                            <img src="/assets/images/Subtract.svg" alt="" class="mt-1"> 
-                                            <div class="ms-2">
-                                                <div class="text-muted fs-16">Memorial ID</div> <div class="text-bold fs-16">12324324212</div>
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-start">
+                                                <img src="../assets/images/Subtract.svg" alt="" class="mt-1"> 
+                                                <div class="ms-2">
+                                                    <div class="text-muted fs-16">Memorial ID</div> <div class="text-bold fs-16">12324324212</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                    <div class="flovers ">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto"><img class="user" src="/assets/images/user-profile.svg" alt="img"></div>
-                                            <div class="col-8 p-0">
-                                                
-                                                <div class="dropdown w-100 selected-images">
-                                                    <sapn id="selected-images">
-                                                        <div id="satectImg"></div>
-                                                    <input type="text"  class="form-control fs-14 text-muted bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Write a comment">
-                                                    <img src="/assets/images/customer/floverGreen.svg" class="iconFlover" alt="img">
-                                                    </span>
-                                                    <div class="dropdown-menu w-100">
-                                                        <select name="gift" class="form-select customSelect" id="gift">
-                                                            <option value="1">Flower</option>
-                                                            <option value="1">2</option>
-                                                            <option value="1">3</option>
-                                                            <option value="1">4</option>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="flovers ">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><img class="user" src="../assets/images/user-profile.svg" alt="img"></div>
+                                                <div class="col-8 p-0">
+                                                    
+                                                    <div class="dropdown w-100 selected-images">
+                                                        <sapn id="selected-images">
+                                                            <div id="satectImg"></div>
+                                                        <input type="text"  class="form-control fs-14 text-muted bg-transparent" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Write a comment">
+                                                        <img src="../assets/images/customer/floverGreen.svg" class="iconFlover" alt="img">
+                                                        </span>
+                                                        <div class="dropdown-menu w-100">
+                                                            <select name="gift" class="form-select customSelect" id="gift">
+                                                                <option value="1">Flower</option>
+                                                                <option value="1">2</option>
+                                                                <option value="1">3</option>
+                                                                <option value="1">4</option>
 
-                                                        </select>
-                                                        <div class="price">Gift price is $1</div>
-                                                        <div class="d-flex row text-center w-100 m-0 p-0 g-3 customHeight">
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-1.svg">
-                                                                <p class="mb-0 fs-14">White<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-2.svg">
-                                                                <p class="mb-0 fs-14">Red<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-3.svg">
-                                                                <p class="mb-0 fs-14">Yellow<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-4.svg">
-                                                                <p class="mb-0 fs-14">White<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-5.svg">
-                                                                <p class="mb-0 fs-14">Red<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-6.svg">
-                                                                <p class="mb-0 fs-14">Yellow<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-7.svg">
-                                                                <p class="mb-0 fs-14">White<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-8.svg">
-                                                                <p class="mb-0 fs-14">Red<br> Flower</p>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="/assets/images/customer/Flower-9.svg">
-                                                                <p class="mb-0 fs-14">Yellow<br> Flower</p>
+                                                            </select>
+                                                            <div class="price">Gift price is $1</div>
+                                                            <div class="d-flex row text-center w-100 m-0 p-0 g-3 customHeight">
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-1.svg">
+                                                                    <p class="mb-0 fs-14">White<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-2.svg">
+                                                                    <p class="mb-0 fs-14">Red<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-3.svg">
+                                                                    <p class="mb-0 fs-14">Yellow<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-4.svg">
+                                                                    <p class="mb-0 fs-14">White<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-5.svg">
+                                                                    <p class="mb-0 fs-14">Red<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-6.svg">
+                                                                    <p class="mb-0 fs-14">Yellow<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-7.svg">
+                                                                    <p class="mb-0 fs-14">White<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-8.svg">
+                                                                    <p class="mb-0 fs-14">Red<br> Flower</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <img src="../assets/images/customer/Flower-9.svg">
+                                                                    <p class="mb-0 fs-14">Yellow<br> Flower</p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-auto"><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none" data-bs-target="#MemorialDetailModalToggle5" data-bs-toggle="modal"><span class="d-inline-flex"><img src="../assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
                                             </div>
-                                            <div class="col-auto"><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none" data-bs-target="#MemorialDetailModalToggle5" data-bs-toggle="modal"><span class="d-inline-flex"><img src="/assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
-                                        </div>
-                                        
-                                <!-- Leave Your Flowers start -->
-                                        <div class="flover d-none">
-                                            <div class="w-auto">
-                                                <img src="/assets/images/customer/floverGreen.svg" alt="img">
-                                                <div class="fw-bold text-18 mt-3">Leave Your Flowers</div>
+                                            
+                                    <!-- Leave Your Flowers start -->
+                                            <div class="flover d-none">
+                                                <div class="w-auto">
+                                                    <img src="../assets/images/customer/floverGreen.svg" alt="img">
+                                                    <div class="fw-bold text-18 mt-3">Leave Your Flowers</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                <!-- Leave Your Flowers end -->
-                                        <div class="floverList">
-                                            <div class="floverCard p-3">
-                                                <div class="floverCardHeader d-flex justify-content-between align-items-center">
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="/assets/images/customer/Flower-1.svg">
-                                                        <span class="me-2">+25 Flowers</span>
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                    <!-- Leave Your Flowers end -->
+                                            <div class="floverList">
+                                                <div class="floverCard p-3">
+                                                    <div class="floverCardHeader d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../assets/images/customer/Flower-1.svg">
+                                                            <span class="me-2">+25 Flowers</span>
                                                         </div>
-                                                        <ul class="dropdown-menu py-0">
-                                                            <li><a class="active" href="#">Edit Comment</a></li>
-                                                            <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle3" data-bs-toggle="modal">Delete Comment</a></li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="floverCardBody">
-                                                    <div class="fs-13 text-muted mt-1">Left by <span> Paul D</span> on 12-12-2020</div>
-                                                </div>
-                                            </div>
-                                            <div class="floverCard p-3">
-                                                <div class="floverCardHeader d-flex justify-content-between align-items-center">
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="/assets/images/customer/Flower-2.svg">
-                                                        <span class="me-2">+5 Flowers</span>
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                                        <div class="dropdown">
+                                                            <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                                            </div>
+                                                            <ul class="dropdown-menu py-0">
+                                                                <li><a class="active" href="#">Edit Comment</a></li>
+                                                                <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle3" data-bs-toggle="modal">Delete Comment</a></li>
+                                                            </ul>
                                                         </div>
-                                                        <ul class="dropdown-menu py-0">
-                                                            <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle4" data-bs-toggle="modal">Report Comment</a></li>
-                                                          </ul>
+                                                    </div>
+                                                    <div class="floverCardBody">
+                                                        <div class="fs-13 text-muted mt-1">Left by <span> Paul D</span> on 12-12-2020</div>
                                                     </div>
                                                 </div>
-                                                <div class="floverCardBody">
-                                                    <div class="fs-14 text-bold mb-2 mt-2">Rest in peace my love</div>
-                                                    <div class="fs-13 text-muted">Left by <span> Peter J</span> on 12-12-2020</div>
+                                                <div class="floverCard p-3">
+                                                    <div class="floverCardHeader d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../assets/images/customer/Flower-2.svg">
+                                                            <span class="me-2">+5 Flowers</span>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <div class="dotDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg class="w-100" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="12" cy="12" r="2" fill="#7F7F8D"></circle><circle cx="19" cy="12" r="2" fill="#7F7F8D"></circle></svg>
+                                                            </div>
+                                                            <ul class="dropdown-menu py-0">
+                                                                <li><a class="" href="javascript::"  data-bs-target="#MemorialDetailModalToggle4" data-bs-toggle="modal">Report Comment</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="floverCardBody">
+                                                        <div class="fs-14 text-bold mb-2 mt-2">Rest in peace my love</div>
+                                                        <div class="fs-13 text-muted">Left by <span> Peter J</span> on 12-12-2020</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="modal fade" id="MemorialDetailModalToggle2" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel2" tabindex="-1">
@@ -443,47 +430,47 @@
             </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal fade" id="MemorialDetailModalToggle5" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Choose Payment Card</h1>
+                <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="theme-btn btnGreen w-50 py-3" data-bs-target="#MemorialDetailModalToggle6" data-bs-toggle="modal">+ Add Card Details</button>
+                </div>
+            </div>
+            </div>
         </div>
+    </div>
 
-        <div class="modal fade" id="MemorialDetailModalToggle5" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel5" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-md">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Choose Payment Card</h1>
-                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="MemorialDetailModalToggle6" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Card Payment</h1>
+                <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 col-md-6"></div>
                 </div>
-                <div class="modal-body py-4">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <button class="theme-btn btnGreen w-50 py-3" data-bs-target="#MemorialDetailModalToggle6" data-bs-toggle="modal">+ Add Card Details</button>
-                    </div>
-                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="theme-btn btnGreen w-50 py-3 opLow"data-bs-dismiss="modal" aria-label="Close">Save</button>
                 </div>
             </div>
             </div>
+        </div>
+    </div>
 
-            <div class="modal fade" id="MemorialDetailModalToggle6" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel6" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered modal-md">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Card Payment</h1>
-                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 col-md-6"></div>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="theme-btn btnGreen w-50 py-3 opLow"data-bs-dismiss="modal" aria-label="Close">Save</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-      
-    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
     <!-- input type Year -->
     <script>
             $('.date-own').datepicker({
@@ -495,17 +482,18 @@
         $('.Favorite').click (function(){
            $(this).children().toggleClass("like")
     });
-</script>
-<script>
-   const dropdown = document.querySelector('#image-dropdown');
-const selectedImagesContainer = document.querySelector('#selected-images');
+    </script>
+    <script>
+    const dropdown = document.querySelector('#image-dropdown');
+    const selectedImagesContainer = document.querySelector('#selected-images');
 
-dropdown.addEventListener('change', (event) => {
-  const selectedImages = Array.from(dropdown.selectedOptions).map(option => option.value);
-  const selectedImagesHTML = selectedImages.map(image => `<img src="${image}">`).join('');
-  selectedImagesContainer.innerHTML = selectedImagesHTML;
-});
-</script>
+    dropdown.addEventListener('change', (event) => {
+    const selectedImages = Array.from(dropdown.selectedOptions).map(option => option.value);
+    const selectedImagesHTML = selectedImages.map(image => `<img src="${image}">`).join('');
+    selectedImagesContainer.innerHTML = selectedImagesHTML;
+    });
+    </script>
+
 </body>
 
 </html>

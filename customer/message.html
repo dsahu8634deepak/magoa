@@ -50,64 +50,63 @@
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- Custom Css -->
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
 </head>
 <body>
     <div class="mainPage" data-page-name="messagePage">
-    <nav class="navbar topHeader">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">
-                <img src="assets/images/logo.svg" alt="img">
-            </span>
-            <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </a>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <!--########## [ Aside Bar Start ] ###########-->
-        <div class="sidebar-lg sidebar">
-            <div class="sider-top">
-                <div class="user">
-                    <ul class="list-unstyled">
-                        <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
-                        <li>
-                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                            <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
-                        </li>
-                    </ul>
-                </div>
-                <hr class="divder">
-                </hr>
-                <div class="job">
-                    <ul class="list-unstyled">
-                        <li class="current">Current Job</li>
-                        <li class="price">$450</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="links h-100 flex-fill overflow-hidden">
-                <div class="">
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round active"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                        <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                        <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                        <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                        <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                        <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                        <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
-                    </ul>
-            </div>
-            </div>
-        </div>
-        <!--########## [ Aside Bar End ] ###########-->
+        <!-- ########## Navbar ##########-->
+        <nav class="navbar topHeader">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1">
+                    <a href="customer.html"><img src="../assets/images/logo.svg" alt="logo"></a>
+                </span>
+                <div class="right-nav dashboard customer">
+                    <a href="javascript:" class="link me-3 Memorials pe-3">Memorials</a>
+                    <!-- afterLogin start -->
+                        <!-- <div class="d-flex align-items-center afterLogin gap-3">
+                            <a href="javascript:" class="link">Sign In</a>
+                            <a class="theme-btn btnGreen" href="javascript:">Sign Up</a>
+                        </div>   -->
+                    <!-- afterLogin end -->
 
+                    <!-- BeforeLogin start -->
+                        <ul class="beforeLogin ps-0 mb-0 gap-3">
+                            <li>
+                                <a href="javascript:"><img  class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="message.html"><img  class="gray" src="../assets/images/message.svg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="user-btn"> user <span class="ms-2"><img src="../assets/images/user-fillter.png" alt="fillter"></span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown user">
+                                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/user-profile.svg" alt="img"></div>
+                                   
+                                    <ul class="dropdown-menu me-0 p-0 border-0 dropdown-menu-end">
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/userDrop.svg" alt=""></span> Profile</a></li>
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/cleaning-order-icon.svg" alt=""></span> My Order</a></li>
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/Favorite-drop.svg" alt=""></span>Favorite</a></li>
+                                      <li><a class="dropdown-item" href="settings.html"><span class="me-2"><img src="../assets/images/settings.svg" alt=""></span>Settings</a></li>
+                                    </ul>
+                                  </div>
+                                
+                            </li>
+                        </ul>
+                    <!-- BeforeLogin end -->
+
+                </div>
+            </div>
+        </nav>
+<!-- ########## Navbar ##########-->
+    <div class="wrapper">
         <!--########## [ Main Content ] ###########-->
-        <div class="main">
+        <div class="main m-0 w-100">
             <div class="row h-100 flex-column flex-nowrap mx-0">
                 <div class="col-12">
                     <h4 class="page-title">Message</h4>
@@ -128,7 +127,7 @@
                         <div class="col-12 h-100 bg-white livechatbox overflow-yauto d-flex align-items-center justify-content-center d-none">
                             <div class="emptyChatebox text-center">
                                 <div class="mtChatBox">
-                                    <div class="chatImage mx-auto"><img src="assets/images/chat.svg" class="w-100" alt="Chatiing"></div>
+                                    <div class="chatImage mx-auto"><img src="../assets/images/chat.svg" class="w-100" alt="Chatiing"></div>
                                 </div>
                                 <div class="message py-sm-2 py-1">No Message Here</div>
                                 <div class="nomessage">All message will appear here.</div>
@@ -143,7 +142,7 @@
                                     <div class="col-12 px-0">
                                         <form action="" class="searchgroup p-3 px-md-3 px-0 ">
                                             <div class="input-group rounded-pill d-flex align-items-center h-100">
-                                                <span class="input-group-text border-0 bg-transparent d-flex p-0" id="basic-addon2"><img src="assets/images/search_icon.svg" class="w-100 h-100" alt=""></span>
+                                                <span class="input-group-text border-0 bg-transparent d-flex p-0" id="basic-addon2"><img src="../assets/images/search_icon.svg" class="w-100 h-100" alt=""></span>
                                                 <input type="search" class="form-control border-0 shadow-none pe-2" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
                                             </div>
                                         </form>
@@ -155,7 +154,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -173,7 +172,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user2.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user2.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -191,7 +190,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user3.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user3.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -209,7 +208,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user4.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user4.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -227,7 +226,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -245,7 +244,7 @@
                                                     <div class="card-body rounded-0 h-100">
                                                         <div class="row align-items-center mx-0">
                                                             <div class="col-auto px-0">
-                                                                <div class="liveUserImg rounded-circle"><img src="assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
+                                                                <div class="liveUserImg rounded-circle"><img src="../assets/images/img/user1.png" class="rounded-circle h-100 w-100" alt=""></div>
                                                             </div>
                                                             <div class="col contentscard px-0 text-nowrap overflow-hidden">
                                                                 <div class="d-flex align-items-center justify-content-between">
@@ -267,14 +266,14 @@
                                     <div class="col-12 ">
                                         <div class="toast align-items-center alert p-2 m-2 row mx-0 align-items-center overflow-hidden show border-0 shadow-none w-100" role="alert" aria-live="assertive" aria-atomic="true">
                                             <div class="col toast-body">All communication and transactions should be done on the site. Any communication done off site will VOID insurance. <span class="fw-bold">Terms and Conditions</span></div>
-                                            <div class="col-auto"><button class="closeBtn border-0 bg-transparent shadow-none p-0" data-bs-dismiss="toast" aria-label="Close"><img src="assets/images/close.svg" class="w-100" alt=""></button></div>
+                                            <div class="col-auto"><button class="closeBtn border-0 bg-transparent shadow-none p-0" data-bs-dismiss="toast" aria-label="Close"><img src="../assets/images/close.svg" class="w-100" alt=""></button></div>
                                         </div>
                                     </div>
                                     <div class="col-12 px-0 chatBoxHeader bg-white d-flex align-items-center">
                                         <div class="row mx-0 align-items-center w-100">
-                                            <div class="col-auto d-md-none d-block"><a href="javascript:;" class="closeIcon"data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight" aria-label="Close"><img src="assets/images/arrow-down.svg" alt="" class="w-100"></a></div>
+                                            <div class="col-auto d-md-none d-block"><a href="javascript:;" class="closeIcon"data-bs-dismiss="offcanvas" data-bs-target="#offcanvasRight" aria-label="Close"><img src="../assets/images/arrow-down.svg" alt="" class="w-100"></a></div>
                                             <div class="col-auto px-0">
-                                                <div class="rounded-circle userpic m-lg-3 m-2"><img src="assets/images/img/user1.png" class="w-100 h-100 rounded-circle" alt=""></div>
+                                                <div class="rounded-circle userpic m-lg-3 m-2"><img src="../assets/images/img/user1.png" class="w-100 h-100 rounded-circle" alt=""></div>
                                             </div>
                                             <div class="col px-0"><div class="userNAme">John D</div></div>
                                             <div class="col-auto moreRefressBtn position-relative">
@@ -323,10 +322,10 @@
                                                 <input type="text" class="form-control shadow-none w100 h-100 p-3 rounded-pill" placeholder="Type your message here..." aria-describedby="basic-addon2">
                                                 <div class="upload pe-1">
                                                     <input type="file" id="choosefile" hidden="">
-                                                    <label for="choosefile"><div class="choosefileImg"><img src="assets/images/attach_icon.svg" class="h-100" alt=""></div></label>
+                                                    <label for="choosefile"><div class="choosefileImg"><img src="../assets/images/attach_icon.svg" class="h-100" alt=""></div></label>
                                                 </div>
                                             </div>
-                                            <div class="col-auto "><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none"><span class="d-inline-flex"><img src="assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
+                                            <div class="col-auto "><button class="sendBtn rounded-circle d-flex align-items-center justify-content-center border-0 shadow-none"><span class="d-inline-flex"><img src="../assets/images/send_icon.svg" class="w-100" alt=""></span></button></div>
                                             <!-- <div class="col-auto"><button class="btn btn-theme1 px-0 py-1 d-flex justify-content-center align-items-center h-lg-35px w-lg-50px h-25px w-40px"><img src="assets/img/icon/send.svg" alt="" class="h-100"></button></div> -->
                                         </form>
                                     </div>
@@ -342,47 +341,8 @@
         <!--########## [ Main Content End ] ###########-->
     </div>
 </div>
-
-
-<!-- sidebar sm satrt -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-body p-0">
-        <div class="sider-top">
-            <div class="user">
-                <ul class="list-unstyled">
-                    <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
-                    <li>
-                        <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                        <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png" alt="fillter"></span></a>
-                    </li>
-                </ul>
-            </div>
-            <hr class="divder"></hr>
-            <div class="job">
-                <ul class="list-unstyled">
-                    <li class="current">Current Job</li>
-                    <li class="price">$450</li>
-                </ul>
-            </div>
-        </div>
-        <div class="links">
-            <ul class="list-unstyled">
-                <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round active"><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- sidebar sm end -->
-
-<script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
 <script>
 var toastElList = [].slice.call(document.querySelectorAll('.toast'))
 var toastList = toastElList.map(function (toastEl) {

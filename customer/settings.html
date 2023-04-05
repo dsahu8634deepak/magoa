@@ -48,65 +48,62 @@
     <meta name="classification" content="MAGOA" />
     <link rel="canonical" href="" />
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- Custom Css -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <script src="assets/libs/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <script src="../assets/libs/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
     <div class="main" page-name="settings">
+        <!-- ########## Navbar ##########-->
         <nav class="navbar topHeader">
-            <div class="container-fluid">
+            <div class="container">
                 <span class="navbar-brand mb-0 h1">
-                    <img src="assets/images/logo.svg" alt="img">
+                    <a href="customer.html"><img src="../assets/images/logo.svg" alt="logo"></a>
                 </span>
-                <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                </a>
-            </div>
-        </nav>
-        <div class="wrapper">
-<!--########## [ Aside Bar Start ] ###########-->
-            <div class="sidebar-lg sidebar">
-                <div class="sider-top">
-                    <div class="user">
-                        <ul class="list-unstyled">
-                            <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                <div class="right-nav dashboard customer">
+                    <a href="javascript:" class="link me-3 Memorials pe-3">Memorials</a>
+                    <!-- afterLogin start -->
+                        <!-- <div class="d-flex align-items-center afterLogin gap-3">
+                            <a href="javascript:" class="link">Sign In</a>
+                            <a class="theme-btn btnGreen" href="javascript:">Sign Up</a>
+                        </div>   -->
+                    <!-- afterLogin end -->
+
+                    <!-- BeforeLogin start -->
+                        <ul class="beforeLogin ps-0 mb-0 gap-3">
                             <li>
-                                <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                                <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                                <a href="javascript:"><img  class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="message.html"><img  class="gray" src="../assets/images/message.svg" alt=""> </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="user-btn"> user <span class="ms-2"><img src="../assets/images/user-fillter.png" alt="fillter"></span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown user">
+                                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/user-profile.svg" alt="img"></div>
+                                   
+                                    <ul class="dropdown-menu me-0 p-0 border-0 dropdown-menu-end">
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/userDrop.svg" alt=""></span> Profile</a></li>
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/cleaning-order-icon.svg" alt=""></span> My Order</a></li>
+                                      <li><a class="dropdown-item" href="#"><span class="me-2"><img src="../assets/images/customer/Favorite-drop.svg" alt=""></span>Favorite</a></li>
+                                      <li><a class="dropdown-item" href="settings.html"><span class="me-2"><img src="../assets/images/settings.svg" alt=""></span>Settings</a></li>
+                                    </ul>
+                                  </div>
+                                
                             </li>
                         </ul>
-                    </div>
-                    <hr class="divder">
-                    </hr>
-                    <div class="job">
-                        <ul class="list-unstyled">
-                            <li class="current">Current Job</li>
-                            <li class="price">$450</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="links h-100 flex-fill overflow-hidden">
-                    <div class="">
-                        <ul class="list-unstyled">
-                            <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                            <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                            <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                            <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                            <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                            <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                            <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                            <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round active"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
-                        </ul>
-                    </div>
+                    <!-- BeforeLogin end -->
                 </div>
             </div>
-<!--########## [ Aside Bar End ] ###########-->
-            <div class="main settings">
+        </nav>
+<!-- ########## Navbar ##########-->
+        <div class="wrapper">
+            <div class="main settings  m-0 w-100">
                 <div class="dPage settings" data-id="tab5">
                         <div class="page-title my-4 fs-24 fw-bold">Profile Setting</div>
                     <div class="row g-3">
@@ -750,8 +747,8 @@
     </div>
 <!-- sidebar sm end -->
 
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
