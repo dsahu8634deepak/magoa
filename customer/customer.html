@@ -55,6 +55,8 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/fonts/inter.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
 </head>
@@ -85,7 +87,7 @@
                                 <a href="javascript:"><img  class="gray" src="/assets/images/message.svg" alt=""> </a>
                             </li>
                             <li>
-                                <a href="javascript:;" class="user-btn"> user <span class="ms-2"><img src="/assets/images/user-fillter.png" alt="fillter"></span></a>
+                                <a href="/index.html" class="user-btn"> Cleaner <span class="ms-2"><img src="/assets/images/user-fillter.png" alt="fillter"></span></a>
                             </li>
                             <li>
                                 <div class="dropdown user">
@@ -109,17 +111,17 @@
 <!-- ########## Navbar ##########-->
 
 <!-- ########## filterMemorials start ##########-->
-        <section class="filterMemorials">
+        <section class="filterMemorials ">
             <div class="container">
                 <h4 class="page-title">Memorials</h4>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col-12 col-md-6">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="mb-3">
                                     <label for="FullName" class="form-label">Full Name</label>
                                     <div class="filter-icon">
-                                        <input type="text" class="form-control" id="FullName" placeholder="Full Name">
+                                        <input type="text" class="form-control text-muted" id="FullName" value="Full Name">
                                         <img src="/assets/images/user-green.svg" alt="">
                                     </div>
                                 </div>
@@ -145,26 +147,26 @@
                             <div class="col-6 col-md-6">
                                     <label for="Birth" class="form-label">Birth Date</label>
                                     <div class="filter-icon">
-                                        <input type="text" class="form-control date-own" id="Birth" placeholder="YYYY">
+                                        <input type="text" class="form-control date-own" id="Birth" value="YYYY">
                                         <img src="/assets/images/calendar.svg" alt="">
                                     </div>
                             </div>
                             <div class="col-6 col-md-6">
                                 <label for="Death" class="form-label">Death Date</label>
                                 <div class="filter-icon">
-                                    <input type="text" class="form-control date-own" id="Death" placeholder="YYYY">
+                                    <input type="text" class="form-control date-own" id="Death" value="YYYY">
                                     <img src="/assets/images/calendar.svg" alt="">
                                 </div>
                              </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-2 custom-mt">
-                        <a href="javascript:" class="theme-btn btnGreen w-100"><span><img src="" alt=""></span> Search</a>
+                        <a href="javascript:" class="theme-btn btnGreen w-100 d-flex justify-content-center"><span><i class="fa-solid fa-search me-2"></i></span> Search</a>
                     </div>
                 </div>
                 <div class="row row-cols-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
-                        <div class="card cardcontent border-0">
+                        <div class="card cardcontent border-0 p-2">
                             <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
                             <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
                                 <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image1.png" alt="cardImage"></div>
@@ -178,7 +180,291 @@
                             </div>
                         </div>
                     </div>
-                   
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image2.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image3.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image4.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image5.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image3.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image2.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image5.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image4.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image1.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image1.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image2.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image3.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image4.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image5.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image3.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image2.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image5.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image4.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardcontent border-0 p-2">
+                            <div class="Favorite"><img class="w-100 h-100" src="/assets\images\customer/redHeart.svg" alt="cardImage"></div>
+                            <div data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">
+                                <div class="cardImage"> <img class="w-100 h-100" src="/assets/shoppage/image1.png" alt="cardImage"></div>
+                                <div class="card-body">
+                                    <ul class="ps-0 mb-0 list">
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/user-green.svg" alt=""></sapn> <span class="text-bold fs-16">A G Powell</span> </li>
+                                        <li class="mb-2"><span class="me-2"><img src="/assets/images/Subtract.svg" alt=""></sapn> <span class="text-muted fs-16">California Cemetery</span> </li>
+                                        <li><span class="me-2"><img src="/assets/images/calendar.svg" alt=""></sapn> <span class="text-muted fs-16">1970–2020</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
