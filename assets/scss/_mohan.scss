@@ -355,6 +355,69 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin reviewspage-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin reviewspage-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin reviewspage-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin reviewspage-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin reviewspage-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin reviewspage-mixin-max-xs() {
+    [page-name=reviewspage] {
+        & .reviewspage {
+            .borderRight {
+                border-right: 0;
+                border-bottom: 1px solid #EAEAEA;
+
+                .p-15 {}
+            }
+
+            .borderbottom {}
+
+            .squre {
+
+                &.rating {
+
+                    img {}
+                }
+
+                &.user {}
+            }
+
+            .ReviewsRight {
+                .progress {
+
+                    .progress-bar {
+
+                        p {}
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin reviewspage-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin reviewspage-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin reviewspage-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin reviewspage-mixin-max-xl() {}
 //*************************Reviews Page css end **********************************//
 
 //*************************tutorials Page css start **********************************//
@@ -447,6 +510,35 @@
 
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin tutorials-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin tutorials-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin tutorials-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin tutorials-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin tutorials-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin tutorials-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin tutorials-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin tutorials-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin tutorials-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin tutorials-mixin-max-xl() {}
 //*************************tutorials Page css end **********************************//
 
 //*************************settings Page css start **********************************//
@@ -485,6 +577,35 @@
     
    
 }
+// Small devices (landscape phones, 576px and up)
+@mixin settings-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin settings-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin settings-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin settings-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin settings-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin settings-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin settings-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin settings-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin settings-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin settings-mixin-max-xl() {}
 //*************************settings Page css end **********************************//
 
 //*************************earnings Page css start **********************************//
@@ -785,6 +906,35 @@ $font-family_1: Verdana, sans-serif;
         color: #7e7b7b;
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin earnings-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin earnings-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin earnings-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin earnings-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin earnings-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin earnings-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin earnings-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin earnings-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin earnings-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin earnings-mixin-max-xl() {}
 //*************************earnings Page css end **********************************//
 
 //*************************availability Page css start **********************************//
@@ -906,6 +1056,35 @@ $font-family_1: Verdana, sans-serif;
     }
     
 }
+// Small devices (landscape phones, 576px and up)
+@mixin availability-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin availability-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin availability-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin availability-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin availability-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin availability-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin availability-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin availability-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin availability-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin availability-mixin-max-xl() {}
 //*************************availability Page css end **********************************//
 /* Check out later: https://bbbootstrap.com/snippets/accordion-hover-effect-26103860 */
 
@@ -1212,69 +1391,36 @@ $font-family_1: Verdana, sans-serif;
             
         }
     }
+
+    // Small devices (landscape phones, 576px and up)
+@mixin customerPage-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin customerPage-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin customerPage-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin customerPage-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin customerPage-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin customerPage-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin customerPage-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin customerPage-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin customerPage-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin customerPage-mixin-max-xl() {}
     
 //*************************availability Page css end **********************************//
 
-// Small devices (landscape phones, 576px and up)
-@mixin reviewspage-mixin-min-sm() {}
-
-// Medium devices (tablets, 768px and up)
-@mixin reviewspage-mixin-min-md() {}
-
-// Large devices (desktops, 992px and up)
-@mixin reviewspage-mixin-min-lg() {}
-
-// X-Large devices (large desktops, 1200px and up)
-@mixin reviewspage-mixin-min-xl() {}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@mixin reviewspage-mixin-min-xxl() {}
-
-// X-Small devices (portrait phones, less than 576px)
-@mixin reviewspage-mixin-max-xs() {
-    [page-name=reviewspage] {
-        & .reviewspage {
-            .borderRight {
-                border-right: 0;
-                border-bottom: 1px solid #EAEAEA;
-
-                .p-15 {}
-            }
-
-            .borderbottom {}
-
-            .squre {
-
-                &.rating {
-
-                    img {}
-                }
-
-                &.user {}
-            }
-
-            .ReviewsRight {
-                .progress {
-
-                    .progress-bar {
-
-                        p {}
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-// Small devices (landscape phones, less than 768px)
-@mixin reviewspage-mixin-max-sm() {}
-
-// Medium devices (tablets, less than 992px)
-@mixin reviewspage-mixin-max-md() {}
-
-// Large devices (desktops, less than 1200px)
-@mixin reviewspage-mixin-max-lg() {}
-
-// X-Large devices (large desktops, less than 1400px)
-@mixin reviewspage-mixin-max-xl() {}
