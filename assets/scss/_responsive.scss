@@ -6,7 +6,7 @@
   @include index-page-mixin-min-sm();
   @include shoppage-mixin-min-sm();
   @include reviewspage-mixin-min-sm();
-
+  @include earnings-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
@@ -14,8 +14,7 @@
   @include index-page-mixin-min-md();
   @include shoppage-mixin-min-md();
   @include reviewspage-mixin-min-md();
-
-
+  @include earnings-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
@@ -30,7 +29,7 @@
   @include index-page-mixin-min-xl();
   @include shoppage-mixin-min-xl();
   @include reviewspage-mixin-min-xl();
-
+  @include earnings-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -38,6 +37,7 @@
   @include index-page-mixin-min-xxl();
   @include shoppage-mixin-min-xxl();
   @include reviewspage-mixin-min-xxl();
+  @include earnings-mixin-min-xxl();
 }
 
 // Large devices (desktops, less than 1200px)
@@ -45,8 +45,7 @@
   @include index-page-mixin-max-lg();
   @include shoppage-mixin-max-lg();
   @include reviewspage-mixin-max-lg();
-
-
+  @include earnings-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
@@ -54,7 +53,7 @@
   @include index-page-mixin-max-md();
   @include shoppage-mixin-max-md();
   @include reviewspage-mixin-max-md();
-
+  @include earnings-mixin-max-md();
 
 }
 
@@ -63,8 +62,7 @@
   @include index-page-mixin-max-sm();
   @include shoppage-mixin-max-sm();
   @include reviewspage-mixin-max-sm();
-
-
+  @include earnings-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -72,9 +70,8 @@
   @include index-page-mixin-max-xs();
   @include shoppage-mixin-max-xs();
   @include reviewspage-mixin-max-xs();
+  @include earnings-mixin-max-xs();
 
-
-  
 }
 
 // @media (max-width: 430px) {
