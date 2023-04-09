@@ -1391,6 +1391,17 @@ $font-family_1: Verdana, sans-serif;
             
         }
     }
+    ::-webkit-inner-spin-button,
+    ::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    .cardIcon{
+        top: 7px;
+        right: 15px;
+        width: 24px;
+    }
+
 
     // Small devices (landscape phones, 576px and up)
 @mixin customerPage-mixin-min-sm() {}
