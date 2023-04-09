@@ -705,7 +705,7 @@
             </div>
             <div class="modal-body">
                 <div class="fs-16 mb-3">Want to Report Comment?</div>
-                <select class="form-select mb-2" aria-label="Default select example">
+                <select class="form-select mb-2 customInput" aria-label="Default select example">
                     <option selected>Choose reason</option>
                     <option value="1">Hate Speech</option>
                     <option value="2">Unwanted Commercial Content</option>
@@ -714,7 +714,7 @@
                     <option value="3">Others</option>
 
                   </select>
-                  <input type="text" class="form-control mb-3" id="InputReason" placeholder="Input reason">
+                  <input type="text" class="form-control customInput mb-3" id="InputReason" placeholder="Input reason">
                 <div class="d-flex justify-content-between align-items-center mt-3 gap-3">
                     <button class="theme-btn btnGrayBorder w-100"data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     <button class="theme-btn btnred w-100 opLow"data-bs-dismiss="modal" aria-label="Close">Send</button>
@@ -750,7 +750,25 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-6">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control customInput mb-3" id="Name" placeholder="Full Name">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="CardNumber">Card Number</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control customInput mb-3" id="CardNumber" placeholder="Card Number">
+                            <img class="position-absolute cardIcon" src="../assets/images/customer/CardPaymentIcon.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="Expiration">Expiration (MM/YY)</label>
+                        <input type="month" class="form-control customInput mb-3" min="2018-03" id="Expiration" placeholder="MM/YY">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="cvc">CVC</label>
+                        <input type="text" class="form-control customInput mb-3" id="cvc" placeholder="CVC">
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <button class="theme-btn btnGreen w-50 py-3 opLow"data-bs-dismiss="modal" aria-label="Close">Save</button>

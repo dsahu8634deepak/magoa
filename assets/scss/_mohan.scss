@@ -1641,6 +1641,17 @@
             margin-bottom: 0;
         }
     }
+    ::-webkit-inner-spin-button,
+    ::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    .cardIcon{
+        top: 7px;
+        right: 15px;
+        width: 24px;
+    }
+
 
     .selected-images {
         position: relative;

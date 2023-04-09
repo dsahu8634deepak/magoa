@@ -6,6 +6,7 @@
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
   background-color: rgba($black, 0);
 }
 
@@ -59,7 +60,7 @@ body{
   border: 1px solid #EAEAEA !important;
   border-radius: 8px !important;
   box-shadow: inherit !important;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px !important;
   color: $black;
   &:focus,&:active,&:hover {
