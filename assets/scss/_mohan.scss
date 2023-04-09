@@ -1,4 +1,12 @@
 //************* [ Modal css start ] *************
+.bodyBg{
+    background-color: #EAEAEA;
+}
+input::placeholder{
+    color: #7F7F8D;
+    font-size: 16px;
+    font-weight: 400;
+}
 .modal-content {
     overflow: hidden;
     border-radius: 24px !important;
@@ -891,7 +899,15 @@ $font-family_1: Verdana, sans-serif;
         font-weight: 600;
         font-size: 14px;
         color: $black;
+        &.success{
+        background: #E9F9EB;
+        border-left: 5px solid $theme1;
+        }
     }
+    &.success{
+        background: #E9F9EB;
+        border-left: 5px solid $theme1;
+        }
 }
 .custom-border{
     border-radius: 24px 24px 0px 0px !important;
@@ -1255,6 +1271,13 @@ $font-family_1: Verdana, sans-serif;
                 margin-bottom: 0;
             }
         }
+        & .floverList{
+            & .floverCard{
+                &.success{
+                    background: #e9f9eb;
+                }
+            }
+        }
         .selected-images{
             position: relative;
             height: 45px;
@@ -1346,7 +1369,7 @@ $font-family_1: Verdana, sans-serif;
             }
         }
         .custom-p{
-            padding: 15px 15px 15px 27px;
+            padding: 15px;
         }
     }
     .floverList{
@@ -1402,7 +1425,9 @@ $font-family_1: Verdana, sans-serif;
         width: 24px;
     }
 
-
+.customHeaderBorder{
+    border-radius: 24px 24px 0px 0px !important;
+}
     // Small devices (landscape phones, 576px and up)
 @mixin customerPage-mixin-min-sm() {}
 

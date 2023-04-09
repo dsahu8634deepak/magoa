@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
 </head>
 
-<body class="h-auto overflow-auto">
+<body class="h-auto overflow-auto bodyBg">
     <div class="main" page-name="customerPage">
 <!-- ########## Navbar ##########-->
 <nav class="navbar topHeader">
@@ -468,13 +468,13 @@
 
     <div class="modal fade" id="MemorialDetailModalToggle" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content ">
-                <div class="modal-header">
+            <div class="modal-content overflow-visible">
+                <div class="modal-header customHeaderBorder">
                 <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel">Memorial Detail</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0">
-                    <div class="row align-items-center">
+                <div class="modal-body p-0 OTPVerification position-relative">
+                    <div class="row align-items-center m-0 text-start">
                         <div class="col-12 col-md-4 custom-p">
                             <div class=" Detail-img">
                                 <img class="w-100" src="../assets/shoppage/image1.png" alt="cardImage">
@@ -483,7 +483,7 @@
                             <button class="theme-btn btnGreen w-100 mt-3" data-bs-target="#MemorialDetailModalToggle2" data-bs-toggle="modal">Request Cleaning</button>
                         </div>
                         <div class="col-12 col-md-8 MemorialDetailRight">
-                            <ul class="list-unstyled nav nav-pills myJobTopTab" id="pills-tab" role="tablist">
+                            <ul class="list-unstyled nav nav-pills myJobTopTab overflow-hidden" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Information</button>
                                 </li>
@@ -610,7 +610,7 @@
                                             </div>
                                     <!-- Leave Your Flowers end -->
                                             <div class="floverList">
-                                                <div class="floverCard p-3">
+                                                <div class="floverCard success p-3">
                                                     <div class="floverCardHeader d-flex justify-content-between align-items-center">
                                                         <div class="d-flex align-items-center">
                                                             <img src="../assets/images/customer/Flower-1.svg">
@@ -656,24 +656,48 @@
                             </div>
                         </div>
                     </div>
+                    <!--When payment successful -->
+                    <div class="otpalert d-none">
+                        Payment failed, try again
+                    </div>
+                     <!--When report, we will review -->
+                     <div class="otpalert d-none">
+                        Thank you for you report, we will review
+                    </div>
+                    <!--When payment failed -->
+                    <div class="otpalert success d-none">
+                        Payment success, flower has been sent!
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal fade" id="MemorialDetailModalToggle2" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
         <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Request Cleaning </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            Hide this modal and show the first with the button below.
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-        </div>
+            <div class="modal-body">
+                <div class="fs-16 mb-3">Cemetary Location</div>
+                <select class="form-select mb-2 customInput" aria-label="Default select example">
+                    <option selected disabled>City/State</option>
+                    <option value="1">Austin, Texas</option>
+                    <option value="2">Albuquerque, New Mexico</option>
+                    <option value="3">Atlanta, Georgia</option>
+                    <option value="3">Aurora, Colorado</option>
+                    <option value="3">Arlington, Texas</option>
+
+                  </select>
+                  <input type="text" class="form-control customInput mb-3" id="InputReason" placeholder="Input reason">
+                <div class="d-flex justify-content-between align-items-center mt-3 gap-3">
+                    <button class="theme-btn btnGrayBorder w-100"data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <a href="cleanerList.html" class="theme-btn btnGreen w-100 opLow">Next</a>
+    
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -717,7 +741,7 @@
                   <input type="text" class="form-control customInput mb-3" id="InputReason" placeholder="Input reason">
                 <div class="d-flex justify-content-between align-items-center mt-3 gap-3">
                     <button class="theme-btn btnGrayBorder w-100"data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                    <button class="theme-btn btnred w-100 opLow"data-bs-dismiss="modal" aria-label="Close">Send</button>
+                    <button class="theme-btn btnred w-100 opLow"  data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">Send</button>
     
                 </div>
             </div>
@@ -771,8 +795,50 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button class="theme-btn btnGreen w-50 py-3 opLow"data-bs-dismiss="modal" aria-label="Close">Save</button>
+                    <button class="theme-btn btnGreen w-50 py-3 opLow" data-bs-target="#MemorialDetailModalToggle7" data-bs-toggle="modal">Save</button>
                 </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="MemorialDetailModalToggle7" aria-hidden="true" aria-labelledby="MemorialDetailModalToggleLabel7" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 mx-auto" id="exampleModalToggleLabel2">Choose Payment Card</h1>
+                <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body shopmaincontent shopmainsectionid shippingpayment">
+                <div class="row  addressContent p-3 m-3">
+                    <div class="col-6 col-sm-auto px-0 position-relative">
+                        <div class="form-check checkForm">
+                            <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                            <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
+                                ShipBob Delivery
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm px-0 pt-3 pt-sm-0 order-3 order-sm-2">
+                        <div class="d-flex">
+                            <div class="fs-14 text-muted">**** **** **** 3451</div>
+                            <span class="fs-14 text-muted mx-2">05/26</span>
+                            <span class="w-30px h-30px d-inline-flex"><img class="w-100 h-100" src="../assets/shoppage/image9.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto col-6 px-0 order-2 order-sm-3">
+                        <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 inputGroupBtn">
+                            <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="../assets/shoppage/delate-icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="theme-btn btnGreenBorder w-50 py-3" data-bs-target="#MemorialDetailModalToggle7" data-bs-toggle="modal">+ Add Card Details</button>
+                </div>
+               
+            </div>
+            <div class="d-flex justify-content-center align-items-center modal-footer">
+                <button class="theme-btn btnGreen w-50" data-bs-target="#MemorialDetailModalToggle" data-bs-toggle="modal">Proceed Payment</button>
             </div>
             </div>
         </div>
