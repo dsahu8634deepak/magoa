@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body class="h-auto overflow-auto bodyBg">
@@ -108,7 +109,7 @@
 <!-- ########## filterMemorials start ##########-->
         <section class="filterMemorials ">
             <div class="container">
-                <h4 class="page-title">Cleaner List</h4>
+                <h4 class="page-title"><i class="fa-solid fa-chevron-left"></i> Cleaner List</h4>
                 <div class="row mb-2">
                     <div class="col-12 col-md-4">
                         <div class="mb-3">
@@ -168,33 +169,40 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3">
-                        <div class="CleanerListCard position-relative">
-                            <div class="CleanerListHeader">
-                                <div class="d-flex">
-                                    <img src="../assets/images/CleanerListUser.svg" alt="img">
-                                    <div class="ms-2">
-                                        <div class="userName">Danish M <span>
-                                            <img src="../assets/images/star-medal.svg" alt="img"></span>
+                        <div class="CleanerListCard position-relative" href="../customer/customer.html">
+                            <a href="CleanerDetail.html">
+                                <div class="CleanerListHeader">
+                                    <div class="d-flex">
+                                        <img src="../assets/images/CleanerListUser.svg" alt="img">
+                                        <div class="ms-2">
+                                            <div class="userName text-black">Danish M <span>
+                                                <img src="../assets/images/star-medal.svg" alt="img"></span>
+                                            </div>
+                                            <ul class="d-flex ps-0 mb-0">
+                                                <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
+                                                <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
+                                                <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
+                                                <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
+                                                <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
+                                                <li class="fs-14 text-muted">
+                                                    <span>5</span> <span>(20)</span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="d-flex ps-0 mb-0">
-                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
-                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
-                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
-                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
-                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></span></li>
-                                            <li class="fs-14">
-                                                <span>5</span> <span>(20)</span>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="CleanerListBody p-3 pe-0">
-
-                            </div>
-                            <div class="position-absolute">
-                                <div class="price fs-16">$10</div>
-                            </div>
+                                <div class="CleanerListBody p-3 pe-0">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></div>
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-3.svg" alt="img"></div>
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></div>
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-3.svg" alt="img"></div>
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></div>
+                                        <div class="item"><img src="../assets/images/Cleaner-List-slide-3.svg" alt="img"></div>
+                                    </div>
+                                </div>
+                                <div class="price fs-16 position-absolute">$10</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -209,6 +217,7 @@
     <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- input type Year -->
     
     <script>
@@ -225,6 +234,26 @@
     const selectedImagesHTML = selectedImages.map(image => `<img src="${image}">`).join('');
     selectedImagesContainer.innerHTML = selectedImagesHTML;
     });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    items:1,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:1.5
+        }
+    }
+})
     </script>
 
 </body>

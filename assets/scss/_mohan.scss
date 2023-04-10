@@ -55,7 +55,42 @@ input::placeholder{
         }
     }
 }
-
+.CleanerListCard {
+    background: #fff !important;
+    border-Radius: 16px;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
+    .CleanerListHeader {
+        padding: 15px 15px 0px 15px;
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        button.owl-dot {
+            width: 8px;
+            height: 8px;
+            margin: 0px 5px;
+            border-radius: 50%;
+            background-color: #EAEAEA;
+            &.active{
+                background: #3cb54a;
+            }
+        }
+    }
+    .price.fs-16.position-absolute {
+        top: 0;
+        right: 0;
+        background: #E9F9EB;
+        color: #3CB54A;
+        padding: 16px 20px;
+        border-radius: 0px 0px 0px 25px;
+    }
+}
 .MemorialDetail {
     ul.Detail {
         margin-bottom: 0;
@@ -334,34 +369,35 @@ input::placeholder{
             }
         }
 
-        .ReviewsRight {
-            .progress {
-                background: transparent;
-                height: 6px;
-                overflow: visible;
+       
+    }
+}
+.ReviewsRight {
+    .progress {
+        background: transparent;
+        height: 6px;
+        overflow: visible;
 
-                .progress-bar {
-                    border-radius: 12px;
-                    background-color: $theme1 !important;
-                    position: relative;
-                    overflow: visible;
+        .progress-bar {
+            border-radius: 12px;
+            background-color: $theme1 !important;
+            position: relative;
+            overflow: visible;
 
-                    p {
-                        position: absolute;
-                        right: -34px;
-                        font-family: "Inter";
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: #7f7f8d;
-                        margin-bottom: 1px;
-                    }
-                }
+            p {
+                position: absolute;
+                right: -34px;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7f7f8d;
+                margin-bottom: 1px;
             }
-
         }
     }
+
 }
 // Small devices (landscape phones, 576px and up)
 @mixin reviewspage-mixin-min-sm() {}
