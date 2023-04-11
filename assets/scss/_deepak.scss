@@ -286,55 +286,7 @@
 
         }
 
-        &.shippingpayment {
-            & .addressContent {
-                border: 1px solid $theme1;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-            }
-
-            & .checkForm {
-                & .redioubtn {
-                    height: 20px;
-                    width: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    &:checked {
-                        background-color: $theme1;
-                        border-color: $theme1;
-                    }
-
-                    &:focus {
-                        box-shadow: none !important;
-                    }
-                }
-
-
-                & .inputText {}
-            }
-
-            & .innertext {
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 19px;
-                color: $theme1;
-                padding-left: 15px;
-            }
-
-            & .deliverttext {
-                // padding-left: 22px;
-            }
-
-            & .inputGroupBtn {
-                & button {
-                    background-color: transparent;
-                }
-            }
-        }
-
+      
         &.orderSuccessful {
             & .seccesorder {
                 width: 80px;
@@ -1084,6 +1036,52 @@
                     }
                 }
             }
+        }
+    }
+}
+.shippingpayment {
+    & .addressContent {
+        border: 1px solid $theme1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    & .checkForm {
+        & .redioubtn {
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:checked {
+                background-color: $theme1;
+                border-color: $theme1;
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+
+        & .inputText {}
+    }
+
+    & .innertext {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $theme1;
+        padding-left: 15px;
+    }
+
+   
+
+    & .inputGroupBtn {
+        & button {
+            background-color: transparent;
         }
     }
 }

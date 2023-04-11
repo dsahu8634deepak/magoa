@@ -1,4 +1,12 @@
 //************* [ Modal css start ] *************
+.bodyBg{
+    background-color: #EAEAEA;
+}
+input::placeholder{
+    color: #7F7F8D;
+    font-size: 16px;
+    font-weight: 400;
+}
 .modal-content {
     overflow: hidden;
     border-radius: 24px !important;
@@ -47,7 +55,42 @@
         }
     }
 }
-
+.CleanerListCard {
+    background: #fff !important;
+    border-Radius: 16px;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
+    .CleanerListHeader {
+        padding: 15px 15px 0px 15px;
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        button.owl-dot {
+            width: 8px;
+            height: 8px;
+            margin: 0px 5px;
+            border-radius: 50%;
+            background-color: #EAEAEA;
+            &.active{
+                background: #3cb54a;
+            }
+        }
+    }
+    .price.fs-16.position-absolute {
+        top: 0;
+        right: 0;
+        background: #E9F9EB;
+        color: #3CB54A;
+        padding: 16px 20px;
+        border-radius: 0px 0px 0px 25px;
+    }
+}
 .MemorialDetail {
     ul.Detail {
         margin-bottom: 0;
@@ -330,34 +373,35 @@
             }
         }
 
-        .ReviewsRight {
-            .progress {
-                background: transparent;
-                height: 6px;
-                overflow: visible;
+       
+    }
+}
+.ReviewsRight {
+    .progress {
+        background: transparent;
+        height: 6px;
+        overflow: visible;
 
-                .progress-bar {
-                    border-radius: 12px;
-                    background-color: $theme1 !important;
-                    position: relative;
-                    overflow: visible;
+        .progress-bar {
+            border-radius: 12px;
+            background-color: $theme1 !important;
+            position: relative;
+            overflow: visible;
 
-                    p {
-                        position: absolute;
-                        right: -34px;
-                        font-family: "Inter";
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: #7f7f8d;
-                        margin-bottom: 1px;
-                    }
-                }
+            p {
+                position: absolute;
+                right: -34px;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #7f7f8d;
+                margin-bottom: 1px;
             }
-
         }
     }
+
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -949,7 +993,15 @@
         font-weight: 600;
         font-size: 14px;
         color: $black;
+        &.success{
+        background: #E9F9EB;
+        border-left: 5px solid $theme1;
+        }
     }
+    &.success{
+        background: #E9F9EB;
+        border-left: 5px solid $theme1;
+        }
 }
 
 .custom-border {
@@ -1618,31 +1670,169 @@
             padding-left: 0 !important;
         }
     }
-}
-
-.flovers {
-    & .user {
-        width: 44px;
+    .flovers {
+        & .user{
+            width: 44px;
+        }
+        & .sendBtn{
+            background: #3cb54a;
+            width: 44px;
+            height: 44px;
+        }
+        & .flover {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 230px;
+            padding-right: 12px;
+            & img{
+                width: 14%;
+                margin: auto;
+                margin-bottom: 0;
+            }
+        }
+        & .floverList{
+            & .floverCard{
+                &.success{
+                    background: #e9f9eb;
+                }
+            }
+        }
+        .selected-images{
+            position: relative;
+            height: 45px;
+            background: #fff;
+            border: 1px solid #d3d3d3;
+            border-radius: 50px;
+            width: 100%;
+            .dropdown-menu {
+            
+                border: 1px solid #d3d3d3;
+                border-radius: 16px;
+                margin-top: 11px !important;
+                .customSelect{
+                    border: 1px solid #eaeaea;
+                    border-radius: 8px;
+                    box-shadow: none;
+                    margin: 3px auto 10px auto;
+                    width: 94%;
+                    display: flex;
+                }
+                .customHeight{
+                    height: 231px;
+                    overflow: auto;
+                }
+                .price{
+                    background: #F6F6F6;
+                    border-radius: 8px;
+                    margin: 3px auto 10px auto;
+                    width: 94%;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 15px;
+                    border-left: 4px solid  #7F7F8D;
+                }
+            }
+            #selected-images{
+                border: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                input{
+                    border: 0;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: none;
+                }
+                .iconFlover{
+                    position: absolute;
+                    top: 13px;
+                    right: 15px;
+                    width: 20px;
+                    filter: grayscale(1);
+                }
+            }
+        }
     }
-
-    & .sendBtn {
-        background: #3cb54a;
-        width: 44px;
-        height: 44px;
+    #MemorialDetailModalToggle{
+        & .Detail-img{
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .MemorialDetailRight{
+            border-left: 1px solid #EAEAEA;
+            padding: 0;
+            .myJobTopTab{
+                background-color: inherit;
+                box-shadow: inherit;
+                border-radius: inherit;
+                border-bottom: 1px solid #EAEAEA;
+            }
+            .round{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18px;
+                height: 18px;
+                background: #7F7F8D;
+                border-radius: 40px;
+                color: #fff;
+                font-size: 10px;
+            }
+            .map{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                text-decoration-line: underline;
+                color: $theme1;
+            }
+        }
+        .custom-p{
+            padding: 15px;
+        }
     }
-
-    & .flover {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        height: 230px;
-        padding-right: 12px;
-
-        & img {
-            width: 14%;
-            margin: auto;
-            margin-bottom: 0;
+    .floverList{
+        .floverCard {
+            background: #F6F6F6;
+            border-radius: 16px;
+            margin-top: 15px;
+            margin-right: 13px;
+            .dropdown{
+                .dotDropdown {
+                    cursor: pointer;
+                }
+                .dropdown-menu{
+                    background: #FFFFFF;
+                    border: 1px solid #EAEAEA;
+                    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                    border-radius: 12px;
+                    li {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        a {
+                            height: 44px;
+                            border-bottom: 1px solid #EAEAEA;
+                            width: 100%;
+                            padding: 11px 15px;
+                            display: flex;
+                            align-items: center;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #29293E;
+                            text-decoration: none;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                
+                }
+            }
+            
         }
     }
 
@@ -1658,164 +1848,10 @@
         width: 24px;
     }
 
-
-    .selected-images {
-        position: relative;
-        height: 45px;
-        background: #fff;
-        border: 1px solid #d3d3d3;
-        border-radius: 50px;
-        width: 100%;
-
-        .dropdown-menu {
-
-            border: 1px solid #d3d3d3;
-            border-radius: 16px;
-            margin-top: 11px !important;
-
-            .customSelect {
-                border: 1px solid #eaeaea;
-                border-radius: 8px;
-                box-shadow: none;
-                margin: 3px auto 10px auto;
-                width: 94%;
-                display: flex;
-            }
-
-            .customHeight {
-                height: 231px;
-                overflow: auto;
-            }
-
-            .price {
-                background: #F6F6F6;
-                border-radius: 8px;
-                margin: 3px auto 10px auto;
-                width: 94%;
-                height: 32px;
-                display: flex;
-                align-items: center;
-                padding: 3px 15px;
-                border-left: 4px solid #7F7F8D;
-            }
-        }
-
-        #selected-images {
-            border: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-
-            input {
-                border: 0;
-                width: 100%;
-                height: 100%;
-                box-shadow: none;
-            }
-
-            .iconFlover {
-                position: absolute;
-                top: 13px;
-                right: 15px;
-                width: 20px;
-                filter: grayscale(1);
-            }
-        }
-    }
+.customHeaderBorder{
+    border-radius: 24px 24px 0px 0px !important;
 }
-
-#MemorialDetailModalToggle {
-    & .Detail-img {
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
-    .MemorialDetailRight {
-        border-left: 1px solid #EAEAEA;
-        padding: 0;
-
-        .myJobTopTab {
-            background-color: inherit;
-            box-shadow: inherit;
-            border-radius: inherit;
-            border-bottom: 1px solid #EAEAEA;
-        }
-
-        .round {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 18px;
-            height: 18px;
-            background: #7F7F8D;
-            border-radius: 40px;
-            color: #fff;
-            font-size: 10px;
-        }
-
-        .map {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            text-decoration-line: underline;
-            color: $theme1;
-        }
-    }
-
-    .custom-p {
-        padding: 15px 15px 15px 27px;
-    }
-}
-
-.floverList {
-    .floverCard {
-        background: #F6F6F6;
-        border-radius: 16px;
-        margin-top: 15px;
-        margin-right: 13px;
-
-        .dropdown {
-            .dotDropdown {
-                cursor: pointer;
-            }
-
-            .dropdown-menu {
-                background: #FFFFFF;
-                border: 1px solid #EAEAEA;
-                box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
-                border-radius: 12px;
-
-                li {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-
-                    a {
-                        height: 44px;
-                        border-bottom: 1px solid #EAEAEA;
-                        width: 100%;
-                        padding: 11px 15px;
-                        display: flex;
-                        align-items: center;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #29293E;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: red;
-                        }
-                    }
-                }
-
-            }
-        }
-
-    }
-}
-
-// Small devices (landscape phones, 576px and up)
+    // Small devices (landscape phones, 576px and up)
 @mixin customerPage-mixin-min-sm() {}
 
 // Medium devices (tablets, 768px and up)
