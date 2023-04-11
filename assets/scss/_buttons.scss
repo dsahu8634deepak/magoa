@@ -35,6 +35,7 @@
     border: 1px solid #7F7F8D;
     color: #7F7F8D;
     background: transparent !important;
+
     &:hover {
         background: #7F7F8D !important;
         color: $white;
@@ -56,11 +57,13 @@
     border: 1px solid $theme1;
     color: $theme1;
     background-color: transparent !important;
+
     &:hover {
         background: $theme1 !important;
         color: $white;
     }
 }
+
 .btnRedBorder {
     border: 1px solid $red;
     color: $red;
@@ -70,6 +73,7 @@
         color: $white;
     }
 }
+
 .btnGreen {
     border: 1px solid $theme1;
     color: $white;
@@ -131,4 +135,55 @@
         background-color: $theme1 !important;
         color: $white;
     }
+}
+
+.buttonGroup {
+    & .Greenbutton {
+        background: #E9F9EB;
+        border: 1px solid #2BA339;
+        border-radius: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2BA339;
+    }
+
+    & .orangebutton {
+        background: #FFEDDC;
+        border: 1px solid #E99140;
+        border-radius: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #E99140;
+
+
+    }
+}
+
+.greenbtnmodal {
+    background-color: #3cb54a;
+    color: #fff;
+    border: 1px solid #2ba339;
+    border-radius: 32px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    width: 175px ;
+    display: inline-flex;
+    height: 51px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $white;
+        color: $theme1;
+    }
+
 }

@@ -992,249 +992,248 @@
                 font-size: 14px;
 
 
-                    & option {
-                        font-size: 14px;
-                        border: 0;
-                        background-color: transparent;
-                        color: #000;
-
-                        &:hover {
-                            background-color: #e9f9eb !important;
-                            color: $theme1;
-                        }
-                    }
-                }
-            }
-
-            .theme-card {
-                border-radius: 12px;
-            }
-
-
-            .downlode {
-                border-radius: 50px;
-                font-weight: 500;
-                font-size: 13px;
-                height: 34px;
-                line-height: 42px;
-                text-align: center;
-                text-decoration: none;
-                padding: 12px 40px;
-                border: 1px solid $theme1;
-
-                border: 1px solid #7f7f8d;
-                color: #29293E;
-                background: rgba(0, 0, 0, 0) !important;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0px 12px;
-                width: fit-content;
-                margin-left: auto;
-
-                img {
-                    filter: opacity(0.5);
-                }
-
-                .me-1 {
-                    display: none;
-                }
-
-                &:hover {
-                    transition: all ease-in-out .1s;
-                    background: #7f7f8d !important;
-                    color: $white;
-
-                    img {
-                        filter: brightness(100);
-                    }
-                }
-            }
-
-            .customTable {
-                th {
-                    vertical-align: middle;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 20px;
-                    text-align: center;
-                    color: #7F7F8D;
-                    background: #F6F6F6;
-                    border-bottom: 0;
-                }
-
-                td {
-                    font-weight: 600;
+                & option {
                     font-size: 14px;
+                    border: 0;
+                    background-color: transparent;
+                    color: #000;
 
-                    &.green {
+                    &:hover {
+                        background-color: #e9f9eb !important;
                         color: $theme1;
                     }
+                }
+            }
+        }
+
+        .theme-card {
+            border-radius: 12px;
+        }
+
+
+        .downlode {
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 13px;
+            height: 34px;
+            line-height: 42px;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 40px;
+            border: 1px solid $theme1;
+
+            border: 1px solid #7f7f8d;
+            color: #29293E;
+            background: rgba(0, 0, 0, 0) !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 12px;
+            width: fit-content;
+            margin-left: auto;
+
+            img {
+                filter: opacity(0.5);
+            }
+
+            .me-1 {
+                display: none;
+            }
+
+            &:hover {
+                transition: all ease-in-out .1s;
+                background: #7f7f8d !important;
+                color: $white;
+
+                img {
+                    filter: brightness(100);
+                }
+            }
+        }
+
+        .customTable {
+            th {
+                vertical-align: middle;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                color: #7F7F8D;
+                background: #F6F6F6;
+                border-bottom: 0;
+            }
+
+            td {
+                font-weight: 600;
+                font-size: 14px;
+
+                &.green {
+                    color: $theme1;
+                }
+
+                &.orange {
+                    color: #f89408;
+                }
+
+                &.red {
+                    color: #dc3545;
+                }
+            }
+        }
+
+        $color_1: #555;
+        $font-family_1: Verdana, sans-serif;
+
+        .totalEarning {
+            width: 100%;
+            justify-content: space-between;
+            padding: 15px !important;
+
+            .total {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+
+                &.afterBefore {
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        width: 1px;
+                        height: 100%;
+                        background-color: #EAEAEA;
+                        right: 35px;
+                        top: 0;
+                    }
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        width: 1px;
+                        height: 100%;
+                        background-color: #EAEAEA;
+                        left: -16px;
+                        top: 0;
+                    }
+                }
+
+                p {
+                    margin-bottom: 11px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #7F7F8D;
+                }
+
+                .round {
+                    width: 52px;
+                    height: 52px;
+                    left: 16px;
+                    top: 16px;
+                    background: #E9F9EB;
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     &.orange {
-                        color: #f89408;
+                        background: #F9F1E9;
                     }
 
                     &.red {
-                        color: #dc3545;
+                        background: #F9E9E9;
                     }
                 }
             }
-
-            $color_1: #555;
-            $font-family_1: Verdana, sans-serif;
-
-            .totalEarning {
-                width: 100%;
-                justify-content: space-between;
-                padding: 15px !important;
-
-                .total {
-                    width: 100%;
-                    text-align: center;
-                    align-items: center;
-
-                    &.afterBefore {
-                        position: relative;
-
-                        &:after {
-                            position: absolute;
-                            content: "";
-                            width: 1px;
-                            height: 100%;
-                            background-color: #EAEAEA;
-                            right: 35px;
-                            top: 0;
-                        }
-
-                        &:before {
-                            position: absolute;
-                            content: "";
-                            width: 1px;
-                            height: 100%;
-                            background-color: #EAEAEA;
-                            left: -16px;
-                            top: 0;
-                        }
-                    }
-
-                    p {
-                        margin-bottom: 11px;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: #7F7F8D;
-                    }
-
-                    .round {
-                        width: 52px;
-                        height: 52px;
-                        left: 16px;
-                        top: 16px;
-                        background: #E9F9EB;
-                        border-radius: 12px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        &.orange {
-                            background: #F9F1E9;
-                        }
-
-                        &.red {
-                            background: #F9E9E9;
-                        }
-                    }
-                }
-            }
-
-            #container {
-                height: 400px;
-                overflow: hidden;
-                margin-left: -29px;
-                margin-bottom: -38px;
-
-                .highcharts-title,
-                .highcharts-button-symbol {
-                    display: none !important;
-                }
-
-                .highcharts-point {
-                    background-color: $red !important;
-                    border-radius: 50px !important;
-                    width: 8px !important;
-                    overflow: hidden;
-                    fill: inherit;
-
-                    &.highcharts-color-1 {
-                        fill: $red !important;
-                    }
-
-                    &.highcharts-color-0 {
-                        fill: $theme1 !important;
-                    }
-
-                    &.highcharts-color-2 {
-                        fill: #F89408 !important;
-                    }
-                }
-            }
-
-            .highcharts-figure {
-                max-width: 100%;
-                background: $white;
-                padding-top: 26px;
-                background: $white;
-                box-shadow: 0px 0px 16px #00000012;
-                border-radius: 16px;
-                overflow: hidden;
-            }
-
-            .highcharts-data-table {
-                table {
-                    min-width: 310px;
-                    max-width: 800px;
-                    margin: 1em auto;
-                    font-family: $font-family_1;
-                    border-collapse: collapse;
-                    border: 1px solid #ebebeb;
-                    margin: 10px auto;
-                    text-align: center;
-                    width: 100%;
-                    max-width: 500px;
-                }
-
-                caption {
-                    padding: 1em 0;
-                    font-size: 1.2em;
-                    color: $color_1;
-                    padding: 0.5em;
-                }
-
-                th {
-                    font-weight: 600;
-                    padding: 0.5em;
-                    padding: 0.5em;
-                }
-
-                td {
-                    padding: 0.5em;
-                }
-
-                thead {
-                    tr {
-                        background: $red;
-                    }
-                }
-
-                tr {
-                    &:nth-child(even) {}
-
-                    &:hover {}
-                }
-            }
-
         }
+
+        #container {
+            height: 400px;
+            overflow: hidden;
+            margin-left: -29px;
+            margin-bottom: -38px;
+
+            .highcharts-title,
+            .highcharts-button-symbol {
+                display: none !important;
+            }
+
+            .highcharts-point {
+                background-color: $red !important;
+                border-radius: 50px !important;
+                width: 8px !important;
+                overflow: hidden;
+                fill: inherit;
+
+                &.highcharts-color-1 {
+                    fill: $red !important;
+                }
+
+                &.highcharts-color-0 {
+                    fill: $theme1 !important;
+                }
+
+                &.highcharts-color-2 {
+                    fill: #F89408 !important;
+                }
+            }
+        }
+
+        .highcharts-figure {
+            max-width: 100%;
+            background: $white;
+            padding-top: 26px;
+            background: $white;
+            box-shadow: 0px 0px 16px #00000012;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .highcharts-data-table {
+            table {
+                min-width: 310px;
+                max-width: 800px;
+                margin: 1em auto;
+                font-family: $font-family_1;
+                border-collapse: collapse;
+                border: 1px solid #ebebeb;
+                margin: 10px auto;
+                text-align: center;
+                width: 100%;
+                max-width: 500px;
+            }
+
+            caption {
+                padding: 1em 0;
+                font-size: 1.2em;
+                color: $color_1;
+                padding: 0.5em;
+            }
+
+            th {
+                font-weight: 600;
+                padding: 0.5em;
+                padding: 0.5em;
+            }
+
+            td {
+                padding: 0.5em;
+            }
+
+            thead {
+                tr {
+                    background: $red;
+                }
+            }
+
+            tr {
+                &:nth-child(even) {}
+
+                &:hover {}
+            }
+        }
+
     }
 }
 
@@ -1245,23 +1244,28 @@
             .total {
                 padding: 10px 0;
             }
+
             .total.afterBefore:after {
                 position: absolute;
                 content: "";
                 display: none;
             }
-            .wrapper .main{
+
+            .wrapper .main {
                 padding: 10px 14px !important;
             }
         }
-        .pding{
+
+        .pding {
             padding: 0 12px;
         }
-        .reg{
+
+        .reg {
             display: contents;
         }
     }
-    .wrapper .main{
+
+    .wrapper .main {
         padding: 10px 14px !important;
     }
 }
@@ -1641,12 +1645,14 @@
             margin-bottom: 0;
         }
     }
+
     ::-webkit-inner-spin-button,
     ::-webkit-calendar-picker-indicator {
         display: none;
         -webkit-appearance: none;
     }
-    .cardIcon{
+
+    .cardIcon {
         top: 7px;
         right: 15px;
         width: 24px;
