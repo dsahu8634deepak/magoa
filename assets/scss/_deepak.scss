@@ -2582,9 +2582,9 @@
             color: #646464;
             padding: 6px 16px;
         }
-        & label[type=checkbox] {
-            color: $white !important;
-            
+        & .btn-check:checked+.btn {
+            color: $white;
+            border-color: $theme1;
         }
 
         & .canclebtn {
@@ -3031,8 +3031,11 @@
             input[type=checkbox]:checked~label, input[type=radio]:checked~label {
                 color: $theme1 !important;
                 font-weight: 600 !important;
+                .rediotext{
+                    color: $theme1;
+                }
             }
-
+            
 
         }
     }

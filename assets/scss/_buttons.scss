@@ -8,6 +8,12 @@
     padding: 12px 40px;
     border: 1px solid $theme1;
     transition: all ease-in-out 0.3s;
+    &:hover{
+    transition: all ease-in-out 0.3s;
+        & .customColor{
+            filter: brightness(9.5);         
+        }
+    }
 }
 
 .custommsgBtn {

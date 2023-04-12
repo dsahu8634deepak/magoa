@@ -59,6 +59,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
+    <link rel="stylesheet" href="assets\css\ionic.bundle.css" />
 </head>
 
 <body class="h-auto overflow-auto bodyBg">
@@ -820,6 +822,12 @@
                                         <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     </div>
                                 </div>
+                                <div class="col-6">
+                                    <div class="theme-btn btnGreenBorder py-2"> <span class="icons"><img class="customColor" src="../assets/images/message.svg" alt="img"></span> Message</div>
+                                    </div>
+                                <div class="col-6">
+                                    <div class="theme-btn btnGreen" data-bs-toggle="modal" data-bs-target="#ContinueModal">Continue</div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade contantTab" id="uprightMemorial" role="tabpanel" aria-labelledby="uprightMemorial-tab">...</div>
@@ -831,13 +839,113 @@
         </div>
     <!-- ########## filterMemorials end ##########-->
     </div>  
+
+
+    <div class="modal fade" id="ContinueModal" tabindex="-1" aria-labelledby="ContinueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+          <div class="modal-content mx-5">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Choose Schedule</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body position-relative">
+                <!-- <div class="theme-btn btnGrayBorder w-auto float-end px-3 position-absolute r-16 py-2" id="date">
+                </div> -->
+                <ion-datetime class="w-100 customWidth2" presentation="date" multiple="true"></ion-datetime>
+               
+            </div>
+             <div class="d-flex justify-content-between px-3 py-2 borderGray modal-footer">
+                    <div class="fs-14 fw-bold d-flex align-items-center"><span></span> Available</div>
+                    <div class="fs-14 text-muted">Tap the date to change availability*</div>
+                </div>
+            <div class="modal-footer py-2">
+              <button type="button" class="theme-btn btnGreen w-50 mx-auto">Get a Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="assets\libs\ionic.esm.js"></script>
     <!-- input type Year -->
 
+
+    <!-- calendar -->
+<script>
+    $( document ).ready(function() {
+
+    var e = document.getElementById("salectValue");
+    var value = e.value;
+
+});
+    //today
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + '/' + yyyy;
+        document.write(today);
+        document.getElementById("date").innerHTML = today;
+
+    //all date
+    const getDays = (year, month) => {
+        return new Date(year, month, 0).getDate();
+    };
+    //monday to fridday date
+    var monfridday = [
+        new Date(firstMonday),
+        new Date(secondMonday),
+        new Date(thirdMonday),
+        new Date(fourthMonday),
+        new Date(firstFriday),
+        new Date(secondFriday),
+        new Date(thirdFriday),
+        new Date(fourthFriday),
+    ];
+    //weekends
+    var weekends = [
+        new Date(firstSaturday),
+        new Date(secondSaturday),
+        new Date(thirdSaturday),
+        new Date(fourthSaturday),
+        new Date(firstSunday),
+        new Date(secondSaturday),
+        new Date(thirdSaturday),
+        new Date(fourthSaturday),
+    ];
+    //Custom salect date
+    const datetime = document.querySelector('ion-datetime');
+    datetime.value = ['2022-06-03', '2022-06-13', '2022-06-29'];
+
+    
+</script>
+<!-- Cleaning Charge Hide -->
+<script>
+    $(".CleaningChargeHide").click(function(){
+        $(".CleaningCharge").hide();
+        $(".CleaningChargeEdit").addClass("show");
+        if ($(".switch-wrapper :input").is(':checked')) {
+            debugger;
+            $(".switch-wrapper :input").attr('checked', 'false');
+        } else {
+            $(".switch-wrapper :input").attr('checked', 'true');
+        }
+    });
+    $(".EditCleaningChargeHide").click(function(){
+        $(".CleaningCharge").show();
+        $(".CleaningChargeEdit").removeClass("show");
+    });
+</script>
+<script>
+    $(".calendar-day").click(function(){
+        debugger;
+        $(this).addClass("green");
+    });
+</script>
 </body>
 
 </html>
