@@ -82,7 +82,7 @@
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 19px;
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .textCard {
@@ -159,7 +159,7 @@
             overflow: hidden;
 
             & .cardHeading {
-                color: #29293E;
+                color: $theme4;
                 line-height: 29px;
                 background: #F7F7F7;
                 font-weight: 400;
@@ -247,7 +247,7 @@
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 19px;
-                        color: #29293E;
+                        color: $theme4;
 
                     }
 
@@ -286,7 +286,7 @@
 
         }
 
-      
+
         &.orderSuccessful {
             & .seccesorder {
                 width: 80px;
@@ -298,7 +298,7 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 29px;
-                color: #29293E;
+                color: $theme4;
                 text-align: center;
 
             }
@@ -307,7 +307,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -328,7 +328,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
                 padding: 0 14px;
 
             }
@@ -343,7 +343,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #29293E;
+                    color: $theme4;
 
                 }
 
@@ -370,12 +370,12 @@
 
                             & .card-body {
                                 & .headingtext {
-                                    color: #29293E;
+                                    color: $theme4;
                                     background: #F7F7F7;
                                 }
 
                                 & .subtext {
-                                    color: #29293E;
+                                    color: $theme4;
 
                                 }
 
@@ -397,7 +397,7 @@
                             overflow: hidden;
 
                             & .headingtext {
-                                color: #29293E;
+                                color: $theme4;
                                 background: #F7F7F7;
                             }
 
@@ -409,7 +409,7 @@
                                 }
 
                                 & .subtext {
-                                    color: #29293E;
+                                    color: $theme4;
 
                                     & span {
                                         color: #7F7F8D;
@@ -435,7 +435,7 @@
                             overflow: hidden;
 
                             & .headingtext {
-                                color: #29293E;
+                                color: $theme4;
                                 background: #F7F7F7;
                             }
 
@@ -449,7 +449,7 @@
                                     font-weight: 600;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    color: #29293E;
+                                    color: $theme4;
                                 }
 
                                 & .subInner {
@@ -474,7 +474,7 @@
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 19px;
-                        color: #29293E;
+                        color: $theme4;
                         background: #F7F7F7;
                         border-top-left-radius: 16px;
                         border-top-right-radius: 16px;
@@ -496,7 +496,7 @@
                             font-weight: 700;
                             font-size: 16px;
                             line-height: 19px;
-                            color: #29293E;
+                            color: $theme4;
                         }
 
                         & .quntenty {
@@ -531,7 +531,7 @@
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 17px;
-                            color: #29293E;
+                            color: $theme4;
 
                             & span {
                                 font-weight: 700;
@@ -557,7 +557,7 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 29px;
-                color: #29293E;
+                color: $theme4;
             }
 
             & .subtextpurches {
@@ -594,7 +594,7 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .orderNumber {
@@ -610,14 +610,14 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .date {
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
                     }
                 }
 
@@ -636,7 +636,7 @@
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 19px;
-                    color: #29293E;
+                    color: $theme4;
                 }
 
                 & .subHeading {
@@ -655,7 +655,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #29293E;
+                    color: $theme4;
 
                     & span {
                         font-weight: 400;
@@ -669,7 +669,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #29293E;
+                    color: $theme4;
                 }
 
                 & .orderPayment {
@@ -741,7 +741,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #29293E;
+            color: $theme4;
         }
 
         & .dismissbtn {}
@@ -790,7 +790,7 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
-            color: #29293E;
+            color: $theme4;
             background: #F7F7F7;
             border-top-left-radius: 16px;
             border-top-right-radius: 16px;
@@ -812,7 +812,7 @@
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 19px;
-                color: #29293E;
+                color: $theme4;
             }
 
             & .quntenty {
@@ -847,7 +847,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 17px;
-                color: #29293E;
+                color: $theme4;
 
                 & span {
                     font-weight: 700;
@@ -867,11 +867,11 @@
 
                 & .card-body {
                     & .headingtext {
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .subtext {
-                        color: #29293E;
+                        color: $theme4;
 
                     }
 
@@ -891,7 +891,7 @@
                 overflow: hidden;
 
                 & .headingtext {
-                    color: #29293E;
+                    color: $theme4;
                 }
 
                 & .card-body {
@@ -902,7 +902,7 @@
                     }
 
                     & .subtext {
-                        color: #29293E;
+                        color: $theme4;
 
                         & span {
                             color: #7F7F8D;
@@ -927,7 +927,7 @@
                 overflow: hidden;
 
                 & .headingtext {
-                    color: #29293E;
+                    color: $theme4;
                 }
 
                 & .imagecardbottom {
@@ -940,7 +940,7 @@
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .subInner {
@@ -964,7 +964,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
-            color: #29293E;
+            color: $theme4;
             height: 45px;
             width: 210px;
             justify-content: center;
@@ -1039,6 +1039,7 @@
         }
     }
 }
+
 .shippingpayment {
     & .addressContent {
         border: 1px solid $theme1;
@@ -1077,7 +1078,7 @@
         padding-left: 15px;
     }
 
-   
+
 
     & .inputGroupBtn {
         & button {
@@ -1508,7 +1509,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #29293E;
+                    color: $theme4;
 
                     & span {
                         font-weight: 700;
@@ -1528,11 +1529,11 @@
 
                     & .card-body {
                         & .headingtext {
-                            color: #29293E;
+                            color: $theme4;
                         }
 
                         & .subtext {
-                            color: #29293E;
+                            color: $theme4;
 
                         }
 
@@ -1552,7 +1553,7 @@
                     overflow: hidden;
 
                     & .headingtext {
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .card-body {
@@ -1563,7 +1564,7 @@
                         }
 
                         & .subtext {
-                            color: #29293E;
+                            color: $theme4;
 
                             & span {
                                 color: #7F7F8D;
@@ -1677,7 +1678,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 29px;
-            color: #29293E;
+            color: $theme4;
 
         }
 
@@ -1830,7 +1831,7 @@
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
                     }
 
                     & .Greenbutton {
@@ -1871,7 +1872,7 @@
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #29293E;
+                        color: $theme4;
 
                         &.color {
                             color: #E99140 !important;
@@ -1941,7 +1942,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        color: #29293E;
+        color: $theme4;
         background: #E9F9EB;
         border-radius: 8px;
         border-left: 5px solid #3CB54A;
@@ -1954,7 +1955,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        color: #29293E;
+        color: $theme4;
         background: #F9D9D7;
         border-radius: 8px;
         border-left: 5px solid #E84F45;
@@ -2059,7 +2060,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 20px;
-            color: #29293E;
+            color: $theme4;
         }
 
         & .Greenbutton {
@@ -2100,7 +2101,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 20px;
-            color: #29293E;
+            color: $theme4;
 
             &.color {
                 color: #E99140 !important;
@@ -2118,7 +2119,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 20px;
-            color: #29293E;
+            color: $theme4;
         }
 
         & .formControl {
@@ -2169,7 +2170,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
             }
 
             & .starlist {
@@ -2181,7 +2182,7 @@
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 19px;
-                        color: #29293E;
+                        color: $theme4;
 
                     }
                 }
@@ -2289,7 +2290,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #29293E;
+            color: $theme4;
 
         }
     }
@@ -2316,7 +2317,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
                 font-weight: 600;
 
                 & .number {
@@ -2470,7 +2471,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
 
             }
 
@@ -2494,7 +2495,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
 
             }
 
@@ -2527,7 +2528,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #29293E;
+            color: $theme4;
         }
     }
 
@@ -2581,6 +2582,10 @@
             color: #646464;
             padding: 6px 16px;
         }
+        & label[type=checkbox] {
+            color: $white !important;
+            
+        }
 
         & .canclebtn {
             font-family: 'Inter';
@@ -2629,7 +2634,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
-            color: #29293e;
+            color: $theme4;
             background: #F9D9D7;
             border-radius: 8px;
             cursor: pointer;
@@ -2645,7 +2650,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #29293E;
+            color: $theme4;
         }
     }
 
@@ -2657,7 +2662,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 19px;
-                color: #29293E;
+                color: $theme4;
             }
 
             & input {
@@ -2672,7 +2677,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
-                color: #29293E;
+                color: $theme4;
             }
         }
     }
@@ -2715,7 +2720,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #29293E;
+            color: $theme4;
         }
     }
 
@@ -2726,7 +2731,7 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-            color: #29293E;
+            color: $theme4;
 
         }
 
@@ -2751,7 +2756,8 @@
                     line-height: 20px;
                     color: #7F7F8D;
                     height: 44px;
-                    &:focus{
+
+                    &:focus {
                         outline: none;
                         border-color: transparent !important;
                     }
@@ -2825,3 +2831,239 @@
 
 // X-Large devices (large desktops, less than 1400px)
 @mixin myorder-mixin-max-xl() {}
+
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Cleaner Detail !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!1!!!!
+
+[page-name=cleanerDetail] {
+    & .clenerSection {
+        & .clenarheading {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $theme4;
+            cursor: pointer;
+
+            & span {}
+
+        }
+
+        & .leftSide {
+            & .clenerimaege {
+                width: 42px;
+                height: 42px;
+            }
+
+            & .username {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme4;
+
+                & span {}
+            }
+
+            & .starList {
+                & .textstar {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $theme1;
+                    align-items: center;
+                    display: flex;
+
+                    & span {
+                        color: #7F7F8D !important;
+                    }
+                }
+            }
+
+            & .navbutton {
+                & .nav-link {
+                    width: 214px;
+                    height: 140px;
+
+                    &.active {
+                        background-color: transparent !important;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+
+            & .form-label {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                color: $theme4;
+            }
+
+            & .form-control {
+                &:focus {
+                    outline: none;
+                    border-color: #eaeaea !important;
+                }
+            }
+        }
+
+        & .rightSide {
+            & .nav-tabs {
+                & .nav-item {
+                    width: calc(100% / 3);
+                    border-bottom: 2px solid #EAEAEA !important;
+
+                    & .nav-link {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: #7F7F8D;
+                        width: 100%;
+                        background-color: transparent;
+
+                        &.active {
+                            font-weight: 700;
+                            color: $theme1;
+                            border-bottom: 2px solid $theme1 !important;
+                        }
+                    }
+                }
+            }
+
+            & .contantTab {
+                & .form-check {
+                    background: $white;
+                    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+                    border-radius: 16px;
+                    height: 52px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: none;
+
+
+                    & .inputGroup {
+
+                        & .form-check-label {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-align: right;
+                            color: #7F7F8D;
+                        }
+                    }
+
+                    & .form-check-input {
+                        box-shadow: none;
+
+                        &:checked {
+                            background-color: $theme1;
+                            border-color: $theme1;
+                            color: $theme1;
+                        }
+                    }
+
+                    & .rediotext {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: right;
+                        color: #7F7F8D;
+
+                    }
+                }
+
+                & .heading {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme4;
+                }
+
+                & .form-label {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $theme4;
+                }
+
+                & .form-control {
+                    &:focus {
+                        outline: none;
+                        border-color: #eaeaea !important;
+                    }
+                }
+            }
+
+            input[type=checkbox]~label, input[type=radio]~label {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #7F7F8D;
+                margin-top: 5px;
+
+
+            }
+
+            input[type=checkbox]:checked~label, input[type=radio]:checked~label {
+                color: $theme1 !important;
+                font-weight: 600 !important;
+            }
+
+
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin cleanerDetail-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin cleanerDetail-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin cleanerDetail-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin cleanerDetail-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin cleanerDetail-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin cleanerDetail-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin cleanerDetail-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin cleanerDetail-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin cleanerDetail-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin cleanerDetail-mixin-max-xl() {}

@@ -62,7 +62,7 @@
 </head>
 
 <body class="h-auto overflow-auto bodyBg">
-    <div class="main" page-name="customerPage">
+    <div class="main" page-name="cleanerDetail">
     <!-- ########## Navbar ##########-->
         <nav class="navbar topHeader">
             <div class="container">
@@ -79,10 +79,10 @@
                     <!-- BeforeLogin start -->
                         <ul class="beforeLogin ps-0 mb-0 gap-3">
                             <li>
-                                <a href="javascript:"><img  class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt=""> </a>
+                                <a href="javascript:"><img  class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning"> </a>
                             </li>
                             <li>
-                                <a href="./message.html"><img  class="gray" src="../assets/images/message.svg" alt=""> </a>
+                                <a href="./message.html"><img  class="gray" src="../assets/images/message.svg" alt="message"> </a>
                             </li>
                             <li>
                                 <a href="../index.html" class="user-btn"> Cleaner <span class="ms-2"><img src="../assets/images/user-fillter.png" alt="fillter"></span></a>
@@ -92,8 +92,8 @@
                                     <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/user-profile.svg" alt="user-profile"></div>
                                     <ul class="dropdown-menu me-0 p-0 border-0 dropdown-menu-end">
                                         <li><a class="dropdown-item" href="./settings.html"><span class="me-2"><img src="../assets/images/customer/userDrop.svg" alt="userDrop"></span> Profile</a></li>
-                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning-order-icon"></span> My Order</a></li>
-                                        <li><a class="dropdown-item" href="javascript:"><span class="me-2"><img src="../assets/images/customer/Favorite-drop.svg" alt="Favorite-drop"></span>Favorite</a></li>
+                                        <li><a class="dropdown-item" href="./myorder.html"><span class="me-2"><img src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning-order-icon"></span> My Order</a></li>
+                                        <li><a class="dropdown-item" href="./favorite.html"><span class="me-2"><img src="../assets/images/customer/Favorite-drop.svg" alt="Favorite-drop"></span>Favorite</a></li>
                                         <li><a class="dropdown-item" href="./settings.html"><span class="me-2"><img src="../assets/images/settings.svg" alt="settings"></span>Settings</a></li>
                                     </ul>
                                 </div>
@@ -107,610 +107,736 @@
     <!-- ########## Navbar ##########-->
 
     <!-- ########## filterMemorials start ##########-->
-        <section class="filterMemorials ">
+        <div class="container-fluid clenerSection pt-4">
             <div class="container">
-                <h4 class="page-title"><i class="fa-solid fa-chevron-left"></i> Cleaner Detail</h4>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                    <div class="content-carousel">
-                        <div class="owl-carousel">
-                          <div class="item"> <img src="../assets/images/Cleaner-List-slide-1.svg"> </div>
-                          <div class="item"> <img src="../assets/images/Cleaner-List-slide-3.svg"> </div>
-                          <div class="item"> <img src="../assets/images/Cleaner-List-slide-5.svg"> </div>
-                        </div>
-                      
-                        <div class="owl-dots d-block">
-                            <button role="button" class="owl-dot active"><img class="w-100" src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></button>
-                            <button role="button" class="owl-dot"><img class="w-100" src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></button>
-                            <button role="button" class="owl-dot"><img class="w-100" src="../assets/images/Cleaner-List-slide-1.svg" alt="img"></button>
-                        </div>
-                      </div>
+                <div class="row pb-5">
+                    <div class="col-12 mb-3">
+                        <div class="clenarheading"><span class="d-inline-flex me-2"><img class="w-100 h-100" src="../assets/clenerDetails/svg1.svg" alt="svg1"></span> Cleaner Detail</div>
                     </div>
-                    <div class="col-12 col-md-6"></div>
-                    <div class="col-12 col-md-6">
-                        <div class="dPage ReviewsSection mt-4" data-id="tab5">
-                            <h4 class="page-title">Reviews</h4>
-                            <div class="Reviews-detail">
-                                <div class="theme-card mb-4">
-                                    <div class="row m-0">
+                    <div class="col-md-6 leftSide ">
+                        <div class="row mx-0 mb-3">
+                            <div class="col-auto">
+                                <div class="clenerimaege"><img class="w-100 h-100 rounded-pill" src="../assets/clenerDetails/image1.png" alt="image1"></div>
+                            </div>
+                            <div class="col ps-0">
+                                <div class="username d-flex align-items-center">Danish M <span class="d-inline-flex"><img class="w-100 h-100" src="../assets/clenerDetails/svg2.svg" alt="medal"></span></div>
+                                <ul class="list-unstyled d-flex align-items-center starList mb-0">
+                                    <li><img src="../assets/clenerDetails/svg3.svg" alt="star"></li>
+                                    <li><img src="../assets/clenerDetails/svg3.svg" alt="star"></li>
+                                    <li><img src="../assets/clenerDetails/svg3.svg" alt="star"></li>
+                                    <li><img src="../assets/clenerDetails/svg3.svg" alt="star"></li>
+                                    <li><img src="../assets/clenerDetails/svg3.svg" alt="star"></li>
+                                    <li class="textstar mx-2">5 <span class="mx-2">(20)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <div class="imagetab">
+                                        <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image2.png" alt="image2">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <div class="imagetab">
+                                        <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image3.png" alt="image2">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                    <div class="imagetab">
+                                        <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image4.png" alt="image2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav flex-column nav-pills me-3 navbutton" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image3.png" alt="image3">
+                                </button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image4.png" alt="image4">
+                                </button>
+                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                    <img class="w-100 h-100 rounded-2" src="../assets/clenerDetails/image5.png" alt="image5">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea11" class="form-label">About Me</label>
+                                <textarea class="form-control shadow-none" id="exampleFormControlTextarea11" placeholder="Hello My name is Danish and I've been cleaning headstones for over 10 years and I love what I do." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="dPage ReviewsSection mt-4" data-id="tab5">
+                                <h4 class="page-title">Reviews</h4>
+                                <div class="Reviews-detail">
+                                    <div class="theme-card mb-4">
+                                        <div class="row m-0">
+                                            <div class="col-12 col-md-12 p-3 pe-5">
+                                                <div class="ReviewsRight">
+                                                    <div class="row align-items-center g-3 mb-1">
+                                                        <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
+                                                        <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">5</h4></div>
+                                                        <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar text-bg-warning" style="width: 56%"><p>56</p></div>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="row align-items-center g-3 mb-1">
+                                                        <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
+                                                        <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">4</h4></div>
+                                                        <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar text-bg-warning" style="width: 10%"><p>10</p></div>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="row align-items-center g-3 mb-1">
+                                                        <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
+                                                        <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">3</h4></div>
+                                                        <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar text-bg-warning" style="width: 4%"><p>4</p></div>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="row align-items-center g-3 mb-1">
+                                                        <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
+                                                        <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">2</h4></div>
+                                                        <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="row align-items-center g-3">
+                                                        <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
+                                                        <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">1</h4></div>
+                                                        <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
+                                                            </div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled nav nav-pills mb-3 underTab" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-ReviewsAll-tab" data-bs-toggle="pill" data-bs-target="#pills-ReviewsAll" type="button" role="tab" aria-controls="pills-ReviewsAll" aria-selected="true">All <span>(70)</span></button>
+                                    </li>
+                                    <li class="nav-item ms-2" role="presentation">
+                                        <button class="nav-link" id="pills-Reviews5Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews5Star" type="button" role="tab" aria-controls="pills-Reviews5Star" aria-selected="false" tabindex="-1">5 Star
+                                            <span>(56)</span></button>
+                                    </li>
+                                    <li class="nav-item ms-2" role="presentation">
+                                        <button class="nav-link" id="pills-Reviews4Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews4Star" type="button" role="tab" aria-controls="pills-Reviews4Star" aria-selected="false" tabindex="-1">4 Star
+                                            <span>(10)</span></button>
+                                    </li>
+                                    <li class="nav-item ms-2" role="presentation">
+                                        <button class="nav-link" id="pills-Reviews3Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews3Star" type="button" role="tab" aria-controls="pills-Reviews3Star" aria-selected="false" tabindex="-1">3 Star
+                                            <span>(4)</span></button>
+                                    </li>
+                                    <li class="nav-item ms-2" role="presentation">
+                                        <button class="nav-link" id="pills-Reviews2Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews2Star" type="button" role="tab" aria-controls="pills-Reviews2Star" aria-selected="false" tabindex="-1">2 Star
+                                            <span>(0)</span></button>
+                                    </li>
+                                    <li class="nav-item ms-2" role="presentation">
+                                        <button class="nav-link" id="pills-Reviews1Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews1Star" type="button" role="tab" aria-controls="pills-Reviews1Star" aria-selected="false" tabindex="-1">1 Star
+                                            <span>(0)</span></button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade active show" id="pills-ReviewsAll" role="tabpanel" aria-labelledby="pills-ReviewsAll-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-Reviews5Star" role="tabpanel" aria-labelledby="pills-Reviews5Star-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                        
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-Reviews4Star" role="tabpanel" aria-labelledby="pills-Reviews4Star-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                        
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-Reviews3Star" role="tabpanel" aria-labelledby="pills-Reviews3Star-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-Reviews2Star" role="tabpanel" aria-labelledby="pills-Reviews2Star-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                        
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-Reviews1Star" role="tabpanel" aria-labelledby="pills-Reviews1Star-tab" tabindex="0">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Jacob.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Jacob J</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                        
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="theme-card">
+                                                    <div class="theme-card-header">
+                                                        <div class="new-cleaner">
+                                                            <ul class="list-unstyled">
+                                                                <li class="profile-pic">
+                                                                    <img src="../assets/images/Leslie.svg" alt="img">
+                                                                </li>
+                                                                <li class="cleaner-name">
+                                                                    <h5 class="name">Leslie A</h5>
+                                                                    <p class="mb-0">21 February 2022</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                        
+                                                        <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
+                                                            <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li><img src="../assets/images/star-review.svg" alt="img"></li>
+                                                            <li class="mt-1 fw-bold">5</li>
+                        
+                                                        </ul>
+                                                    </div>
+                                                    <div class="theme-card-body">
+                                                        
+                                                        <div class="message py-3">
+                                                            <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
+                                                        </div>
+                                                        <ul class="list-unstyled mb-0 offering ">
+                                                            <li class="availabile me-2">Communication</li>
+                                                            <li class="availabile me-2">Cleanliness</li>
+                                                            <li class="availabile me-2">Neatness</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 rightSide">
+                        <ul class="nav nav-tabs border-0 " id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0 active" id="flatMemorial-tab" data-bs-toggle="tab" data-bs-target="#flatMemorial" type="button" role="tab" aria-controls="flatMemorial" aria-selected="true">Flat Memorial</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0" id="uprightMemorial-tab" data-bs-toggle="tab" data-bs-target="#uprightMemorial" type="button" role="tab" aria-controls="uprightMemorial" aria-selected="false">Upright Memorial</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link border-0" id="largeMemorial-tab" data-bs-toggle="tab" data-bs-target="#largeMemorial" type="button" role="tab" aria-controls="largeMemorial" aria-selected="false">Large Memorial</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content contantTab mt-3" id="myTabContent">
+                        <div class="tab-pane fade show active" id="flatMemorial" role="tabpanel" aria-labelledby="flatMemorial-tab">
+                            <div class="row mx-0 gy-4">
+                                <div class="col-md-6 ">
+                                    <div class="form-check d-flex align-items-center p-2">
+                                        <div class="inputGroup d-flex align-items-center">
+                                            <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label stretched-link d-flex align-items-center gap-5 mt-1" for="flexRadioDefault1">
+                                                One Time Cleaning <span class="rediotext ps-2 d-inline-flex" for="flexRadioDefault1">$10</span>
+                                            </label>
+                                        </div>
                                         
-                                        <div class="col-12 col-md-12 p-3 pe-5">
-                                            <div class="ReviewsRight">
-                                                <div class="row align-items-center g-3 mb-1">
-                                                    <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
-                                                    <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">5</h4></div>
-                                                    <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar text-bg-warning" style="width: 56%"><p>56</p></div>
-                                                        </div></div>
-                                                </div>
-                                                <div class="row align-items-center g-3 mb-1">
-                                                    <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
-                                                    <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">4</h4></div>
-                                                    <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar text-bg-warning" style="width: 10%"><p>10</p></div>
-                                                        </div></div>
-                                                </div>
-                                                <div class="row align-items-center g-3 mb-1">
-                                                    <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
-                                                    <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">3</h4></div>
-                                                    <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar text-bg-warning" style="width: 4%"><p>4</p></div>
-                                                        </div></div>
-                                                </div>
-                                                <div class="row align-items-center g-3 mb-1">
-                                                    <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
-                                                    <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">2</h4></div>
-                                                    <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
-                                                        </div></div>
-                                                </div>
-                                                <div class="row align-items-center g-3">
-                                                    <div class="col-auto"><img class="mb-1" src="../assets/images/star-review.svg" alt="img"></div>
-                                                    <div class="col-auto"><h4 class="mb-0 fs-14 fw-bold">1</h4></div>
-                                                    <div class="col-5"><div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <div class="progress-bar text-bg-warning" style="width: 0%"><p>0</p></div>
-                                                        </div></div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-check p-2 d-flex align-items-center">
+                                        <div class="inputGroup">
+                                            <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                            <label class="form-check-label stretched-link d-flex align-items-center gap-5 mt-1" for="flexRadioDefault2">
+                                                Monthly <span class="rediotext ps-5 ms-5 d-inline-flex" for="flexRadioDefault2">$10</span>
+                                            </label>
                                         </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="heading">Choose Add Ons</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateA">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateA">
+                                            American Flag
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateB">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateB">
+                                            Family Picture
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateC">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateC">
+                                            Teddy Bear
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateD">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateD">
+                                            Candles
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateE">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateE">
+                                            Flowers
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateF">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateF">
+                                            Polish
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateG">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateG">
+                                            Engrave/Lettering
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-2">
+                                        <input class="form-check-input mx-2 shadow-none" type="checkbox" value="" id="flexCheckIndeterminateH">
+                                        <label class="form-check-label stretched-link" for="flexCheckIndeterminateH">
+                                            Grass Trimming
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Notes to Cleaner</label>
+                                        <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="list-unstyled nav nav-pills mb-3 underTab" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-ReviewsAll-tab" data-bs-toggle="pill" data-bs-target="#pills-ReviewsAll" type="button" role="tab" aria-controls="pills-ReviewsAll" aria-selected="true">All <span>(70)</span></button>
-                                </li>
-                                <li class="nav-item ms-2" role="presentation">
-                                    <button class="nav-link" id="pills-Reviews5Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews5Star" type="button" role="tab" aria-controls="pills-Reviews5Star" aria-selected="false" tabindex="-1">5 Star
-                                        <span>(56)</span></button>
-                                </li>
-                                <li class="nav-item ms-2" role="presentation">
-                                    <button class="nav-link" id="pills-Reviews4Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews4Star" type="button" role="tab" aria-controls="pills-Reviews4Star" aria-selected="false" tabindex="-1">4 Star
-                                        <span>(10)</span></button>
-                                </li>
-                                <li class="nav-item ms-2" role="presentation">
-                                    <button class="nav-link" id="pills-Reviews3Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews3Star" type="button" role="tab" aria-controls="pills-Reviews3Star" aria-selected="false" tabindex="-1">3 Star
-                                        <span>(4)</span></button>
-                                </li>
-                                <li class="nav-item ms-2" role="presentation">
-                                    <button class="nav-link" id="pills-Reviews2Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews2Star" type="button" role="tab" aria-controls="pills-Reviews2Star" aria-selected="false" tabindex="-1">2 Star
-                                        <span>(0)</span></button>
-                                </li>
-                                <li class="nav-item ms-2" role="presentation">
-                                    <button class="nav-link" id="pills-Reviews1Star-tab" data-bs-toggle="pill" data-bs-target="#pills-Reviews1Star" type="button" role="tab" aria-controls="pills-Reviews1Star" aria-selected="false" tabindex="-1">1 Star
-                                        <span>(0)</span></button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade active show" id="pills-ReviewsAll" role="tabpanel" aria-labelledby="pills-ReviewsAll-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-Reviews5Star" role="tabpanel" aria-labelledby="pills-Reviews5Star-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-Reviews4Star" role="tabpanel" aria-labelledby="pills-Reviews4Star-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-Reviews3Star" role="tabpanel" aria-labelledby="pills-Reviews3Star-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-Reviews2Star" role="tabpanel" aria-labelledby="pills-Reviews2Star-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-Reviews1Star" role="tabpanel" aria-labelledby="pills-Reviews1Star-tab" tabindex="0">
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Jacob.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Jacob J</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">AMAZING JOB WELL DONE</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-12">
-                                            <div class="theme-card">
-                                                <div class="theme-card-header">
-                                                    <div class="new-cleaner">
-                                                        <ul class="list-unstyled">
-                                                            <li class="profile-pic">
-                                                                <img src="../assets/images/Leslie.svg" alt="img">
-                                                            </li>
-                                                            <li class="cleaner-name">
-                                                                <h5 class="name">Leslie A</h5>
-                                                                <p class="mb-0">21 February 2022</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-        
-                                                    <ul class="review-star p-0 mb-0 d-flex ms-auto gap-1 align-items-center ">
-                                                        <li class="me-1"><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li><img src="../assets/images/star-review.svg" alt="img"></li>
-                                                        <li class="mt-1 fw-bold">5</li>
-        
-                                                    </ul>
-                                                </div>
-                                                <div class="theme-card-body">
-                                                    
-                                                    <div class="message py-3">
-                                                        <h4 class="fs-14 mb-0 text-secondary">Great Job! My grandma gravestone look so clean and neat.</h4>
-                                                    </div>
-                                                    <ul class="list-unstyled mb-0 offering ">
-                                                        <li class="availabile me-2">Communication</li>
-                                                        <li class="availabile me-2">Cleanliness</li>
-                                                        <li class="availabile me-2">Neatness</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="tab-pane fade contantTab" id="uprightMemorial" role="tabpanel" aria-labelledby="uprightMemorial-tab">...</div>
+                        <div class="tab-pane fade contantTab" id="largeMemorial" role="tabpanel" aria-labelledby="largeMemorial-tab">...</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     <!-- ########## filterMemorials end ##########-->
     </div>  
-   
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- input type Year -->
-    
-    <script>
-      
-
-$(".owl-carousel").owlCarousel({    
-    loop:true,
-    items:1,
-    margin:0,
-    stagePadding: 0,
-    autoplay:false  
-});
-
-    </script>
 
 </body>
 
