@@ -2277,6 +2277,9 @@
             &:hover {
                 background-color: #3CB54A;
                 color: $white;
+                & span{
+                    filter: brightness(9.5);
+                }
             }
         }
     }
