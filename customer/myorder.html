@@ -14,7 +14,7 @@
     <meta name="revisit-after" content="3 days">
     <meta name="copyright" content="Site Name">
     <meta name="language" content="English">
-    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="reply-to" content="">
     <meta name="distribution" content="Global" />
     <meta name="rating" content="General" />
     <!-- Twitter Meta -->
@@ -115,52 +115,189 @@
                     <div class="col-12 navtabssection p-3 pb-0 mb-3">
                         <nav>
                             <div class="nav nav-tabs navTabs border-0 gap-4" id="nav-tab" role="tablist">
-                                <button class="nav-link pb-4 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                                <button class="nav-link pb-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                                <button class="nav-link pb-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                <button class="nav-link pb-4 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All Order</button>
+                                <button class="nav-link pb-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">In Progress</button>
                                 <button class="nav-link pb-4" id="nav-completed-tab" data-bs-toggle="tab" data-bs-target="#nav-completed" type="button" role="tab" aria-controls="nav-completed" aria-selected="false">Completed</button>
                                 <button class="nav-link pb-4" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history" aria-selected="false">History</button>
                             </div>
                         </nav>   
                     </div>
-                    <div class="col-12 tabsContentSection px-0">
+                    <!-- Comment Emoty Order Section  d-none-->
+                    <div class="col-12 emptysection text-center my-5 d-none">
+                        <div class="row mx-0">
+                            <div class="col-12">
+                                <div class="imagemyorderempty mx-auto">
+                                    <img src="../assets/orderImage/emptyorder.svg" alt="emptyorder" class="w-100 h-100">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="Heading my-2">No Order History</div>
+                                <div class="perograph mb-2">All orders will appear here.</div>
+                            </div>
+                            <div class="button">
+                                <button class="btn buttonempty">Search Gravestone</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment Emoty Order Section  d-none-->
+                    <div class="col-12 tabsContentSection px-0 ">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active position-relative" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div class="row mx-0">
                                     <div class="col-12 px-0">
                                         <div class="card border-0 overflow-hidden">
                                             <div class="card-header border-0 py-3">
-                                                <div class="row mx-0 align-items-center">
-                                                    <div class="col-auto">
+                                                <div class="row mx-0 align-items-center g-2">
+                                                    <div class="col-sm-auto">
                                                         <div class="daydate">21 February 2022</div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-sm">
                                                         <div class="buttonGroup">
                                                             <button class="Greenbutton btn">One Time</button>
-                                                            <button class="Greenbutton btn d-none">In Progress</button>
                                                             <button class="orangebutton btn">Waiting Quotation</button>
-                                                            <button class="orangebutton btn d-none">Waiting Approval</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card-body row mx-0">
-                                                <div class="col-md-6 row mx-0 border-end">
-                                                    <div class="col-auto px-0">
+                                                <div class="col-md-6 row mx-0 border-end px-1 px-sm">
+                                                    <div class="col-auto">
                                                         <div class="iamgeleft">
                                                             <img class="w-100 h-100" src="../assets/orderImage/orderimage1.png" alt="orderimage1">
                                                         </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
                                                             <div class="imageright">
                                                                 <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                                             </div>
                                                             <div class="textimage">
-                                                                <a class="cemeterytext" href="#">A G Powell, California Cemetery <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="ordericon4"></span></a>
+                                                                <a class="cemeterytext" href="#"><span class="cemeterytext1">A G Powell, California Cemetery</span> <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="ordericon4"></span></a>
                                                             </div>
                                                             <div class="button">
-                                                                <button class="buttonMemorial btn px-3">Large Memorial</button>
+                                                                <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                            <div class="imageright h-auto">
+                                                                <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <div class="cemeterytext text-decoration-none">27 February 2022</div>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="yellowbutton btn px-3"><span class="d-inline-flex"><img src="../assets/orderImage/ordericon3.svg" alt="ordericon3"></span> 4 more days</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="textbottom p-3">Hi, please take care for clean up my grandma gravestone, thanks!</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-1 px-sm">
+                                                    <div class="row mx-0">
+                                                        <div class="col-md-7 row mx-0 px-0 border-end">
+                                                            <div class="col-12 px0 mb-2">
+                                                                <div class="headingadd">Add Ons</div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="row mx-0 ">
+                                                                    <div class="col-12 px-0 flowerbutton">
+                                                                        <button class="Greenbutton btn border-0 mb-2">Flower</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">US Flag</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Grass Trimming</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Engrave Letting</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Family Photo</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="row mx-0 g-3 align-items-center">
+                                                                <div class="col col-sm-12 px-0">
+                                                                    <div class="headingadd">Cleaner</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="imageuser"><img class="rounded-pill w-100 h-100" src="../assets/orderImage/orderimage2.png" alt="orderimage2"></div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="usernameandmeddle d-flex align-items-center">Danish M <span class="d-inline-flex medeal"><img class="w-100 h-100 mx-2" src="../assets/orderImage/orderimage3.png" alt="medeal"></span></div>
+                                                                </div>
+                                                                <div class="col-12 row mx-0  px-0">
+                                                                    <div class="col col-sm-12 px-0">
+                                                                        <div class="textHead">Quotation </div>
+                                                                    </div>
+                                                                    <div class="col-auto col-sm-12 px-0">
+                                                                        <div class="textHead color">Waiting</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer py-3 bg-transparent">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                    <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
+                                                    <li class="drop">
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
+                                                        <ul class="list-unstyled dropdown-menu py-0">
+                                                            <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                                            <li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:;">Decline Job</a></li>
+                                                        </ul>
+                                                        
+                                                    </li>
+                                                    <li class="buttons d-flex gap-2">
+                                                        <a role="button" class="btn theme-btn bgblur viewdetails" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">View Detail</a>
+                                                        <a href="javascript:;" rolo="button" class="theme-btn bgblur">Pay Now</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0  w-100">
+                                    <div class="reviewthanks p-3 position-absolute">Thank you for your review!</div>
+                                </div>
+                                <!-- Report D-none  -->
+                                <div class="row mx-0  w-100 d-none">
+                                    <div class="reviewthanksred p-3 position-absolute">Your report has been sent! We will review and come back to you soon.</div>
+                                </div>
+                                <!-- Report D-none  -->
+                            </div>
+                            <div class="tab-pane fade position-relative" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0">
+                                        <div class="card border-0 overflow-hidden">
+                                            <div class="card-header border-0 py-3">
+                                                <div class="row mx-0 align-items-center g-2">
+                                                    <div class="col-sm-auto">
+                                                        <div class="daydate">21 February 2022</div>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <div class="buttonGroup">
+                                                            <button class="Greenbutton btn">One Time</button>
+                                                            <button class="Greenbutton btn">In Progress</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body row mx-0">
+                                                <div class="col-md-6 row mx-0 border-end px-1 px-sm">
+                                                    <div class="col-auto">
+                                                        <div class="iamgeleft">
+                                                            <img class="w-100 h-100" src="../assets/orderImage/orderimage1.png" alt="orderimage1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                            <div class="imageright">
+                                                                <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <a class="cemeterytext" href="#"><span class="cemeterytext1">A G Powell, California Cemetery</span> <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="ordericon4"></span></a>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                                             </div>
                                                         </div>
                                                         <div class="d-flex align-items-baseline gap-2 mb-2">
@@ -179,7 +316,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 px-1 px-sm">
                                                     <div class="row mx-0">
                                                         <div class="col-md-7 row mx-0 px-0 border-end">
                                                             <div class="col-12 px0 mb-2">
@@ -187,7 +324,251 @@
                                                             </div>
                                                             <div class="col-auto">
                                                                 <div class="row mx-0 ">
-                                                                    <div class="col-12 px-0">
+                                                                    <div class="col-12 px-0 flowerbutton">
+                                                                        <button class="Greenbutton btn border-0 mb-2">Flower</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">US Flag</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Grass Trimming</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Engrave Letting</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Family Photo</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="row mx-0 g-3 align-items-center">
+                                                                <div class="col col-sm-12 px-0">
+                                                                    <div class="headingadd">Cleaner</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="imageuser"><img class="rounded-pill w-100 h-100" src="../assets/orderImage/orderimage2.png" alt="orderimage2"></div>
+                                                                </div>
+                                                                <div class="col-auto px-0">
+                                                                    <div class="usernameandmeddle d-flex align-items-center">Danish M <span class="d-inline-flex medeal"><img class="w-100 h-100 mx-2" src="../assets/orderImage/orderimage3.png" alt="medeal"></span></div>
+                                                                </div>
+                                                                <div class="col-12 row mx-0  px-0">
+                                                                    <div class="col col-sm-12 px-0">
+                                                                        <div class="textHead">Quotation</div>
+                                                                    </div>
+                                                                    <div class="col-auto col-sm-12 px-0">
+                                                                        <div class="usernameandmeddle">$50 + 10% Fee</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer py-3 bg-transparent">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                    <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
+                                                    <li class="drop">
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
+                                                        <ul class="list-unstyled dropdown-menu py-0">
+                                                            <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                                            <li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:;">Decline Job</a></li>
+                                                        </ul>
+                                                        
+                                                    </li>
+                                                    <li class="buttons d-flex gap-2">
+                                                        <a href="javascript:;" class="btn bgblur viewdetails"data-bs-toggle="modal" data-bs-target="#viewmodaleModal">View Detail</a>
+                                                        <a href="javascript:;" class="btn bgblur ">Review</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0  w-100">
+                                    <div class="reviewthanks p-3 position-absolute">Thank you for your review!</div>
+                                </div>
+                                <div class="row mx-0  w-100 d-none">
+                                    <div class="reviewthanksred p-3 position-absolute">Your report has been sent! We will review and come back to you soon.</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade position-relative" id="nav-completed" role="tabpanel" aria-labelledby="nav-completed-tab">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0">
+                                        <div class="card border-0 overflow-hidden">
+                                            <div class="card-header border-0 py-3">
+                                                <div class="row mx-0 align-items-center g-2">
+                                                    <div class="col-sm-auto">
+                                                        <div class="daydate">21 February 2022</div>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <div class="buttonGroup">
+                                                            <button class="Greenbutton btn">One Time</button>
+                                                            <button class="Greenbutton btn">Completed</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body row mx-0">
+                                                <div class="col-md-6 row mx-0 border-end px-1 px-sm">
+                                                    <div class="col-auto">
+                                                        <div class="iamgeleft">
+                                                            <img class="w-100 h-100" src="../assets/orderImage/orderimage1.png" alt="orderimage1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                            <div class="imageright">
+                                                                <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <a class="cemeterytext" href="#"><span class="cemeterytext1">A G Powell, California Cemetery</span> <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="ordericon4"></span></a>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                            <div class="imageright h-auto">
+                                                                <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <div class="cemeterytext text-decoration-none">27 February 2022</div>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="yellowbutton btn px-3"><span class="d-inline-flex"><img src="../assets/orderImage/ordericon3.svg" alt="ordericon3"></span> 4 more days</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="textbottom p-3">
+                                                            Hi, please take care for clean up my grandma gravestone, thanks!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-1 px-sm">
+                                                    <div class="row mx-0">
+                                                        <div class="col-md-7 row mx-0 px-0 border-end">
+                                                            <div class="col-12 px0 mb-2">
+                                                                <div class="headingadd">Add Ons</div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="row mx-0 ">
+                                                                    <div class="col-12 px-0 flowerbutton">
+                                                                        <button class="Greenbutton btn border-0 mb-2">Flower</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">US Flag</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Grass Trimming</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Engrave Letting</button>
+                                                                        <button class="Greenbutton btn border-0 mb-2">Family Photo</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="row mx-0 g-3 align-items-center">
+                                                                <div class="col-12">
+                                                                    <div class="headingadd">Cleaner</div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="imageuser"><img class="rounded-pill w-100 h-100" src="../assets/orderImage/orderimage2.png" alt="orderimage2"></div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="usernameandmeddle d-flex align-items-center">Danish M <span class="d-inline-flex medeal"><img class="w-100 h-100 mx-2" src="../assets/orderImage/orderimage3.png" alt="medeal"></span></div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textHead">Total</div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="usernameandmeddle">$50 + 10% Fee</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer py-3 bg-transparent">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                    <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
+                                                    <li class="drop">
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
+                                                        <ul class="list-unstyled dropdown-menu py-0">
+                                                            <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                                            <li><a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"></a><a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#MemorialDetailModal">Memorial Detail</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:;">Decline Job</a></li>
+                                                        </ul>
+                                                        
+                                                    </li>
+                                                    <li class="buttons d-flex gap-2">
+                                                        <a href="javascript:;" role="button" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#seeresultleModal">See Result</a>
+                                                        <a href="javascript:;" role="button" class="btn bgblur ">Review</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx-0  w-100">
+                                    <div class="reviewthanks p-3 position-absolute">Thank you for your review!</div>
+                                </div>
+                                <div class="row mx-0  w-100 d-none">
+                                    <div class="reviewthanksred p-3 position-absolute">Your report has been sent! We will review and come back to you soon.</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade position-relative" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0">
+                                        <div class="card border-0 overflow-hidden">
+                                            <div class="card-header border-0 py-3">
+                                                <div class="row mx-0 align-items-center g-2">
+                                                    <div class="col-sm-auto">
+                                                        <div class="daydate">21 February 2022</div>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <div class="buttonGroup">
+                                                            <button class="Greenbutton btn">One Time</button>
+                                                            <button class="Greenbutton btn">History</button>
+                                                            <!-- <button class="orangebutton btn">Waiting Quotation</button>
+                                                            <button class="orangebutton btn">Waiting Approval</button> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body row mx-0">
+                                                <div class="col-md-6 row mx-0 border-end px-1 px-sm">
+                                                    <div class="col-auto">
+                                                        <div class="iamgeleft">
+                                                            <img class="w-100 h-100" src="../assets/orderImage/orderimage1.png" alt="orderimage1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                            <div class="imageright">
+                                                                <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <a class="cemeterytext" href="#"><span class="cemeterytext1">A G Powell, California Cemetery</span> <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="ordericon4"></span></a>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                            <div class="imageright h-auto">
+                                                                <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
+                                                            </div>
+                                                            <div class="textimage">
+                                                                <div class="cemeterytext text-decoration-none">27 February 2022</div>
+                                                            </div>
+                                                            <div class="button">
+                                                                <button class="yellowbutton btn px-3"><span class="d-inline-flex"><img src="../assets/orderImage/ordericon3.svg" alt="ordericon3"></span> 4 more days</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="textbottom p-3">
+                                                            Hi, please take care for clean up my grandma gravestone, thanks!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-1 px-sm">
+                                                    <div class="row mx-0">
+                                                        <div class="col-md-7 row mx-0 px-0 border-end">
+                                                            <div class="col-12 px0 mb-2">
+                                                                <div class="headingadd">Add Ons</div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="row mx-0 ">
+                                                                    <div class="col-12 px-0 flowerbutton">
                                                                         <button class="Greenbutton btn border-0 mb-2">Flower</button>
                                                                         <button class="Greenbutton btn border-0 mb-2">US Flag</button>
                                                                         <button class="Greenbutton btn border-0 mb-2">Grass Trimming</button>
@@ -223,7 +604,7 @@
                                             </div>
                                             <div class="card-footer py-3 bg-transparent">
                                                 <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
-                                                    <li class="drop"><a href="javascript:;" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
+                                                    <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
                                                         <ul class="list-unstyled dropdown-menu py-0">
@@ -234,12 +615,12 @@
                                                         
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="javascript:;" class="theme-btn btnGreen" data-bs-toggle="modal" data-bs-target="#seeresultleModal">See Result</a>
-                                                        <a href="javascript:;" class="theme-btn btnGreen" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">Memorial Detail</a>
-                                                        <a href="javascript:;" class="theme-btn btnGreen" data-bs-toggle="modal" data-bs-target="#tipModal">Leave a Tip</a>
-                                                        <a href="javascript:;" class="btn theme-btn bgblur viewdetails">View Detail</a>
-                                                        <a href="javascript:;" class="theme-btn bgblur">Pay Now</a>
-                                                        <a href="javascript:;" class="theme-btn bgblur ">Review</a>
+                                                        <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#seeresultleModal">See Result</a>
+                                                        <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">Memorial Detail</a>
+                                                        <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#tipModal">Leave a Tip</a>
+                                                        <a href="javascript:;" class="btn bgblur viewdetails">View Detail</a>
+                                                        <a href="javascript:;" class="btn bgblur">Pay Now</a>
+                                                        <a href="javascript:;" class="btn bgblur">Review</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -253,8 +634,6 @@
                                     <div class="reviewthanksred p-3 position-absolute">Your report has been sent! We will review and come back to you soon.</div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                         </div>
                     </div>
                 </div>
@@ -304,7 +683,7 @@
                                     <a class="cemeterytext" href="#">A G Powell, California Cemetery <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="imageorder"></span></a>
                                 </div>
                                 <div class="button">
-                                    <button class="buttonMemorial btn px-3">Large Memorial</button>
+                                    <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                 </div>
                             </div>
                             <div class="d-flex align-items-baseline gap-2 mb-2">
@@ -536,13 +915,13 @@
                             <a class="cemeterytext" href="#">A G Powell, California Cemetery <span><img class="ps-1" src="../assets/orderImage/ordericon4.svg" alt="imageorder"></span></a>
                         </div>
                         <div class="button">
-                            <button class="buttonMemorial btn px-3">Large Memorial</button>
+                            <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 px-0 mx-0 cardection">
-                    <div class="beforcleningtext mb-2">Before Cleaning</div>
-                    <div class="row row-cols-lg-4">
+                    <div class="beforcleningtext mb-2 fw-bold">Before Cleaning</div>
+                    <div class="row row-cols-3  row-cols-lg-4">
                         <div class="col">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage5.png" alt="orderimage5">
@@ -558,30 +937,30 @@
                                 <img src="../assets/orderImage/orderimage7.png" alt="orderimage7">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col d-none d-sm-block">
                             <div class="imagecard"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 px-0 mx-0 cardection">
-                    <div class="beforcleningtext mb-2">After Cleaning</div>
-                    <div class="row  row-cols-lg-4">
-                        <div class="col">
+                    <div class="beforcleningtext mb-2 fw-bold">After Cleaning</div>
+                    <div class="row  row row-cols-3  row-cols-lg-4 px-0">
+                        <div class="col ">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage8.png" alt="orderimage8">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col ">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage9.png" alt="orderimage9">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col ">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage10.png" alt="orderimage10">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col d-none d-sm-block">
                             <div class="imagecard"></div>
                         </div>
                     </div>

@@ -1,17 +1,19 @@
 
 ::-webkit-scrollbar-track {
   // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: rgba($black, 0);
+  background-color: rgba($theme1, 0);
 }
 
 ::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
-  background-color: rgba($black, 0);
+  height: 2px;
+  background-color: rgba($theme1, 0);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $theme2;
+  background-color: $theme1;
+  border-radius: 10px;
 }
 
 
@@ -87,13 +89,13 @@ body{
           }
 
           h4.user-name {
-              color: #29293E;
-              font-family: 'Inter';
+              color: $theme4;
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 700;
               font-size: 16px;
               line-height: 19px;
-              color: #29293E;
+              color: $theme4;
               margin-bottom: 0;
 
               span {
@@ -106,15 +108,15 @@ body{
               flex-direction: row;
               align-items: flex-end;
               padding: 5px 12px;
-              border: 1px solid #3CB54A;
+              border: 1px solid $theme1;
               border-radius: 30px;
-              font-family: 'Inter';
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 600;
               font-size: 14px;
               text-align: center;
               width: fit-content;
-              color: #3CB54A;
+              color: $theme1;
               text-decoration: none;
               margin-top: 8px;
 
@@ -133,7 +135,7 @@ body{
       align-items: center;
 
       li.current {
-          font-family: 'Inter';
+          font-family: 'Inter', sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -142,13 +144,13 @@ body{
       }
 
       li.price {
-          font-family: 'Inter';
+          font-family: 'Inter', sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
           line-height: 19px;
           text-align: right;
-          color: #3CB54A;
+          color: $theme1;
       }
   }
 }
@@ -159,7 +161,7 @@ body{
   margin-top: 8px;
 
   a {
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -190,9 +192,10 @@ body{
           }
 
           &.active {
-              border-left: 4px solid #3CB54A;
+              border-left: 4px solid $theme1;
               background: #E9F9EB;
-              color: #3cb54a;
+              color: $theme1;
+              font-weight: 600;
 
               img {
                   filter: inherit;
@@ -214,7 +217,7 @@ body{
   top: 0px;
   bottom: 0;
   display: inline-block;
-  background: #FFFFFF;
+  background: $white;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
 
 }

@@ -1,5 +1,4 @@
 [page-name=shoppage] {
-
     & .shopmaincontent {
         & .headingmain {
             font-weight: 700;
@@ -1040,6 +1039,7 @@
     }
 }
 
+// Shiping Payment
 .shippingpayment {
     & .addressContent {
         border: 1px solid $theme1;
@@ -1105,6 +1105,7 @@
 // X-Small devices (portrait phones, less than 576px)
 @mixin shoppage-mixin-max-xs() {
     [page-name=shoppage] {
+        display: none;
         & .shopmaincontent {
             padding: 24px 5px 24px 5px;
 
@@ -1137,6 +1138,26 @@
                         &.active {}
                     }
 
+                    /* width */
+                    &::-webkit-scrollbar {
+                        width: 20px;
+                        display: none;
+                    }
+
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        display: none;
+                    }
+
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                        background: $theme1;
+                        border-radius: 10px;
+                        width: 20px;
+                        display: none;
+
+                    }
                 }
             }
 
@@ -1201,7 +1222,6 @@
                         &:hover {}
                     }
                 }
-
 
                 & .itempayment {}
 
@@ -1654,6 +1674,99 @@
         }
     }
 
+    // Shiping Payment
+    .shippingpayment {
+        & .addressContent {
+            border: 1px solid $theme1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        & .checkForm {
+            & .redioubtn {
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:checked {
+                    background-color: $theme1;
+                    border-color: $theme1;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                }
+            }
+
+
+            & .inputText {}
+        }
+
+        & .innertext {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: $theme1;
+            padding-left: 15px;
+        }
+
+
+
+        & .inputGroupBtn {
+            & button {
+                background-color: transparent;
+            }
+        }
+    }
+
+    // modal Shipping Address
+    .shippingModal {
+        & .modalDialog {
+            & .Heading {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: $theme4;
+            }
+
+            & .dismissbtn {}
+
+            & .formShipping {
+                & .formLebal {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #7F7F8D;
+                }
+
+                & .controlForm {
+                    border: 1px solid #EAEAEA;
+                    border-radius: 8px;
+                    height: 44px;
+                }
+
+                & .form-select {
+                    border: 1px solid #EAEAEA;
+                    border-radius: 8px;
+                    height: 44px;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    // Card Details
+    .cardDetails {
+        & .modalDilog {
+            & .modal-title {}
+
+            & .cardBody {}
+        }
+    }
+
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -1668,12 +1781,12 @@
 // X-Large devices (large desktops, less than 1400px)
 @mixin shoppage-mixin-max-xl() {}
 
-
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! myorder !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-----
+
 [page-name=myorder] {
     & .myordersection {
         & .heading {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -1683,13 +1796,13 @@
         }
 
         & .navtabssection {
-            background: #FFFFFF;
+            background: $white;
             box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
             border-radius: 16px;
 
             & .navTabs {
                 & .nav-link {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -1699,8 +1812,9 @@
                     border: none;
 
                     &.active {
-                        color: #3CB54A;
-                        border-bottom: 2px solid #3CB54A;
+                        color: $theme1;
+                        border-bottom: 2px solid $theme1;
+                        font-weight: bold;
 
                     }
                 }
@@ -1709,13 +1823,13 @@
 
         & .tabsContentSection {
             & .card {
-                background: #FFFFFF;
+                background: $white;
                 box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
                 border-radius: 16px;
 
                 & .card-header {
                     & .daydate {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
@@ -1727,14 +1841,14 @@
                     & .buttonGroup {
                         & .Greenbutton {
                             background: #E9F9EB;
-                            border: 1px solid #2BA339;
+                            border: 1px solid $theme3;
                             border-radius: 32px;
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #2BA339;
+                            color: $theme3;
                         }
 
                         & .orangebutton {
@@ -1742,7 +1856,7 @@
                             border: 1px solid #E99140;
                             border-radius: 32px;
 
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
@@ -1776,7 +1890,7 @@
 
                     & .textimage {
                         & .cemeterytext {
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 16px;
@@ -1790,31 +1904,31 @@
                     & .button {
                         & .buttonMemorial {
                             background: #E9F9EB;
-                            border: 1px solid #2BA339;
+                            border: 1px solid $theme3;
                             border-radius: 32px;
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #2BA339;
+                            color: $theme3;
                         }
 
                         & .yellowbutton {
                             background: #FBFAE0;
-                            border: 1px solid #B7A928;
+                            border: 1px solid $theme2;
                             border-radius: 32px;
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 20px;
-                            color: #B7A928;
+                            color: $theme2;
                         }
                     }
 
                     & .textbottom {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 14px;
@@ -1826,7 +1940,7 @@
                     }
 
                     & .headingadd {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 14px;
@@ -1837,12 +1951,12 @@
                     & .Greenbutton {
                         background: #E9F9EB;
                         border-radius: 32px;
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 20px;
-                        color: #2BA339;
+                        color: $theme3;
                     }
 
                     & .imageuser {
@@ -1851,12 +1965,12 @@
                     }
 
                     & .usernameandmeddle {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 19px;
-                        color: #3CB54A;
+                        color: $theme1;
 
                         & .medeal {
                             width: 20px;
@@ -1867,7 +1981,7 @@
                     }
 
                     & .textHead {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 14px;
@@ -1884,7 +1998,7 @@
                 & .card-footer {
                     & .chat {
                         & .drop {
-                            background: #fff;
+                            background: $white;
                             border: 1px solid #eaeaea;
                             display: flex;
                             justify-content: center;
@@ -1899,13 +2013,13 @@
                     & .bgblur {
                         background: #98D19E;
                         border-radius: 30px;
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 19px;
                         text-align: center;
-                        color: #FFFFFF;
+                        color: $white;
                         max-width: 238px !important;
 
                         &.viewdetails {
@@ -1914,20 +2028,20 @@
                     }
 
                     & .btnGreen {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 16px;
-                        line-height: 19px;
+                        line-height: 24px;
                         text-align: center;
-                        color: #3CB54A;
+                        color: $theme1;
                         max-width: 238px !important;
                         border-radius: 30px;
                         background-color: transparent;
                         transition: all 0.3s ease-in-out;
 
                         &:hover {
-                            background-color: #3CB54A;
+                            background-color: $theme1;
                             color: $white;
                         }
                     }
@@ -1937,7 +2051,7 @@
     }
 
     & .reviewthanks {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1945,12 +2059,12 @@
         color: $theme4;
         background: #E9F9EB;
         border-radius: 8px;
-        border-left: 5px solid #3CB54A;
+        border-left: 5px solid $theme1;
         bottom: -156px;
     }
 
     & .reviewthanksred {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -1961,21 +2075,66 @@
         border-left: 5px solid #E84F45;
         bottom: -156px;
     }
+
+    & .emptysection {
+        & .imagemyorderempty {
+            width: 120px;
+            height: 120px;
+        }
+
+        & .Heading {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $theme4;
+        }
+
+        & .perograph {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #7F7F8D;
+
+        }
+
+        & .button {
+            & .buttonempty {
+                background: $theme1;
+                border-radius: 50px;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: $white;
+                padding: 16px 48px;
+
+            }
+        }
+    }
 }
 
+// View Details Modal
 #viewmodaleModal {
     & .modal-title {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
-        color: #000000;
+        color: $black;
 
     }
 
     & .daydate {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -2005,7 +2164,7 @@
 
         & .textimage {
             & .cemeterytext {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2019,31 +2178,31 @@
         & .button {
             & .buttonMemorial {
                 background: #E9F9EB;
-                border: 1px solid #2BA339;
+                border: 1px solid $theme3;
                 border-radius: 32px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #2BA339;
+                color: $theme3;
             }
 
             & .yellowbutton {
                 background: #FBFAE0;
-                border: 1px solid #B7A928;
+                border: 1px solid $theme2;
                 border-radius: 32px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #B7A928;
+                color: $theme2;
             }
         }
 
         & .textbottom {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -2055,7 +2214,7 @@
         }
 
         & .headingadd {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -2066,12 +2225,12 @@
         & .Greenbutton {
             background: #E9F9EB;
             border-radius: 32px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
             line-height: 20px;
-            color: #2BA339;
+            color: $theme3;
         }
 
         & .imageuser {
@@ -2080,12 +2239,12 @@
         }
 
         & .usernameandmeddle {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-            color: #3CB54A;
+            color: $theme1;
 
             & .medeal {
                 width: 20px;
@@ -2096,7 +2255,7 @@
         }
 
         & .textHead {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -2108,13 +2267,13 @@
             }
 
             &.green {
-                color: #3CB54A;
+                color: $theme1;
             }
 
         }
 
         & .befortext {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -2127,7 +2286,7 @@
                 background: #F7F7F7;
                 border-radius: 12px;
                 height: 78px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
@@ -2143,7 +2302,7 @@
         }
 
         & .progresstext {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -2165,7 +2324,7 @@
 
         & .reviewSection {
             & .reviewheadin {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
@@ -2177,7 +2336,7 @@
                 & .iconstar {
 
                     &.ranking {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
@@ -2192,7 +2351,7 @@
                 & .form-control {
                     background: #F7F7F7;
                     border-radius: 12px;
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -2213,12 +2372,12 @@
                     background: #E9F9EB;
                     border-radius: 32px;
                     padding: 6px 12px;
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 20px;
-                    color: #3CB54A;
+                    color: $theme1;
                 }
             }
         }
@@ -2229,7 +2388,7 @@
 
         & .chat {
             & .drop {
-                background: #fff;
+                background: $white;
                 border: 1px solid #eaeaea;
                 display: flex;
                 justify-content: center;
@@ -2244,13 +2403,13 @@
         & .bgblur {
             background: #98D19E;
             border-radius: 30px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
-            color: #FFFFFF;
+            color: $white;
             max-width: 238px !important;
             height: 51px;
             display: inline-flex;
@@ -2259,13 +2418,13 @@
         }
 
         & .btnGreen {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
-            color: #3CB54A;
+            color: $theme1;
             max-width: 238px !important;
             border-radius: 30px;
             background-color: transparent;
@@ -2275,9 +2434,10 @@
             align-items: center;
 
             &:hover {
-                background-color: #3CB54A;
+                background-color: $theme1;
                 color: $white;
-                & span{
+
+                & span {
                     filter: brightness(9.5);
                 }
             }
@@ -2285,10 +2445,11 @@
     }
 }
 
+// Payment Modal
 #paymentModal {
     & .modal-header {
         & .modal-title {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -2300,22 +2461,22 @@
 
     & .modal-body {
         & .bordercolumn {
-            border: 1px solid #3CB54A;
+            border: 1px solid $theme1;
             border-radius: 8px;
         }
 
         & .form-check {
             & .form-check-input {
                 &:checked {
-                    background-color: #3CB54A !important;
-                    color: #3CB54A !important;
-                    border-color: #3CB54A;
+                    background-color: $theme1 !important;
+                    color: $theme1 !important;
+                    border-color: $theme1;
                     box-shadow: none;
                 }
             }
 
             & .form-check-label {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2332,7 +2493,7 @@
 
         & .datetext {
 
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -2348,23 +2509,23 @@
         }
 
         & .buttonmiddle {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
-            color: #3CB54A;
+            color: $theme1;
             padding: 16px 32px;
             height: 51px;
             transition: all 0.3s ease-in-out;
             background-color: transparent;
             border-radius: 50px;
-            border: 1px solid #3CB54A;
+            border: 1px solid $theme1;
             width: 275px;
 
             &:hover {
-                background: #3CB54A;
+                background: $theme1;
                 color: $white;
             }
         }
@@ -2374,42 +2535,43 @@
         justify-content: center;
 
         & button {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
-            color: #FFFFFF;
+            color: $white;
             padding: 16px 32px;
             height: 51px;
-            background: #3CB54A;
+            background: $theme1;
             border-radius: 50px;
             transition: all 0.3s ease-in-out;
-            border: 1px solid #3CB54A;
+            border: 1px solid $theme1;
             width: 275px;
 
             &:hover {
                 background-color: transparent;
-                color: #3CB54A;
+                color: $theme1;
             }
         }
     }
 }
 
+// See Result Modal
 #seeresultleModal {
     & .modal-title {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
-        color: #000000;
+        color: $black;
 
     }
 
     & .daydate {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -2430,7 +2592,7 @@
 
         & .textimage {
             & .cemeterytext {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2444,32 +2606,32 @@
         & .button {
             & .buttonMemorial {
                 background: #E9F9EB;
-                border: 1px solid #2BA339;
+                border: 1px solid $theme3;
                 border-radius: 32px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #2BA339;
+                color: $theme3;
             }
 
             & .yellowbutton {
                 background: #FBFAE0;
-                border: 1px solid #B7A928;
+                border: 1px solid $theme2;
                 border-radius: 32px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: #B7A928;
+                color: $theme2;
             }
         }
 
         & .cardection {
             & .beforcleningtext {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2479,9 +2641,9 @@
             }
 
             & .imagecard {
-                width: 129px;
-                height: 129px;
-                background-color: white;
+                width: 116px;
+                height: 116px;
+                background-color: $white;
 
                 & img {
                     width: 100%;
@@ -2493,7 +2655,7 @@
 
         & .inputsection {
             & .form-label {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2504,7 +2666,7 @@
 
             & .form-control {
 
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -2523,10 +2685,11 @@
     }
 }
 
+// Review MOdal(Reating)
 #reviewmodalModal {
     & .modal-header {
         & .modal-title {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -2542,12 +2705,12 @@
         }
 
         & .userName {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 19px;
-            color: #3CB54A;
+            color: $theme1;
         }
 
         & .meddleimage {
@@ -2565,7 +2728,7 @@
             }
 
             & .lebletext {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -2585,13 +2748,14 @@
             color: #646464;
             padding: 6px 16px;
         }
+
         & .btn-check:checked+.btn {
             color: $white;
             border-color: $theme1;
         }
 
         & .canclebtn {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -2611,7 +2775,7 @@
         }
 
         & .sendbtn {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -2632,7 +2796,7 @@
 
         & .reporthere {
             border-left: 5px solid #e84f45;
-            font-family: "Inter";
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -2645,10 +2809,11 @@
     }
 }
 
+// Reports Problam MOdal
 #reposthereModal {
     & .modal-header {
         & .modal-title {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -2660,7 +2825,7 @@
     & .modal-body {
         & .formSection {
             & .form-label {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2675,7 +2840,7 @@
             & .form-control {
                 border: 1px solid #EAEAEA;
                 border-radius: 8px;
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -2687,9 +2852,9 @@
 
     & .modal-footer {
         & .cancel {
-            background: #FFFFFF;
+            background: $white;
             border-radius: 24px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -2702,23 +2867,24 @@
         & .send {
             background: #E84F45;
             border-radius: 30px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
             text-align: center;
-            color: #FFFFFF;
+            color: $white;
             height: 51px;
 
         }
     }
 }
 
+// Tip MOdal
 #tipModal {
     & .modal-header {
         & .modal-title {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -2729,7 +2895,7 @@
 
     & .modal-body {
         & .heading {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
@@ -2744,7 +2910,7 @@
                 border-radius: 8px;
 
                 & .input-group-text {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -2752,7 +2918,7 @@
                 }
 
                 & .form-control {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -2772,9 +2938,9 @@
 
     & .modal-footer {
         & .cancel {
-            background: #FFFFFF;
+            background: $white;
             border-radius: 24px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -2787,7 +2953,7 @@
         & .add {
             background: #98D19E;
             border-radius: 30px;
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -2803,6 +2969,7 @@
 
         }
     }
+
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -2821,28 +2988,1953 @@
 @mixin myorder-mixin-min-xxl() {}
 
 // X-Small devices (portrait phones, less than 576px)
-@mixin myorder-mixin-max-xs() {}
+@mixin myorder-mixin-max-xs() {
+    [page-name=myorder] {
+        & .myordersection {
+            & .heading {
+                font-size: 20px;
+            }
+
+            & .navtabssection {
+
+                & .navTabs {
+                    overflow: auto hidden;
+                    white-space: nowrap;
+                    flex-wrap: nowrap;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+
+            & .tabsContentSection {
+                & .card {
+
+                    & .card-header {
+                        & .daydate {}
+
+                        & .buttonGroup {
+                            & .Greenbutton {}
+
+                            & .orangebutton {}
+                        }
+                    }
+
+                    .card-body {
+                        padding: 10px 5px;
+
+                        & .iamgeleft {
+
+                            & img {}
+                        }
+
+                        & .imageright {
+
+                            & img {}
+                        }
+
+                        & .textimage {
+                            & .cemeterytext {
+                                & .cemeterytext1 {
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    width: 121px;
+                                    display: inline-block;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+
+                        & .button {
+                            & .buttonMemorial {}
+
+                            & .yellowbutton {}
+                        }
+
+                        & .textbottom {
+                            font-size: 13px;
+                        }
+
+                        & .headingadd {}
+
+                        & .flowerbutton {
+                            overflow: auto hidden;
+                            white-space: nowrap;
+
+                            &::-webkit-scrollbar {
+                                display: none;
+                            }
+                        }
+
+                        & .Greenbutton {
+                            font-size: 12px;
+                        }
+
+                        & .imageuser {}
+
+                        & .usernameandmeddle {
+                            font-size: 14px;
+
+                            & .medeal {}
+
+                        }
+
+                        & .textHead {
+
+                            &.color {}
+
+                        }
+                    }
+
+                    & .card-footer {
+                        & .chat {
+                            & .drop {}
+                        }
+
+                        & .bgblur {
+                            padding: 10px 22px;
+                            font-size: 12px;
+
+
+                            &.viewdetails {}
+                        }
+
+                        & .btnGreen {
+                            font-size: 13px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        & .reviewthanks {}
+
+        & .reviewthanksred {}
+    }
+
+    #viewmodaleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .iamgeleft {
+
+                & img {}
+            }
+
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .textbottom {}
+
+            & .headingadd {}
+
+            & .Greenbutton {}
+
+            & .imageuser {}
+
+            & .usernameandmeddle {
+
+                & .medeal {}
+
+            }
+
+            & .textHead {
+
+                &.color {}
+
+                &.green {}
+
+            }
+
+            & .befortext {}
+
+            & .formControl {
+                & .form-control {
+
+                    &:focus {}
+
+                }
+            }
+
+            & .progresstext {}
+
+            & .cardorderdetaisimg {
+
+                & img {}
+            }
+
+            & .reviewSection {
+                & .reviewheadin {}
+
+                & .starlist {
+                    & .iconstar {
+
+                        &.ranking {}
+                    }
+                }
+
+                & .inputdisible {
+                    & .form-control {
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .selectinput {
+                    & .slectuser {}
+                }
+            }
+        }
+
+        & .modal-footer {
+
+            & .chat {
+                & .drop {}
+            }
+
+            & .bgblur {}
+
+            & .btnGreen {
+                font-size: 13px;
+
+
+                &:hover {
+                    & span {}
+                }
+            }
+        }
+    }
+
+    #paymentModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .bordercolumn {}
+
+            & .form-check {
+                & .form-check-input {
+                    &:checked {}
+                }
+
+                & .form-check-label {
+
+                    & .number {}
+                }
+            }
+
+            & .datetext {
+
+                & span {}
+            }
+
+            & .imageDelate {}
+
+            & .buttonmiddle {
+
+                &:hover {}
+            }
+        }
+
+        & .modal-footer {
+
+            & button {
+
+                &:hover {}
+            }
+        }
+    }
+
+    #seeresultleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {
+                    font-size: 14px;
+                }
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .cardection {
+                & .beforcleningtext {}
+
+                & .imagecard {
+                    width: 93px;
+                    height: 93px;
+
+                    & img {}
+                }
+            }
+
+            & .inputsection {
+                & .form-label {}
+
+                & .form-control {
+
+                    &:focus {}
+                }
+            }
+        }
+    }
+
+    #reviewmodalModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .orderreviewimage {}
+
+            & .userName {}
+
+            & .meddleimage {}
+
+            & .imagestar {}
+
+            & .form-floating {
+                & .form-control {}
+
+                & .lebletext {}
+            }
+
+            & .btn-check {}
+
+            & .btnBorderd {}
+
+            & .btn-check:checked+.btn {}
+
+            & .canclebtn {
+
+                &:hover {}
+            }
+
+            & .sendbtn {
+
+                &:hover {}
+            }
+
+            & .reporthere {}
+        }
+    }
+
+    #reposthereModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .formSection {
+                & .form-label {}
+
+                & input {}
+
+                & .form-control {}
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .send {}
+        }
+    }
+
+    #tipModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .heading {}
+
+            & .addinput {
+                & .input-group {
+
+                    & .input-group-text {}
+
+                    & .form-control {
+
+                        &:focus {}
+
+                    }
+                }
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .add {
+
+                &:hover {}
+
+            }
+        }
+    }
+}
 
 // Small devices (landscape phones, less than 768px)
-@mixin myorder-mixin-max-sm() {}
+@mixin myorder-mixin-max-sm() {
+    [page-name=myorder] {
+        & .myordersection {
+            & .heading {}
+
+            & .navtabssection {
+
+                & .navTabs {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+
+            & .tabsContentSection {
+                & .card {
+
+                    & .card-header {
+                        & .daydate {}
+
+                        & .buttonGroup {
+                            & .Greenbutton {}
+
+                            & .orangebutton {}
+                        }
+                    }
+
+                    .card-body {
+                        & .iamgeleft {
+
+                            & img {}
+                        }
+
+                        & .imageright {
+
+                            & img {}
+                        }
+
+                        & .textimage {
+                            & .cemeterytext {}
+                        }
+
+                        & .button {
+                            & .buttonMemorial {}
+
+                            & .yellowbutton {}
+                        }
+
+                        & .textbottom {}
+
+                        & .headingadd {}
+
+                        & .Greenbutton {}
+
+                        & .imageuser {}
+
+                        & .usernameandmeddle {
+
+                            & .medeal {}
+
+                        }
+
+                        & .textHead {
+
+                            &.color {}
+
+                        }
+                    }
+
+                    & .card-footer {
+                        & .chat {
+                            & .drop {}
+                        }
+
+                        & .bgblur {
+
+                            &.viewdetails {}
+                        }
+
+                        & .btnGreen {
+                            font-size: 13px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        & .reviewthanks {}
+
+        & .reviewthanksred {}
+    }
+
+    #viewmodaleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .iamgeleft {
+
+                & img {}
+            }
+
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .textbottom {}
+
+            & .headingadd {}
+
+            & .Greenbutton {}
+
+            & .imageuser {}
+
+            & .usernameandmeddle {
+
+                & .medeal {}
+
+            }
+
+            & .textHead {
+
+                &.color {}
+
+                &.green {}
+
+            }
+
+            & .befortext {}
+
+            & .formControl {
+                & .form-control {
+
+                    &:focus {}
+
+                }
+            }
+
+            & .progresstext {}
+
+            & .cardorderdetaisimg {
+
+                & img {}
+            }
+
+            & .reviewSection {
+                & .reviewheadin {}
+
+                & .starlist {
+                    & .iconstar {
+
+                        &.ranking {}
+                    }
+                }
+
+                & .inputdisible {
+                    & .form-control {
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .selectinput {
+                    & .slectuser {}
+                }
+            }
+        }
+
+        & .modal-footer {
+
+            & .chat {
+                & .drop {}
+            }
+
+            & .bgblur {}
+
+            & .btnGreen {
+                font-size: 13px;
+
+                &:hover {
+                    & span {}
+                }
+            }
+        }
+    }
+
+    #paymentModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .bordercolumn {}
+
+            & .form-check {
+                & .form-check-input {
+                    &:checked {}
+                }
+
+                & .form-check-label {
+
+                    & .number {}
+                }
+            }
+
+            & .datetext {
+
+                & span {}
+            }
+
+            & .imageDelate {}
+
+            & .buttonmiddle {
+
+                &:hover {}
+            }
+        }
+
+        & .modal-footer {
+
+            & button {
+
+                &:hover {}
+            }
+        }
+    }
+
+    #seeresultleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .cardection {
+                & .beforcleningtext {}
+
+                & .imagecard {
+
+                    & img {}
+                }
+            }
+
+            & .inputsection {
+                & .form-label {}
+
+                & .form-control {
+
+                    &:focus {}
+                }
+            }
+        }
+    }
+
+    #reviewmodalModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .orderreviewimage {}
+
+            & .userName {}
+
+            & .meddleimage {}
+
+            & .imagestar {}
+
+            & .form-floating {
+                & .form-control {}
+
+                & .lebletext {}
+            }
+
+            & .btn-check {}
+
+            & .btnBorderd {}
+
+            & .btn-check:checked+.btn {}
+
+            & .canclebtn {
+
+                &:hover {}
+            }
+
+            & .sendbtn {
+
+                &:hover {}
+            }
+
+            & .reporthere {}
+        }
+    }
+
+    #reposthereModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .formSection {
+                & .form-label {}
+
+                & input {}
+
+                & .form-control {}
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .send {}
+        }
+    }
+
+    #tipModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .heading {}
+
+            & .addinput {
+                & .input-group {
+
+                    & .input-group-text {}
+
+                    & .form-control {
+
+                        &:focus {}
+
+                    }
+                }
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .add {
+
+                &:hover {}
+
+            }
+        }
+    }
+}
 
 // Medium devices (tablets, less than 992px)
-@mixin myorder-mixin-max-md() {}
+@mixin myorder-mixin-max-md() {
+    [page-name=myorder] {
+        & .myordersection {
+            & .heading {}
+
+            & .navtabssection {
+
+                & .navTabs {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+
+            & .tabsContentSection {
+                & .card {
+
+                    & .card-header {
+                        & .daydate {}
+
+                        & .buttonGroup {
+                            & .Greenbutton {}
+
+                            & .orangebutton {}
+                        }
+                    }
+
+                    .card-body {
+                        & .iamgeleft {
+
+                            & img {}
+                        }
+
+                        & .imageright {
+
+                            & img {}
+                        }
+
+                        & .textimage {
+                            & .cemeterytext {}
+                        }
+
+                        & .button {
+                            & .buttonMemorial {}
+
+                            & .yellowbutton {}
+                        }
+
+                        & .textbottom {}
+
+                        & .headingadd {}
+
+                        & .Greenbutton {}
+
+                        & .imageuser {}
+
+                        & .usernameandmeddle {
+
+                            & .medeal {}
+
+                        }
+
+                        & .textHead {
+
+                            &.color {}
+
+                        }
+                    }
+
+                    & .card-footer {
+                        & .chat {
+                            & .drop {}
+                        }
+
+                        & .bgblur {
+
+                            &.viewdetails {}
+                        }
+
+                        & .btnGreen {
+                            font-size: 13px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        & .reviewthanks {}
+
+        & .reviewthanksred {}
+    }
+
+    #viewmodaleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .iamgeleft {
+
+                & img {}
+            }
+
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .textbottom {}
+
+            & .headingadd {}
+
+            & .Greenbutton {}
+
+            & .imageuser {}
+
+            & .usernameandmeddle {
+
+                & .medeal {}
+
+            }
+
+            & .textHead {
+
+                &.color {}
+
+                &.green {}
+
+            }
+
+            & .befortext {}
+
+            & .formControl {
+                & .form-control {
+
+                    &:focus {}
+
+                }
+            }
+
+            & .progresstext {}
+
+            & .cardorderdetaisimg {
+
+                & img {}
+            }
+
+            & .reviewSection {
+                & .reviewheadin {}
+
+                & .starlist {
+                    & .iconstar {
+
+                        &.ranking {}
+                    }
+                }
+
+                & .inputdisible {
+                    & .form-control {
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .selectinput {
+                    & .slectuser {}
+                }
+            }
+        }
+
+        & .modal-footer {
+
+            & .chat {
+                & .drop {}
+            }
+
+            & .bgblur {}
+
+            & .btnGreen {
+                font-size: 13px;
+
+                &:hover {
+                    & span {}
+                }
+            }
+        }
+    }
+
+    #paymentModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .bordercolumn {}
+
+            & .form-check {
+                & .form-check-input {
+                    &:checked {}
+                }
+
+                & .form-check-label {
+
+                    & .number {}
+                }
+            }
+
+            & .datetext {
+
+                & span {}
+            }
+
+            & .imageDelate {}
+
+            & .buttonmiddle {
+
+                &:hover {}
+            }
+        }
+
+        & .modal-footer {
+
+            & button {
+
+                &:hover {}
+            }
+        }
+    }
+
+    #seeresultleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .cardection {
+                & .beforcleningtext {}
+
+                & .imagecard {
+
+                    & img {}
+                }
+            }
+
+            & .inputsection {
+                & .form-label {}
+
+                & .form-control {
+
+                    &:focus {}
+                }
+            }
+        }
+    }
+
+    #reviewmodalModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .orderreviewimage {}
+
+            & .userName {}
+
+            & .meddleimage {}
+
+            & .imagestar {}
+
+            & .form-floating {
+                & .form-control {}
+
+                & .lebletext {}
+            }
+
+            & .btn-check {}
+
+            & .btnBorderd {}
+
+            & .btn-check:checked+.btn {}
+
+            & .canclebtn {
+
+                &:hover {}
+            }
+
+            & .sendbtn {
+
+                &:hover {}
+            }
+
+            & .reporthere {}
+        }
+    }
+
+    #reposthereModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .formSection {
+                & .form-label {}
+
+                & input {}
+
+                & .form-control {}
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .send {}
+        }
+    }
+
+    #tipModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .heading {}
+
+            & .addinput {
+                & .input-group {
+
+                    & .input-group-text {}
+
+                    & .form-control {
+
+                        &:focus {}
+
+                    }
+                }
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .add {
+
+                &:hover {}
+
+            }
+        }
+    }
+}
 
 // Large devices (desktops, less than 1200px)
-@mixin myorder-mixin-max-lg() {}
+@mixin myorder-mixin-max-lg() {
+    [page-name=myorder] {
+        & .myordersection {
+            & .heading {}
+
+            & .navtabssection {
+
+                & .navTabs {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+
+            & .tabsContentSection {
+                & .card {
+
+                    & .card-header {
+                        & .daydate {}
+
+                        & .buttonGroup {
+                            & .Greenbutton {}
+
+                            & .orangebutton {}
+                        }
+                    }
+
+                    .card-body {
+                        & .iamgeleft {
+
+                            & img {}
+                        }
+
+                        & .imageright {
+
+                            & img {}
+                        }
+
+                        & .textimage {
+                            & .cemeterytext {}
+                        }
+
+                        & .button {
+                            & .buttonMemorial {}
+
+                            & .yellowbutton {}
+                        }
+
+                        & .textbottom {}
+
+                        & .headingadd {}
+
+                        & .Greenbutton {}
+
+                        & .imageuser {}
+
+                        & .usernameandmeddle {
+
+                            & .medeal {}
+
+                        }
+
+                        & .textHead {
+
+                            &.color {}
+
+                        }
+                    }
+
+                    & .card-footer {
+                        & .chat {
+                            & .drop {}
+                        }
+
+                        & .bgblur {
+
+                            &.viewdetails {}
+                        }
+
+                        & .btnGreen {
+                            font-size: 13px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        & .reviewthanks {}
+
+        & .reviewthanksred {}
+    }
+
+    #viewmodaleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .iamgeleft {
+
+                & img {}
+            }
+
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .textbottom {}
+
+            & .headingadd {}
+
+            & .Greenbutton {}
+
+            & .imageuser {}
+
+            & .usernameandmeddle {
+
+                & .medeal {}
+
+            }
+
+            & .textHead {
+
+                &.color {}
+
+                &.green {}
+
+            }
+
+            & .befortext {}
+
+            & .formControl {
+                & .form-control {
+
+                    &:focus {}
+
+                }
+            }
+
+            & .progresstext {}
+
+            & .cardorderdetaisimg {
+
+                & img {}
+            }
+
+            & .reviewSection {
+                & .reviewheadin {}
+
+                & .starlist {
+                    & .iconstar {
+
+                        &.ranking {}
+                    }
+                }
+
+                & .inputdisible {
+                    & .form-control {
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .selectinput {
+                    & .slectuser {}
+                }
+            }
+        }
+
+        & .modal-footer {
+
+            & .chat {
+                & .drop {}
+            }
+
+            & .bgblur {}
+
+            & .btnGreen {
+                font-size: 13px;
+
+                &:hover {
+                    & span {}
+                }
+            }
+        }
+    }
+
+    #paymentModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .bordercolumn {}
+
+            & .form-check {
+                & .form-check-input {
+                    &:checked {}
+                }
+
+                & .form-check-label {
+
+                    & .number {}
+                }
+            }
+
+            & .datetext {
+
+                & span {}
+            }
+
+            & .imageDelate {}
+
+            & .buttonmiddle {
+
+                &:hover {}
+            }
+        }
+
+        & .modal-footer {
+
+            & button {
+
+                &:hover {}
+            }
+        }
+    }
+
+    #seeresultleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .cardection {
+                & .beforcleningtext {}
+
+                & .imagecard {
+
+                    & img {}
+                }
+            }
+
+            & .inputsection {
+                & .form-label {}
+
+                & .form-control {
+
+                    &:focus {}
+                }
+            }
+        }
+    }
+
+    #reviewmodalModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .orderreviewimage {}
+
+            & .userName {}
+
+            & .meddleimage {}
+
+            & .imagestar {}
+
+            & .form-floating {
+                & .form-control {}
+
+                & .lebletext {}
+            }
+
+            & .btn-check {}
+
+            & .btnBorderd {}
+
+            & .btn-check:checked+.btn {}
+
+            & .canclebtn {
+
+                &:hover {}
+            }
+
+            & .sendbtn {
+
+                &:hover {}
+            }
+
+            & .reporthere {}
+        }
+    }
+
+    #reposthereModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .formSection {
+                & .form-label {}
+
+                & input {}
+
+                & .form-control {}
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .send {}
+        }
+    }
+
+    #tipModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .heading {}
+
+            & .addinput {
+                & .input-group {
+
+                    & .input-group-text {}
+
+                    & .form-control {
+
+                        &:focus {}
+
+                    }
+                }
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .add {
+
+                &:hover {}
+
+            }
+        }
+    }
+}
 
 // X-Large devices (large desktops, less than 1400px)
-@mixin myorder-mixin-max-xl() {}
+@mixin myorder-mixin-max-xl() {
+    [page-name=myorder] {
+        & .myordersection {
+            & .heading {}
 
+            & .navtabssection {
 
+                & .navTabs {
+                    & .nav-link {
+
+                        &.active {}
+                    }
+                }
+            }
+
+            & .tabsContentSection {
+                & .card {
+
+                    & .card-header {
+                        & .daydate {}
+
+                        & .buttonGroup {
+                            & .Greenbutton {}
+
+                            & .orangebutton {}
+                        }
+                    }
+
+                    .card-body {
+                        & .iamgeleft {
+
+                            & img {}
+                        }
+
+                        & .imageright {
+
+                            & img {}
+                        }
+
+                        & .textimage {
+                            & .cemeterytext {}
+                        }
+
+                        & .button {
+                            & .buttonMemorial {}
+
+                            & .yellowbutton {}
+                        }
+
+                        & .textbottom {}
+
+                        & .headingadd {}
+
+                        & .Greenbutton {}
+
+                        & .imageuser {}
+
+                        & .usernameandmeddle {
+
+                            & .medeal {}
+
+                        }
+
+                        & .textHead {
+
+                            &.color {}
+
+                        }
+                    }
+
+                    & .card-footer {
+                        & .chat {
+                            & .drop {}
+                        }
+
+                        & .bgblur {
+
+                            &.viewdetails {}
+                        }
+
+                        & .btnGreen {
+                            font-size: 13px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        & .reviewthanks {}
+
+        & .reviewthanksred {}
+    }
+
+    #viewmodaleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .iamgeleft {
+
+                & img {}
+            }
+
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .textbottom {}
+
+            & .headingadd {}
+
+            & .Greenbutton {}
+
+            & .imageuser {}
+
+            & .usernameandmeddle {
+
+                & .medeal {}
+
+            }
+
+            & .textHead {
+
+                &.color {}
+
+                &.green {}
+
+            }
+
+            & .befortext {}
+
+            & .formControl {
+                & .form-control {
+
+                    &:focus {}
+
+                }
+            }
+
+            & .progresstext {}
+
+            & .cardorderdetaisimg {
+
+                & img {}
+            }
+
+            & .reviewSection {
+                & .reviewheadin {}
+
+                & .starlist {
+                    & .iconstar {
+
+                        &.ranking {}
+                    }
+                }
+
+                & .inputdisible {
+                    & .form-control {
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .selectinput {
+                    & .slectuser {}
+                }
+            }
+        }
+
+        & .modal-footer {
+
+            & .chat {
+                & .drop {}
+            }
+
+            & .bgblur {}
+
+            & .btnGreen {
+                font-size: 13px;
+
+                &:hover {
+                    & span {}
+                }
+            }
+        }
+    }
+
+    #paymentModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .bordercolumn {}
+
+            & .form-check {
+                & .form-check-input {
+                    &:checked {}
+                }
+
+                & .form-check-label {
+
+                    & .number {}
+                }
+            }
+
+            & .datetext {
+
+                & span {}
+            }
+
+            & .imageDelate {}
+
+            & .buttonmiddle {
+
+                &:hover {}
+            }
+        }
+
+        & .modal-footer {
+
+            & button {
+
+                &:hover {}
+            }
+        }
+    }
+
+    #seeresultleModal {
+        & .modal-title {}
+
+        & .daydate {}
+
+        & .modal-body {
+            & .imageright {
+
+                & img {}
+            }
+
+            & .textimage {
+                & .cemeterytext {}
+            }
+
+            & .button {
+                & .buttonMemorial {}
+
+                & .yellowbutton {}
+            }
+
+            & .cardection {
+                & .beforcleningtext {}
+
+                & .imagecard {
+
+                    & img {}
+                }
+            }
+
+            & .inputsection {
+                & .form-label {}
+
+                & .form-control {
+
+                    &:focus {}
+                }
+            }
+        }
+    }
+
+    #reviewmodalModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .orderreviewimage {}
+
+            & .userName {}
+
+            & .meddleimage {}
+
+            & .imagestar {}
+
+            & .form-floating {
+                & .form-control {}
+
+                & .lebletext {}
+            }
+
+            & .btn-check {}
+
+            & .btnBorderd {}
+
+            & .btn-check:checked+.btn {}
+
+            & .canclebtn {
+
+                &:hover {}
+            }
+
+            & .sendbtn {
+
+                &:hover {}
+            }
+
+            & .reporthere {}
+        }
+    }
+
+    #reposthereModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .formSection {
+                & .form-label {}
+
+                & input {}
+
+                & .form-control {}
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .send {}
+        }
+    }
+
+    #tipModal {
+        & .modal-header {
+            & .modal-title {}
+        }
+
+        & .modal-body {
+            & .heading {}
+
+            & .addinput {
+                & .input-group {
+
+                    & .input-group-text {}
+
+                    & .form-control {
+
+                        &:focus {}
+
+                    }
+                }
+            }
+        }
+
+        & .modal-footer {
+            & .cancel {}
+
+            & .add {
+
+                &:hover {}
+
+            }
+        }
+    }
+}
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Cleaner Detail !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!!!1!!!!
 
 [page-name=cleanerDetail] {
     & .clenerSection {
         & .clenarheading {
-            font-family: 'Inter';
+            font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -2861,7 +4953,7 @@
             }
 
             & .username {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2873,7 +4965,7 @@
 
             & .starList {
                 & .textstar {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 14px;
@@ -2904,7 +4996,7 @@
             }
 
             & .form-label {
-                font-family: 'Inter';
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -2927,7 +5019,7 @@
                     border-bottom: 2px solid #EAEAEA !important;
 
                     & .nav-link {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
@@ -2961,7 +5053,7 @@
                     & .inputGroup {
 
                         & .form-check-label {
-                            font-family: 'Inter';
+                            font-family: 'Inter', sans-serif;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 16px;
@@ -2982,7 +5074,7 @@
                     }
 
                     & .rediotext {
-                        font-family: 'Inter';
+                        font-family: 'Inter', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
@@ -2994,7 +5086,7 @@
                 }
 
                 & .heading {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -3003,7 +5095,7 @@
                 }
 
                 & .form-label {
-                    font-family: 'Inter';
+                    font-family: 'Inter', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -3019,8 +5111,9 @@
                 }
             }
 
-            input[type=checkbox]~label, input[type=radio]~label {
-                font-family: 'Inter';
+            input[type=checkbox]~label,
+            input[type=radio]~label {
+                font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -3031,14 +5124,16 @@
 
             }
 
-            input[type=checkbox]:checked~label, input[type=radio]:checked~label {
+            input[type=checkbox]:checked~label,
+            input[type=radio]:checked~label {
                 color: $theme1 !important;
                 font-weight: 600 !important;
-                .rediotext{
+
+                .rediotext {
                     color: $theme1;
                 }
             }
-            
+
 
         }
     }
@@ -3060,16 +5155,441 @@
 @mixin cleanerDetail-mixin-min-xxl() {}
 
 // X-Small devices (portrait phones, less than 576px)
-@mixin cleanerDetail-mixin-max-xs() {}
+@mixin cleanerDetail-mixin-max-xs() {
+    [page-name=cleanerDetail] {
+        & .clenerSection {
+            & .clenarheading {
+
+                & span {}
+
+            }
+
+            & .leftSide {
+                & .clenerimaege {}
+
+                & .username {
+
+                    & span {}
+                }
+
+                & .starList {
+                    & .textstar {
+
+                        & span {}
+                    }
+                }
+
+                & .navbutton {
+                    & .nav-link {
+
+                        &.active {}
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .form-label {}
+
+                & .form-control {
+                    &:focus {}
+                }
+            }
+
+            & .rightSide {
+                & .nav-tabs {
+                    & .nav-item {
+
+                        & .nav-link {
+
+                            &.active {}
+                        }
+                    }
+                }
+
+                & .contantTab {
+                    & .form-check {
+                        & .inputGroup {
+                            & .form-check-label {}
+                        }
+
+                        & .form-check-input {
+                            &:checked {}
+                        }
+
+                        & .rediotext {}
+                    }
+
+                    & .heading {}
+
+                    & .form-label {}
+
+                    & .form-control {
+                        &:focus {}
+                    }
+                }
+
+                input[type=checkbox]~label,
+                input[type=radio]~label {}
+
+                input[type=checkbox]:checked~label,
+                input[type=radio]:checked~label {
+                    .rediotext {}
+                }
+
+
+            }
+        }
+    }
+}
 
 // Small devices (landscape phones, less than 768px)
-@mixin cleanerDetail-mixin-max-sm() {}
+@mixin cleanerDetail-mixin-max-sm() {
+    [page-name=cleanerDetail] {
+        & .clenerSection {
+            & .clenarheading {
+
+                & span {}
+
+            }
+
+            & .leftSide {
+                & .clenerimaege {}
+
+                & .username {
+
+                    & span {}
+                }
+
+                & .starList {
+                    & .textstar {
+
+                        & span {}
+                    }
+                }
+
+                & .navbutton {
+                    & .nav-link {
+
+                        &.active {}
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .form-label {}
+
+                & .form-control {
+                    &:focus {}
+                }
+            }
+
+            & .rightSide {
+                & .nav-tabs {
+                    & .nav-item {
+
+                        & .nav-link {
+
+                            &.active {}
+                        }
+                    }
+                }
+
+                & .contantTab {
+                    & .form-check {
+                        & .inputGroup {
+                            & .form-check-label {}
+                        }
+
+                        & .form-check-input {
+                            &:checked {}
+                        }
+
+                        & .rediotext {}
+                    }
+
+                    & .heading {}
+
+                    & .form-label {}
+
+                    & .form-control {
+                        &:focus {}
+                    }
+                }
+
+                input[type=checkbox]~label,
+                input[type=radio]~label {}
+
+                input[type=checkbox]:checked~label,
+                input[type=radio]:checked~label {
+                    .rediotext {}
+                }
+
+
+            }
+        }
+    }
+}
 
 // Medium devices (tablets, less than 992px)
-@mixin cleanerDetail-mixin-max-md() {}
+@mixin cleanerDetail-mixin-max-md() {
+    [page-name=cleanerDetail] {
+        & .clenerSection {
+            & .clenarheading {
+
+                & span {}
+
+            }
+
+            & .leftSide {
+                & .clenerimaege {}
+
+                & .username {
+
+                    & span {}
+                }
+
+                & .starList {
+                    & .textstar {
+
+                        & span {}
+                    }
+                }
+
+                & .navbutton {
+                    & .nav-link {
+
+                        &.active {}
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .form-label {}
+
+                & .form-control {
+                    &:focus {}
+                }
+            }
+
+            & .rightSide {
+                & .nav-tabs {
+                    & .nav-item {
+
+                        & .nav-link {
+
+                            &.active {}
+                        }
+                    }
+                }
+
+                & .contantTab {
+                    & .form-check {
+                        & .inputGroup {
+                            & .form-check-label {}
+                        }
+
+                        & .form-check-input {
+                            &:checked {}
+                        }
+
+                        & .rediotext {}
+                    }
+
+                    & .heading {}
+
+                    & .form-label {}
+
+                    & .form-control {
+                        &:focus {}
+                    }
+                }
+
+                input[type=checkbox]~label,
+                input[type=radio]~label {}
+
+                input[type=checkbox]:checked~label,
+                input[type=radio]:checked~label {
+                    .rediotext {}
+                }
+
+
+            }
+        }
+    }
+}
 
 // Large devices (desktops, less than 1200px)
-@mixin cleanerDetail-mixin-max-lg() {}
+@mixin cleanerDetail-mixin-max-lg() {
+    [page-name=cleanerDetail] {
+        & .clenerSection {
+            & .clenarheading {
+
+                & span {}
+
+            }
+
+            & .leftSide {
+                & .clenerimaege {}
+
+                & .username {
+
+                    & span {}
+                }
+
+                & .starList {
+                    & .textstar {
+
+                        & span {}
+                    }
+                }
+
+                & .navbutton {
+                    & .nav-link {
+
+                        &.active {}
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .form-label {}
+
+                & .form-control {
+                    &:focus {}
+                }
+            }
+
+            & .rightSide {
+                & .nav-tabs {
+                    & .nav-item {
+
+                        & .nav-link {
+
+                            &.active {}
+                        }
+                    }
+                }
+
+                & .contantTab {
+                    & .form-check {
+                        & .inputGroup {
+                            & .form-check-label {}
+                        }
+
+                        & .form-check-input {
+                            &:checked {}
+                        }
+
+                        & .rediotext {}
+                    }
+
+                    & .heading {}
+
+                    & .form-label {}
+
+                    & .form-control {
+                        &:focus {}
+                    }
+                }
+
+                input[type=checkbox]~label,
+                input[type=radio]~label {}
+
+                input[type=checkbox]:checked~label,
+                input[type=radio]:checked~label {
+                    .rediotext {}
+                }
+
+
+            }
+        }
+    }
+}
 
 // X-Large devices (large desktops, less than 1400px)
-@mixin cleanerDetail-mixin-max-xl() {}
+@mixin cleanerDetail-mixin-max-xl() {
+    [page-name=cleanerDetail] {
+        & .clenerSection {
+            & .clenarheading {
+
+                & span {}
+
+            }
+
+            & .leftSide {
+                & .clenerimaege {}
+
+                & .username {
+
+                    & span {}
+                }
+
+                & .starList {
+                    & .textstar {
+
+                        & span {}
+                    }
+                }
+
+                & .navbutton {
+                    & .nav-link {
+
+                        &.active {}
+
+                        &:focus-visible {}
+                    }
+                }
+
+                & .form-label {}
+
+                & .form-control {
+                    &:focus {}
+                }
+            }
+
+            & .rightSide {
+                & .nav-tabs {
+                    & .nav-item {
+
+                        & .nav-link {
+
+                            &.active {}
+                        }
+                    }
+                }
+
+                & .contantTab {
+                    & .form-check {
+                        & .inputGroup {
+                            & .form-check-label {}
+                        }
+
+                        & .form-check-input {
+                            &:checked {}
+                        }
+
+                        & .rediotext {}
+                    }
+
+                    & .heading {}
+
+                    & .form-label {}
+
+                    & .form-control {
+                        &:focus {}
+                    }
+                }
+
+                input[type=checkbox]~label,
+                input[type=radio]~label {}
+
+                input[type=checkbox]:checked~label,
+                input[type=radio]:checked~label {
+                    .rediotext {}
+                }
+
+
+            }
+        }
+    }
+}

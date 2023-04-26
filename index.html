@@ -14,7 +14,7 @@
     <meta name="revisit-after" content="3 days">
     <meta name="copyright" content="Site Name">
     <meta name="language" content="English">
-    <meta name="reply-to" content="info@imgglobalinfotech.com">
+    <meta name="reply-to" content="">
     <meta name="distribution" content="Global" />
     <meta name="rating" content="General" />
     <!-- Twitter Meta -->
@@ -46,16 +46,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
     <link rel="icon" type="image/x-icon" href="assets/logo/favicon-32x32.png" />
     <meta name="classification" content="MAGOA" />
-    <link rel="canonical" href="" />
     <script src="assets/libs/jquery-3.6.0.min.js"></script>
-
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/fonts/inter.css">
 </head>
 <body>
-    <div class="main" data-page-name="mainDashboard">
+    <div class="main" page-name="index-page">
 <!-- ########## Navbar ##########-->
         <nav class="navbar topHeader">
             <div class="container-fluid">
@@ -80,12 +79,11 @@
                         <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
                         <li>
                             <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                            <a href="customer/customer.html" class="user-btn"> Costumer <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                            <a href="customer/customer.html" class="user-btn"> Custumer <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
                         </li>
                     </ul>
                 </div>
-                <hr class="divder">
-                </hr>
+                <hr class="divder"></hr>
                 <div class="job">
                     <ul class="list-unstyled">
                         <li class="current">Current Job</li>
@@ -167,44 +165,30 @@
                                                 </div>
 
                                                 <ul class="list-unstyled availabilityBtns">
-                                                    <li class="availabile me-2">
-                                                        In Progress
-                                                    </li>
-                                                    <li class="availabile">
-                                                        Monthly
-                                                    </li>
+                                                    <li class="availabile me-2">New Job</li>
+                                                    <li class="availabile">One Time</li>
                                                 </ul>
                                             </div>
                                             <div class="theme-card-body">
                                                 <div class="card-body-top">
                                                     <ul class="list-unstyled">
                                                         <li>
-                                                            <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
-                                                            </div>
-                                                            <div class="link">
-                                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
-                                                            </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            <div class="icon"><img src="assets/images/Subtract.svg" alt="subtract"></div>
+                                                            <div class="link"><a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt="maximize"></span></a><div class="top-btn Memorial">Large Memorial</div></div>
+                                                            
                                                         </li>
                                                         <li>
-                                                            <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
-                                                            </div>
+                                                            <div class="icon"><img src="assets/images/calendar.svg" alt="calendar"></div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
+                                                                <div class="top-btn moreDays d-flex align-items-center gap-1"><span class="d-inline-flex align-items-center"><img src="assets/images/time.svg" alt="image"></span> 4 more days</div>
                                                             </div>
-                                                            <div
-                                                                class="top-btn moreDays d-flex align-items-center gap-1">
-                                                                <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
-                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" required>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -219,35 +203,26 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
-                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                        <a href="javascript:;" class="more round" data-bs-toggle="dropdown"aria-expanded="false">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
-                                                                <li><a class="dropdown-item" href="javascript:;"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#MemorialDetailModal">Memorial
-                                                                        Detail</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:;"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#DeclineModal">Decline Job</a>
-                                                                </li>
+                                                                <li><a class="dropdown-item" href="javascript:;"data-bs-toggle="modal"data-bs-target="#MemorialDetailModal">Memorial Detail</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:;"data-bs-toggle="modal"data-bs-target="#DeclineModal">Decline Job</a></li>
                                                             </ul>
                                                         </a>
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
-                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#MemorialDetailModal">Memorial Detail</a>
+                                                        <a href="javascript:;" class="theme-btn btnGreenBorder"data-bs-toggle="modal"data-bs-target="#MemorialDetailModal">Memorial Detail</a>
                                                         <a href="javascript:;" class="theme-btn btnGreen">Send Quote</a>
                                                     </li>
                                                 </ul>
@@ -283,31 +258,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="img"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -322,19 +299,19 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
@@ -386,31 +363,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="img">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="img"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="img">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -425,19 +404,19 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
@@ -489,31 +468,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -528,19 +509,19 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
@@ -567,7 +548,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-WaitingPayment" role="tabpanel"
                                 aria-labelledby="pills-WaitingPayment-tab" tabindex="0">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12 col-md-6">
                                         <div class="theme-card">
                                             <div class="theme-card-header">
@@ -597,31 +578,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -641,13 +624,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
@@ -701,32 +684,34 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1 red">
                                                                 <span class="d-inline-flex align-items-center">
-                                                                    <img src="assets/images/time-red.svg" alt=""></span> 4 more
+                                                                    <img src="assets/images/time-red.svg" alt="image"></span> 4 more
                                                                 days
                                                             </div>
+                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -746,13 +731,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;"
                                                                         data-bs-toggle="modal"
@@ -798,7 +783,7 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-bb1" role="tabpanel"
                                 aria-labelledby="pills-bb1-tab" tabindex="0">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12 col-md-6">
                                         <div class="theme-card">
                                             <div class="theme-card-header">
@@ -828,31 +813,32 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
+                                                            </div>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -872,13 +858,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -926,31 +912,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1 red">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time-red.svg" alt=""></span> 1 more
+                                                                        src="assets/images/time-red.svg" alt="image"></span> 1 more
                                                                 days</div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -970,13 +958,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -999,7 +987,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-bb2" role="tabpanel" aria-labelledby="pills-bb2-tab"
                                 tabindex="0">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12 col-md-6">
                                         <div class="theme-card">
                                             <div class="theme-card-header">
@@ -1029,31 +1017,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1073,13 +1063,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1127,31 +1117,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1 red">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time-red.svg" alt=""></span> 1 more
+                                                                        src="assets/images/time-red.svg" alt="image"></span> 1 more
                                                                 days</div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1171,13 +1163,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1222,7 +1214,7 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-NewJob" role="tabpanel"
                                 aria-labelledby="pills-NewJob-tab" tabindex="0">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12 col-md-6">
                                         <div class="theme-card">
                                             <div class="theme-card-header">
@@ -1252,31 +1244,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1291,19 +1285,19 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1351,31 +1345,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                            
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1390,19 +1386,19 @@
                                                     </li>
                                                     <li class="edit_price">
                                                         <h5 class="price">$50</h5>
-                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt=""></span></p>
+                                                        <p>Edit <span><img src="assets/images/pencil.svg" alt="image"></span></p>
                                                     </li>
                                                 </ul>
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1425,7 +1421,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-WaitingPayment" role="tabpanel"
                                 aria-labelledby="pills-WaitingPayment-tab" tabindex="0">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12 col-md-6">
                                         <div class="theme-card">
                                             <div class="theme-card-header">
@@ -1455,31 +1451,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                           
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1499,13 +1497,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1553,31 +1551,33 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/Subtract.svg" alt="">
+                                                                <img src="assets/images/Subtract.svg" alt="image">
                                                             </div>
                                                             <div class="link">
                                                                 <a href="javascript:;">Abie Everman, California Cemetry <span><img
-                                                                            src="assets/images/maximize.svg" alt=""></span></a>
+                                                                            src="assets/images/maximize.svg" alt="image"></span></a>
+                                                                            <div class="top-btn Memorial">Large Memorial</div>
                                                             </div>
-                                                            <div class="top-btn Memorial">Large Memorial</div>
+                                                           
                                                         </li>
                                                         <li>
                                                             <div class="icon">
-                                                                <img src="assets/images/calendar.svg" alt="">
+                                                                <img src="assets/images/calendar.svg" alt="image">
                                                             </div>
                                                             <div class="date">
                                                                 <p>27 February 2022 </p>
-                                                            </div>
-                                                            <div
+                                                                <div
                                                                 class="top-btn moreDays d-flex align-items-center gap-1">
                                                                 <span class="d-inline-flex align-items-center"><img
-                                                                        src="assets/images/time.svg" alt=""></span> 4 more days
+                                                                        src="assets/images/time.svg" alt="image"></span> 4 more days
                                                             </div>
+                                                            </div>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="message">
-                                                    <input type="text" placeholder="Message">
+                                                    <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                                                 </div>
                                                 <ul class="list-unstyled offering ">
                                                     <li class="availabile me-2">Flower</li>
@@ -1597,13 +1597,13 @@
                                                 <ul class="list-unstyled chat">
                                                     <li class="drop">
                                                         <a href="javascript:;" class="message round p-0">
-                                                            <img src="assets/images/message.svg" alt="">
+                                                            <img src="assets/images/message.svg" alt="image">
                                                         </a>
                                                     </li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
-                                                            <img src="assets/images/More.svg" alt="">
+                                                            <img src="assets/images/More.svg" alt="image">
                                                             <ul class="list-unstyled dropdown-menu py-0">
                                                                 <li><a class="dropdown-item" href="javascript:;">Memorial
                                                                         Detail</a></li>
@@ -1663,24 +1663,26 @@
                                     </div>
                                         <li>
                                             <div class="icon">
-                                                <img src="assets/images/Subtract.svg" alt="">
+                                                <img src="assets/images/Subtract.svg" alt="image">
                                             </div>
                                             <div class="link">
                                                 <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
-                                                            alt=""></span></a>
+                                                            alt="image"></span></a>
+                                                            <div class="top-btn Memorial">Large Memorial</div>
                                             </div>
-                                            <div class="top-btn Memorial">Large Memorial</div>
+                                           
                                         </li>
                                         <li>
                                             <div class="icon">
-                                                <img src="assets/images/calendar.svg" alt="">
+                                                <img src="assets/images/calendar.svg" alt="image">
                                             </div>
                                             <div class="date">
                                                 <p>27 February 2022 </p>
-                                            </div>
-                                            <div class="top-btn moreDays d-flex align-items-center gap-1"> <span
+                                                <div class="top-btn moreDays d-flex align-items-center gap-1"> <span
                                                     class="d-inline-flex align-items-center"><img src="assets/images/time.svg"
-                                                        alt=""></span> 4 more days</div>
+                                                        alt="image"></span> 4 more days</div>
+                                            </div>
+                                           
                                         </li>
                                     </ul>
                                 </div>
@@ -1731,24 +1733,22 @@
                                     <ul class="list-unstyled">
                                         <li>
                                             <div class="icon">
-                                                <img src="assets/images/Subtract.svg" alt="">
+                                                <img src="assets/images/Subtract.svg" alt="image">
                                             </div>
                                             <div class="link">
-                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
-                                                            alt=""></span></a>
+                                                <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg" alt="maximize"></span></a>
+                                                <div class="top-btn Memorial">Large Memorial</div>
                                             </div>
-                                            <div class="top-btn Memorial">Large Memorial</div>
+                                            
                                         </li>
                                         <li>
                                             <div class="icon">
-                                                <img src="assets/images/calendar.svg" alt="">
+                                                <img src="assets/images/calendar.svg" alt="image">
                                             </div>
                                             <div class="date">
                                                 <p>27 February 2022 </p>
+                                            <div class="top-btn moreDays d-flex align-items-center gap-1"> <span class="d-inline-flex align-items-center"><img src="assets/images/time.svg"alt="time"></span> 4 more days</div>
                                             </div>
-                                            <div class="top-btn moreDays d-flex align-items-center gap-1"> <span
-                                                    class="d-inline-flex align-items-center"><img src="assets/images/time.svg"
-                                                        alt=""></span> 4 more days</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -1837,7 +1837,7 @@
                                         <li>
                                             <h6>1435 North Main Street (US Hwy 395)Lone Pine, California, USA <span><a
                                                         href="javascript:;">Show Map <span><img src="assets/images/maximize-green.svg"
-                                                                alt=""></span></a></span></h6>
+                                                                alt="image"></span></a></span></h6>
                                         </li>
                                         <li class="mb-0">
                                             <p>Memorial ID</p>
@@ -1894,29 +1894,31 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/images/Subtract.svg" alt="">
+                                            <img src="assets/images/Subtract.svg" alt="image">
                                         </div>
                                         <div class="link">
                                             <a href="javascript:;">A G Powell, Cliff Hill <span><img src="assets/images/maximize.svg"
-                                                        alt=""></span></a>
+                                                        alt="image"></span></a>
+                                                        <div class="top-btn Memorial">Large Memorial</div>
                                         </div>
-                                        <div class="top-btn Memorial">Large Memorial</div>
+                                       
                                     </li>
                                     <li>
                                         <div class="icon">
-                                            <img src="assets/images/calendar.svg" alt="">
+                                            <img src="assets/images/calendar.svg" alt="image">
                                         </div>
                                         <div class="date">
                                             <p>27 February 2022 </p>
-                                        </div>
-                                        <div class="top-btn moreDays d-flex align-items-center gap-1"> <span
+                                            <div class="top-btn moreDays d-flex align-items-center gap-1"> <span
                                                 class="d-inline-flex align-items-center"><img src="assets/images/time.svg"
-                                                    alt=""></span> 4 more days</div>
+                                                    alt="image"></span> 4 more days</div>
+                                        </div>
+                                        
                                     </li>
                                 </ul>
                             </div>
                             <div class="message">
-                                <input type="text" placeholder="Message">
+                                <input type="text" placeholder="Hi, please take care for clean up my grandma gravestone, thanks!" readonly>
                             </div>
                             <ul class="list-unstyled offering mb-0">
                                 <li class="availabile me-2">Flower</li>
@@ -1944,7 +1946,7 @@
                                                     <div class="upload__img-wrap">
                                                         <div class="upload__btn-box">
                                                             <label class="upload__btn">
-                                                                <img src="assets/images/add.svg" alt="">
+                                                                <img src="assets/images/add.svg" alt="image">
                                                                 <p class="mb-0">Add Photo</p>
                                                                 <input type="file" multiple="" data-max_length="20"
                                                                     class="upload__inputfile">
@@ -1957,7 +1959,7 @@
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
-                                                            <img src="assets/images/add.svg" alt="">
+                                                            <img src="assets/images/add.svg" alt="image">
                                                             <p class="mb-0">Add Photo</p>
                                                             <input type="file" multiple="" data-max_length="20"
                                                                 class="upload__inputfile">
@@ -1970,7 +1972,7 @@
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
-                                                            <img src="assets/images/add.svg" alt="">
+                                                            <img src="assets/images/add.svg" alt="image">
                                                             <p class="mb-0">Add Photo</p>
                                                             <input type="file" multiple="" data-max_length="20"
                                                                 class="upload__inputfile">
@@ -1988,7 +1990,7 @@
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
-                                                            <img src="assets/images/add.svg" alt="">
+                                                            <img src="assets/images/add.svg" alt="image">
                                                             <p class="mb-0">Add Photo</p>
                                                             <input type="file" multiple="" data-max_length="20"
                                                                 class="upload__inputfile">
@@ -2001,7 +2003,7 @@
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
-                                                            <img src="assets/images/add.svg" alt="">
+                                                            <img src="assets/images/add.svg" alt="image">
                                                             <p class="mb-0">Add Photo</p>
                                                             <input type="file" multiple="" data-max_length="20"
                                                                 class="upload__inputfile">
@@ -2014,7 +2016,7 @@
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
-                                                            <img src="assets/images/add.svg" alt="">
+                                                            <img src="assets/images/add.svg" alt="image">
                                                             <p class="mb-0">Add Photo</p>
                                                             <input type="file" multiple="" data-max_length="20"
                                                                 class="upload__inputfile">
@@ -2033,19 +2035,26 @@
                                 </div>
                             </div>
                             <ul class="list-unstyled chat d-flex justify-content-between">
-                                <li>
+                                <li class="drop msgA d-none">
+                                    <a href="javascript:;" class="message round p-0">
+                                        <img src="assets/images/message.svg" alt="image">
+                                    </a>
+                                </li>
+                                <li class=" msgB">
+                                    
                                     <a href="javascript:;" class="theme-btn btnGreenBorder custommsgBtn">
-                                        <img src="assets/images/message.svg" alt="">
+                                        <img src="assets/images/message.svg" alt="image">
                                         <span>Message</span>
                                     </a>
                                 </li>
 
                                 <li class="d-flex">
                                     <ul class="list-unstyled">
+                                       
                                         <li class="drop">
                                             <a href="javascript:;" class="more round" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
-                                                <img src="assets/images/More.svg" alt="">
+                                                <img src="assets/images/More.svg" alt="image">
                                             </a>
 
                                             <ul class="list-unstyled dropdown-menu py-0">

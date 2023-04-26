@@ -7,6 +7,9 @@
   @include shoppage-mixin-min-sm();
   @include reviewspage-mixin-min-sm();
   @include earnings-mixin-min-sm();
+  @include myorder-mixin-min-sm();
+  @include cleanerDetail-mixin-min-sm();
+  @include availability-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
@@ -15,6 +18,9 @@
   @include shoppage-mixin-min-md();
   @include reviewspage-mixin-min-md();
   @include earnings-mixin-min-md();
+  @include myorder-mixin-min-md();
+  @include cleanerDetail-mixin-min-md();
+  @include availability-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
@@ -22,6 +28,9 @@
   @include index-page-mixin-min-lg();
   @include shoppage-mixin-min-lg();
   @include reviewspage-mixin-min-lg();
+  @include myorder-mixin-min-lg();
+  @include cleanerDetail-mixin-min-lg();
+  @include availability-mixin-min-lg();
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -30,6 +39,9 @@
   @include shoppage-mixin-min-xl();
   @include reviewspage-mixin-min-xl();
   @include earnings-mixin-min-xl();
+  @include myorder-mixin-min-xl();
+  @include cleanerDetail-mixin-min-xl();
+  @include availability-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -38,6 +50,9 @@
   @include shoppage-mixin-min-xxl();
   @include reviewspage-mixin-min-xxl();
   @include earnings-mixin-min-xxl();
+  @include myorder-mixin-min-xxl();
+  @include cleanerDetail-mixin-min-xxl();
+  @include availability-mixin-min-xxl();
 }
 
 // Large devices (desktops, less than 1200px)
@@ -46,6 +61,9 @@
   @include shoppage-mixin-max-lg();
   @include reviewspage-mixin-max-lg();
   @include earnings-mixin-max-lg();
+  @include myorder-mixin-max-lg();
+  @include cleanerDetail-mixin-max-lg();
+  @include availability-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
@@ -54,7 +72,9 @@
   @include shoppage-mixin-max-md();
   @include reviewspage-mixin-max-md();
   @include earnings-mixin-max-md();
-
+  @include myorder-mixin-max-md();
+  @include cleanerDetail-mixin-max-md();
+  @include availability-mixin-max-md();
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -63,6 +83,9 @@
   @include shoppage-mixin-max-sm();
   @include reviewspage-mixin-max-sm();
   @include earnings-mixin-max-sm();
+  @include myorder-mixin-max-sm();
+  @include cleanerDetail-mixin-max-sm();
+  @include availability-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -71,7 +94,9 @@
   @include shoppage-mixin-max-xs();
   @include reviewspage-mixin-max-xs();
   @include earnings-mixin-max-xs();
-
+  @include myorder-mixin-max-xs();
+  @include cleanerDetail-mixin-max-xs();
+  @include availability-mixin-max-xs();
 }
 
 // @media (max-width: 430px) {

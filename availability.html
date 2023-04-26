@@ -55,7 +55,9 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="assets\libs\ionic.esm.js"></script>
     <link rel="stylesheet" href="assets\css\ionic.bundle.css" />
+   
 </head>
+
 <body class="d-block">
     <div class="main" page-name="availability">
         <nav class="navbar topHeader">
@@ -69,16 +71,514 @@
                 </a>
             </div>
         </nav>
-    <div class="wrapper">
-        <!--########## [ Aside Bar Start ] ###########-->
-        <div class="sidebar-lg sidebar">
+        <div class="wrapper">
+            <!--########## [ Aside Bar Start ] ###########-->
+            <div class="sidebar-lg sidebar">
+                <div class="sider-top">
+                    <div class="user">
+                        <ul class="list-unstyled">
+                            <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
+                            <li>
+                                <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png"
+                                            alt="cleaner"></span></h4>
+                                <a href="customer/customer.html" class="user-btn"> Custumer <span><img
+                                            src="assets/images/user-fillter.png" alt="fillter"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="divder">
+                    </hr>
+                    <div class="job">
+                        <ul class="list-unstyled">
+                            <li class="current">Current Job</li>
+                            <li class="price">$450</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links h-100 flex-fill overflow-hidden">
+                    <div class="">
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="tab-a" data-id="tab1">
+                                    <div class="round "><span class="icons"><img src="assets/images/paint-brush.svg"
+                                                alt="img"></span> My Jobs</div>
+                                </a></li>
+                            <li><a href="message.html" class="tab-a" data-id="tab2">
+                                    <div class="round "><span class="icons"><img src="assets/images/message.svg"
+                                                alt="img"></span> Message</div>
+                                </a></li>
+                            <li><a href="earnings.html" class="tab-a" data-id="tab3">
+                                    <div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg"
+                                                alt="img"></span> Earnings</div>
+                                </a></li>
+                            <li><a href="availability.html" class="tab-a" data-id="tab4">
+                                    <div class="round active"><span class="icons"><img src="assets/images/calendar.svg"
+                                                alt="img"></span> Availability</div>
+                                </a></li>
+                            <li><a href="reviews.html" class="tab-a" data-id="tab5">
+                                    <div class="round"><span class="icons"><img src="assets/images/star.svg"
+                                                alt="img"></span> Reviews</div>
+                                </a></li>
+                            <li><a href="shop.html" class="tab-a" data-id="tab6">
+                                    <div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg"
+                                                alt="img"></span> Shop</div>
+                                </a></li>
+                            <li><a href="tutorials.html" class="tab-a" data-id="tab7">
+                                    <div class="round"><span class="icons"><img src="assets/images/play-button.svg"
+                                                alt="img"></span> Tutorials</div>
+                                </a></li>
+                            <li><a href="settings.html" class="tab-a" data-id="tab8">
+                                    <div class="round"><span class="icons"><img src="assets/images/settings.svg"
+                                                alt="img"></span> Settings</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--########## [ Aside Bar End ] ###########-->
+
+            <!--########## [ Main Content ] ###########-->
+            <div class="main">
+                <div class="dPage availability" data-id="tab5">
+                    <h4 class="page-title my-4 fs-24 f text-startw-bold">Availability</h4>
+                    <div class="row mb-3 myJobTopTab">
+                        <div class="col-12 col-md-7 d-flex align-items-center justify-content-between">
+                            <div class="salectDates d-flex align-items-center">
+                                <span> I’m available to work</span>
+                                <select class="border-0 p-0 bg-transparent ms-2 shadow-none" id="salectValue"
+                                    aria-label="Default select example">
+                                    <option value="0">Everyday</option>
+                                    <option value="1" selected>mon-fri</option>
+                                    <option value="2">weekend </option>
+                                    <option value="3">customs</option>
+                                </select>
+                            </div>
+                            <div class="theme-btn btnGreen sm-none">Add to Google Calendar</div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-7">
+                            <div class="theme-card">
+                                <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
+
+                                </div>
+                                <div class="theme-card-body position-relative pt-1">
+                                    <div class="theme-btn btnGrayBorder w-auto float-end px-3 position-absolute r-16 py-2"
+                                        id="date">
+                                    </div>
+                                    <ion-datetime class="w-100 customWidth " presentation="date"
+                                        multiple="true"></ion-datetime>
+                                    <div class="d-flex justify-content-between p-3 borderGray">
+                                        <div class="fs-14 fw-bold d-flex align-items-center"><span></span> Available
+                                        </div>
+                                        <div class="fs-14 text-muted">Tap the date to change availability*</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="theme-card">
+                                <div class="theme-card-header">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Work Location</div>
+                                </div>
+                                <div class="theme-card-body overflow-auto LocationHeight">
+                                    <ul class="workLocation">
+                                        <li class="d-flex justify-content-between">
+                                            <div class="location">
+                                                <span>
+                                                    <img src="assets/images/location.svg" alt="img">
+                                                </span>
+                                                <div class="fs-14">Virginia Beach, Virginia</div>
+                                            </div>
+                                            <div class="delete" data-bs-toggle="modal"
+                                                data-bs-target="#deleteLocationModal">
+                                                <img src="assets/images/delete.svg" alt="img">
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <div class="location">
+                                                <span>
+                                                    <img src="assets/images/location.svg" alt="img">
+                                                </span>
+                                                <div class="fs-14">Virginia Beach, Virginia</div>
+                                            </div>
+                                            <div class="delete" data-bs-toggle="modal"
+                                                data-bs-target="#deleteLocationModal">
+                                                <img src="assets/images/delete.svg" alt="img">
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <div class="location">
+                                                <span>
+                                                    <img src="assets/images/location.svg" alt="img">
+                                                </span>
+                                                <div class="fs-14">Virginia Beach, Virginia</div>
+                                            </div>
+                                            <div class="delete" data-bs-toggle="modal"
+                                                data-bs-target="#deleteLocationModal">
+                                                <img src="assets/images/delete.svg" alt="img">
+                                            </div>
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <div class="location">
+                                                <span>
+                                                    <img src="assets/images/location.svg" alt="img">
+                                                </span>
+                                                <div class="fs-14">Virginia Beach, Virginia</div>
+                                            </div>
+                                            <div class="delete" data-bs-toggle="modal"
+                                                data-bs-target="#deleteLocationModal">
+                                                <img src="assets/images/delete.svg" alt="img">
+                                            </div>
+                                        </li>
+                                        <li class="border-0">
+                                            <button class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal"
+                                                data-bs-target="#addLocationModal">+ Add Work Location</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="theme-card">
+                                <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Package Settings</div>
+                                </div>
+                                <div class="theme-card-body position-relative p-3">
+                                    <div class="row g-2">
+                                        <div class="col-12 col-md-4">
+                                            <div class="theme-card innerCard">
+                                                <div
+                                                    class="theme-card-header d-flex justify-content-between align-items-center">
+                                                    <div class="fs-14 mb-0 h4 fw-bold text-white">Flat Memorial</div>
+                                                </div>
+                                                <div class="theme-card-body position-relative p-3">
+                                                    <ul class="p-0 m-0">
+                                                        <li
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox1"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox1"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="d-flex justify-content-between align-items-center">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox2"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox2"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="theme-card innerCard">
+                                                <div
+                                                    class="theme-card-header d-flex justify-content-between align-items-center">
+                                                    <div class="fs-14 mb-0 h4 fw-bold text-white">Upright Memorial</div>
+                                                </div>
+                                                <div class="theme-card-body position-relative p-3">
+                                                    <ul class="p-0 m-0">
+                                                        <li
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox3"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox3"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="d-flex justify-content-between align-items-center">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox4"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox4"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="theme-card innerCard">
+                                                <div
+                                                    class="theme-card-header d-flex justify-content-between align-items-center">
+                                                    <div class="fs-14 mb-0 h4 fw-bold text-white">Large Memorial</div>
+                                                </div>
+                                                <div class="theme-card-body position-relative p-3">
+                                                    <ul class="p-0 m-0">
+                                                        <li
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox5"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox5"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="d-flex justify-content-between align-items-center">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="me-2">
+                                                                    <div class="switch-wrapper line-switch">
+                                                                        <input type="checkbox" id="switchBox6"
+                                                                            class="switch-input">
+                                                                        <label for="switchBox6"
+                                                                            class="switch-label"></label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                            </div>
+                                                            <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#CleaningChargeModal">Input Charge</div>
+                                                            <div class="align-items-center CleaningChargeEdit">
+                                                                <span class="charge me-2 fw-bold ts-16">
+                                                                    $15
+                                                                </span>
+                                                                <div class="edit" data-bs-toggle="modal"
+                                                                    data-bs-target="#EditCleaningChargeModal"><img
+                                                                        src="assets/images/pencil.svg" alt="image"></div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="theme-card">
+                                <div class="theme-card-header d-flex justify-content-between align-items-center">
+                                    <div class="fs-16 mb-0 h4 fw-bold text-black">Additional Service</div>
+                                </div>
+                                <div class="theme-card-body position-relative p-3">
+                                    <div class="row g-2">
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox7" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox7" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox8" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox8" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox9" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox9" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox10" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox10" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox11" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox11" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox12" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox12" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox13" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox13" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="AdditionalService">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="me-2">
+                                                        <div class="switch-wrapper line-switch">
+                                                            <input type="checkbox" id="switchBox14" class="switch-input"
+                                                                checked>
+                                                            <label for="switchBox14" class="switch-label"></label>
+                                                        </div>
+                                                    </span>
+                                                    <div class="fs-14 fw-bold">One Time Cleaning</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--########## [ Main Content End ] ###########-->
+        </div>
+    </div>
+
+    <!-- sidebar sm satrt -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
             <div class="sider-top">
                 <div class="user">
                     <ul class="list-unstyled">
                         <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
                         <li>
-                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                            <a href="customer/customer.html" class="user-btn"> Costumer <span><img src="assets/images/user-fillter.png"  alt="fillter"></span></a>
+                            <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png"
+                                        alt="cleaner"></span></h4>
+                            <a href="javascript:;" class="user-btn"> user <span><img
+                                        src="assets/images/user-fillter.png" alt="fillter"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -91,433 +591,47 @@
                     </ul>
                 </div>
             </div>
-            <div class="links h-100 flex-fill overflow-hidden">
-                <div class="">
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                        <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                        <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                        <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round active"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                        <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                        <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                        <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                        <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
-                    </ul>
-            </div>
-            </div>
-        </div>
-        <!--########## [ Aside Bar End ] ###########-->
-
-        <!--########## [ Main Content ] ###########-->
-        <div class="main">
-            <div class="dPage availability" data-id="tab5">
-                <h4 class="page-title my-4 fs-24 f text-startw-bold">Availability</h4>
-                <div class="row mb-3">
-                    <div class="col-12 col-md-7 d-flex align-items-center justify-content-between">
-                        <div class="salectDates d-flex align-items-center">
-                           <span> I’m available to work</span>
-                            <select class="border-0 p-0 bg-transparent ms-2 shadow-none" id="salectValue" aria-label="Default select example">
-                                <option value="0">Everyday</option>
-                                <option value="1" selected>mon-fri</option>
-                                <option value="2">weekend </option>
-                                <option value="3">customs</option>
-                              </select>
-                        </div>
-                        <div class="theme-btn btnGreen">Add to Google Calendar</div>
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-12 col-md-7">
-                        <div class="theme-card">
-                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                <div class="fs-16 mb-0 h4 fw-bold text-black">Profile Picture</div>
-                               
-                            </div>
-                            <div class="theme-card-body position-relative pt-1">
-                                <div class="theme-btn btnGrayBorder w-auto float-end px-3 position-absolute r-16 py-2" id="date">
-                                </div>
-                                <ion-datetime class="w-100 customWidth " presentation="date" multiple="true"></ion-datetime>
-                                <div class="d-flex justify-content-between p-3 borderGray">
-                                    <div class="fs-14 fw-bold d-flex align-items-center"><span></span> Available</div>
-                                    <div class="fs-14 text-muted">Tap the date to change availability*</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="theme-card">
-                            <div class="theme-card-header">
-                                <div class="fs-16 mb-0 h4 fw-bold text-black">Work Location</div>
-                            </div>
-                            <div class="theme-card-body overflow-auto LocationHeight">
-                                <ul class="workLocation">
-                                    <li class="d-flex justify-content-between">
-                                        <div class="location">
-                                            <span>
-                                                <img src="assets/images/location.svg" alt="img">
-                                            </span>
-                                            <div class="fs-14">Virginia Beach, Virginia</div>
-                                        </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
-                                            <img  src="assets/images/delete.svg" alt="img">
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <div class="location">
-                                            <span>
-                                                <img src="assets/images/location.svg" alt="img">
-                                            </span>
-                                            <div class="fs-14">Virginia Beach, Virginia</div>
-                                        </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
-                                            <img  src="assets/images/delete.svg" alt="img">
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <div class="location">
-                                            <span>
-                                                <img src="assets/images/location.svg" alt="img">
-                                            </span>
-                                            <div class="fs-14">Virginia Beach, Virginia</div>
-                                        </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
-                                            <img  src="assets/images/delete.svg" alt="img">
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between">
-                                        <div class="location">
-                                            <span>
-                                                <img src="assets/images/location.svg" alt="img">
-                                            </span>
-                                            <div class="fs-14">Virginia Beach, Virginia</div>
-                                        </div>
-                                        <div class="delete" data-bs-toggle="modal" data-bs-target="#deleteLocationModal" >
-                                            <img  src="assets/images/delete.svg" alt="img">
-                                        </div>
-                                    </li>
-                                    <li class="border-0">
-                                        <button class="theme-btn btnGreenBorder w-100" data-bs-toggle="modal" data-bs-target="#addLocationModal">+ Add Work Location</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12">
-                        <div class="theme-card">
-                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                <div class="fs-16 mb-0 h4 fw-bold text-black">Package Settings</div>
-                            </div>
-                            <div class="theme-card-body position-relative p-3">
-                                <div class="row g-2">
-                                    <div class="col-12 col-md-4">
-                                        <div class="theme-card innerCard">
-                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Flat Memorial</div>
-                                            </div>
-                                            <div class="theme-card-body position-relative p-3">
-                                                <ul class="p-0 m-0">
-                                                    <li class="d-flex justify-content-between align-items-center mb-2">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox1"class="switch-input" >
-                                                                    <label for="switchBox1" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="d-flex justify-content-between align-items-center">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox2"class="switch-input" >
-                                                                    <label for="switchBox2" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="theme-card innerCard">
-                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Upright Memorial</div>
-                                            </div>
-                                            <div class="theme-card-body position-relative p-3">
-                                                <ul class="p-0 m-0">
-                                                    <li class="d-flex justify-content-between align-items-center mb-2">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox3"class="switch-input" >
-                                                                    <label for="switchBox3" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="d-flex justify-content-between align-items-center">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox4"class="switch-input" >
-                                                                    <label for="switchBox4" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="theme-card innerCard">
-                                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                                <div class="fs-14 mb-0 h4 fw-bold text-white">Large Memorial</div>
-                                            </div>
-                                            <div class="theme-card-body position-relative p-3">
-                                                <ul class="p-0 m-0">
-                                                    <li class="d-flex justify-content-between align-items-center mb-2">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox5"class="switch-input" >
-                                                                    <label for="switchBox5" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="d-flex justify-content-between align-items-center">
-                                                        <div  class="d-flex align-items-center">
-                                                            <span class="me-2">
-                                                                <div class="switch-wrapper line-switch">
-                                                                    <input type="checkbox" id="switchBox6"class="switch-input" >
-                                                                    <label for="switchBox6" class="switch-label"></label>
-                                                                </div>
-                                                            </span>
-                                                            <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                                        </div>
-                                                        <div class="theme-btn btnGreenBorder px-3 py-2 text-14 CleaningCharge" data-bs-toggle="modal" data-bs-target="#CleaningChargeModal">Input Charge</div>
-                                                        <div class="align-items-center CleaningChargeEdit">
-                                                            <span class="charge me-2 fw-bold ts-16">
-                                                                $15
-                                                            </span>
-                                                            <div class="edit" data-bs-toggle="modal" data-bs-target="#EditCleaningChargeModal"><img src="assets/images/pencil.svg" alt=""></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12">
-                        <div class="theme-card">
-                            <div class="theme-card-header d-flex justify-content-between align-items-center">
-                                <div class="fs-16 mb-0 h4 fw-bold text-black">Additional Service</div>
-                            </div>
-                            <div class="theme-card-body position-relative p-3">
-                                <div class="row g-2">
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox7"class="switch-input" checked>
-                                                        <label for="switchBox7" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox8"class="switch-input" checked>
-                                                        <label for="switchBox8" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox9"class="switch-input" checked>
-                                                        <label for="switchBox9" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox10"class="switch-input" checked>
-                                                        <label for="switchBox10" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox11"class="switch-input" checked>
-                                                        <label for="switchBox11" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox12"class="switch-input" checked>
-                                                        <label for="switchBox12" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox13"class="switch-input" checked>
-                                                        <label for="switchBox13" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="AdditionalService">
-                                            <div  class="d-flex align-items-center">
-                                                <span class="me-2">
-                                                    <div class="switch-wrapper line-switch">
-                                                        <input type="checkbox" id="switchBox14"class="switch-input" checked>
-                                                        <label for="switchBox14" class="switch-label"></label>
-                                                    </div>
-                                                </span>
-                                                <div class="fs-14 fw-bold">One Time Cleaning</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--########## [ Main Content End ] ###########-->
-    </div>
-</div>
-
-<!-- sidebar sm satrt -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-body p-0">
-        <div class="sider-top">
-            <div class="user">
+            <div class="links">
                 <ul class="list-unstyled">
-                    <li class="user"><img src="assets/images/user-profile.svg" alt="img"></li>
-                    <li>
-                        <h4 class="user-name">Eric Adorno <span><img src="assets/images/cleaner-icon.png" alt="cleaner"></span></h4>
-                        <a href="javascript:;" class="user-btn"> user <span><img src="assets/images/user-fillter.png" alt="fillter"></span></a>
-                    </li>
-                </ul>
-            </div>
-            <hr class="divder"></hr>
-            <div class="job">
-                <ul class="list-unstyled">
-                    <li class="current">Current Job</li>
-                    <li class="price">$450</li>
+                    <li><a href="index.html" class="tab-a" data-id="tab1">
+                            <div class="round "><span class="icons"><img src="assets/images/paint-brush.svg"
+                                        alt="img"></span> My Jobs</div>
+                        </a></li>
+                    <li><a href="message.html" class="tab-a" data-id="tab2">
+                            <div class="round "><span class="icons"><img src="assets/images/message.svg"
+                                        alt="img"></span> Message</div>
+                        </a></li>
+                    <li><a href="earnings.html" class="tab-a" data-id="tab3">
+                            <div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg"
+                                        alt="img"></span> Earnings</div>
+                        </a></li>
+                    <li><a href="availability.html" class="tab-a" data-id="tab4">
+                            <div class="round active"><span class="icons"><img src="assets/images/calendar.svg"
+                                        alt="img"></span> Availability</div>
+                        </a></li>
+                    <li><a href="reviews.html" class="tab-a" data-id="tab5">
+                            <div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span>
+                                Reviews</div>
+                        </a></li>
+                    <li><a href="shop.html" class="tab-a" data-id="tab6">
+                            <div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg"
+                                        alt="img"></span> Shop</div>
+                        </a></li>
+                    <li><a href="tutorials.html" class="tab-a" data-id="tab7">
+                            <div class="round"><span class="icons"><img src="assets/images/play-button.svg"
+                                        alt="img"></span> Tutorials</div>
+                        </a></li>
+                    <li><a href="settings.html" class="tab-a" data-id="tab8">
+                            <div class="round"><span class="icons"><img src="assets/images/settings.svg"
+                                        alt="img"></span> Settings</div>
+                        </a></li>
                 </ul>
             </div>
         </div>
-        <div class="links">
-            <ul class="list-unstyled">
-                <li><a href="index.html" class="tab-a" data-id="tab1"><div class="round "><span class="icons"><img src="assets/images/paint-brush.svg" alt="img"></span> My Jobs</div></a></li>
-                <li><a href="message.html" class="tab-a" data-id="tab2"><div class="round "><span class="icons"><img src="assets/images/message.svg" alt="img"></span> Message</div></a></li>
-                <li><a href="earnings.html" class="tab-a" data-id="tab3"><div class="round"><span class="icons"><img src="assets/images/dollar-symbol.svg" alt="img"></span> Earnings</div></a></li>
-                <li><a href="availability.html" class="tab-a" data-id="tab4"><div class="round active"><span class="icons"><img src="assets/images/calendar.svg" alt="img"></span> Availability</div></a></li>
-                <li><a href="reviews.html" class="tab-a" data-id="tab5"><div class="round"><span class="icons"><img src="assets/images/star.svg" alt="img"></span> Reviews</div></a></li>
-                <li><a href="shop.html" class="tab-a" data-id="tab6"><div class="round"><span class="icons"><img src="assets/images/shopping-cart.svg" alt="img"></span> Shop</div></a></li>
-                <li><a href="tutorials.html" class="tab-a" data-id="tab7"><div class="round"><span class="icons"><img src="assets/images/play-button.svg" alt="img"></span> Tutorials</div></a></li>
-                <li><a href="settings.html" class="tab-a" data-id="tab8"><div class="round"><span class="icons"><img src="assets/images/settings.svg" alt="img"></span> Settings</div></a></li>
-            </ul>
-        </div>
     </div>
-</div>
-<!-- sidebar sm end -->
+    <!-- sidebar sm end -->
 
-<!-- ////Cleaning Charge modal start ////// -->
+    <!-- ////Cleaning Charge modal start ////// -->
     <div class="modal fade" id="CleaningChargeModal" tabindex="-1" aria-labelledby="CleaningChargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -536,122 +650,126 @@
                     <div class="d-flex gap-2">
                         <button type="button" class="theme-btn px-3 w-100 btnGrayBorder"
                             data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="theme-btn px-3 w-100 btnGreen opLow CleaningChargeHide"  data-bs-dismiss="modal">Save</button>
+                        <button type="button" class="theme-btn px-3 w-100 btnGreen opLow CleaningChargeHide"
+                            data-bs-dismiss="modal">Save</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- ////Cleaning Charge modal end ////// -->
+    <!-- ////Cleaning Charge modal end ////// -->
 
-<!-- ////Edit Cleaning Charge modal start ////// -->
-<div class="modal fade" id="EditCleaningChargeModal" tabindex="-1" aria-labelledby="EditCleaningChargeModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-sm modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-            <div class="modal-title fs-20 h1" id="exampleModalLabel">Flat Memorial</div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <h4 class="worn fs-18 mb-2 mt-0">One Time Cleaning</h4>
-            <div class="mb-3">
-                <label for="CurrentCharge" class="form-label fs-14">Current Charge</label>
-                <input type="text" class="form-control customInput fs-14" id="CurrentCharge"
-                    placeholder="Current Charge">
-            </div>
-            <div class="mb-3">
-                <label for="NewCharge" class="form-label fs-14">New Charge</label>
-                <input type="text" class="form-control customInput fs-14" id="NewCharge"
-                    placeholder="New Charge">
-            </div>
-            <div class="d-flex gap-2">
-                <button type="button" class="theme-btn px-3 w-100 btnGrayBorder"
-                    data-bs-dismiss="modal">Close</button>
-                <button type="button" class="theme-btn px-3 w-100 btnGreen opLow EditCleaningChargeHide"  data-bs-dismiss="modal">Save</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- ////Edit Cleaning Charge modal end ////// -->
-
-<!-- ////Delete Work Location modal satrt ////// -->
-<div class="modal fade" id="deleteLocationModal" tabindex="-1" aria-labelledby="deleteLocationModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Delete Work Location</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="location d-flex align-items-center justify-content-center">
-                    <span class="me-2">
-                        <img src="assets/images/location.svg" alt="img">
-                    </span>
-                    <div class="fs-14">Virginia Beach, Virginia</div>
+    <!-- ////Edit Cleaning Charge modal start ////// -->
+    <div class="modal fade" id="EditCleaningChargeModal" tabindex="-1" aria-labelledby="EditCleaningChargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-20 h1" id="exampleModalLabel">Flat Memorial</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Delete Work Location?</h4>
-                <div class="d-flex justify-content-between">
-                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                    <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal">Delete</button>
+                <div class="modal-body">
+                    <h4 class="worn fs-18 mb-2 mt-0">One Time Cleaning</h4>
+                    <div class="mb-3">
+                        <label for="CurrentCharge" class="form-label fs-14">Current Charge</label>
+                        <input type="text" class="form-control customInput fs-14" id="CurrentCharge"
+                            placeholder="Current Charge">
+                    </div>
+                    <div class="mb-3">
+                        <label for="NewCharge" class="form-label fs-14">New Charge</label>
+                        <input type="text" class="form-control customInput fs-14" id="NewCharge"
+                            placeholder="New Charge">
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="theme-btn px-3 w-100 btnGrayBorder"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="theme-btn px-3 w-100 btnGreen opLow EditCleaningChargeHide"
+                            data-bs-dismiss="modal">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ////Delete Work Location modal end ////// -->
+    <!-- ////Edit Cleaning Charge modal end ////// -->
 
-<!-- ////add Work Location modal satrt ////// -->
-<div class="modal fade" id="addLocationModal" tabindex="-1" aria-labelledby="addLocationModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addLocationModalLabel">Add Work Location</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mb-2">
-                    <label for="ChooseState" class="form-label fs-14">State</label>
-                     <select class="form-select customInput fs-14 text-muted" id="ChooseState">
-                        <option selected>Choose State</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="mb-2">
-                    <label for="ChooseCity" class="form-label fs-14">City</label>
-                     <select class="form-select customInput fs-14 text-muted" id="ChooseCity">
-                        <option selected>Choose City</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                  </div>
-               
-                <div class="d-flex justify-content-between">
-                    <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
-                    <button class="theme-btn btnGreen opLow" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal">Save</button>
+    <!-- ////Delete Work Location modal satrt ////// -->
+    <div class="modal fade" id="deleteLocationModal" tabindex="-1" aria-labelledby="deleteLocationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="emailBtnModalToggleLabel">Delete Work Location</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="location d-flex align-items-center justify-content-center">
+                        <span class="me-2">
+                            <img src="assets/images/location.svg" alt="img">
+                        </span>
+                        <div class="fs-14">Virginia Beach, Virginia</div>
+                    </div>
+                    <h4 class="worn text-center fs-15 mb-3">Are You Sure Want to Delete Work Location?</h4>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnred" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Delete</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ////add Work Location modal end ////// -->
+    <!-- ////Delete Work Location modal end ////// -->
+
+    <!-- ////add Work Location modal satrt ////// -->
+    <div class="modal fade" id="addLocationModal" tabindex="-1" aria-labelledby="addLocationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addLocationModalLabel">Add Work Location</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label for="ChooseState" class="form-label fs-14">State</label>
+                        <select class="form-select customInput fs-14 text-muted" id="ChooseState">
+                            <option selected>Choose State</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label for="ChooseCity" class="form-label fs-14">City</label>
+                        <select class="form-select customInput fs-14 text-muted" id="ChooseCity">
+                            <option selected>Choose City</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="theme-btn btnGrayBorder" data-bs-dismiss="modal">Cancle</button>
+                        <button class="theme-btn btnGreen opLow" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////add Work Location modal end ////// -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-<!-- calendar -->
-<script>
-    $( document ).ready(function() {
+    <!-- calendar -->
+    <script>
+        $(document).ready(function () {
 
-    var e = document.getElementById("salectValue");
-    var value = e.value;
+            var e = document.getElementById("salectValue");
+            var value = e.value;
 
-});
-    //today
+        });
+        //today
         var today = new Date();
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -660,60 +778,61 @@ aria-hidden="true">
         document.write(today);
         document.getElementById("date").innerHTML = today;
 
-    //all date
-    const getDays = (year, month) => {
-        return new Date(year, month, 0).getDate();
-    };
-    //monday to fridday date
-    var monfridday = [
-        new Date(firstMonday),
-        new Date(secondMonday),
-        new Date(thirdMonday),
-        new Date(fourthMonday),
-        new Date(firstFriday),
-        new Date(secondFriday),
-        new Date(thirdFriday),
-        new Date(fourthFriday),
-    ];
-    //weekends
-    var weekends = [
-        new Date(firstSaturday),
-        new Date(secondSaturday),
-        new Date(thirdSaturday),
-        new Date(fourthSaturday),
-        new Date(firstSunday),
-        new Date(secondSaturday),
-        new Date(thirdSaturday),
-        new Date(fourthSaturday),
-    ];
-    //Custom salect date
-    const datetime = document.querySelector('ion-datetime');
-    datetime.value = ['2022-06-03', '2022-06-13', '2022-06-29'];
+        //all date
+        const getDays = (year, month) => {
+            return new Date(year, month, 0).getDate();
+        };
+        //monday to fridday date
+        var monfridday = [
+            new Date(firstMonday),
+            new Date(secondMonday),
+            new Date(thirdMonday),
+            new Date(fourthMonday),
+            new Date(firstFriday),
+            new Date(secondFriday),
+            new Date(thirdFriday),
+            new Date(fourthFriday),
+        ];
+        //weekends
+        var weekends = [
+            new Date(firstSaturday),
+            new Date(secondSaturday),
+            new Date(thirdSaturday),
+            new Date(fourthSaturday),
+            new Date(firstSunday),
+            new Date(secondSaturday),
+            new Date(thirdSaturday),
+            new Date(fourthSaturday),
+        ];
+        //Custom salect date
+        const datetime = document.querySelector('ion-datetime');
+        datetime.value = ['2022-06-03', '2022-06-13', '2022-06-29'];
 
-    
-</script>
-<!-- Cleaning Charge Hide -->
-<script>
-    $(".CleaningChargeHide").click(function(){
-        $(".CleaningCharge").hide();
-        $(".CleaningChargeEdit").addClass("show");
-        if ($(".switch-wrapper :input").is(':checked')) {
+
+    </script>
+    <!-- Cleaning Charge Hide -->
+    <script>
+        $(".CleaningChargeHide").click(function () {
+            $(".CleaningCharge").hide();
+            $(".CleaningChargeEdit").addClass("show");
+            if ($(".switch-wrapper :input").is(':checked')) {
+                debugger;
+                $(".switch-wrapper :input").attr('checked', 'false');
+            } else {
+                $(".switch-wrapper :input").attr('checked', 'true');
+            }
+        });
+        $(".EditCleaningChargeHide").click(function () {
+            $(".CleaningCharge").show();
+            $(".CleaningChargeEdit").removeClass("show");
+        });
+    </script>
+    <script>
+        $(".calendar-day").click(function () {
             debugger;
-            $(".switch-wrapper :input").attr('checked', 'false');
-        } else {
-            $(".switch-wrapper :input").attr('checked', 'true');
-        }
-    });
-    $(".EditCleaningChargeHide").click(function(){
-        $(".CleaningCharge").show();
-        $(".CleaningChargeEdit").removeClass("show");
-    });
-</script>
-<script>
-    $(".calendar-day").click(function(){
-        debugger;
-        $(this).addClass("green");
-    });
-</script>
+            $(this).addClass("green");
+        });
+    </script>
 </body>
+
 </html>
