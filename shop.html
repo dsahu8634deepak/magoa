@@ -126,7 +126,7 @@
                                 <div class="row mx-0 gy-2 gy-sm-0">
                                     <div class="col-sm col-12 order-2 order-sm-1 ">
                                         <div class="ceatgeorymain">
-                                            <div class="nav d-flex nav-pills gap-3  navcategorey" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <div class="nav d-flex nav-pills gap-sm-3 gap-2  navcategorey" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                                 <button class="nav-link ceatgeory active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
                                                 <button class="nav-link ceatgeory" id="v-pills-decoration-tab" data-bs-toggle="pill" data-bs-target="#v-pills-decoration" type="button" role="tab" aria-controls="v-pills-decoration" aria-selected="false">Decoration</button>
                                                 <button class="nav-link ceatgeory" id="v-pills-tools-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tools" type="button" role="tab" aria-controls="v-pills-tools" aria-selected="false">Tools</button>
@@ -1235,7 +1235,7 @@
                     <div class="col-12 mb-2">
                         <div class="d-inline-flex align-items-center gap-2 fs-sm-24 fs-20 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt="image"></span>Cart</div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 table-responsive">
                         <table class="table align-middle">
                             <thead>
                                 <tr>
@@ -1356,13 +1356,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card cartcard">
-                            <div class="cardHeading mb-2  p-3">Order Summary</div>
-                            <div class="d-flex align-items-center justify-content-between p-2 border-bottom">
+                            <div class="cardHeading mb-2  p-3 fw-bold text-black">Order Summary</div>
+                            <div class="d-flex align-items-center justify-content-between py-2 px-3 border-bottom">
                                 <div class="fs-14 text-secondary">Items (3)</div>
                                 <div class="fs-16 fw-bold itempayment">$27</div>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between p-2">
-                                <div class="fs-14 text-black">Order Total</div>
+                            <div class="d-flex align-items-center justify-content-between py-2 px-3">
+                                <div class="fs-14 text-black fw-semibold">Order Total</div>
                                 <div class="fs-16 fw-bold itempayment">$27</div>
                             </div>
                             <div class="w-100  p-3">
@@ -1374,7 +1374,7 @@
             </div>
             <!--hold  -->
             <div class="main shopmaincontent shopmainsectionid shippingpayment" id="section3">
-                <div class="row">
+                <div class="row g-3">
                     <div class="col-12 mb-2">
                         <div class="d-inline-flex align-items-center gap-2 fs-20 fs-sm-26 fw-bold cartHeading" onclick="backout1()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt="image"></span>Shipping and Payment</div>
                     </div>
@@ -1387,13 +1387,13 @@
                                         <div class="col-6 col-sm-auto px-0 position-relative">
                                             <div class="form-check checkForm">
                                                 <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping">
-                                                <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping">
+                                                <label class="form-check-label fs-sm-14 fs-13 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping">
                                                     Eric Ardono
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm px-0 order-3 order-sm-2 pt-3 pt-sm-0">
-                                            <div class="fs-14 text-muted">105 Krome Ave, New York, Greenfield, 53143 (+1 202 556 3456)</div>
+                                            <div class="fs-14 text-muted ps-4 ps-sm-0">105 Krome Ave, New York, Greenfield, 53143 (+1 202 556 3456)</div>
                                         </div>
                                         <div class="col-sm-auto col-6 px-0 order-2 order-sm-3">
                                             <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 inputGroupBtn">
@@ -1410,56 +1410,137 @@
                             <div class="col-12">
                                 <div class="card cartcard">
                                     <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Shipping Method</div>
-                                    <div class="row addressContent p-3 m-3">
-                                        <div class="col-6 col-sm-auto px-0 position-relative">
-                                            <div class="form-check checkForm">
-                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
-                                                <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
-                                                    FedEx Delivery
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 order-4">
-                                            <div class="innertext">$12</div>
-                                        </div>
-                                        <div class="col-12 col-sm px-0 pt-3 pt-sm-0">
-                                            <div class="fs-14 text-muted deliverttext">Delivery: 2–3 days work</div>
-                                        </div>
-                                        <div class="col-sm-auto col-6 px-0">
-                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
-                                                <div class="w-62px h-34px"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt="image"></div>
-                                                
+                                    <div class="row mx-0 mb-3">
+                                        <div class="col-12">
+                                            <div class="row mx-0 addressContent">
+                                                <div class="col px-0 px-sm">
+                                                    <div class="row  p-3 m-3 mx-0">
+                                                        <div class="col-auto px-0 position-relative">
+                                                            <div class="form-check checkForm">
+                                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                                                <label class="form-check-label fs-13 fs-sm-14 fw-semibold inputText stretched-link me-3 text-wrap" for="flexRadioDefault1shipping2">
+                                                                    FedEx Delivery
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto px-0 pt-sm-0 ps-4 ps-sm-0">
+                                                            <div class="fs-sm-14 fs-13 text-muted deliverttext">Delivery: 2–3 days work</div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="innertext">$12</div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto px-0">
+                                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
+                                                                <div class="imageshiping"><img class="w-100 h-100" src="assets/shoppage/image6.png" alt="image"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="p-3 fs-14 text-muted">
-                                        Waiting for shipping address    
+                                    <div class="row mx-0 mb-3">
+                                        <div class="col-12">
+                                            <div class="row mx-0 addressContent">
+                                                <div class="col px-0 px-sm">
+                                                    <div class="row p-3 m-3 mx-0">
+                                                        <div class="col-auto px-0 position-relative">
+                                                            <div class="form-check checkForm">
+                                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                                                <label class="form-check-label fs-13 fs-sm-14 fw-semibold inputText stretched-link me-3 text-wrap" for="flexRadioDefault1shipping2">
+                                                                    DHL Delivery
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto px-0 pt-sm-0 ps-4 ps-sm-0">
+                                                            <div class="fs-13 fs-sm-14 text-muted deliverttext">Delivery: 2–3 days work</div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="innertext">$12</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto  px-0">
+                                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
+                                                                <div class="imageshiping"><img class="w-100 h-100" src="assets/shoppage/image7.png" alt="image"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mb-3">
+                                        <div class="col-12">
+                                            <div class="row mx-0 addressContent">
+                                                <div class="col px-0 px-sm">
+                                                    <div class="row  p-3 m-3 mx-0">
+                                                        <div class="col-auto px-0 position-relative">
+                                                            <div class="form-check checkForm">
+                                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                                                <label class="form-check-label fs-13 fs-sm-14 fw-semibold inputText stretched-link me-3 text-wrap" for="flexRadioDefault1shipping2">
+                                                                    ShipBob Delivery
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto px-0 pt-sm-0 ps-4 ps-sm-0">
+                                                            <div class="fs-13 fs-sm-14 text-muted deliverttext">Delivery: 2–3 days work</div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="innertext">$10</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto  px-0">
+                                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
+                                                                <div class="imageshiping"><img class="w-100 h-100" src="assets/shoppage/image8.png" alt="image"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="card cartcard">
-                                    <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Shipping Method</div>
-                                    <div class="row  addressContent p-3 m-3">
-                                        <div class="col-6 col-sm-auto px-0 position-relative">
-                                            <div class="form-check checkForm">
-                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
-                                                <label class="form-check-label fs-14 fw-semibold inputText stretched-link me-3" for="flexRadioDefault1shipping2">
-                                                    ShipBob Delivery
-                                                </label>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm px-0 pt-3 pt-sm-0 order-3 order-sm-2">
-                                            <div class="d-flex">
-                                                <div class="fs-14 text-muted">3103 8745 8956 3451</div>
-                                                <span class="fs-14 text-muted mx-2">05/26</span>
-                                                <span class="w-30px h-30px d-inline-flex"><img class="w-100 h-100" src="assets/shoppage/image9.png" alt="image"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-auto col-6 px-0 order-2 order-sm-3">
-                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 inputGroupBtn">
-                                                <button class="w-20px h-20px border-0 shadow-none"><img class="w-100 h-100" src="assets/shoppage/delate-icon.svg" alt="image"></button>
+                                    <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Card Payment</div>
+                                    <div class="row mx-0 mb-3">
+                                        <div class="col-12">
+                                            <div class="row mx-0 addressContent">
+                                                <div class="col px-0 px-sm">
+                                                    <div class="row  p-3 m-3 mx-0">
+                                                        <div class="col-auto px-0 position-relative">
+                                                            <div class="form-check checkForm">
+                                                                <input class="form-check-input redioubtn stretched-link me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1shipping2">
+                                                                <label class="form-check-label fs-13 fs-sm-14 fw-semibold inputText stretched-link me-3 text-wrap" for="flexRadioDefault1shipping2">
+                                                                    Eric Ardono
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto px-0 pt-sm-0 ps-4 ps-sm-0">
+                                                            <div class="fs-13 fs-sm-14 text-muted deliverttext">3103 8745 8956 3451 <span class="fs-13 fs-sm-14 text-muted">05/26</span> <span class="d-inline-flex w-30px h-30px"><img src="assets/shoppage/image9.png" alt="image9"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="row mx-0">
+                                                        <div class="col-auto  px-0">
+                                                            <div class="d-flex align-items-center justify-content-sm-between justify-content-end  gap-2 ">
+                                                                <div class="imageshiping"><img class="w-100 h-100" src="assets/shoppage/delete.svg" alt="image"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1474,12 +1555,12 @@
                         <div class="card cartcard">
                             <div class="cardHeading mb-2  p-3 fw-bold text-black fs-sm-16 fs-14">Order Summary</div>
                             <div class="d-flex align-items-center justify-content-between p-2 border-bottom">
-                                <div class="fs-14 text-secondary">Items (3)</div>
-                                <div class="fs-16 fw-bold itempayment">$27</div>
+                                <div class="fs-13 fs-sm-14 text-secondary">Items (3)</div>
+                                <div class="fs-14 fs-sm-14 fw-bold itempayment">$27</div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between p-2">
-                                <div class="fs-14 text-black">Order Total</div>
-                                <div class="fs-16 fw-bold itempayment">$27</div>
+                                <div class="fs-13 fs-sm-14 text-black fw-semibold">Order Total</div>
+                                <div class="fs-14 fs-sm-14 fw-bold itempayment">$27</div>
                             </div>
                             <div class="w-100  p-3">
                                 <button class="w-100 cartbtn bgblur" onclick="successOrder()" >Place Order</button>
@@ -1488,6 +1569,7 @@
                     </div>
                 </div>
             </div>
+<!-- your order Successful -->
             <div class="main shopmaincontent shopmainsectionid orderSuccessful" id="section4">
                 <div class="col-12 mb-2 py-3 d-block d-sm-none bg-white">
                     <div class="d-inline-flex align-items-center gap-2 fs-20 fs-sm-26 fw-bold cartHeading  ps-4"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt="image"></span>Shipping and Payment</div>

@@ -1077,6 +1077,10 @@
         color: $theme1;
         padding-left: 15px;
     }
+    & .imageshiping{
+        width: 62px;
+        height: 30px;
+    }
 
 
 
@@ -1105,7 +1109,7 @@
 // X-Small devices (portrait phones, less than 576px)
 @mixin shoppage-mixin-max-xs() {
     [page-name=shoppage] {
-        display: none;
+        
         & .shopmaincontent {
             padding: 24px 5px 24px 5px;
 
@@ -1124,6 +1128,7 @@
             }
 
             & .ceatgeorymain {
+                padding: 9px 0px;
 
                 & .navcategorey {
                     display: flex;
@@ -1197,7 +1202,7 @@
                     }
 
                     & .cartbtn {
-                        transform: translate(15px, -36px);
+                        transform: translate(15px, -100px);
 
 
                         & .cartbutton {}
@@ -1246,7 +1251,9 @@
                     & .bodytable {
                         & .tableimage {}
 
-                        & .texttable {}
+                        & .texttable {
+                            white-space: nowrap;
+                        }
 
                         & .numbertext {}
 
@@ -1269,6 +1276,8 @@
                 & .addressContent {}
 
                 & .checkForm {
+                    flex-wrap: nowrap;
+                    display: flex;
                     & .redioubtn {
                         &:checked {}
 
@@ -1282,6 +1291,10 @@
                 }
 
                 & .innertext {}
+                & .imageshiping{
+                    width: 60px;
+                    height: 30px;
+                }
 
                 & .inputGroupBtn {
                     & button {}
