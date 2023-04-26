@@ -345,6 +345,11 @@ input::placeholder {
         margin-left: 0;
     }
 }
+@media (max-width:767px) {
+    .page-title {
+        font-size: 20px !important;
+    }
+}
 
 //*************************Reviews Page css start **********************************//
 [page-name=reviewspage] {
@@ -373,7 +378,7 @@ input::placeholder {
             margin-right: 12px;
 
             &.rating {
-                background: $white;
+                background: #FFF3E3;
 
                 img {
                     width: 25px;
@@ -434,8 +439,24 @@ input::placeholder {
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin reviewspage-mixin-max-xs() {
+   
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin reviewspage-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin reviewspage-mixin-max-md() {
     [page-name=reviewspage] {
         & .reviewspage {
+            padding: 15px;
+            padding-bottom: 70px;
+            .page-title {
+                background: #fff;
+                margin: -14px -15px 20px -15px;
+                padding: 20px 15px;
+                box-shadow: 0px 0px 16px rgba(0,0,0,.07);
+            }
             .borderRight {
                 border-right: 0;
                 border-bottom: 1px solid #EAEAEA;
@@ -456,6 +477,7 @@ input::placeholder {
             }
 
             .ReviewsRight {
+                padding-left: 15px;
                 .progress {
 
                     .progress-bar {
@@ -465,15 +487,46 @@ input::placeholder {
                 }
 
             }
+            .underTab{
+                display: flex;
+                width: 100%;
+                overflow: auto hidden;
+                white-space: nowrap;
+                flex-wrap: nowrap;
+                 /* width */
+                 &::-webkit-scrollbar {
+                    width: 20px;
+                    display: none;
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;
+                    display: none;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: $theme1;
+                    border-radius: 10px;
+                    width: 20px;
+                    display: none;
+
+                }
+            }
+            .tab-content{
+                .theme-card{
+                    .theme-card-header{
+                        flex-wrap: wrap;
+                        .review-star{
+                            margin-left: 0 !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
-// Small devices (landscape phones, less than 768px)
-@mixin reviewspage-mixin-max-sm() {}
-
-// Medium devices (tablets, less than 992px)
-@mixin reviewspage-mixin-max-md() {}
 
 // Large devices (desktops, less than 1200px)
 @mixin reviewspage-mixin-max-lg() {}
@@ -596,7 +649,23 @@ input::placeholder {
 @mixin tutorials-mixin-max-sm() {}
 
 // Medium devices (tablets, less than 992px)
-@mixin tutorials-mixin-max-md() {}
+@mixin tutorials-mixin-max-md() {
+    [page-name=tutorials] {
+        & .main{
+            padding: 15px;
+            padding-bottom: 70px;
+            .page-title {
+                background: #fff;
+                margin: -14px -15px 20px -15px;
+                padding: 20px 15px;
+                box-shadow: 0px 0px 16px rgba(0,0,0,.07);
+            }
+            h5{
+                margin: 14px 0px 20px 0px !important;
+            }
+        }
+    }
+}
 
 // Large devices (desktops, less than 1200px)
 @mixin tutorials-mixin-max-lg() {}
@@ -643,6 +712,9 @@ input::placeholder {
 
 
 }
+.modal-content{
+    margin: 0;
+}
 
 // Small devices (landscape phones, 576px and up)
 @mixin settings-mixin-min-sm() {}
@@ -666,7 +738,31 @@ input::placeholder {
 @mixin settings-mixin-max-sm() {}
 
 // Medium devices (tablets, less than 992px)
-@mixin settings-mixin-max-md() {}
+@mixin settings-mixin-max-md() {
+    .modal-content{
+        margin: 0 !important;
+        .OTPVerification .otpInput input{
+            width: 63px;
+        }
+    }
+    
+    [page-name=settings] {
+        & .main {
+                padding: 15px;
+                padding-bottom: 70px;
+                .page-title {
+                    &:first-child{
+                        background: #fff;
+                    margin: -14px -15px 20px -15px !important;
+                    padding: 20px 15px;
+                    box-shadow: 0px 0px 16px rgba(0,0,0,.07);
+                    }
+                    
+                }
+               
+        }
+    }
+}
 
 // Large devices (desktops, less than 1200px)
 @mixin settings-mixin-max-lg() {}
@@ -1280,7 +1376,18 @@ input::placeholder {
 @mixin availability-mixin-max-sm() {}
 
 // Medium devices (tablets, less than 992px)
-@mixin availability-mixin-max-md() {}
+@mixin availability-mixin-max-md() {
+    [page-name=availability] {
+        & .main{
+         padding: 24px 15px 70px 15px;
+         margin-bottom: 50px;
+         .page-title{
+             margin-top: 0 !important;
+         }
+        
+        }
+}
+}
 
 // Large devices (desktops, less than 1200px)
 @mixin availability-mixin-max-lg() {
@@ -1322,6 +1429,7 @@ input::placeholder {
          }
          .borderGray {
             margin-top: -4px !important;
+            flex-wrap: wrap;
             .text-muted{
                 font-size: 13px !important;
             }

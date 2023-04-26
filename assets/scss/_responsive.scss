@@ -10,6 +10,8 @@
   @include myorder-mixin-min-sm();
   @include cleanerDetail-mixin-min-sm();
   @include availability-mixin-min-sm();
+  @include tutorials-mixin-min-sm();
+  @include settings-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
@@ -21,6 +23,8 @@
   @include myorder-mixin-min-md();
   @include cleanerDetail-mixin-min-md();
   @include availability-mixin-min-md();
+  @include tutorials-mixin-min-md();
+  @include settings-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
@@ -31,6 +35,8 @@
   @include myorder-mixin-min-lg();
   @include cleanerDetail-mixin-min-lg();
   @include availability-mixin-min-lg();
+  @include tutorials-mixin-min-lg();
+  @include settings-mixin-min-lg();
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -42,6 +48,8 @@
   @include myorder-mixin-min-xl();
   @include cleanerDetail-mixin-min-xl();
   @include availability-mixin-min-xl();
+  @include tutorials-mixin-min-xl();
+  @include settings-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -53,6 +61,8 @@
   @include myorder-mixin-min-xxl();
   @include cleanerDetail-mixin-min-xxl();
   @include availability-mixin-min-xxl();
+  @include tutorials-mixin-min-xxl();
+  @include settings-mixin-min-xxl();
 }
 
 // Large devices (desktops, less than 1200px)
@@ -64,6 +74,8 @@
   @include myorder-mixin-max-lg();
   @include cleanerDetail-mixin-max-lg();
   @include availability-mixin-max-lg();
+  @include tutorials-mixin-max-lg();
+  @include settings-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
@@ -75,6 +87,8 @@
   @include myorder-mixin-max-md();
   @include cleanerDetail-mixin-max-md();
   @include availability-mixin-max-md();
+  @include tutorials-mixin-max-md();
+  @include settings-mixin-max-md();
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -86,6 +100,8 @@
   @include myorder-mixin-max-sm();
   @include cleanerDetail-mixin-max-sm();
   @include availability-mixin-max-sm();
+  @include tutorials-mixin-max-sm();
+  @include settings-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -97,6 +113,8 @@
   @include myorder-mixin-max-xs();
   @include cleanerDetail-mixin-max-xs();
   @include availability-mixin-max-xs();
+  @include tutorials-mixin-max-xs();
+  @include settings-mixin-max-xs();
 }
 
 // @media (max-width: 430px) {
