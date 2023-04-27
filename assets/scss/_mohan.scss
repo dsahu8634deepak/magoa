@@ -71,6 +71,9 @@ input::placeholder {
 
     .CleanerListHeader {
         padding: 15px 15px 0px 15px;
+        .userName{
+            font-weight: bold;
+        }
     }
 
     .owl-dots {
@@ -349,6 +352,94 @@ input::placeholder {
     .page-title {
         font-size: 20px !important;
     }
+    .MemorialDetailRight{
+        .modal-list{
+            margin-bottom: 3px;
+            img{
+                margin-top: 0 !important;
+            }
+            .detail{
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                width: 100%;
+                .fs-16{
+                    font-size: 14px;
+                    text-align: right;
+                }
+            }
+        }
+        .flovers {
+           
+            .floversHeader{
+                width: 100%;
+                margin: 0 !important;
+                padding: 0;
+                justify-content: space-between;
+                .sm-pl-none{
+                    padding-left: 0 !important;
+                }
+                .sm-pr-none{
+                    padding-right: 0 !important;
+                }
+            }
+            .floverList{
+                height: 220px;
+                overflow: auto;
+                .floverCard{
+                    margin-right: 0 !important;
+                }
+            }
+            .selected-images {
+                .dropdown-menu {
+                    width: 260px !important;
+                    margin-left: -43px !important;
+                }
+            }
+        }
+    }
+    #MemorialDetailModalToggle2,#MemorialDetailModalToggle3,#MemorialDetailModalToggle4,#MemorialDetailModalToggle5,#MemorialDetailModalToggle6,#MemorialDetailModalToggle7{
+        button.theme-btn{
+            width: 100% !important;
+        }
+       
+    }
+    #MemorialDetailModalToggle7{
+        .addressContent{
+            margin: 0px 0px 15px !important;
+            position: relative;
+            .checkForm{
+                width: 166px;
+                display: flex;
+            }
+            .stretched-link{
+            }
+            .icon{
+                display: block !important;
+                width: 27px;
+                margin-bottom: 10px;
+            }
+            .delate{
+                margin-top: -33px;
+            }
+            .sm-none{
+                display: none !important;
+            }
+        }
+    }
+  .sm-none,.smNone{
+    display: none !important;
+  }
+  #ContinueModal{
+    .modal-footer{
+        button{
+            width: 100% !important;
+        }
+    }
+    .modal-body{
+        padding: 0 !important;
+    }
+}
 }
 
 //*************************Reviews Page css start **********************************//
@@ -1482,7 +1573,7 @@ input::placeholder {
     & .filterMemorials {
         width: 100%;
         padding: 40px 0;
-
+       
         .custom-mt {
             margin-top: 33px !important;
         }
@@ -1496,7 +1587,6 @@ input::placeholder {
             cursor: pointer;
             transition: all ease-in-out 0.3s;
             position: relative;
-
             .cardImage {
                 height: 155px;
                 position: relative;
@@ -1554,8 +1644,16 @@ input::placeholder {
             color: $theme4;
         }
     }
+    & .CleanerList{
+       
+    }
 }
-
+.customerTitle {
+    font-weight: 700 !important;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem !important;
+}
 .Detail-img {
     height: 155px;
     position: relative;
@@ -1864,7 +1962,51 @@ input::placeholder {
 @mixin customerPage-mixin-max-sm() {}
 
 // Medium devices (tablets, less than 992px)
-@mixin customerPage-mixin-max-md() {}
+@mixin customerPage-mixin-max-md() {
+    [page-name=customerPage] {
+        & .filterMemorials {
+            padding-bottom: 0;
+            .page-title{
+                margin-bottom: 20px;
+            }
+            & .custom-mt {
+                margin-top: 20px!important;
+                margin-bottom: 17px;
+            }
+            .cardcontent{
+                padding: 12px 0px 12px 12px !important;
+                & >div{
+                    &:last-child{
+                        width: 100%;
+                        display: flex;
+                        .cardImage {
+                            width: 30%;
+                            position: relative;
+                            z-index: 1;
+                            height: 100% !important;
+                        }
+                        .card-body{
+                            padding: 5px 15px;
+                            span{
+                                font-size: 14px !important;
+                            }
+                        }
+                    }
+                }
+                & .Favorite {
+                    top: 12px;
+                    right: 12px;
+                    width: 32px;
+                    height: 32px;
+                    img{
+                        width: 18px !important;
+                    }
+                }
+            }
+        }
+        
+    }
+}
 
 // Large devices (desktops, less than 1200px)
 @mixin customerPage-mixin-max-lg() {}

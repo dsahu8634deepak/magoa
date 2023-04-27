@@ -77,10 +77,10 @@
 
                     <!-- BeforeLogin start -->
                         <ul class="beforeLogin ps-0 mb-0 gap-3">
-                            <li>
+                            <li class="smNone">
                                 <a href="javascript:"><img  class="gray" src="../assets/images/customer/cleaning-order-icon.svg" alt="cleaning-order-icon"> </a>
                             </li>
-                            <li>
+                            <li class="smNone">
                                 <a href="./message.html"><img  class="gray" src="../assets/images/message.svg" alt="message"> </a>
                             </li>
                             <li>
@@ -106,13 +106,13 @@
         <!-- ########## Navbar ##########-->
 
         <!-- ########## my order ##########-->
-        <div class="conatinwe-fluid myordersection">
+        <div class="container-fluid myordersection">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 my-3">
+               
+                    <div class="my-3">
                         <div class="heading">My Order</div>
                     </div>
-                    <div class="col-12 navtabssection p-3 pb-0 mb-3">
+                    <div class="navtabssection p-3 pb-0 mb-3">
                         <nav>
                             <div class="nav nav-tabs navTabs border-0 gap-4" id="nav-tab" role="tablist">
                                 <button class="nav-link pb-4 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All Order</button>
@@ -122,6 +122,7 @@
                             </div>
                         </nav>   
                     </div>
+                    <div class="row">
                     <!-- Comment Emoty Order Section  d-none-->
                     <div class="col-12 emptysection text-center my-5 d-none">
                         <div class="row mx-0">
@@ -167,7 +168,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                        <div class="d-flex align-items-center gap-2 mb-2 myorderList">
                                                             <div class="imageright">
                                                                 <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                                             </div>
@@ -178,7 +179,7 @@
                                                                 <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                                             </div>
                                                         </div>
-                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                                             <div class="imageright h-auto">
                                                                 <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
                                                             </div>
@@ -235,7 +236,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-footer py-3 bg-transparent">
-                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0  gap-2">
                                                     <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
@@ -246,8 +247,11 @@
                                                         </ul>
                                                         
                                                     </li>
-                                                    <li class="buttons d-flex gap-2">
-                                                        <a role="button" class="btn theme-btn bgblur viewdetails" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">View Detail</a>
+                                                    <li class="buttons d-flex">
+                                                        <a role="button" class="btn theme-btn bgblur viewdetails smNone" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">View Detail</a>
+                                                        
+                                                    </li>
+                                                    <li class="buttons d-flex">
                                                         <a href="javascript:;" rolo="button" class="theme-btn bgblur">Pay Now</a>
                                                     </li>
                                                 </ul>
@@ -359,7 +363,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-footer py-3 bg-transparent">
-                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0 smReview">
                                                     <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
@@ -372,6 +376,8 @@
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
                                                         <a href="javascript:;" class="btn bgblur viewdetails"data-bs-toggle="modal" data-bs-target="#viewmodaleModal">View Detail</a>
+                                                        </li>
+                                                    <li class="buttons d-flex gap-2">
                                                         <a href="javascript:;" class="btn bgblur ">Review</a>
                                                     </li>
                                                 </ul>

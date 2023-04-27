@@ -109,3 +109,30 @@
     width: 280px !important;
 }
 
+
+@media (max-width:767px){
+    .topHeader{
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            .navbar-brand{
+                width: 128px;
+                img{
+                    width: 100%;
+                }
+            }
+            & .right-nav{
+                .Memorials,.smNone{
+                    display: none;
+                }
+                .beforeLogin{
+                    .userImg{
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
