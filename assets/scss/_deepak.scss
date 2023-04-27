@@ -2009,6 +2009,9 @@
                 }
 
                 & .card-footer {
+                    .list-unstyled{
+                        gap: 10px !important;
+                    }
                     & .chat {
                         & .drop {
                             background: $white;
@@ -3840,25 +3843,7 @@
                         .border-end{
                             border: 0 !important;
                         }
-                        & .myorderList{
-                            flex-wrap: wrap;
-                            margin: 15px 0px;
-                            &:last-child{
-                                margin-bottom: 20px;
-                            }
-                            & .textimage{
-                                .cemeterytext{
-                                    display: flex;
-                                    align-items: center;
-                                    font-size: 13px;
-                                    .cemeterytext1{
-                                        width: auto;
-                                        font-size: 13px;
-                                    }
-                                }
-                               
-                            }
-                        }
+                        
                         & .iamgeleft {
 
                             & img {}
@@ -3901,13 +3886,26 @@
                     }
 
                     & .card-footer {
+                        & .historyFooter{
+                            flex-wrap: wrap;
+                            li{
+                                &:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8){
+                                    max-width: 100% !important;
+                                    width: 100% !important;
+                                    .btn{
+                                        width: 100%;
+                                    max-width: 100% !important;
+
+                                    }
+                                }
+                            }
+                        }
                         .smReview{
                             flex-wrap: wrap;
                             gap: 10px;
                             li{
                                 &:nth-child(3){
                                     order: -1;
-                                    width: 100%;
                                     max-width: 100% !important;
                                     width: 100% !important;
 
@@ -3924,7 +3922,8 @@
                         }
 
                         & .bgblur {
-
+                            width: 160px;
+                            line-height: 25px;
                             &.viewdetails {}
                         }
 
@@ -3956,6 +3955,12 @@
         & .daydate {}
 
         & .modal-body {
+            & .smPNone{
+                padding: 0 !important;
+            }
+            & .cleanerBorder{
+                border-bottom: 1px solid #e1e1e1;
+            }
             & .iamgeleft {
 
                 & img {}
@@ -4098,9 +4103,12 @@
     }
 
     #seeresultleModal {
+        
         & .modal-title {}
 
-        & .daydate {}
+        & .daydate {
+            margin-bottom: 13px;
+        }
 
         & .modal-body {
             & .imageright {
@@ -4122,7 +4130,8 @@
                 & .beforcleningtext {}
 
                 & .imagecard {
-
+                    width: 100% !important;
+                    height: 76px !important;
                     & img {}
                 }
             }
@@ -4137,7 +4146,25 @@
             }
         }
     }
-
+    .myorderList{
+        flex-wrap: wrap;
+        margin: 15px 0px;
+        &:last-child{
+            margin-bottom: 20px;
+        }
+        & .textimage{
+            .cemeterytext{
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                .cemeterytext1{
+                    width: auto;
+                    font-size: 13px;
+                }
+            }
+           
+        }
+    }
     #reviewmodalModal {
         & .modal-header {
             & .modal-title {}

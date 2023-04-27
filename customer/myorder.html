@@ -293,7 +293,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                        <div class="d-flex align-items-center gap-2 mb-2 myorderList">
                                                             <div class="imageright">
                                                                 <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                                             </div>
@@ -304,7 +304,7 @@
                                                                 <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                                             </div>
                                                         </div>
-                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                                             <div class="imageright h-auto">
                                                                 <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
                                                             </div>
@@ -417,7 +417,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                        <div class="d-flex align-items-center gap-2 mb-2 myorderList">
                                                             <div class="imageright">
                                                                 <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                                             </div>
@@ -428,7 +428,7 @@
                                                                 <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                                             </div>
                                                         </div>
-                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                                             <div class="imageright h-auto">
                                                                 <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
                                                             </div>
@@ -485,7 +485,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-footer py-3 bg-transparent">
-                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0 smReview">
                                                     <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
@@ -539,7 +539,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                        <div class="d-flex align-items-center gap-2 mb-2 myorderList">
                                                             <div class="imageright">
                                                                 <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                                             </div>
@@ -550,7 +550,7 @@
                                                                 <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                                             </div>
                                                         </div>
-                                                        <div class="d-flex align-items-baseline gap-2 mb-2">
+                                                        <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                                             <div class="imageright h-auto">
                                                                 <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
                                                             </div>
@@ -609,7 +609,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-footer py-3 bg-transparent">
-                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0">
+                                                <ul class="list-unstyled chat d-flex align-items-center justify-content-end mb-0 mx-0 historyFooter">
                                                     <li class="drop"><a href="message.html" class="message round p-0"><img src="../assets/images/message.svg" alt="imageorder"></a></li>
                                                     <li class="drop">
                                                         <a href="javascript:;" class="more round" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/More.svg" alt="imageorder"></a>
@@ -622,10 +622,25 @@
                                                     </li>
                                                     <li class="buttons d-flex gap-2">
                                                         <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#seeresultleModal">See Result</a>
+                                                        </li>
+                                                    <li class="buttons d-flex gap-2">
+
                                                         <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#viewmodaleModal">Memorial Detail</a>
+                                                       </li>
+                                                    <li class="buttons d-flex gap-2">
+
                                                         <a href="javascript:;" class="btn btnGreen" data-bs-toggle="modal" data-bs-target="#tipModal">Leave a Tip</a>
+                                                       </li>
+                                                    <li class="buttons d-flex gap-2">
+
                                                         <a href="javascript:;" class="btn bgblur viewdetails">View Detail</a>
+                                                        </li>
+                                                    <li class="buttons d-flex gap-2">
+
                                                         <a href="javascript:;" class="btn bgblur">Pay Now</a>
+                                                        </li>
+                                                    <li class="buttons d-flex gap-2">
+
                                                         <a href="javascript:;" class="btn bgblur">Review</a>
                                                     </li>
                                                 </ul>
@@ -664,24 +679,24 @@
                             <div class="daydate">21 February 2022</div>
                         </div>
                         <div class="col">
-                            <div class="buttonGroup d-flex gap-2">
-                                <button class="Greenbutton btn">One Time</button>
-                                <button class="Greenbutton btn dnone">In Progress</button>
-                                <button class="orangebutton btn">Waiting Quotation</button>
-                                <button class="orangebutton btn dnone">Waiting Approval</button>
-                            </div>
+                            <ul class="buttonGroup d-flex gap-2">
+                                <li class="Greenbutton btn">One Time</li>
+                                <li class="Greenbutton btn dnone">Completed</li>
+                                <li class="orangebutton btn d-none">Waiting Quotation</li>
+                                <li class="orangebutton btn d-none">Waiting Approval</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="modal-body row gy-3 mx-0 px-0">
                     <div class="col-md-12 row mx-0 border-end mt-3">
-                        <div class="col-auto px-0">
+                        <div class="col-3 col-md-2 px-0">
                             <div class="iamgeleft">
                                 <img class="w-100 h-100" src="../assets/orderImage/orderimage1.png" alt="orderimage1">
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                        <div class="col-12 col-md-10 px-0 px-lg-3">
+                            <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                 <div class="imageright">
                                     <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                                 </div>
@@ -692,7 +707,7 @@
                                     <button class="buttonMemorial btn px-2 px-sm-3">Large Memorial</button>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-baseline gap-2 mb-2">
+                            <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                                 <div class="imageright h-auto">
                                     <img src="../assets/orderImage/ordericon2.svg" alt="ordericon1">
                                 </div>
@@ -724,27 +739,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 border-top border-bottom">
+                    <div class="col-12 border-top border-bottom smPNone">
                         <div class="row mx-0">
-                            <div class="col-md-6 px-0 border-end py-3">
-                                <div class="row mx-0 gy-2">
-                                    <div class="col-12 ">
+                            <div class="col-md-6 px-0 border-end py-3 cleanerBorder">
+                                <div class="row mx-0 gy-2 align-items-center">
+                                    <div class="col-5 col-md-12">
                                         <div class="headingadd">Cleaner</div>
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-7 col-md-12 d-flex">
                                         <div class="imageuser"><img class="rounded-pill w-100 h-100" src="../assets/orderImage/orderimage2.png" alt="orderimage2"></div>
+                                        <div class="usernameandmeddle d-flex align-items-center ms-3">Danish M <span class="d-inline-flex medeal"><img class="w-100 h-100 mx-2" src="../assets/orderImage/orderimage3.png" alt="medeal"></span></div>
                                     </div>
-                                    <div class="col">
-                                        <div class="usernameandmeddle d-flex align-items-center">Danish M <span class="d-inline-flex medeal"><img class="w-100 h-100 mx-2" src="../assets/orderImage/orderimage3.png" alt="medeal"></span></div>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col-md-6  px-0 py-3">
+                            <div class="col-md-6  px-0 py-3 cleanerBorder">
                                 <div class="row mx-0 gy-2">
-                                    <div class="col-12">
+                                    <div class="col-7 col-md-12">
                                         <div class="textHead">Quotation</div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-5 col-md-12">
                                         <div class="textHead color">Waiting</div>
                                         <div class="textHead green">$50 + 10% Fee</div>
                                     </div>
@@ -758,7 +772,7 @@
                                 <div class="col-auto">
                                     <div class="befortext">Before Cleaning</div>
                                     <div class="progresstext">In Progress</div>
-                                    <div class="row mt-2">
+                                    <div class="row mt-2 g-3">
                                         <div class="col-auto px-1">
                                             <div class="cardorderdetaisimg"><img src="../assets/orderImage/orderimage5.png" alt="orderimage5"></div>
                                         </div>
@@ -773,7 +787,7 @@
                                 <div class="col-auto text-start">
                                     <div class="befortext">After Cleaning</div>
                                     <div class="progresstext">In Progress</div>
-                                    <div class="row mt-2">
+                                    <div class="row mt-2 g-3">
                                         <div class="col-auto px-1">
                                             <div class="cardorderdetaisimg"><img src="../assets/orderImage/orderimage8.png" alt="orderimage8"></div>
                                         </div>
@@ -902,18 +916,18 @@
                         <div class="daydate">21 February 2022</div>
                     </div>
                     <div class="col">
-                        <div class="buttonGroup d-flex gap-2">
-                            <button class="Greenbutton btn">One Time</button>
-                            <button class="Greenbutton btn dnone">Completed</button>
-                            <button class="orangebutton btn d-none">Waiting Quotation</button>
-                            <button class="orangebutton btn d-none">Waiting Approval</button>
-                        </div>
+                        <ul class="buttonGroup d-flex gap-2">
+                            <li class="Greenbutton btn">One Time</li>
+                            <li class="Greenbutton btn dnone">Completed</li>
+                            <li class="orangebutton btn d-none">Waiting Quotation</li>
+                            <li class="orangebutton btn d-none">Waiting Approval</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="modal-body row mx-0 gy-3">
-                <div class="col-12">
-                    <div class="d-flex align-items-baseline gap-2 mb-2">
+                <div class="col-12 p-0">
+                    <div class="d-flex align-items-baseline gap-2 mb-2 myorderList">
                         <div class="imageright">
                             <img src="../assets/orderImage/ordericon1.svg" alt="ordericon1">
                         </div>
@@ -927,7 +941,7 @@
                 </div>
                 <div class="col-12 px-0 mx-0 cardection">
                     <div class="beforcleningtext mb-2 fw-bold">Before Cleaning</div>
-                    <div class="row row-cols-3  row-cols-lg-4">
+                    <div class="row row-cols-3  row-cols-lg-4 g-3">
                         <div class="col">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage5.png" alt="orderimage5">
@@ -950,7 +964,7 @@
                 </div>
                 <div class="col-12 px-0 mx-0 cardection">
                     <div class="beforcleningtext mb-2 fw-bold">After Cleaning</div>
-                    <div class="row  row row-cols-3  row-cols-lg-4 px-0">
+                    <div class="row  row row-cols-3  row-cols-lg-4 px-0 g-3">
                         <div class="col ">
                             <div class="imagecard">
                                 <img src="../assets/orderImage/orderimage8.png" alt="orderimage8">
