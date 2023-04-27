@@ -56,17 +56,22 @@
 </head>
 <body>
     <div class="main" page-name="reviewspage">
-        <nav class="navbar topHeader">
-            <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">
-                    <img src="assets/images/logo.svg" alt="img">
-                </span>
-                <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                </a>
-            </div>
-        </nav>
+<!-- ########## Navbar ##########-->
+<nav class="navbar topHeader">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+            <img class="w-100 h-100" src="assets/images/logo.svg" alt="img">
+        </span>
+        <div class="d-flex align-items-center gap-2 ">
+            <a href="customer/customer.html" class="user-btn theme-btn text-theme1 d-block d-md-none py-2"> User<span><img class="px-2" src="assets/images/user-fillter.png" alt="fillter"></span></a>
+            <div class="userimage d-block d-md-none"><img src="assets/images/user-profile.svg" alt=""></div>
+            <a class="toggler-icon d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- ########## Navbar ##########-->
         <div class="wrapper">
 <!--########## [ Aside Bar Start ] ###########-->
         <div class="sidebar-lg sidebar">

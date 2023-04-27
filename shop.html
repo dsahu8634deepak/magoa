@@ -58,17 +58,22 @@
 </head>
 <body>
     <div class="main" page-name="shoppage">
-        <nav class="navbar topHeader">
-            <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">
-                    <img src="assets/images/logo.svg" alt="logo">
-                </span>
-                <a class="toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                </a>
-            </div>
-        </nav>
+<!-- ########## Navbar ##########-->
+<nav class="navbar topHeader">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+            <img class="w-100 h-100" src="assets/images/logo.svg" alt="img">
+        </span>
+        <div class="d-flex align-items-center gap-2 ">
+            <a href="customer/customer.html" class="user-btn theme-btn text-theme1 d-block d-md-none py-2"> User<span><img class="px-2" src="assets/images/user-fillter.png" alt="fillter"></span></a>
+            <div class="userimage d-block d-md-none"><img src="assets/images/user-profile.svg" alt=""></div>
+            <a class="toggler-icon d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- ########## Navbar ##########-->
         <div class="wrapper">
 <!--########## [ Aside Bar Start ] ###########-->
             <div class="sidebar-lg sidebar">
@@ -146,7 +151,7 @@
                             <div class="col-12">
                                 <div class="tab-content tabscontentinner pt-3" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active alltab" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab" tabindex="0">
-                                        <div class="row row-cols-lg-5 row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
+                                        <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-3  row-cols-sm-2 row-cols-2 g-3">
                                             <div class="col">
                                                 <div class="card cardcontent border-0" >
                                                     <div class="cardImage"> <img class="w-100 h-100" src="assets/shoppage/image1.png" class="card-img-top" alt="cardImage"></div>
@@ -1722,7 +1727,7 @@
                     <div class="col-12 px-0 mb-3">
                         <div class="d-flex align-items-center gap-2 fs-24 fw-bold cartHeading" onclick="backout()"> <span class="d-flex align-items-center gap-1"><img class="w-100 h-100" src="assets/shoppage/arrow.svg" alt="image"></span>My Orders</div>
                     </div>
-                    <div class="col-md-6 PX-1">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 px-1">
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
@@ -1781,7 +1786,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 PX-1">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 px-1">
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
@@ -1840,7 +1845,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 PX-1">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 px-1">
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
@@ -1899,7 +1904,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 PX-1">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 px-1">
                         <div class="card">
                             <div class="row mx-0">
                                 <div class="col-12 px-0">
